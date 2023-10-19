@@ -195,6 +195,10 @@ void TSU_Priority_OutOfOrder::Report_results_in_XML(std::string name_prefix, Uti
 
 void TSU_Priority_OutOfOrder::Schedule()
 {
+
+    std::cout<<"TSU_Priority_OutOfOrder::Schedule"<<std::endl;
+    std::cout<<"the size of transaction_receive_slots: "<<transaction_receive_slots.size()<<std::endl;
+
     opened_scheduling_reqs--;
     if (opened_scheduling_reqs > 0)
     {
@@ -222,9 +226,14 @@ void TSU_Priority_OutOfOrder::Schedule()
             {
             case Transaction_Source_Type::CACHE:
             case Transaction_Source_Type::USERIO:
+
+                std::cout<<"TSU_Priority_OutOfOrder::Schedule: read transaction from user"<<std::endl;
+
                 if ((*it)->Priority_class != IO_Flow_Priority_Class::UNDEFINED)
                 {
                     UserReadTRQueue[(*it)->Address.ChannelID][(*it)->Address.ChipID][static_cast<int>((*it)->Priority_class)].push_back((*it));
+
+                    std::cout<<"The size of UserReadTRQueue: "<<UserReadTRQueue[(*it)->Address.ChannelID][(*it)->Address.ChipID][static_cast<int>((*it)->Priority_class)].size()<<std::endl;
                 }
                 else
                 {
@@ -281,6 +290,8 @@ void TSU_Priority_OutOfOrder::Schedule()
             {
                 NVM::FlashMemory::Flash_Chip *chip = _NVMController->Get_chip(channelID, Round_robin_turn_of_channel[channelID]);
                 //The TSU does not check if the chip is idle or not since it is possible to suspend a busy chip and issue a new command
+                std::cout<<"TSU_Priority_OutOfOrder::Schedule: process_chip_requests"<<std::endl;
+
                 if (!service_read_transaction(chip))
                 {
                     if (!service_write_transaction(chip))
@@ -291,6 +302,8 @@ void TSU_Priority_OutOfOrder::Schedule()
                 Round_robin_turn_of_channel[channelID] = (flash_chip_ID_type)(Round_robin_turn_of_channel[channelID] + 1) % chip_no_per_channel;
                 if (_NVMController->Get_channel_status(chip->ChannelID) != BusChannelStatus::IDLE)
                 {
+                    //std::cout<<"TSU_Priority_OutOfOrder::Schedule: break"<<std::endl;
+
                     break;
                 }
             }
@@ -335,6 +348,9 @@ Flash_Transaction_Queue *TSU_Priority_OutOfOrder::get_next_read_service_queue(NV
 bool TSU_Priority_OutOfOrder::service_read_transaction(NVM::FlashMemory::Flash_Chip *chip)
 {
     Flash_Transaction_Queue *sourceQueue1 = NULL, *sourceQueue2 = NULL;
+
+    std::cout<<"TSU_Priority_OutOfOrder::service_read_transaction"<<std::endl;
+
 
     //Flash transactions that are related to FTL mapping data have the highest priority
     if (MappingReadTRQueue[chip->ChannelID][chip->ChipID].size() > 0)

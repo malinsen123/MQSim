@@ -477,8 +477,10 @@ namespace SSD_Components
 		return domains[stream_id]->No_of_inserted_entries_in_preconditioning;
 	}
 
+	//LM This function is called from TSU
 	void Address_Mapping_Unit_Page_Level::Translate_lpa_to_ppa_and_dispatch(const std::list<NVM_Transaction*>& transactionList)
 	{
+
 		for (std::list<NVM_Transaction*>::const_iterator it = transactionList.begin();
 			it != transactionList.end(); ) {
 			if (is_lpa_locked_for_gc((*it)->Stream_id, ((NVM_Transaction_Flash*)(*it))->LPA)) {
@@ -503,6 +505,8 @@ namespace SSD_Components
 				}
 			}
 			
+			std::cout<<"Address come here 1"<<std::endl;
+			std::cout<<"transactionList.size() = "<<transactionList.size()<<std::endl;
 			ftl->TSU->Schedule();
 		}
 	}

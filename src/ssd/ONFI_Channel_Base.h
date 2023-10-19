@@ -23,13 +23,18 @@ namespace SSD_Components
 		void SetStatus(BusChannelStatus new_status, NVM::FlashMemory::Flash_Chip* target_chip)
 		{
 			if (((status == BusChannelStatus::IDLE && new_status == BusChannelStatus::IDLE)
-				|| (status == BusChannelStatus::BUSY && new_status == BusChannelStatus::BUSY))
+				|| (status == BusChannelStatus::BUSY && new_status == BusChannelStatus::BUSY) 
+				|| (status == BusChannelStatus::BUSY_IN && new_status == BusChannelStatus::BUSY_IN)
+				|| (status == BusChannelStatus::BUSY_OUT && new_status == BusChannelStatus::BUSY_OUT)
+				|| (status == BusChannelStatus::BUSY_IN_AND_OUT && new_status == BusChannelStatus::BUSY_IN_AND_OUT))
 				&& (current_active_chip != target_chip)) {
 				PRINT_ERROR("Bus " << ChannelID << ": illegal bus status transition!")
 			}
 
+			std::cout<<"set status: "<<(int)status<<" -> "<<(int)new_status<<std::endl;
+
 			status = new_status;
-			if (status == BusChannelStatus::BUSY) {
+			if (status == BusChannelStatus::BUSY || status == BusChannelStatus::BUSY_IN || status == BusChannelStatus::BUSY_IN_AND_OUT || status == BusChannelStatus::BUSY_OUT) {
 				current_active_chip = target_chip;
 			} else {
 				current_active_chip = NULL;

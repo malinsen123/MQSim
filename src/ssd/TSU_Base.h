@@ -92,6 +92,9 @@ protected:
 	int opened_scheduling_reqs;
 	void process_chip_requests(NVM::FlashMemory::Flash_Chip* chip)
 	{
+
+		std::cout<<"TSU_Base::process_chip_requests"<<std::endl;
+
 		if (!_my_instance->service_read_transaction(chip)) {
 			if (!_my_instance->service_write_transaction(chip)) {
 				_my_instance->service_erase_transaction(chip);

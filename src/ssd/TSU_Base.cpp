@@ -43,16 +43,23 @@ namespace SSD_Components
 	{
 		//TSU does nothing. The generator of the transaction will handle it.
 	}
-
+	//LM need to change this function
+	//Old only handle when Channel is idle
 	void TSU_Base::handle_channel_idle_signal(flash_channel_ID_type channelID)
 	{
+		std::cout<<"TSU_Base::handle_channel_idle_signal"<<std::endl;
+
+
 		for (unsigned int i = 0; i < _my_instance->chip_no_per_channel; i++) {
 			//The TSU does not check if the chip is idle or not since it is possible to suspend a busy chip and issue a new command
 			_my_instance->process_chip_requests(_my_instance->_NVMController->Get_chip(channelID, _my_instance->Round_robin_turn_of_channel[channelID]));
 			_my_instance->Round_robin_turn_of_channel[channelID] = (flash_chip_ID_type)(_my_instance->Round_robin_turn_of_channel[channelID] + 1) % _my_instance->chip_no_per_channel;
 
 			//A transaction has been started, so TSU should stop searching for another chip
-			if (_my_instance->_NVMController->Get_channel_status(channelID) == BusChannelStatus::BUSY) {
+			if (_my_instance->_NVMController->Get_channel_status(channelID) == BusChannelStatus::BUSY
+			||_my_instance->_NVMController->Get_channel_status(channelID) == BusChannelStatus::BUSY_IN
+			||_my_instance->_NVMController->Get_channel_status(channelID) == BusChannelStatus::BUSY_OUT
+			||_my_instance->_NVMController->Get_channel_status(channelID) == BusChannelStatus::BUSY_IN_AND_OUT  ) {
 				break;
 			}
 		}
@@ -60,6 +67,9 @@ namespace SSD_Components
 	
 	void TSU_Base::handle_chip_idle_signal(NVM::FlashMemory::Flash_Chip* chip)
 	{
+
+		std::cout<<"TSU_Base::handle_chip_idle_signal"<<std::endl;
+
 		if (_my_instance->_NVMController->Get_channel_status(chip->ChannelID) == BusChannelStatus::IDLE) {
 			_my_instance->process_chip_requests(chip);
 		}
@@ -122,6 +132,11 @@ namespace SSD_Components
 
 			if (transaction_dispatch_slots.size() > 0)
 			{
+
+				std::cout<<"TSU_Base sending command to chip"<<std::endl;
+				std::cout<<"sourceQueue1->size(): "<<sourceQueue1->size()<<std::endl;
+
+
 				_NVMController->Send_command_to_chip(transaction_dispatch_slots);
 				transaction_dispatch_slots.clear();
 				dieID = (dieID + 1) % die_no_per_chip;
