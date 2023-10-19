@@ -4,9 +4,9 @@
 #include "../nvm_chip/flash_memory/FlashTypes.h"
 #include "ONFI_Channel_Base.h"
 
-
-#define NVDDR2DataInTransferTime(X,Y) ((X / Y->ChannelWidth / 2) * Y->TwoUnitDataInTime)
-#define NVDDR2DataOutTransferTime(X,Y) ((X / Y->ChannelWidth / 2) * Y->TwoUnitDataOutTime)
+//LM 
+#define NVDDR2DataInTransferTime(X,Y) ((X / Y->ChannelWidth / 2) * Y->TwoUnitDataInTime/1000)
+#define NVDDR2DataOutTransferTime(X,Y) ((X/ Y->ChannelWidth / 2) * Y->TwoUnitDataOutTime/1000)
 
 
 namespace SSD_Components

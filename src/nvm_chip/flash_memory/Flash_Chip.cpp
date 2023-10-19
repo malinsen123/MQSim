@@ -168,6 +168,10 @@ namespace NVM
 						targetDie->Planes[command->Address[planeCntr].PlaneID]->Progam_count++;
 						targetDie->Planes[command->Address[planeCntr].PlaneID]->Blocks[command->Address[planeCntr].BlockID]->Pages[command->Address[planeCntr].PageID].Write_metadata(command->Meta_data[planeCntr]);
 					}
+
+					std::cout<<"Flash_Chip.cpp: finish_command_execution: CMD_PROGRAM_PAGE"<<std::endl;
+					std::cout<<"The command size is: "<<command->Address.size()<<std::endl;
+
 					break;
 				case CMD_ERASE_BLOCK:
 				case CMD_ERASE_BLOCK_MULTIPLANE:
@@ -187,6 +191,7 @@ namespace NVM
 				default:
 					PRINT_ERROR("Flash chip " << ID() << ": unhandled flash command type!")
 			}
+
 
 			//In MQSim, flash chips always announce their status using the ready/busy signal; the controller does not issue a die status read command
 			broadcast_ready_signal(command);
