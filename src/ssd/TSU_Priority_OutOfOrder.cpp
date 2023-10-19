@@ -417,6 +417,11 @@ bool TSU_Priority_OutOfOrder::service_read_transaction(NVM::FlashMemory::Flash_C
 
     bool suspensionRequired = false;
     ChipStatus cs = _NVMController->GetChipStatus(chip);
+
+    std::cout<<"the chip status is: "<<_NVMController->ChipStatusToString(cs)<<std::endl;
+
+    std::cout<<"current time: "<<Simulator->Time()<<std::endl;
+
     switch (cs)
     {
     case ChipStatus::IDLE:

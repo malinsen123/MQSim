@@ -662,7 +662,16 @@ namespace SSD_Components {
 		if (_my_instance->channels[chip->ChannelID]->GetStatus() == BusChannelStatus::IDLE)
 			_my_instance->broadcastChannelIdleSignal(chip->ChannelID);
 		else if (chipBKE->Status == ChipStatus::IDLE)
+		{
+			std::cout<<"come here 5"<<std::endl;
+
 			_my_instance->broadcastChipIdleSignal(chip);
+		}else{//LM do the modification need to trigger the broadcastChipIdleSignal 
+			//the chip is in WAIT_FOR_DATA_OUT status
+			std::cout<<"come here 6"<<std::endl;
+			std::cout<<"chip status: "<<_my_instance->ChipStatusToString(chipBKE->Status)<<std::endl;
+		}
+			
 	}
 
 	inline void NVM_PHY_ONFI_NVDDR2::transfer_read_data_from_chip(ChipBookKeepingEntry* chipBKE, DieBookKeepingEntry* dieBKE, NVM_Transaction_Flash* tr)

@@ -47,4 +47,33 @@ namespace SSD_Components {
 			(*it)(chip);
 		}
 	}
+
+
+	std::string NVM_PHY_ONFI::ChipStatusToString(ChipStatus status)
+	{
+		switch(status){
+			case ChipStatus::IDLE:
+				return "IDLE";
+			case ChipStatus::CMD_IN:
+				return "CMD_IN";
+			case ChipStatus::CMD_DATA_IN:
+				return "CMD_DATA_IN";
+			case ChipStatus::DATA_OUT:
+				return "DATA_OUT";
+			case ChipStatus::READING:
+				return "READING";
+			case ChipStatus::WRITING:
+				return "WRITING";
+			case ChipStatus::ERASING:
+				return "ERASING";
+			case ChipStatus::WAIT_FOR_DATA_OUT:
+				return "WAIT_FOR_DATA_OUT";
+			case ChipStatus::WAIT_FOR_COPYBACK_CMD:
+				return "WAIT_FOR_COPYBACK_CMD";
+			default:
+				return "UNKNOWN";
+
+		}
+	}
+
 }

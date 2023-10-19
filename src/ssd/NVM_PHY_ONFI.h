@@ -41,6 +41,11 @@ namespace SSD_Components
 		void ConnectToChannelIdleSignal(ChannelIdleHandlerType);
 		typedef void(*ChipIdleHandlerType) (NVM::FlashMemory::Flash_Chip*);
 		void ConnectToChipIdleSignal(ChipIdleHandlerType);
+
+
+		//LM
+		std::string ChipStatusToString(ChipStatus status);
+
 	protected:
 		unsigned int channel_count;
 		unsigned int chip_no_per_channel;
