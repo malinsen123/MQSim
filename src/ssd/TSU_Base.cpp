@@ -64,7 +64,7 @@ namespace SSD_Components
 			}
 		}
 	}
-	
+	//LM Do the important change here
 	void TSU_Base::handle_chip_idle_signal(NVM::FlashMemory::Flash_Chip* chip)
 	{
 
@@ -72,6 +72,18 @@ namespace SSD_Components
 
 		if (_my_instance->_NVMController->Get_channel_status(chip->ChannelID) == BusChannelStatus::IDLE) {
 			_my_instance->process_chip_requests(chip);
+		}else{
+			std::cout<<"TSU_Base::handle_chip_idle_signal: channel is << "<<(int)_my_instance->_NVMController->Get_channel_status(chip->ChannelID)<<std::endl;
+
+			//LM: This is the case when the channel is busy_out and the chip is DATA_OUT
+			if (_my_instance->_NVMController->Get_channel_status(chip->ChannelID) == BusChannelStatus::BUSY_OUT){
+
+				std::cout<<"TSU_Base::handle_chip_idle_signal: channel is busy_out"<<std::endl;
+
+				_my_instance->process_chip_requests(chip);
+
+			}
+
 		}
 	}
 
@@ -135,7 +147,7 @@ namespace SSD_Components
 
 				std::cout<<"TSU_Base sending command to chip"<<std::endl;
 				std::cout<<"sourceQueue1->size(): "<<sourceQueue1->size()<<std::endl;
-
+				std::cout<<"transaction_dispatch_slots.size(): "<<transaction_dispatch_slots.size()<<std::endl;
 
 				_NVMController->Send_command_to_chip(transaction_dispatch_slots);
 				transaction_dispatch_slots.clear();

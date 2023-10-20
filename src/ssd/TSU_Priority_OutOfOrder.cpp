@@ -196,8 +196,8 @@ void TSU_Priority_OutOfOrder::Report_results_in_XML(std::string name_prefix, Uti
 void TSU_Priority_OutOfOrder::Schedule()
 {
 
-    std::cout<<"TSU_Priority_OutOfOrder::Schedule"<<std::endl;
-    std::cout<<"the size of transaction_receive_slots: "<<transaction_receive_slots.size()<<std::endl;
+    //std::cout<<"TSU_Priority_OutOfOrder::Schedule"<<std::endl;
+    //std::cout<<"the size of transaction_receive_slots: "<<transaction_receive_slots.size()<<std::endl;
 
     opened_scheduling_reqs--;
     if (opened_scheduling_reqs > 0)
@@ -227,7 +227,7 @@ void TSU_Priority_OutOfOrder::Schedule()
             case Transaction_Source_Type::CACHE:
             case Transaction_Source_Type::USERIO:
 
-                std::cout<<"TSU_Priority_OutOfOrder::Schedule: read transaction from user"<<std::endl;
+                //std::cout<<"TSU_Priority_OutOfOrder::Schedule: read transaction from user"<<std::endl;
 
                 if ((*it)->Priority_class != IO_Flow_Priority_Class::UNDEFINED)
                 {
@@ -290,7 +290,7 @@ void TSU_Priority_OutOfOrder::Schedule()
             {
                 NVM::FlashMemory::Flash_Chip *chip = _NVMController->Get_chip(channelID, Round_robin_turn_of_channel[channelID]);
                 //The TSU does not check if the chip is idle or not since it is possible to suspend a busy chip and issue a new command
-                std::cout<<"TSU_Priority_OutOfOrder::Schedule: process_chip_requests"<<std::endl;
+                //std::cout<<"TSU_Priority_OutOfOrder::Schedule: process_chip_requests"<<std::endl;
 
                 if (!service_read_transaction(chip))
                 {
@@ -419,9 +419,9 @@ bool TSU_Priority_OutOfOrder::service_read_transaction(NVM::FlashMemory::Flash_C
     ChipStatus cs = _NVMController->GetChipStatus(chip);
 
     std::cout<<"the chip status is: "<<_NVMController->ChipStatusToString(cs)<<std::endl;
+    // std::cout<<"current time: "<<Simulator->Time()<<std::endl;
 
-    std::cout<<"current time: "<<Simulator->Time()<<std::endl;
-
+    //LM Make the important change here
     switch (cs)
     {
     case ChipStatus::IDLE:
@@ -446,6 +446,16 @@ bool TSU_Priority_OutOfOrder::service_read_transaction(NVM::FlashMemory::Flash_C
             return false;
         }
         suspensionRequired = true;
+    case ChipStatus::DATA_OUT://LM added
+        std::cout<<"the chip status is: "<<_NVMController->ChipStatusToString(cs)<<std::endl;
+        std::cout<<"current time: "<<Simulator->Time()<<std::endl;
+        break;
+    /*
+    case ChipStatus::WAIT_FOR_DATA_OUT: //LM new added which will cause problem for having too long transmission queue
+        std::cout<<"the chip status is: "<<_NVMController->ChipStatusToString(cs)<<std::endl;
+        std::cout<<"current time: "<<Simulator->Time()<<std::endl;
+        break;
+    */
     default:
         return false;
     }

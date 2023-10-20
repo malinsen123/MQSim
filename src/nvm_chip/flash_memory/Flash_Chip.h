@@ -11,6 +11,7 @@
 #include "Flash_Command.h"
 #include <vector>
 #include <stdexcept>
+#include <unistd.h>
 
 namespace NVM
 {
@@ -57,6 +58,10 @@ namespace NVM
 			void EndCMDDataInXfer(Flash_Command* command)//End transferring write data of a group of multi-plane transactions to the Flash chip
 			{
 				this->STAT_totalXferTime += (Simulator->Time() - this->lastTransferStart);
+
+				std::cout<<"the added time is: "<<(Simulator->Time() - this->lastTransferStart)<<std::endl;
+				sleep(1);
+
 				if (this->idleDieNo != die_no)
 					STAT_totalOverlappedXferExecTime += (Simulator->Time() - lastTransferStart);
 				this->Dies[command->Address[0].DieID]->STAT_TotalXferTime += (Simulator->Time() - lastTransferStart);
@@ -68,6 +73,10 @@ namespace NVM
 			void EndDataOutXfer(Flash_Command* command)
 			{
 				this->STAT_totalXferTime += (Simulator->Time() - this->lastTransferStart);
+
+				std::cout<<"the added time is: "<<(Simulator->Time() - this->lastTransferStart)<<std::endl;
+				sleep(1);
+
 				if (this->idleDieNo != die_no)
 					STAT_totalOverlappedXferExecTime += (Simulator->Time() - lastTransferStart);
 				this->Dies[command->Address[0].DieID]->STAT_TotalXferTime += (Simulator->Time() - lastTransferStart);

@@ -111,6 +111,8 @@ namespace NVM
 				PRINT_ERROR("Flash chip " << ID() << ": executing a flash operation on a busy die!")
 			}
 
+			//std::cout<<"Flash_Chip.cpp: register command finish event"<<std::endl;
+
 			targetDie->Expected_finish_time = Simulator->Time() + Get_command_execution_latency(command->CommandCode, command->Address[0].PageID);
 			targetDie->CommandFinishEvent = Simulator->Register_sim_event(targetDie->Expected_finish_time,
 				this, command, static_cast<int>(Chip_Sim_Event_Type::COMMAND_FINISHED));
@@ -169,8 +171,8 @@ namespace NVM
 						targetDie->Planes[command->Address[planeCntr].PlaneID]->Blocks[command->Address[planeCntr].BlockID]->Pages[command->Address[planeCntr].PageID].Write_metadata(command->Meta_data[planeCntr]);
 					}
 
-					std::cout<<"Flash_Chip.cpp: finish_command_execution: CMD_PROGRAM_PAGE"<<std::endl;
-					std::cout<<"The command size is: "<<command->Address.size()<<std::endl;
+					//std::cout<<"Flash_Chip.cpp: finish_command_execution: CMD_PROGRAM_PAGE"<<std::endl;
+					//std::cout<<"The command size is: "<<command->Address.size()<<std::endl;
 
 					break;
 				case CMD_ERASE_BLOCK:
@@ -191,7 +193,7 @@ namespace NVM
 				default:
 					PRINT_ERROR("Flash chip " << ID() << ": unhandled flash command type!")
 			}
-
+			//std::cout<<"Flash_Chip.cpp: finish_command_execution: broadcast_ready_signal"<<std::endl;
 
 			//In MQSim, flash chips always announce their status using the ready/busy signal; the controller does not issue a die status read command
 			broadcast_ready_signal(command);
@@ -280,11 +282,12 @@ namespace NVM
 			std::string val = "@" + std::to_string(ChannelID) + "@" + std::to_string(ChipID);
 			xmlwriter.Write_attribute_string_inline(attr, val);
 
-			attr = "Fraction_of_Time_in_Execution";
+			attr = "Fraction_of_Time_in_Execution is about ";
+			std::cout<<"STAT_totalExecTime: "<<STAT_totalExecTime<<std::endl;
 			val = std::to_string(STAT_totalExecTime / double(Simulator->Time()));
 			xmlwriter.Write_attribute_string_inline(attr, val);
 
-			attr = "Fraction_of_Time_in_DataXfer";
+			attr = "Fraction_of_Time_in_DataXfer is  ";
 			val = std::to_string(STAT_totalXferTime / double(Simulator->Time()));
 			xmlwriter.Write_attribute_string_inline(attr, val);
 

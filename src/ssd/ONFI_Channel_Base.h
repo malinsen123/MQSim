@@ -40,6 +40,27 @@ namespace SSD_Components
 				current_active_chip = NULL;
 			}
 		}
+
+
+		std::string ChannelStatusToString(BusChannelStatus status)
+		{
+			switch (status) {
+			case BusChannelStatus::BUSY:
+				return "BUSY";
+			case BusChannelStatus::BUSY_IN:
+				return "BUSY_IN";
+			case BusChannelStatus::BUSY_OUT:
+				return "BUSY_OUT";
+			case BusChannelStatus::BUSY_IN_AND_OUT:
+				return "BUSY_IN_AND_OUT";
+			case BusChannelStatus::IDLE:
+				return "IDLE";
+			default:
+				return "UNKNOWN";
+			}
+		}
+
+
 	private:
 		BusChannelStatus status;
 		NVM::FlashMemory::Flash_Chip* current_active_chip;

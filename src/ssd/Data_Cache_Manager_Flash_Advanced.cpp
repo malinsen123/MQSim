@@ -200,7 +200,7 @@ namespace SSD_Components
 				case Caching_Mode::READ_CACHE:
 				case Caching_Mode::WRITE_READ_CACHE:
 				{
-					std::cout<<"Data_Cache_Manager_Flash_Advanced::process_new_user_request: "<<user_request->Stream_id<<std::endl;
+					//std::cout<<"Data_Cache_Manager_Flash_Advanced::process_new_user_request: "<<user_request->Stream_id<<std::endl;
 
 					std::list<NVM_Transaction*>::iterator it = user_request->Transaction_list.begin();
 					while (it != user_request->Transaction_list.end()) {

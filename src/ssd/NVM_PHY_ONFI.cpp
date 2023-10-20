@@ -70,6 +70,10 @@ namespace SSD_Components {
 				return "WAIT_FOR_DATA_OUT";
 			case ChipStatus::WAIT_FOR_COPYBACK_CMD:
 				return "WAIT_FOR_COPYBACK_CMD";
+			case ChipStatus::READING_AND_DATA_OUT:
+				return "READING_AND_DATA_OUT";
+			case ChipStatus::READING_AND_WAIT_DATA_OUT:
+				return "READING_AND_WAIT_DATA_OUT";
 			default:
 				return "UNKNOWN";
 

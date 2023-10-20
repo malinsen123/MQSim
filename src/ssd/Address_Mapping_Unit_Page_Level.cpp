@@ -505,8 +505,8 @@ namespace SSD_Components
 				}
 			}
 			
-			std::cout<<"Address come here 1"<<std::endl;
-			std::cout<<"transactionList.size() = "<<transactionList.size()<<std::endl;
+			//std::cout<<"Address come here 1"<<std::endl;
+			//std::cout<<"transactionList.size() = "<<transactionList.size()<<std::endl;
 			ftl->TSU->Schedule();
 		}
 	}

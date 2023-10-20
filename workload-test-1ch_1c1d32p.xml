@@ -22,7 +22,7 @@
 			<Seed>798</Seed>
 			<Average_No_of_Reqs_in_Queue>8192</Average_No_of_Reqs_in_Queue>
 			<Stop_Time>0</Stop_Time>
-			<Total_Requests_To_Generate>2000000</Total_Requests_To_Generate>
+			<Total_Requests_To_Generate>500000</Total_Requests_To_Generate>
 		</IO_Flow_Parameter_Set_Synthetic>
 	</IO_Scenario>
 </MQSim_IO_Scenarios>
