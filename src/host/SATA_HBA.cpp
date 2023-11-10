@@ -80,7 +80,7 @@ namespace Host_Components
 							SATA_UPDATE_SQ_TAIL(sata_ncq);
 						}
 						new_req->Enqueue_time = Simulator->Time();
-						pcie_root_complex->Write_to_device(sata_ncq.Submission_tail_register_address_on_device, sata_ncq.Submission_queue_tail);//Based on NVMe protocol definition, the updated tail pointer should be informed to the device
+						pcie_root_complex->Write_to_device(sata_ncq.Submission_tail_register_address_on_device, 0, sata_ncq.Submission_queue_tail);//Based on NVMe protocol definition, the updated tail pointer should be informed to the device
 					} else {
 						break;
 					}
@@ -112,7 +112,7 @@ namespace Host_Components
 						SATA_UPDATE_SQ_TAIL(sata_ncq);
 					}
 					request->Enqueue_time = Simulator->Time();
-					pcie_root_complex->Write_to_device(sata_ncq.Submission_tail_register_address_on_device, sata_ncq.Submission_queue_tail);//Based on NVMe protocol definition, the updated tail pointer should be informed to the device
+					pcie_root_complex->Write_to_device(sata_ncq.Submission_tail_register_address_on_device,0,  sata_ncq.Submission_queue_tail);//Based on NVMe protocol definition, the updated tail pointer should be informed to the device
 				}
 
 				if (host_requests.size() > 0) {
@@ -176,7 +176,7 @@ namespace Host_Components
 		if (sata_ncq.Completion_queue_head == sata_ncq.Completion_queue_size) {
 			sata_ncq.Completion_queue_head = 0;
 		}
-		pcie_root_complex->Write_to_device(sata_ncq.Completion_head_register_address_on_device, sata_ncq.Completion_queue_head);//Based on NVMe protocol definition, the updated head pointer should be informed to the device
+		pcie_root_complex->Write_to_device(sata_ncq.Completion_head_register_address_on_device, 0, sata_ncq.Completion_queue_head);//Based on NVMe protocol definition, the updated head pointer should be informed to the device
 	}
 
 	const NCQ_Control_Structure* SATA_HBA::Get_sata_ncq_info()

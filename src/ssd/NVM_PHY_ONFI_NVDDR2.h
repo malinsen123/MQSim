@@ -24,6 +24,7 @@ namespace SSD_Components
 	{
 	public:
 		NVM::FlashMemory::Flash_Command* ActiveCommand; //The current command that is executing on the die
+		NVM::FlashMemory::Flash_Command* ActiveCommandout; //The current command that is transfer out of the die
 
 		/*The current transactions that are being serviced. For the set of transactions in ActiveTransactions,
 		there is one ActiveCommand that is geting executed on the die. Transaction is a FTL-level concept, and
@@ -31,7 +32,9 @@ namespace SSD_Components
 		std::list<NVM_Transaction_Flash*> ActiveTransactions; 
 		NVM::FlashMemory::Flash_Command* SuspendedCommand;
 		std::list<NVM_Transaction_Flash*> SuspendedTransactions;
-		NVM_Transaction_Flash* ActiveTransfer; //The current transaction 
+		NVM_Transaction_Flash* ActiveTransfer; //The current transaction
+		NVM_Transaction_Flash* ActiveTransferout; //The current out transaction
+		  
 		bool Free;
 		bool Suspended;
 		sim_time_type Expected_finish_time;

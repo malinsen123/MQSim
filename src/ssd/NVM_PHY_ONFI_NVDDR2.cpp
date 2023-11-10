@@ -174,6 +174,15 @@ namespace SSD_Components {
 		}
 
 		dieBKE->Free = false;
+
+		dieBKE->ActiveCommandout= new NVM::FlashMemory::Flash_Command();
+
+		//copy all the data in Active command to ActiveCommandout
+		dieBKE->ActiveCommandout->CommandCode = dieBKE->ActiveCommand->CommandCode;
+		dieBKE->ActiveCommandout->Address = dieBKE->ActiveCommand->Address;
+		dieBKE->ActiveCommandout->Meta_data = dieBKE->ActiveCommand->Meta_data;
+		
+
 		dieBKE->ActiveCommand = new NVM::FlashMemory::Flash_Command();
 
 		std::cout<<"Send_command_to_chip"<<std::endl;
@@ -461,8 +470,15 @@ namespace SSD_Components {
 				break;
 			case NVDDR2_SimEventType::READ_DATA_TRANSFERRED:
 				//DEBUG2("Chip " << targetChip->ChannelID << ", " << targetChip->ChipID << ", " << dieBKE->ActiveTransactions.front()->Address.DieID << ": READ_DATA_TRANSFERRED ")
-				targetChip->EndDataOutXfer(dieBKE->ActiveCommand);
-				copy_read_data_to_transaction((NVM_Transaction_Flash_RD*)dieBKE->ActiveTransfer, dieBKE->ActiveCommand);
+				//targetChip->EndDataOutXfer(dieBKE->ActiveCommand);
+				//copy_read_data_to_transaction((NVM_Transaction_Flash_RD*)dieBKE->ActiveTransfer, dieBKE->ActiveCommand);
+
+				targetChip->EndDataOutXfer(dieBKE->ActiveCommandout);
+				copy_read_data_to_transaction((NVM_Transaction_Flash_RD*)dieBKE->ActiveTransfer, dieBKE->ActiveCommandout);
+
+
+				std::cout<<"chipBKE->ActiveTransactions.size(): "<<dieBKE->ActiveTransactions.size()<<std::endl;
+				std::cout<<"chipid: "<<targetChip->ChipID<<std::endl;
 
 
 				std::cout<<"????????The activeTransfer. LPA: "<<dieBKE->ActiveTransfer->LPA<<std::endl;

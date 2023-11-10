@@ -46,6 +46,7 @@ public:
 	//Host_Components::Request_Generator_Type Generator_Type;//Request generator could be time-based 
 	int Seed;
 	unsigned int Average_No_of_Reqs_in_Queue;//Average number of I/O requests from this flow in the 
+	unsigned int Queue_Numbers_Of_The_Flow;//LM: added for queue numbers of the flow
 	unsigned int Bandwidth;//The bandwidth of I/O flow in bytes per second (it should be a multiplication of sector size)
 
 	sim_time_type Stop_Time;//Defines when to stop generating I/O requests

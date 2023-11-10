@@ -1,0 +1,20 @@
+MQSim started at Fri Nov 10 03:36:36 2023
+
+******************************
+Executing scenario 1 out of 1 .......
+ONFI_Channel_Base::ONFI_Channel_Base
+channelID: 0
+status: 4
+IO_Flow_Synthetic::IO_Flow_Synthetic
+name: Host.IO_Flow.Synth.No_0
+flow_id: 0
+start_lsa_on_device: 0
+end_lsa_on_device: 249644959
+working_set_ratio: 0.5
+io_queue_id: 1
+nvme_submission_queue_size: 65535
+nvme_completion_queue_size: 65535
+priority_class: 1
+read_ratio: 1
+read_hot_ratio: 0.2
+average_number_of_enqueued_requests: 24

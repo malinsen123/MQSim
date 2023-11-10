@@ -308,6 +308,10 @@ void IO_Flow_Parameter_Set_Synthetic::XML_serialize(Utils::XmlWriter& xmlwriter)
 	val = std::to_string(Average_No_of_Reqs_in_Queue);
 	xmlwriter.Write_attribute_string(attr, val);
 
+	attr = "Queue_Numbers_Of_The_Flow";
+	val = std::to_string(Queue_Numbers_Of_The_Flow);
+	xmlwriter.Write_attribute_string(attr, val);
+
 
 	attr = "Bandwidth";
 	val = std::to_string(Bandwidth);
@@ -396,6 +400,9 @@ void IO_Flow_Parameter_Set_Synthetic::XML_deserialize(rapidxml::xml_node<> *node
 			} else if (strcmp(param->name(), "Average_No_of_Reqs_in_Queue") == 0) {
 				std::string val = param->value();
 				Average_No_of_Reqs_in_Queue = std::stoi(val);
+			} else if (strcmp(param->name(), "Queue_Numbers_Of_The_Flow") == 0) {
+				std::string val = param->value();
+				Queue_Numbers_Of_The_Flow = std::stoi(val);
 			} else if (strcmp(param->name(), "Bandwidth") == 0) {
 				std::string val = param->value();
 				Bandwidth = std::stoi(val);

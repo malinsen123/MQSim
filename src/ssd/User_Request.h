@@ -29,6 +29,7 @@ namespace SSD_Components
 		unsigned int SizeInSectors;
 		UserRequestType Type;
 		stream_id_type Stream_id;
+		uint16_t Queue_id;
 		bool ToBeIgnored;
 		void* IO_command_info;//used to store host I/O command info
 		void* Data;

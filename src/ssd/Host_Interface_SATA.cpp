@@ -32,7 +32,7 @@ namespace SSD_Components
 	inline void Input_Stream_Manager_SATA::Submission_queue_tail_pointer_update(uint16_t tail_pointer_value)
 	{
 		((Input_Stream_SATA*)input_streams[SATA_STREAM_ID])->Submission_tail = tail_pointer_value;
-		((Host_Interface_SATA*)host_interface)->request_fetch_unit->Fetch_next_request(SATA_STREAM_ID);
+		((Host_Interface_SATA*)host_interface)->request_fetch_unit->Fetch_next_request(SATA_STREAM_ID, 0);
 		((Input_Stream_SATA*)input_streams[SATA_STREAM_ID])->On_the_fly_requests++;
 		((Input_Stream_SATA*)input_streams[SATA_STREAM_ID])->Submission_head++;
 		if (((Input_Stream_SATA*)input_streams[SATA_STREAM_ID])->Submission_head == ncq_depth) {
@@ -89,7 +89,7 @@ namespace SSD_Components
 		}
 
 		if (((Input_Stream_SATA*)input_streams[SATA_STREAM_ID])->Submission_head != ((Input_Stream_SATA*)input_streams[SATA_STREAM_ID])->Submission_tail) {
-			((Host_Interface_SATA*)host_interface)->request_fetch_unit->Fetch_next_request(SATA_STREAM_ID);
+			((Host_Interface_SATA*)host_interface)->request_fetch_unit->Fetch_next_request(SATA_STREAM_ID, 0);
 			((Input_Stream_SATA*)input_streams[SATA_STREAM_ID])->On_the_fly_requests++;
 			((Input_Stream_SATA*)input_streams[SATA_STREAM_ID])->Submission_head++;//Update submission queue head after starting fetch request
 			if (((Input_Stream_SATA*)input_streams[SATA_STREAM_ID])->Submission_head == ncq_depth) {//Circular queue implementation
@@ -171,7 +171,7 @@ namespace SSD_Components
 	Request_Fetch_Unit_SATA::Request_Fetch_Unit_SATA(Host_Interface_Base* host_interface, uint16_t ncq_depth) :
 		Request_Fetch_Unit_Base(host_interface), current_phase(0xffff), number_of_sent_cqe(0), ncq_depth(ncq_depth) {}
 
-	void Request_Fetch_Unit_SATA::Process_pcie_write_message(uint64_t address, void * payload, unsigned int payload_size)
+	void Request_Fetch_Unit_SATA::Process_pcie_write_message(uint64_t address, uint16_t queue_id,  void * payload, unsigned int payload_size)
 	{
 		Host_Interface_SATA* hi = (Host_Interface_SATA*)host_interface;
 		uint64_t val = (uint64_t)payload;
@@ -188,7 +188,7 @@ namespace SSD_Components
 		}
 	}
 
-	void Request_Fetch_Unit_SATA::Process_pcie_read_message(uint64_t address, void * payload, unsigned int payload_size)
+	void Request_Fetch_Unit_SATA::Process_pcie_read_message(uint64_t address, uint16_t queue_id,  void * payload, unsigned int payload_size)
 	{
 		Host_Interface_SATA* hi = (Host_Interface_SATA*)host_interface;
 		DMA_Req_Item* dma_req_item = dma_list.front();
@@ -234,7 +234,7 @@ namespace SSD_Components
 		delete dma_req_item;
 	}
 
-	void Request_Fetch_Unit_SATA::Fetch_next_request(stream_id_type stream_id)
+	void Request_Fetch_Unit_SATA::Fetch_next_request(stream_id_type stream_id, uint16_t queue_id)
 	{
 		DMA_Req_Item* dma_req_item = new DMA_Req_Item;
 		dma_req_item->Type = DMA_Req_Type::REQUEST_INFO;
@@ -243,7 +243,7 @@ namespace SSD_Components
 
 		Host_Interface_SATA* hi = (Host_Interface_SATA*)host_interface;
 		Input_Stream_SATA* im = ((Input_Stream_SATA*)hi->input_stream_manager->input_streams[SATA_STREAM_ID]);
-		host_interface->Send_read_message_to_host(im->Submission_queue_base_address + im->Submission_head * sizeof(Submission_Queue_Entry), sizeof(Submission_Queue_Entry));
+		host_interface->Send_read_message_to_host(im->Submission_queue_base_address + im->Submission_head * sizeof(Submission_Queue_Entry), 0, sizeof(Submission_Queue_Entry));
 	}
 
 	void Request_Fetch_Unit_SATA::Fetch_write_data(User_Request* request)
@@ -254,7 +254,7 @@ namespace SSD_Components
 		dma_list.push_back(dma_req_item);
 
 		Submission_Queue_Entry* sqe = (Submission_Queue_Entry*)request->IO_command_info;
-		host_interface->Send_read_message_to_host((sqe->PRP_entry_2 << 31) | sqe->PRP_entry_1, request->Size_in_byte);
+		host_interface->Send_read_message_to_host((sqe->PRP_entry_2 << 31) | sqe->PRP_entry_1,0, request->Size_in_byte);
 	}
 
 	void Request_Fetch_Unit_SATA::Send_completion_queue_element(User_Request* request, uint16_t sq_head_value)
@@ -266,7 +266,7 @@ namespace SSD_Components
 		cqe->SF_P = 0x0001 & current_phase;
 		cqe->Command_Identifier = ((Submission_Queue_Entry*)request->IO_command_info)->Command_Identifier;
 		Input_Stream_SATA* im = ((Input_Stream_SATA*)hi->input_stream_manager->input_streams[SATA_STREAM_ID]);
-		host_interface->Send_write_message_to_host(im->Completion_queue_base_address + im->Completion_tail * sizeof(Completion_Queue_Entry), cqe, sizeof(Completion_Queue_Entry));
+		host_interface->Send_write_message_to_host(im->Completion_queue_base_address + im->Completion_tail * sizeof(Completion_Queue_Entry), 0, cqe, sizeof(Completion_Queue_Entry));
 		number_of_sent_cqe++;
 		if (number_of_sent_cqe % ncq_depth == 0) {
 			if (current_phase == 0xffff) {//According to protocol specification, the value of the Phase Tag is inverted each pass through the Completion Queue
@@ -280,7 +280,7 @@ namespace SSD_Components
 	void Request_Fetch_Unit_SATA::Send_read_data(User_Request* request)
 	{
 		Submission_Queue_Entry* sqe = (Submission_Queue_Entry*)request->IO_command_info;
-		host_interface->Send_write_message_to_host(sqe->PRP_entry_1, request->Data, request->Size_in_byte);
+		host_interface->Send_write_message_to_host(sqe->PRP_entry_1, 0,  request->Data, request->Size_in_byte);
 	}
 
 	Host_Interface_SATA::Host_Interface_SATA(const sim_object_id_type& id,

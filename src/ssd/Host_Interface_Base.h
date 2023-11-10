@@ -73,20 +73,25 @@ namespace SSD_Components
 	public:
 		Request_Fetch_Unit_Base(Host_Interface_Base* host_interface);
 		virtual ~Request_Fetch_Unit_Base();
-		virtual void Fetch_next_request(stream_id_type stream_id) = 0;
+		virtual void Fetch_next_request(stream_id_type stream_id, uint16_t queue_id) = 0;
 		virtual void Fetch_write_data(User_Request* request) = 0;
 		virtual void Send_read_data(User_Request* request) = 0;
-		virtual void Process_pcie_write_message(uint64_t, void *, unsigned int) = 0;
-		virtual void Process_pcie_read_message(uint64_t, void *, unsigned int) = 0;
+		virtual void Process_pcie_write_message(uint64_t, uint16_t,  void *, unsigned int) = 0;
+		virtual void Process_pcie_read_message(uint64_t, uint16_t, void *, unsigned int) = 0;
 	protected:
 		enum class DMA_Req_Type { REQUEST_INFO, WRITE_DATA };
 		struct DMA_Req_Item
 		{
 			DMA_Req_Type Type;
+			uint16_t Queue_id;
 			void * object;
 		};
 		Host_Interface_Base* host_interface;
 		std::list<DMA_Req_Item*> dma_list;
+
+		//I want to create another vector of list named dma_lists. Each list in dma_lists is for a specific queue
+		std::vector<std::list<DMA_Req_Item*>> dma_lists_Nvme;
+		
 	};
 
 	class Host_Interface_Base : public MQSimEngine::Sim_Object, public MQSimEngine::Sim_Reporter
@@ -113,15 +118,15 @@ namespace SSD_Components
 		void Consume_pcie_message(Host_Components::PCIe_Message* message)
 		{
 			if (message->Type == Host_Components::PCIe_Message_Type::READ_COMP) {
-				request_fetch_unit->Process_pcie_read_message(message->Address, message->Payload, message->Payload_size);
+				request_fetch_unit->Process_pcie_read_message(message->Address, message->Queue_id, message->Payload, message->Payload_size);
 			} else {
-				request_fetch_unit->Process_pcie_write_message(message->Address, message->Payload, message->Payload_size);
+				request_fetch_unit->Process_pcie_write_message(message->Address, message->Queue_id, message->Payload, message->Payload_size);
 			}
 			delete message;
 		}
 	
-		void Send_read_message_to_host(uint64_t addresss, unsigned int request_read_data_size);
-		void Send_write_message_to_host(uint64_t addresss, void* message, unsigned int message_size);
+		void Send_read_message_to_host(uint64_t addresss, uint16_t queue_id, unsigned int request_read_data_size);
+		void Send_write_message_to_host(uint64_t addresss, uint16_t queue_id,  void* message, unsigned int message_size);
 
 		HostInterface_Types GetType() { return type; }
 		void Attach_to_device(Host_Components::PCIe_Switch* pcie_switch);

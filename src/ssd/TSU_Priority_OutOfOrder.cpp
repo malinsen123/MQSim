@@ -504,7 +504,7 @@ bool TSU_Priority_OutOfOrder::service_read_transaction(NVM::FlashMemory::Flash_C
 
 
     //sort sourceQueue1 by stream_id
-    Sort_transactions_by_stream_id(*sourceQueue1);
+    //Sort_transactions_by_stream_id(*sourceQueue1);
 
     //LM added
     std::cout<<"sourceQueue1 after sort: "<<std::endl;

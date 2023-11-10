@@ -21,6 +21,7 @@ namespace Host_Components
 {
 	struct NVMe_Queue_Pair
 	{
+		uint16_t Queue_id;
 		uint16_t Submission_queue_head;
 		uint16_t Submission_queue_tail;
 		uint16_t Submission_queue_size;
@@ -36,7 +37,7 @@ namespace Host_Components
 #define NVME_SQ_FULL(Q) (Q.Submission_queue_tail < Q.Submission_queue_size - 1 ? Q.Submission_queue_tail + 1 == Q.Submission_queue_head : Q.Submission_queue_head == 0)
 #define NVME_UPDATE_SQ_TAIL(Q)  Q.Submission_queue_tail++;\
 						if (Q.Submission_queue_tail == Q.Submission_queue_size)\
-							nvme_queue_pair.Submission_queue_tail = 0; //LM possible mistake ??
+							Q.Submission_queue_tail = 0; //LM
 
 	class PCIe_Root_Complex;
 	class IO_Flow_Base : public MQSimEngine::Sim_Object, public MQSimEngine::Sim_Reporter
@@ -46,15 +47,17 @@ namespace Host_Components
 					 uint16_t nvme_submission_queue_size, uint16_t nvme_completion_queue_size, IO_Flow_Priority_Class::Priority priority_class,
 					 sim_time_type stop_time, double initial_occupancy_ratio, unsigned int total_requets_to_be_generated,
 					 HostInterface_Types SSD_device_type, PCIe_Root_Complex *pcie_root_complex, SATA_HBA *sata_hba,
-					 bool enabled_logging, sim_time_type logging_period, std::string logging_file_path);
+					 bool enabled_logging, sim_time_type logging_period, std::string logging_file_path, unsigned int queue_numbers_of_the_flow);
 		~IO_Flow_Base();
 		void Start_simulation();
 		IO_Flow_Priority_Class::Priority Priority_class() { return priority_class; }
 		virtual Host_IO_Request* Generate_next_request() = 0;
 		virtual void NVMe_consume_io_request(Completion_Queue_Entry*);
-		Submission_Queue_Entry* NVMe_read_sqe(uint64_t address);
+		Submission_Queue_Entry* NVMe_read_sqe(uint64_t address, uint16_t queue_id);
 		const NVMe_Queue_Pair* Get_nvme_queue_pair_info();
 		virtual void SATA_consume_io_request(Host_IO_Request* request);
+
+		uint32_t Get_queue_numbers_of_the_flow(); //LM
 		LHA_type Get_start_lsa_on_device();
 		LHA_type Get_end_lsa_address_on_device();
 		uint32_t Get_generated_request_count();
@@ -83,6 +86,9 @@ namespace Host_Components
 		//NVMe host-to-device communication variables
 		IO_Flow_Priority_Class::Priority priority_class;
 		NVMe_Queue_Pair nvme_queue_pair;
+		//LM Modification to let each IO flow can have multiple queues
+		std::vector<NVMe_Queue_Pair> nvme_queue_pairs;
+
 		uint16_t io_queue_id;
 		uint16_t nvme_submission_queue_size;
 		uint16_t nvme_completion_queue_size;
@@ -90,7 +96,8 @@ namespace Host_Components
 		std::vector<Host_IO_Request*> request_queue_in_memory;
 		std::list<Host_IO_Request*> waiting_requests;//The I/O requests that are still waiting to be enqueued in the I/O queue (the I/O queue is full) LM
 		std::unordered_map<sim_time_type, Host_IO_Request*> nvme_software_request_queue;//The I/O requests that are enqueued in the I/O queue of the SSD device
-		void NVMe_update_and_submit_completion_queue_tail();
+		void NVMe_update_and_submit_completion_queue_tail(uint16_t queue_id);
+		unsigned int queue_numbers_of_the_flow;//LM number of queues that the flow can use
 
 		//Variables used to collect statistics
 		unsigned int STAT_generated_request_count, STAT_generated_read_request_count, STAT_generated_write_request_count, STAT_generated_read_hot_request_count;

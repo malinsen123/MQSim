@@ -28,10 +28,10 @@ namespace Host_Components
 			switch (messages->Type)
 			{
 			case PCIe_Message_Type::READ_REQ:
-				Read_from_memory(messages->Address, (unsigned int)(intptr_t)messages->Payload);
+				Read_from_memory(messages->Address, messages->Queue_id,  (unsigned int)(intptr_t)messages->Payload);
 				break;
 			case PCIe_Message_Type::WRITE_REQ:
-				Write_to_memory(messages->Address, messages->Payload);
+				Write_to_memory(messages->Address, messages->Queue_id,  messages->Payload);
 				break;
 			default:
 				break;
@@ -39,7 +39,7 @@ namespace Host_Components
 			delete messages;
 		}
 		
-		void Write_to_device(uint64_t address, uint16_t write_value);
+		void Write_to_device(uint64_t address, uint16_t queue_id, uint16_t write_value);
 		void Set_io_flows(std::vector<Host_Components::IO_Flow_Base*>* IO_flows);
 	private:
 		PCIe_Link* pcie_link;
@@ -47,8 +47,8 @@ namespace Host_Components
 		SATA_HBA * sata_hba;
 		std::vector<Host_Components::IO_Flow_Base*>* IO_flows;
 		
-		void Write_to_memory(const uint64_t address, const void* payload);
-		void Read_from_memory(const uint64_t address, const unsigned int size);
+		void Write_to_memory(const uint64_t address, uint16_t queue_id, const void* payload);
+		void Read_from_memory(const uint64_t address, const uint16_t queue_id,  const unsigned int size);
 	};
 }
 

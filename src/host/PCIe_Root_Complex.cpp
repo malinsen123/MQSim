@@ -6,7 +6,7 @@ namespace Host_Components
 	PCIe_Root_Complex::PCIe_Root_Complex(PCIe_Link* pcie_link, HostInterface_Types SSD_device_type, SATA_HBA* sata_hba, std::vector<Host_Components::IO_Flow_Base*>* IO_flows) :
 		pcie_link(pcie_link), SSD_device_type(SSD_device_type), sata_hba(sata_hba), IO_flows(IO_flows) {}
 
-	void PCIe_Root_Complex::Write_to_memory(const uint64_t address, const void* payload)
+	void PCIe_Root_Complex::Write_to_memory(const uint64_t address, uint16_t queue_id, const void* payload)
 	{
 		//This is a request to write back a read request data into memory (in modern systems the write is done to LLC)
 		if (address >= DATA_MEMORY_REGION) {
@@ -19,8 +19,16 @@ namespace Host_Components
 					std::cout<<"HostInterface_Types::NVME"<<std::endl;
 					std::cout<<"write to memory"<<std::endl;
 
-					unsigned int flow_id = QUEUE_ID_TO_FLOW_ID(((Completion_Queue_Entry*)payload)->SQ_ID);
-					((*IO_flows)[flow_id])->NVMe_consume_io_request((Completion_Queue_Entry*)payload);
+					unsigned int flow_id = QUEUE_ID_TO_FLOW_ID(((Completion_Queue_Entry*)payload)->FLOW_ID);
+					Completion_Queue_Entry* cqe = (Completion_Queue_Entry*)payload;
+					std::cout<<"cqe->SQ_ID "<<cqe->SQ_ID<<std::endl;
+					std::cout<<"cqe->FLOW_ID "<<cqe->FLOW_ID<<std::endl;
+					std::cout<<"cqe->CMD_ID "<<cqe->Command_Identifier<<std::endl;
+
+					cqe->SQ_ID = queue_id;
+					(*IO_flows)[flow_id]->NVMe_consume_io_request(cqe);
+					
+					//((*IO_flows)[flow_id])->NVMe_consume_io_request((Completion_Queue_Entry*)payload);
 					break;
 				}
 				case HostInterface_Types::SATA:
@@ -34,7 +42,7 @@ namespace Host_Components
 	//LM called by IO_Flow_Base::Submit_io_request
 	//PCIe_Message_Type READ_REQ, WRITE_REQ, READ_COMP
 	//PCIe_Destination_Type HOST, DEVICE
-	void PCIe_Root_Complex::Write_to_device(uint64_t address, uint16_t write_value)
+	void PCIe_Root_Complex::Write_to_device(uint64_t address, uint16_t queue_id, uint16_t write_value)
 	{
 
 		std::cout<<"PCIe_Root_Complex::Write_to_device"<<std::endl;
@@ -45,18 +53,23 @@ namespace Host_Components
 		pcie_message->Address = address;
 		pcie_message->Payload = (void*)(intptr_t)write_value;
 		pcie_message->Payload_size = sizeof(write_value);
+		pcie_message->Queue_id = queue_id; //LM added for multi-queue flow
 		pcie_link->Deliver(pcie_message);
 	}
 
-	void PCIe_Root_Complex::Read_from_memory(const uint64_t address, const unsigned int read_size)
+	void PCIe_Root_Complex::Read_from_memory(const uint64_t address,const uint16_t queue_id, const unsigned int read_size)
 	{
 
 		std::cout<<"PCIe_Root_Complex::Read_from_memory"<<std::endl;
+		std::cout<<"address: "<<address<<std::endl;
+		std::cout<<"queue_id: "<<queue_id<<std::endl;
+		std::cout<<"read_size: "<<read_size<<std::endl;
 
 		PCIe_Message* new_pcie_message = new Host_Components::PCIe_Message;
 		new_pcie_message->Type = PCIe_Message_Type::READ_COMP;
 		new_pcie_message->Destination = Host_Components::PCIe_Destination_Type::DEVICE;
 		new_pcie_message->Address = address;
+		new_pcie_message->Queue_id = queue_id; //LM added for multi-queue flow
 
 		//This is a request to read the data of a write request
 		if (address >= DATA_MEMORY_REGION) {
@@ -67,11 +80,9 @@ namespace Host_Components
 			switch (SSD_device_type) {
 				case HostInterface_Types::NVME:
 				{
-
 					std::cout<<"HostInterface_Types::NVME"<<std::endl;
-
 					uint16_t flow_id = QUEUE_ID_TO_FLOW_ID(uint16_t(address >> NVME_COMP_Q_MEMORY_REGION));
-					new_pcie_message->Payload = (*IO_flows)[flow_id]->NVMe_read_sqe(address);
+					new_pcie_message->Payload = (*IO_flows)[flow_id]->NVMe_read_sqe(address, queue_id);
 					new_pcie_message->Payload_size = sizeof(Submission_Queue_Entry);
 					break;
 				}

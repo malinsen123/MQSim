@@ -61,7 +61,7 @@ namespace NVM
 				this->STAT_totalXferTime += (Simulator->Time() - this->lastTransferStart);
 
 				std::cout<<"the added time is: "<<(Simulator->Time() - this->lastTransferStart)<<std::endl;
-				sleep(1);
+				//sleep(1);
 
 				if (this->idleDieNo != die_no)
 					STAT_totalOverlappedXferExecTime += (Simulator->Time() - lastTransferStart);
@@ -76,7 +76,7 @@ namespace NVM
 				this->STAT_totalXferTime += (Simulator->Time() - this->lastTransferStart);
 				std::cout<<"lastTransferStart: "<<this->lastTransferStart<<std::endl;
 				std::cout<<"the added time is: "<<(Simulator->Time() - this->lastTransferStart)<<std::endl;
-				sleep(1);
+				//sleep(1);
 
 				if (this->idleDieNo != die_no)
 					STAT_totalOverlappedXferExecTime += (Simulator->Time() - lastTransferStart);

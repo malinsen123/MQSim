@@ -55,9 +55,13 @@ namespace SSD_Components
 	{
 	}
 
-	void Host_Interface_Base::Send_read_message_to_host(uint64_t addresss, unsigned int request_read_data_size)
+	void Host_Interface_Base::Send_read_message_to_host(uint64_t addresss, uint16_t queue_id,  unsigned int request_read_data_size)
 	{
 		std::cout<<"Host_Interface_Base::Send_read_message_to_host"<<std::endl;
+
+		std::cout<<"addresss: "<<addresss<<std::endl;
+		std::cout<<"queue_id: "<<queue_id<<std::endl;
+		std::cout<<"request_read_data_size: "<<request_read_data_size<<std::endl;
 
 		Host_Components::PCIe_Message* pcie_message = new Host_Components::PCIe_Message;
 		pcie_message->Type = Host_Components::PCIe_Message_Type::READ_REQ;
@@ -65,10 +69,11 @@ namespace SSD_Components
 		pcie_message->Address = addresss;
 		pcie_message->Payload = (void*)(intptr_t)request_read_data_size;
 		pcie_message->Payload_size = sizeof(request_read_data_size);
+		pcie_message->Queue_id = queue_id;
 		pcie_switch->Send_to_host(pcie_message);
 	}
 
-	void Host_Interface_Base::Send_write_message_to_host(uint64_t addresss, void* message, unsigned int message_size)
+	void Host_Interface_Base::Send_write_message_to_host(uint64_t addresss, uint16_t queue_id, void* message, unsigned int message_size)
 	{
 		Host_Components::PCIe_Message* pcie_message = new Host_Components::PCIe_Message;
 		pcie_message->Type = Host_Components::PCIe_Message_Type::WRITE_REQ;
@@ -76,6 +81,7 @@ namespace SSD_Components
 		pcie_message->Address = addresss;
 		COPYDATA(pcie_message->Payload, message, pcie_message->Payload_size);
 		pcie_message->Payload_size = message_size;
+		pcie_message->Queue_id = queue_id;
 		pcie_switch->Send_to_host(pcie_message);
 	}
 

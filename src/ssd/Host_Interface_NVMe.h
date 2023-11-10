@@ -11,21 +11,11 @@
 
 namespace SSD_Components
 {
-class Input_Stream_NVMe : public Input_Stream_Base
+
+
+struct NVMe_Queue_Pair
 {
-public:
-	Input_Stream_NVMe(IO_Flow_Priority_Class::Priority priority_class, LHA_type start_logical_sector_address, LHA_type end_logical_sector_address,
-					  uint64_t submission_queue_base_address, uint16_t submission_queue_size,
-					  uint64_t completion_queue_base_address, uint16_t completion_queue_size) : Input_Stream_Base(),
-																								Priority_class(priority_class),
-																								Start_logical_sector_address(start_logical_sector_address), End_logical_sector_address(end_logical_sector_address),
-																								Submission_queue_base_address(submission_queue_base_address), Submission_queue_size(submission_queue_size),
-																								Completion_queue_base_address(completion_queue_base_address), Completion_queue_size(completion_queue_size),
-																								Submission_head(0), Submission_head_informed_to_host(0), Submission_tail(0), Completion_head(0), Completion_tail(0), On_the_fly_requests(0) {}
-	~Input_Stream_NVMe();
-	IO_Flow_Priority_Class::Priority Priority_class;
-	LHA_type Start_logical_sector_address;
-	LHA_type End_logical_sector_address;
+	uint16_t Queue_id;
 	uint64_t Submission_queue_base_address;
 	uint16_t Submission_queue_size;
 	uint64_t Completion_queue_base_address;
@@ -35,10 +25,31 @@ public:
 	uint16_t Submission_tail;
 	uint16_t Completion_head;
 	uint16_t Completion_tail;
+	uint16_t Queue_on_the_fly_requests;
+};
+
+
+class Input_Stream_NVMe : public Input_Stream_Base
+{
+public:
+	Input_Stream_NVMe(IO_Flow_Priority_Class::Priority priority_class, LHA_type start_logical_sector_address, LHA_type end_logical_sector_address,
+					  uint64_t submission_queue_base_address, uint16_t submission_queue_size,
+					  uint64_t completion_queue_base_address, uint16_t completion_queue_size, uint32_t queue_numbers_of_the_flow) : Input_Stream_Base(),
+																								Priority_class(priority_class),
+																								Start_logical_sector_address(start_logical_sector_address), End_logical_sector_address(end_logical_sector_address),
+																								Flow_On_the_fly_requests(0), queue_numbers_of_the_flow(1) {}
+	~Input_Stream_NVMe();
+	IO_Flow_Priority_Class::Priority Priority_class;
+	LHA_type Start_logical_sector_address;
+	LHA_type End_logical_sector_address;
+
+	uint32_t queue_numbers_of_the_flow; //LM
+	std::vector<NVMe_Queue_Pair> queue_pairs;
+	
 	std::list<User_Request *> Waiting_user_requests;		//The list of requests that have been fetch to the device queue and are getting serviced
 	std::list<User_Request *> Completed_user_requests;		//The list of requests that are completed but have not been informed to the host due to full CQ
 	std::list<User_Request *> Waiting_write_data_transfers; //The list of write requests that are waiting for data
-	uint16_t On_the_fly_requests;							// the number of requests that are either being fetch from host or waiting in the device queue
+	uint16_t Flow_On_the_fly_requests;							// the number of requests that are either being fetch from host or waiting in the device queue
 };
 
 class Input_Stream_Manager_NVMe : public Input_Stream_Manager_Base
@@ -48,14 +59,14 @@ public:
 	unsigned int Queue_fetch_size;
 	stream_id_type Create_new_stream(IO_Flow_Priority_Class::Priority priority_class, LHA_type start_logical_sector_address, LHA_type end_logical_sector_address,
 									 uint64_t submission_queue_base_address, uint16_t submission_queue_size,
-									 uint64_t completion_queue_base_address, uint16_t completion_queue_size);
-	void Submission_queue_tail_pointer_update(stream_id_type stream_id, uint16_t tail_pointer_value);
-	void Completion_queue_head_pointer_update(stream_id_type stream_id, uint16_t head_pointer_value);
+									 uint64_t completion_queue_base_address, uint16_t completion_queue_size, uint32_t queue_numbers_of_the_flow);
+	void Submission_queue_tail_pointer_update(stream_id_type stream_id, uint16_t queue_id, uint16_t tail_pointer_value);
+	void Completion_queue_head_pointer_update(stream_id_type stream_id, uint16_t queue_id, uint16_t head_pointer_value);
 	void Handle_new_arrived_request(User_Request *request);
 	void Handle_arrived_write_data(User_Request *request);
 	void Handle_serviced_request(User_Request *request);
-	uint16_t Get_submission_queue_depth(stream_id_type stream_id);
-	uint16_t Get_completion_queue_depth(stream_id_type stream_id);
+	uint16_t Get_submission_queue_depth(stream_id_type stream_id, uint16_t queue_id);
+	uint16_t Get_completion_queue_depth(stream_id_type stream_id, uint16_t queue_id);
 	IO_Flow_Priority_Class::Priority Get_priority_class(stream_id_type stream_id);
 
 private:
@@ -65,14 +76,15 @@ private:
 
 class Request_Fetch_Unit_NVMe : public Request_Fetch_Unit_Base
 {
+
 public:
 	Request_Fetch_Unit_NVMe(Host_Interface_Base *host_interface);
-	void Fetch_next_request(stream_id_type stream_id);
-	void Fetch_write_data(User_Request *request);
+	void Fetch_next_request(stream_id_type stream_id, uint16_t queue_id); //LM
+	void Fetch_write_data(User_Request *request); //LM
 	void Send_read_data(User_Request *request);
 	void Send_completion_queue_element(User_Request *request, uint16_t sq_head_value);
-	void Process_pcie_write_message(uint64_t, void *, unsigned int);
-	void Process_pcie_read_message(uint64_t, void *, unsigned int);
+	void Process_pcie_write_message(uint64_t, uint16_t,  void *, unsigned int);
+	void Process_pcie_read_message(uint64_t, uint16_t,  void *, unsigned int);
 
 private:
 	uint16_t current_phase;
@@ -89,7 +101,7 @@ public:
 						uint16_t submission_queue_depth, uint16_t completion_queue_depth,
 						unsigned int no_of_input_streams, uint16_t queue_fetch_size, unsigned int sectors_per_page, Data_Cache_Manager_Base *cache);
 	stream_id_type Create_new_stream(IO_Flow_Priority_Class::Priority priority_class, LHA_type start_logical_sector_address, LHA_type end_logical_sector_address,
-									 uint64_t submission_queue_base_address, uint64_t completion_queue_base_address);
+									 uint64_t submission_queue_base_address, uint64_t completion_queue_base_address, uint32_t queue_numbers_of_the_flow);
 	void Start_simulation();
 	void Validate_simulation_config();
 	void Execute_simulator_event(MQSimEngine::Sim_Event *);

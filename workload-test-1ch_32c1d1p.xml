@@ -22,6 +22,7 @@
 			<Variance_Request_Size>0</Variance_Request_Size>
 			<Seed>798</Seed>
 			<Average_No_of_Reqs_in_Queue>24</Average_No_of_Reqs_in_Queue>
+			<Queue_Numbers_Of_The_Flow>10</Queue_Numbers_Of_The_Flow>
 			<Stop_Time>0</Stop_Time>
 			<Total_Requests_To_Generate>500000</Total_Requests_To_Generate>
 		</IO_Flow_Parameter_Set_Synthetic>
