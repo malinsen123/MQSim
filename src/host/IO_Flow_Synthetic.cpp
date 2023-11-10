@@ -2,6 +2,7 @@
 #include <stdexcept>
 #include "../sim/Engine.h"
 #include "IO_Flow_Synthetic.h"
+#include <unistd.h>
 
 namespace Host_Components
 {
@@ -13,13 +14,32 @@ IO_Flow_Synthetic::IO_Flow_Synthetic(const sim_object_id_type &name, uint16_t fl
 									 Utils::Request_Generator_Type generator_type, sim_time_type Average_inter_arrival_time_nano_sec, unsigned int average_number_of_enqueued_requests,
 									 bool generate_aligned_addresses, unsigned int alignment_value,
 									 int seed, sim_time_type stop_time, double initial_occupancy_ratio, unsigned int total_req_count, HostInterface_Types SSD_device_type, PCIe_Root_Complex *pcie_root_complex, SATA_HBA *sata_hba,
-									 bool enabled_logging, sim_time_type logging_period, std::string logging_file_path) : IO_Flow_Base(name, flow_id, start_lsa_on_device, LHA_type(start_lsa_on_device + (end_lsa_on_device - start_lsa_on_device) * working_set_ratio), io_queue_id, nvme_submission_queue_size, nvme_completion_queue_size, priority_class, stop_time, initial_occupancy_ratio, total_req_count, SSD_device_type, pcie_root_complex, sata_hba, enabled_logging, logging_period, logging_file_path),
+									 bool enabled_logging, sim_time_type logging_period, std::string logging_file_path, double read_hot_ratio) : IO_Flow_Base(name, flow_id, start_lsa_on_device, LHA_type(start_lsa_on_device + (end_lsa_on_device - start_lsa_on_device) * working_set_ratio), io_queue_id, nvme_submission_queue_size, nvme_completion_queue_size, priority_class, stop_time, initial_occupancy_ratio, total_req_count, SSD_device_type, pcie_root_complex, sata_hba, enabled_logging, logging_period, logging_file_path),
 																														  read_ratio(read_ratio), address_distribution(address_distribution),
 																														  working_set_ratio(working_set_ratio), hot_region_ratio(hot_region_ratio),
 																														  request_size_distribution(request_size_distribution), average_request_size(average_request_size), variance_request_size(variance_request_size),
 																														  generator_type(generator_type), Average_inter_arrival_time_nano_sec(Average_inter_arrival_time_nano_sec), average_number_of_enqueued_requests(average_number_of_enqueued_requests),
-																														  seed(seed), generate_aligned_addresses(generate_aligned_addresses), alignment_value(alignment_value)
-{
+																														  seed(seed), generate_aligned_addresses(generate_aligned_addresses), alignment_value(alignment_value), read_hot_ratio(read_hot_ratio)
+	{
+
+	//LM print the parameters
+	std::cout<<"IO_Flow_Synthetic::IO_Flow_Synthetic"<<std::endl;
+	std::cout<<"name: "<<name<<std::endl;
+	std::cout<<"flow_id: "<<flow_id<<std::endl;
+	std::cout<<"start_lsa_on_device: "<<start_lsa_on_device<<std::endl;
+	std::cout<<"end_lsa_on_device: "<<end_lsa_on_device<<std::endl;
+	std::cout<<"working_set_ratio: "<<working_set_ratio<<std::endl;
+	std::cout<<"io_queue_id: "<<io_queue_id<<std::endl;
+	std::cout<<"nvme_submission_queue_size: "<<nvme_submission_queue_size<<std::endl;
+	std::cout<<"nvme_completion_queue_size: "<<nvme_completion_queue_size<<std::endl;
+	std::cout<<"priority_class: "<<priority_class<<std::endl;
+	std::cout<<"read_ratio: "<<read_ratio<<std::endl;
+	std::cout<<"read_hot_ratio: "<<read_hot_ratio<<std::endl;
+	std::cout<<"average_number_of_enqueued_requests: "<<average_number_of_enqueued_requests<<std::endl;
+	//std::cout<<"address_distribution: "<<address_distribution<<std::endl;
+	sleep(5);
+
+
 	//If read ratio is 0, then we change its value to a negative one so that in request generation we never generate a read request
 	if (read_ratio == 0.0)
 	{
@@ -53,7 +73,11 @@ IO_Flow_Synthetic::IO_Flow_Synthetic(const sim_object_id_type &name, uint16_t fl
 	{
 		random_time_interval_generator_seed = seed++;
 		random_time_interval_generator = new Utils::RandomGenerator(random_time_interval_generator_seed);
+	}else if(generator_type == Utils::Request_Generator_Type::BATCH_TRANSACTION){
+		//LM
+		std::cout<<"[IO_Flow_Synthetic][IO_Flow_Synthetic] BATCH_TRANSACTION"<<std::endl;
 	}
+
 
 	if (this->working_set_ratio == 0)
 	{
@@ -92,7 +116,7 @@ IO_Flow_Synthetic::IO_Flow_Synthetic(const sim_object_id_type &name, uint16_t fl
 
 		switch (request_size_distribution) {
 			case Utils::Request_Size_Distribution_Type::FIXED:
-				request->LBA_count = average_request_size;
+				request->LBA_count = average_request_size;//8 for 4k 2 for 1k
 				break;
 			case Utils::Request_Size_Distribution_Type::NORMAL:
 			{
@@ -169,15 +193,39 @@ IO_Flow_Synthetic::IO_Flow_Synthetic(const sim_object_id_type &name, uint16_t fl
 	void IO_Flow_Synthetic::NVMe_consume_io_request(Completion_Queue_Entry* io_request)
 	{
 		IO_Flow_Base::NVMe_consume_io_request(io_request);
+
+		std::cout<<"[IO_Flow_Synthetic][NVMe_consume_io_request] io_request: "<<io_request<<std::endl;
+
 		IO_Flow_Base::NVMe_update_and_submit_completion_queue_tail();
+
 		if (generator_type == Utils::Request_Generator_Type::QUEUE_DEPTH) {
-			Host_IO_Request* request = Generate_next_request();
-			
+			//Host_IO_Request* request = Generate_next_request();
+		
+			//LM new	
+			if(nvme_queue_pair.Completion_queue_head == nvme_queue_pair.Submission_queue_head)
+			{
+
+				std::cout<<"[IO_Flow_Synthetic][NVMe_consume_io_request] nvme_queue_pair.Completion_queue_head == nvme_queue_pair.Submission_queue_head"<<std::endl;
+				std::cout<<"the value of nvme_queue_pair.Completion_queue_head: "<<nvme_queue_pair.Completion_queue_head<<std::endl;
+
+				for (unsigned int i = 0; i < average_number_of_enqueued_requests; i++) {
+				std::cout<<"[IO_Flow_Synthetic] average_number_of_enqueued_requests: "<<average_number_of_enqueued_requests<<std::endl;
+				std::cout<<"current time: "<<Simulator->Time()<<std::endl;
+				Submit_io_request(Generate_next_request());
+				}
+
+			}
+	
+
+			//std::cout<<"[IO_Flow_Synthetic][NVMe_consume_io_request] request: "<<request<<std::endl;
+
+
+
 			/* In the demand based execution mode, the Generate_next_request() function may return NULL
 			* if 1) the simulation stop is met, or 2) the number of generated I/O requests reaches its threshold.*/
-			if (request != NULL) {
-				Submit_io_request(request);
-			}
+			//if (request != NULL) {
+			//	Submit_io_request(request); //LM this is the function that sends the request to the SSD
+			//}
 		}
 	}
 
@@ -207,7 +255,16 @@ IO_Flow_Synthetic::IO_Flow_Synthetic(const sim_object_id_type &name, uint16_t fl
 
 		if (generator_type == Utils::Request_Generator_Type::BANDWIDTH) {
 			Simulator->Register_sim_event((sim_time_type)random_time_interval_generator->Exponential((double)Average_inter_arrival_time_nano_sec), this, 0, 0);
-		} else {
+		} else if(generator_type == Utils::Request_Generator_Type::BATCH_TRANSACTION){
+
+			std::cout<<"[IO_Flow_Synthetic][Start_simulation] BATCH_TRANSACTION"<<std::endl;
+
+		}
+		else
+		{
+
+			std::cout<<"[IO_Flow_Synthetic][Start_simulation] average_number_of_enqueued_requests: "<<average_number_of_enqueued_requests<<std::endl;
+
 			Simulator->Register_sim_event((sim_time_type)1, this, 0, 0);
 		}
 	}
@@ -215,7 +272,7 @@ IO_Flow_Synthetic::IO_Flow_Synthetic(const sim_object_id_type &name, uint16_t fl
 	void IO_Flow_Synthetic::Validate_simulation_config()
 	{
 	}
-
+	//LM 
 	void IO_Flow_Synthetic::Execute_simulator_event(MQSimEngine::Sim_Event* event)
 	{
 		if (generator_type == Utils::Request_Generator_Type::BANDWIDTH) {
@@ -224,8 +281,18 @@ IO_Flow_Synthetic::IO_Flow_Synthetic(const sim_object_id_type &name, uint16_t fl
 				Submit_io_request(req);
 				Simulator->Register_sim_event(Simulator->Time() + (sim_time_type)random_time_interval_generator->Exponential((double)Average_inter_arrival_time_nano_sec), this, 0, 0);
 			}
-		} else {
+		}else if(generator_type == Utils::Request_Generator_Type::BATCH_TRANSACTION){
+			std::cout<<"[IO_Flow_Synthetic][Execute_simulator_event] BATCH_TRANSACTION"<<std::endl;
 			for (unsigned int i = 0; i < average_number_of_enqueued_requests; i++) {
+				std::cout<<"[IO_Flow_Synthetic][Execute_simulator_event] average_number_of_enqueued_requests: "<<average_number_of_enqueued_requests<<std::endl;
+				std::cout<<"current time: "<<Simulator->Time()<<std::endl;
+
+				Submit_io_request(Generate_next_request());
+			}
+		}else {//LM QUEUE_DEPTH
+			for (unsigned int i = 0; i < average_number_of_enqueued_requests; i++) {
+				std::cout<<"[IO_Flow_Synthetic][Execute_simulator_event] average_number_of_enqueued_requests: "<<average_number_of_enqueued_requests<<std::endl;
+				std::cout<<"current time: "<<Simulator->Time()<<std::endl;
 				Submit_io_request(Generate_next_request());
 			}
 		}

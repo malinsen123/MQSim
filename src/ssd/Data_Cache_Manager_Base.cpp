@@ -26,7 +26,7 @@ namespace SSD_Components
 	void Data_Cache_Manager_Base::Setup_triggers()
 	{
 		Sim_Object::Setup_triggers();
-		host_interface->Connect_to_user_request_arrived_signal(handle_user_request_arrived_signal);
+		host_interface->Connect_to_user_request_arrived_signal(handle_user_request_arrived_signal); //LM handle the signal from host interface
 	}
 
 	void Data_Cache_Manager_Base::Start_simulation() {}
@@ -58,7 +58,7 @@ namespace SSD_Components
 			(*it)(transaction);
 		}
 	}
-
+	//LM
 	void Data_Cache_Manager_Base::handle_user_request_arrived_signal(User_Request* user_request)
 	{
 		_my_instance->process_new_user_request(user_request);

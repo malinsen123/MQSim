@@ -408,6 +408,7 @@ namespace SSD_Components {
 					//LM new 
 					if(targetChannel->GetStatus() == BusChannelStatus::BUSY_IN_AND_OUT)
 					{
+						targetChip->StartDataOutXfer();
 						std::cout<<"current channel status: BUSY_IN_AND_OUT"<<std::endl;
 						chipBKE->Status = ChipStatus::READING_AND_DATA_OUT;
 						targetChannel->SetStatus(BusChannelStatus::BUSY_OUT, targetChip);
@@ -465,7 +466,7 @@ namespace SSD_Components {
 
 
 				std::cout<<"????????The activeTransfer. LPA: "<<dieBKE->ActiveTransfer->LPA<<std::endl;
-
+				std::cout<<"current time: "<<Simulator->Time()<<std::endl;
 	#if 0
 				if (tr->ExecutionMode != ExecutionModeType::COPYBACK)
 	#endif
@@ -819,6 +820,7 @@ namespace SSD_Components {
 		//DEBUG2("Chip " << tr->Address.ChannelID << ", " << tr->Address.ChipID << ": transfer read data started for LPA: " << tr->LPA)
 		dieBKE->ActiveTransfer = tr;
 		channels[tr->Address.ChannelID]->Chips[tr->Address.ChipID]->StartDataOutXfer();
+		std::cout<<"Chip " << tr->Address.ChannelID << ", " << tr->Address.ChipID << ": transfer read data started for LPA: " << tr->LPA<<std::endl;
 
 
 		//LM new

@@ -109,7 +109,7 @@ namespace SSD_Components
 		{
 			connected_user_request_arrived_signal_handlers.push_back(function);
 		}
-
+		//LM called by PCIe_Switch::Deliver_to_device
 		void Consume_pcie_message(Host_Components::PCIe_Message* message)
 		{
 			if (message->Type == Host_Components::PCIe_Message_Type::READ_COMP) {

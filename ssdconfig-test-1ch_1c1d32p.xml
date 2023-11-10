@@ -13,7 +13,7 @@
 		<Memory_Type>FLASH</Memory_Type>
 		<HostInterface_Type>NVME</HostInterface_Type>
 		<IO_Queue_Depth>65535</IO_Queue_Depth>
-		<Queue_Fetch_Size>8192</Queue_Fetch_Size>
+		<Queue_Fetch_Size>1024</Queue_Fetch_Size>
 		<Caching_Mechanism>ADVANCED</Caching_Mechanism>
 		<Data_Cache_Sharing_Mode>SHARED</Data_Cache_Sharing_Mode>
 		<Data_Cache_Capacity>268435456</Data_Cache_Capacity>

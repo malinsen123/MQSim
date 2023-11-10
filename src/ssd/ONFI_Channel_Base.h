@@ -31,7 +31,7 @@ namespace SSD_Components
 				PRINT_ERROR("Bus " << ChannelID << ": illegal bus status transition!")
 			}
 
-			std::cout<<"set status: "<<(int)status<<" -> "<<(int)new_status<<std::endl;
+			//std::cout<<"set status: "<<(int)status<<" -> "<<(int)new_status<<std::endl;
 
 			status = new_status;
 			if (status == BusChannelStatus::BUSY || status == BusChannelStatus::BUSY_IN || status == BusChannelStatus::BUSY_IN_AND_OUT || status == BusChannelStatus::BUSY_OUT) {

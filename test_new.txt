@@ -1,0 +1,333 @@
+MQSim started at Thu Nov  9 20:00:04 2023
+
+******************************
+Executing scenario 1 out of 1 .......
+ONFI_Channel_Base::ONFI_Channel_Base
+channelID: 0
+status: 4
+IO_Flow_Synthetic::IO_Flow_Synthetic
+name: Host.IO_Flow.Synth.No_0
+flow_id: 0
+start_lsa_on_device: 0
+end_lsa_on_device: 249644959
+working_set_ratio: 0.5
+io_queue_id: 1
+nvme_submission_queue_size: 65535
+nvme_completion_queue_size: 65535
+priority_class: 1
+read_ratio: 1
+read_hot_ratio: 0.2
+average_number_of_enqueued_requests: 24
+[IO_Flow_Synthetic][Start_simulation] average_number_of_enqueued_requests: 24
+[IO_Flow_Synthetic][Execute_simulator_event] average_number_of_enqueued_requests: 24
+current time: 1
+update submission queue tail 2
+the head of submission queue: 0
+the tail of submission queue: 1
+IO_Flow_Base::Submit_io_request
+current time: 1
+PCIe_Root_Complex::Write_to_device
+register event to deliver message to device
+current time: 1
+estimate_transfer_time(message): 2
+[IO_Flow_Synthetic][Execute_simulator_event] average_number_of_enqueued_requests: 24
+current time: 1
+update submission queue tail 2
+the head of submission queue: 0
+the tail of submission queue: 2
+IO_Flow_Base::Submit_io_request
+current time: 1
+PCIe_Root_Complex::Write_to_device
+[PCIe_Link][Deliver] Message_buffer_toward_ssd_device.size() > 1
+The size of Message_buffer_toward_ssd_device is 2
+[IO_Flow_Synthetic][Execute_simulator_event] average_number_of_enqueued_requests: 24
+current time: 1
+update submission queue tail 2
+the head of submission queue: 0
+the tail of submission queue: 3
+IO_Flow_Base::Submit_io_request
+current time: 1
+PCIe_Root_Complex::Write_to_device
+[PCIe_Link][Deliver] Message_buffer_toward_ssd_device.size() > 1
+The size of Message_buffer_toward_ssd_device is 3
+[IO_Flow_Synthetic][Execute_simulator_event] average_number_of_enqueued_requests: 24
+current time: 1
+update submission queue tail 2
+the head of submission queue: 0
+the tail of submission queue: 4
+IO_Flow_Base::Submit_io_request
+current time: 1
+PCIe_Root_Complex::Write_to_device
+[PCIe_Link][Deliver] Message_buffer_toward_ssd_device.size() > 1
+The size of Message_buffer_toward_ssd_device is 4
+[IO_Flow_Synthetic][Execute_simulator_event] average_number_of_enqueued_requests: 24
+current time: 1
+update submission queue tail 2
+the head of submission queue: 0
+the tail of submission queue: 5
+IO_Flow_Base::Submit_io_request
+current time: 1
+PCIe_Root_Complex::Write_to_device
+[PCIe_Link][Deliver] Message_buffer_toward_ssd_device.size() > 1
+The size of Message_buffer_toward_ssd_device is 5
+[IO_Flow_Synthetic][Execute_simulator_event] average_number_of_enqueued_requests: 24
+current time: 1
+update submission queue tail 2
+the head of submission queue: 0
+the tail of submission queue: 6
+IO_Flow_Base::Submit_io_request
+current time: 1
+PCIe_Root_Complex::Write_to_device
+[PCIe_Link][Deliver] Message_buffer_toward_ssd_device.size() > 1
+The size of Message_buffer_toward_ssd_device is 6
+[IO_Flow_Synthetic][Execute_simulator_event] average_number_of_enqueued_requests: 24
+current time: 1
+update submission queue tail 2
+the head of submission queue: 0
+the tail of submission queue: 7
+IO_Flow_Base::Submit_io_request
+current time: 1
+PCIe_Root_Complex::Write_to_device
+[PCIe_Link][Deliver] Message_buffer_toward_ssd_device.size() > 1
+The size of Message_buffer_toward_ssd_device is 7
+[IO_Flow_Synthetic][Execute_simulator_event] average_number_of_enqueued_requests: 24
+current time: 1
+update submission queue tail 2
+the head of submission queue: 0
+the tail of submission queue: 8
+IO_Flow_Base::Submit_io_request
+current time: 1
+PCIe_Root_Complex::Write_to_device
+[PCIe_Link][Deliver] Message_buffer_toward_ssd_device.size() > 1
+The size of Message_buffer_toward_ssd_device is 8
+[IO_Flow_Synthetic][Execute_simulator_event] average_number_of_enqueued_requests: 24
+current time: 1
+update submission queue tail 2
+the head of submission queue: 0
+the tail of submission queue: 9
+IO_Flow_Base::Submit_io_request
+current time: 1
+PCIe_Root_Complex::Write_to_device
+[PCIe_Link][Deliver] Message_buffer_toward_ssd_device.size() > 1
+The size of Message_buffer_toward_ssd_device is 9
+[IO_Flow_Synthetic][Execute_simulator_event] average_number_of_enqueued_requests: 24
+current time: 1
+update submission queue tail 2
+the head of submission queue: 0
+the tail of submission queue: 10
+IO_Flow_Base::Submit_io_request
+current time: 1
+PCIe_Root_Complex::Write_to_device
+[PCIe_Link][Deliver] Message_buffer_toward_ssd_device.size() > 1
+The size of Message_buffer_toward_ssd_device is 10
+[IO_Flow_Synthetic][Execute_simulator_event] average_number_of_enqueued_requests: 24
+current time: 1
+update submission queue tail 2
+the head of submission queue: 0
+the tail of submission queue: 11
+IO_Flow_Base::Submit_io_request
+current time: 1
+PCIe_Root_Complex::Write_to_device
+[PCIe_Link][Deliver] Message_buffer_toward_ssd_device.size() > 1
+The size of Message_buffer_toward_ssd_device is 11
+[IO_Flow_Synthetic][Execute_simulator_event] average_number_of_enqueued_requests: 24
+current time: 1
+update submission queue tail 2
+the head of submission queue: 0
+the tail of submission queue: 12
+IO_Flow_Base::Submit_io_request
+current time: 1
+PCIe_Root_Complex::Write_to_device
+[PCIe_Link][Deliver] Message_buffer_toward_ssd_device.size() > 1
+The size of Message_buffer_toward_ssd_device is 12
+[IO_Flow_Synthetic][Execute_simulator_event] average_number_of_enqueued_requests: 24
+current time: 1
+update submission queue tail 2
+the head of submission queue: 0
+the tail of submission queue: 13
+IO_Flow_Base::Submit_io_request
+current time: 1
+PCIe_Root_Complex::Write_to_device
+[PCIe_Link][Deliver] Message_buffer_toward_ssd_device.size() > 1
+The size of Message_buffer_toward_ssd_device is 13
+[IO_Flow_Synthetic][Execute_simulator_event] average_number_of_enqueued_requests: 24
+current time: 1
+update submission queue tail 2
+the head of submission queue: 0
+the tail of submission queue: 14
+IO_Flow_Base::Submit_io_request
+current time: 1
+PCIe_Root_Complex::Write_to_device
+[PCIe_Link][Deliver] Message_buffer_toward_ssd_device.size() > 1
+The size of Message_buffer_toward_ssd_device is 14
+[IO_Flow_Synthetic][Execute_simulator_event] average_number_of_enqueued_requests: 24
+current time: 1
+update submission queue tail 2
+the head of submission queue: 0
+the tail of submission queue: 15
+IO_Flow_Base::Submit_io_request
+current time: 1
+PCIe_Root_Complex::Write_to_device
+[PCIe_Link][Deliver] Message_buffer_toward_ssd_device.size() > 1
+The size of Message_buffer_toward_ssd_device is 15
+[IO_Flow_Synthetic][Execute_simulator_event] average_number_of_enqueued_requests: 24
+current time: 1
+update submission queue tail 2
+the head of submission queue: 0
+the tail of submission queue: 16
+IO_Flow_Base::Submit_io_request
+current time: 1
+PCIe_Root_Complex::Write_to_device
+[PCIe_Link][Deliver] Message_buffer_toward_ssd_device.size() > 1
+The size of Message_buffer_toward_ssd_device is 16
+[IO_Flow_Synthetic][Execute_simulator_event] average_number_of_enqueued_requests: 24
+current time: 1
+update submission queue tail 2
+the head of submission queue: 0
+the tail of submission queue: 17
+IO_Flow_Base::Submit_io_request
+current time: 1
+PCIe_Root_Complex::Write_to_device
+[PCIe_Link][Deliver] Message_buffer_toward_ssd_device.size() > 1
+The size of Message_buffer_toward_ssd_device is 17
+[IO_Flow_Synthetic][Execute_simulator_event] average_number_of_enqueued_requests: 24
+current time: 1
+update submission queue tail 2
+the head of submission queue: 0
+the tail of submission queue: 18
+IO_Flow_Base::Submit_io_request
+current time: 1
+PCIe_Root_Complex::Write_to_device
+[PCIe_Link][Deliver] Message_buffer_toward_ssd_device.size() > 1
+The size of Message_buffer_toward_ssd_device is 18
+[IO_Flow_Synthetic][Execute_simulator_event] average_number_of_enqueued_requests: 24
+current time: 1
+update submission queue tail 2
+the head of submission queue: 0
+the tail of submission queue: 19
+IO_Flow_Base::Submit_io_request
+current time: 1
+PCIe_Root_Complex::Write_to_device
+[PCIe_Link][Deliver] Message_buffer_toward_ssd_device.size() > 1
+The size of Message_buffer_toward_ssd_device is 19
+[IO_Flow_Synthetic][Execute_simulator_event] average_number_of_enqueued_requests: 24
+current time: 1
+update submission queue tail 2
+the head of submission queue: 0
+the tail of submission queue: 20
+IO_Flow_Base::Submit_io_request
+current time: 1
+PCIe_Root_Complex::Write_to_device
+[PCIe_Link][Deliver] Message_buffer_toward_ssd_device.size() > 1
+The size of Message_buffer_toward_ssd_device is 20
+[IO_Flow_Synthetic][Execute_simulator_event] average_number_of_enqueued_requests: 24
+current time: 1
+update submission queue tail 2
+the head of submission queue: 0
+the tail of submission queue: 21
+IO_Flow_Base::Submit_io_request
+current time: 1
+PCIe_Root_Complex::Write_to_device
+[PCIe_Link][Deliver] Message_buffer_toward_ssd_device.size() > 1
+The size of Message_buffer_toward_ssd_device is 21
+[IO_Flow_Synthetic][Execute_simulator_event] average_number_of_enqueued_requests: 24
+current time: 1
+update submission queue tail 2
+the head of submission queue: 0
+the tail of submission queue: 22
+IO_Flow_Base::Submit_io_request
+current time: 1
+PCIe_Root_Complex::Write_to_device
+[PCIe_Link][Deliver] Message_buffer_toward_ssd_device.size() > 1
+The size of Message_buffer_toward_ssd_device is 22
+[IO_Flow_Synthetic][Execute_simulator_event] average_number_of_enqueued_requests: 24
+current time: 1
+update submission queue tail 2
+the head of submission queue: 0
+the tail of submission queue: 23
+IO_Flow_Base::Submit_io_request
+current time: 1
+PCIe_Root_Complex::Write_to_device
+[PCIe_Link][Deliver] Message_buffer_toward_ssd_device.size() > 1
+The size of Message_buffer_toward_ssd_device is 23
+[IO_Flow_Synthetic][Execute_simulator_event] average_number_of_enqueued_requests: 24
+current time: 1
+update submission queue tail 2
+the head of submission queue: 0
+the tail of submission queue: 24
+IO_Flow_Base::Submit_io_request
+current time: 1
+PCIe_Root_Complex::Write_to_device
+[PCIe_Link][Deliver] Message_buffer_toward_ssd_device.size() > 1
+The size of Message_buffer_toward_ssd_device is 24
+[PCIe_Link][Execute_simulator_event] event->Type: 0
+current time: 3
+Process_pcie_write_message: 4112
+Submission_queue_tail_pointer_update: 1
+on the fly requests: 0
+stream_id: 0
+fetch next request
+current time: 3
+Host_Interface_Base::Send_read_message_to_host
+PCIe_Switch::Send_to_host
+register event to deliver message to host
+estimate_transfer_time(message): 2
+current time: 3
+estimate_finish_time(message): 5
+[PCIe_Link][Execute_simulator_event] event->Type: 0
+current time: 5
+PCIe_Root_Complex::Consume_pcie_message
+PCIe_Root_Complex::Read_from_memory
+HostInterface_Types::NVME
+[PCIe_Link][Deliver] Message_buffer_toward_ssd_device.size() > 1
+The size of Message_buffer_toward_ssd_device is 24
+[PCIe_Link][Execute_simulator_event] event->Type: 0
+current time: 5
+Process_pcie_write_message: 4112
+Submission_queue_tail_pointer_update: 2
+on the fly requests: 1
+stream_id: 0
+fetch next request
+current time: 5
+Host_Interface_Base::Send_read_message_to_host
+PCIe_Switch::Send_to_host
+register event to deliver message to host
+estimate_transfer_time(message): 2
+current time: 5
+estimate_finish_time(message): 7
+[PCIe_Link][Execute_simulator_event] event->Type: 0
+current time: 7
+PCIe_Root_Complex::Consume_pcie_message
+PCIe_Root_Complex::Read_from_memory
+HostInterface_Types::NVME
+[PCIe_Link][Deliver] Message_buffer_toward_ssd_device.size() > 1
+The size of Message_buffer_toward_ssd_device is 24
+[PCIe_Link][Execute_simulator_event] event->Type: 0
+current time: 7
+Process_pcie_write_message: 4112
+Submission_queue_tail_pointer_update: 3
+on the fly requests: 2
+stream_id: 0
+fetch next request
+current time: 7
+Host_Interface_Base::Send_read_message_to_host
+PCIe_Switch::Send_to_host
+register event to deliver message to host
+estimate_transfer_time(message): 2
+current time: 7
+estimate_finish_time(message): 9
+[PCIe_Link][Execute_simulator_event] event->Type: 0
+current time: 9
+PCIe_Root_Complex::Consume_pcie_message
+PCIe_Root_Complex::Read_from_memory
+HostInterface_Types::NVME
+[PCIe_Link][Deliver] Message_buffer_toward_ssd_device.size() > 1
+The size of Message_buffer_toward_ssd_device is 24
+[PCIe_Link][Execute_simulator_event] event->Type: 0
+current time: 9
+Process_pcie_write_message: 4112
+Submission_queue_tail_pointer_update: 4
+on the fly requests: 3
+stream_id: 0
+fetch next request
+current time: 9

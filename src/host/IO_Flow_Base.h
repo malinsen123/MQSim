@@ -36,7 +36,7 @@ namespace Host_Components
 #define NVME_SQ_FULL(Q) (Q.Submission_queue_tail < Q.Submission_queue_size - 1 ? Q.Submission_queue_tail + 1 == Q.Submission_queue_head : Q.Submission_queue_head == 0)
 #define NVME_UPDATE_SQ_TAIL(Q)  Q.Submission_queue_tail++;\
 						if (Q.Submission_queue_tail == Q.Submission_queue_size)\
-							nvme_queue_pair.Submission_queue_tail = 0;
+							nvme_queue_pair.Submission_queue_tail = 0; //LM possible mistake ??
 
 	class PCIe_Root_Complex;
 	class IO_Flow_Base : public MQSimEngine::Sim_Object, public MQSimEngine::Sim_Reporter
@@ -73,7 +73,7 @@ namespace Host_Components
 		double initial_occupancy_ratio;//The initial amount of valid logical pages when pereconditioning is performed
 		sim_time_type stop_time;//The flow stops generating request when simulation time reaches stop_time
 		unsigned int total_requests_to_be_generated;//If stop_time is zero, then the flow stops generating request when the number of generated requests is equal to total_req_count
-		HostInterface_Types SSD_device_type;
+		HostInterface_Types SSD_device_type; // LM  NVME or SATA
 		PCIe_Root_Complex* pcie_root_complex;
 		SATA_HBA* sata_hba;
 		LHA_type start_lsa_on_device, end_lsa_on_device;
@@ -86,23 +86,23 @@ namespace Host_Components
 		uint16_t io_queue_id;
 		uint16_t nvme_submission_queue_size;
 		uint16_t nvme_completion_queue_size;
-		std::set<uint16_t> available_command_ids;
+		std::set<uint16_t> available_command_ids; //The command ids that are available for submission 0 to 4294967295 represent the hardware queue ids
 		std::vector<Host_IO_Request*> request_queue_in_memory;
-		std::list<Host_IO_Request*> waiting_requests;//The I/O requests that are still waiting to be enqueued in the I/O queue (the I/O queue is full)
+		std::list<Host_IO_Request*> waiting_requests;//The I/O requests that are still waiting to be enqueued in the I/O queue (the I/O queue is full) LM
 		std::unordered_map<sim_time_type, Host_IO_Request*> nvme_software_request_queue;//The I/O requests that are enqueued in the I/O queue of the SSD device
 		void NVMe_update_and_submit_completion_queue_tail();
 
 		//Variables used to collect statistics
-		unsigned int STAT_generated_request_count, STAT_generated_read_request_count, STAT_generated_write_request_count;
+		unsigned int STAT_generated_request_count, STAT_generated_read_request_count, STAT_generated_write_request_count, STAT_generated_read_hot_request_count;
 		unsigned int STAT_ignored_request_count;
 		unsigned int STAT_serviced_request_count, STAT_serviced_read_request_count, STAT_serviced_write_request_count;
 		sim_time_type STAT_sum_device_response_time, STAT_sum_device_response_time_read, STAT_sum_device_response_time_write;
 		sim_time_type STAT_min_device_response_time, STAT_min_device_response_time_read, STAT_min_device_response_time_write;
 		sim_time_type STAT_max_device_response_time, STAT_max_device_response_time_read, STAT_max_device_response_time_write;
-		sim_time_type STAT_sum_request_delay, STAT_sum_request_delay_read, STAT_sum_request_delay_write;
-		sim_time_type STAT_min_request_delay, STAT_min_request_delay_read, STAT_min_request_delay_write;
-		sim_time_type STAT_max_request_delay, STAT_max_request_delay_read, STAT_max_request_delay_write;
-		sim_time_type STAT_transferred_bytes_total, STAT_transferred_bytes_read, STAT_transferred_bytes_write;
+		sim_time_type STAT_sum_request_delay, STAT_sum_request_delay_read, STAT_sum_request_delay_write, STAT_sum_request_delay_read_hot;
+		sim_time_type STAT_min_request_delay, STAT_min_request_delay_read, STAT_min_request_delay_write, STAT_min_request_delay_read_hot;
+		sim_time_type STAT_max_request_delay, STAT_max_request_delay_read, STAT_max_request_delay_write, STAT_max_request_delay_read_hot;
+		sim_time_type STAT_transferred_bytes_total, STAT_transferred_bytes_read, STAT_transferred_bytes_write, STAT_transferred_bytes_read_hot;
 		int progress;
 		int next_progress_step = 0;
 

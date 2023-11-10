@@ -22,6 +22,9 @@ namespace Host_Components
 		
 		void Consume_pcie_message(PCIe_Message* messages)//Modern processors support DDIO, where all writes to memory are going through LLC
 		{
+
+			std::cout<<"PCIe_Root_Complex::Consume_pcie_message"<<std::endl;
+
 			switch (messages->Type)
 			{
 			case PCIe_Message_Type::READ_REQ:

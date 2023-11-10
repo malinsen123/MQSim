@@ -54,6 +54,7 @@ public:
 		transaction_receive_slots.clear();
 	}
 
+	//LM
 	void Submit_transaction(NVM_Transaction_Flash *transaction)
 	{
 		transaction_receive_slots.push_back(transaction);
@@ -93,7 +94,7 @@ protected:
 	void process_chip_requests(NVM::FlashMemory::Flash_Chip* chip)
 	{
 
-		std::cout<<"TSU_Base::process_chip_requests"<<std::endl;
+		//std::cout<<"TSU_Base::process_chip_requests"<<std::endl;
 
 		if (!_my_instance->service_read_transaction(chip)) {
 			if (!_my_instance->service_write_transaction(chip)) {

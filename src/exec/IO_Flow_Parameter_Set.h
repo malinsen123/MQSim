@@ -35,6 +35,7 @@ public:
 	unsigned int Working_Set_Percentage;//Percentage of available storage space that is accessed
 	Utils::Request_Generator_Type Synthetic_Generator_Type;
 	char Read_Percentage;
+	char Read_Hot_Percentage; //LM: added for read hot ratio when read hot it will read the SLC region in the plane
 	Utils::Address_Distribution_Type Address_Distribution;
 	char Percentage_of_Hot_Region;//This parameters used if the address distribution type is hot/cold (i.e., (100-H)% of the whole I/O requests are going to a H% hot region of the storage space)
 	bool Generated_Aligned_Addresses;

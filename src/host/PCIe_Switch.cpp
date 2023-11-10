@@ -6,7 +6,7 @@ namespace Host_Components
 		pcie_link(pcie_link), host_interface(host_interface)
 	{
 	}
-
+	//LM This function is the actual function delivering the message to device
 	void PCIe_Switch::Deliver_to_device(PCIe_Message* message)
 	{
 		host_interface->Consume_pcie_message(message);
@@ -14,6 +14,9 @@ namespace Host_Components
 
 	void PCIe_Switch::Send_to_host(PCIe_Message* message)
 	{
+
+		std::cout<<"PCIe_Switch::Send_to_host"<<std::endl;
+
 		pcie_link->Deliver(message);
 	}
 	

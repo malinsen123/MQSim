@@ -274,6 +274,14 @@ IO_Flow_Base::IO_Flow_Base(const sim_object_id_type &name, uint16_t flow_id, LHA
 		STAT_transferred_bytes_total += request->LBA_count * SECTOR_SIZE_IN_BYTE;
 		
 		if (request->Type == Host_IO_Request_Type::READ) {
+
+
+			std::cout<<"nvme consume io request"<<std::endl;
+			std::cout<<"Read request completed"<<std::endl;
+			std::cout<<"current time: "<<Simulator->Time()<<std::endl;
+			std::cout<<"device response time: "<<device_response_time<<std::endl;
+			std::cout<<"request delay: "<<request_delay<<std::endl;
+
 			STAT_serviced_read_request_count++;
 			STAT_sum_device_response_time_read += device_response_time;
 			STAT_sum_request_delay_read += request_delay;
@@ -312,6 +320,10 @@ IO_Flow_Base::IO_Flow_Base(const sim_object_id_type &name, uint16_t flow_id, LHA
 		delete request;
 
 		nvme_queue_pair.Submission_queue_head = cqe->SQ_Head;
+
+		std::cout<<"update submission queue head 1"<<std::endl;
+		std::cout<<"submission queue head: "<<nvme_queue_pair.Submission_queue_head<<std::endl;
+
 		
 		//MQSim always assumes that the request is processed correctly, so no need to check cqe->SF_P
 
@@ -327,9 +339,20 @@ IO_Flow_Base::IO_Flow_Base(const sim_object_id_type &name, uint16_t flow_id, LHA
 					nvme_software_request_queue[*available_command_ids.begin()] = new_req;
 					available_command_ids.erase(available_command_ids.begin());
 					request_queue_in_memory[nvme_queue_pair.Submission_queue_tail] = new_req;
+
+					std::cout<<"update submission queue tail 1"<<std::endl;
+
 					NVME_UPDATE_SQ_TAIL(nvme_queue_pair);
+
+
+					std::cout<<"submission queue tail: "<<nvme_queue_pair.Submission_queue_tail<<std::endl;
+					std::cout<<"submission queue head: "<<nvme_queue_pair.Submission_queue_head<<std::endl;
+
 				}
-				new_req->Enqueue_time = Simulator->Time();
+
+				std::cout<<"waiting request size: "<<waiting_requests.size()<<std::endl;
+
+				new_req->Enqueue_time = Simulator->Time(); //The time that the request enqueued into the I/O queue of the SSD device
 				pcie_root_complex->Write_to_device(nvme_queue_pair.Submission_tail_register_address_on_device, nvme_queue_pair.Submission_queue_tail);//Based on NVMe protocol definition, the updated tail pointer should be informed to the device
 			} else {
 				break;
@@ -401,7 +424,7 @@ IO_Flow_Base::IO_Flow_Base(const sim_object_id_type &name, uint16_t flow_id, LHA
 
 		return sqe;
 	}
-
+	//LM important function
 	void IO_Flow_Base::Submit_io_request(Host_IO_Request* request)
 	{
 		switch (SSD_device_type) {
@@ -417,9 +440,19 @@ IO_Flow_Base::IO_Flow_Base(const sim_object_id_type &name, uint16_t flow_id, LHA
 						nvme_software_request_queue[*available_command_ids.begin()] = request;
 						available_command_ids.erase(available_command_ids.begin());
 						request_queue_in_memory[nvme_queue_pair.Submission_queue_tail] = request;
+
+						std::cout<<"update submission queue tail 2"<<std::endl;
+
 						NVME_UPDATE_SQ_TAIL(nvme_queue_pair);
+
+						std::cout<<"the head of submission queue: "<<nvme_queue_pair.Submission_queue_head<<std::endl;
+						std::cout<<"the tail of submission queue: "<<nvme_queue_pair.Submission_queue_tail<<std::endl;
+
 					}
 					request->Enqueue_time = Simulator->Time();
+					std::cout<<"IO_Flow_Base::Submit_io_request"<<std::endl;
+					std::cout<<"current time: "<<Simulator->Time()<<std::endl;
+
 					pcie_root_complex->Write_to_device(nvme_queue_pair.Submission_tail_register_address_on_device, nvme_queue_pair.Submission_queue_tail);//Based on NVMe protocol definition, the updated tail pointer should be informed to the device
 				}
 				break;
@@ -433,6 +466,17 @@ IO_Flow_Base::IO_Flow_Base(const sim_object_id_type &name, uint16_t flow_id, LHA
 	void IO_Flow_Base::NVMe_update_and_submit_completion_queue_tail()
 	{
 		nvme_queue_pair.Completion_queue_head++;
+
+		std::cout<<"nvme update and submit completion queue tail"<<std::endl;
+		std::cout<<"the head of completion queue: "<<nvme_queue_pair.Completion_queue_head<<std::endl;
+		std::cout<<"the tail of completion queue: "<<nvme_queue_pair.Completion_queue_tail<<std::endl;
+		std::cout<<"the size of completion queue: "<<nvme_queue_pair.Completion_queue_size<<std::endl;
+
+		std::cout<<"the head of submission queue: "<<nvme_queue_pair.Submission_queue_head<<std::endl;
+		std::cout<<"the tail of submission queue: "<<nvme_queue_pair.Submission_queue_tail<<std::endl;
+		std::cout<<"the size of submission queue: "<<nvme_queue_pair.Submission_queue_size<<std::endl;
+
+
 		if (nvme_queue_pair.Completion_queue_head == nvme_queue_pair.Completion_queue_size) {
 			nvme_queue_pair.Completion_queue_head = 0;
 		}

@@ -480,6 +480,8 @@ namespace SSD_Components
 	//LM This function is called from TSU
 	void Address_Mapping_Unit_Page_Level::Translate_lpa_to_ppa_and_dispatch(const std::list<NVM_Transaction*>& transactionList)
 	{
+		//std::cout<<"Translate_lpa_to_ppa_and_dispatch"<<std::endl;
+
 
 		for (std::list<NVM_Transaction*>::const_iterator it = transactionList.begin();
 			it != transactionList.end(); ) {
@@ -487,6 +489,7 @@ namespace SSD_Components
 				//iterator should be post-incremented since the iterator may be deleted from list
 				manage_user_transaction_facing_barrier((NVM_Transaction_Flash*)*(it++));
 			} else {
+
 				query_cmt((NVM_Transaction_Flash*)(*it++));
 			}
 		}
@@ -510,9 +513,14 @@ namespace SSD_Components
 			ftl->TSU->Schedule();
 		}
 	}
-
+	//LM Important function
 	bool Address_Mapping_Unit_Page_Level::query_cmt(NVM_Transaction_Flash* transaction)
 	{
+
+		//std::cout<<"Address_Mapping_Unit_Page_Level::query_cmt"<<std::endl;
+
+
+
 		stream_id_type stream_id = transaction->Stream_id;
 		Stats::total_CMT_queries++;
 		Stats::total_CMT_queries_per_stream[stream_id]++;
@@ -585,6 +593,7 @@ namespace SSD_Components
 	/*This function should be invoked only if the address translation entry exists in CMT.
 	* Otherwise, the call to the CMT->Rerieve_ppa, within this function, will throw an exception.
 	*/
+	//LM
 	bool Address_Mapping_Unit_Page_Level::translate_lpa_to_ppa(stream_id_type streamID, NVM_Transaction_Flash* transaction)
 	{
 		PPA_type ppa = domains[streamID]->Get_ppa(ideal_mapping_table, streamID, transaction->LPA);
@@ -1225,7 +1234,7 @@ namespace SSD_Components
 		domain->GlobalTranslationDirectory[mvpn].MPPN = (MPPN_type)transaction->PPA;
 		domain->GlobalTranslationDirectory[mvpn].TimeStamp = CurrentTimeStamp;
 	}
-
+	//LM
 	PPA_type Address_Mapping_Unit_Page_Level::online_create_entry_for_reads(LPA_type lpa, const stream_id_type stream_id, NVM::FlashMemory::Physical_Page_Address& read_address, uint64_t read_sectors_bitmap)
 	{
 		AddressMappingDomain* domain = domains[stream_id];
@@ -1439,7 +1448,7 @@ namespace SSD_Components
 
 		return target;
 	}
-
+	//LM
 	inline void Address_Mapping_Unit_Page_Level::Convert_ppa_to_address(const PPA_type ppn, NVM::FlashMemory::Physical_Page_Address& address)
 	{
 		address.ChannelID = (flash_channel_ID_type)(ppn / page_no_per_channel);

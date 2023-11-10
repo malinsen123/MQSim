@@ -36,12 +36,15 @@ stream_id_type Input_Stream_Manager_NVMe::Create_new_stream(IO_Flow_Priority_Cla
 
 	return (stream_id_type)(this->input_streams.size() - 1);
 }
-
+//LM
 inline void Input_Stream_Manager_NVMe::Submission_queue_tail_pointer_update(stream_id_type stream_id, uint16_t tail_pointer_value)
 {
 	((Input_Stream_NVMe *)input_streams[stream_id])->Submission_tail = tail_pointer_value;
 
-	if (((Input_Stream_NVMe *)input_streams[stream_id])->On_the_fly_requests < Queue_fetch_size)
+	std::cout<<"Submission_queue_tail_pointer_update: "<<tail_pointer_value<<std::endl;
+	std::cout<<"on the fly requests: "<<((Input_Stream_NVMe *)input_streams[stream_id])->On_the_fly_requests<<std::endl;
+
+	if (((Input_Stream_NVMe *)input_streams[stream_id])->On_the_fly_requests < Queue_fetch_size) //8191 for Queue_fetch_size
 	{
 		((Host_Interface_NVMe *)host_interface)->request_fetch_unit->Fetch_next_request(stream_id);
 		((Input_Stream_NVMe *)input_streams[stream_id])->On_the_fly_requests++;
@@ -65,7 +68,7 @@ inline void Input_Stream_Manager_NVMe::Completion_queue_head_pointer_update(stre
 		inform_host_request_completed(stream_id, request);
 	}
 }
-
+//LM
 inline void Input_Stream_Manager_NVMe::Handle_new_arrived_request(User_Request *request)
 {
 	((Input_Stream_NVMe *)input_streams[request->Stream_id])->Submission_head_informed_to_host++;
@@ -97,9 +100,17 @@ inline void Input_Stream_Manager_NVMe::Handle_arrived_write_data(User_Request *r
 
 inline void Input_Stream_Manager_NVMe::Handle_serviced_request(User_Request *request)
 {
+
+	//LM
+	std::cout<<"Host_Interface_NVME::Handle_serviced_request"<<std::endl;
+	std::cout<<"The request start LBA is "<<request->Start_LBA<<std::endl;
+	std::cout<<"Current time is "<<Simulator->Time()<<std::endl;
+
 	stream_id_type stream_id = request->Stream_id;
 	((Input_Stream_NVMe *)input_streams[request->Stream_id])->Waiting_user_requests.remove(request);
 	((Input_Stream_NVMe *)input_streams[stream_id])->On_the_fly_requests--;
+
+	std::cout<<"The on the fly requests is "<<((Input_Stream_NVMe *)input_streams[stream_id])->On_the_fly_requests<<std::endl;
 
 	DEBUG("** Host Interface: Request #" << request->ID << " from stream #" << request->Stream_id << " is finished")
 
@@ -113,6 +124,7 @@ inline void Input_Stream_Manager_NVMe::Handle_serviced_request(User_Request *req
 	if (((Input_Stream_NVMe *)input_streams[stream_id])->Submission_head != ((Input_Stream_NVMe *)input_streams[stream_id])->Submission_tail)
 	{
 		((Host_Interface_NVMe *)host_interface)->request_fetch_unit->Fetch_next_request(stream_id);
+		std::cout<<"come here 2!!!!!!!!!!!"<<std::endl;
 		((Input_Stream_NVMe *)input_streams[stream_id])->On_the_fly_requests++;
 		((Input_Stream_NVMe *)input_streams[stream_id])->Submission_head++; //Update submission queue head after starting fetch request
 		if (((Input_Stream_NVMe *)input_streams[stream_id])->Submission_head == ((Input_Stream_NVMe *)input_streams[stream_id])->Submission_queue_size)
@@ -217,8 +229,13 @@ void Input_Stream_Manager_NVMe::segment_user_request(User_Request *user_request)
 
 Request_Fetch_Unit_NVMe::Request_Fetch_Unit_NVMe(Host_Interface_Base *host_interface) : Request_Fetch_Unit_Base(host_interface), current_phase(0xffff), number_of_sent_cqe(0) {}
 
+//LM
+//request_fetch_unit->Process_pcie_write_message(message->Address, message->Payload, message->Payload_size);
 void Request_Fetch_Unit_NVMe::Process_pcie_write_message(uint64_t address, void *payload, unsigned int payload_size)
 {
+
+	std::cout<<"Process_pcie_write_message: "<<address<<std::endl;
+
 	Host_Interface_NVMe *hi = (Host_Interface_NVMe *)host_interface;
 	uint64_t val = (uint64_t)payload;
 	switch (address)
@@ -275,12 +292,22 @@ void Request_Fetch_Unit_NVMe::Process_pcie_write_message(uint64_t address, void 
 		throw std::invalid_argument("Unknown register is written!");
 	}
 }
-
+//LM process_pcie_read_message
 void Request_Fetch_Unit_NVMe::Process_pcie_read_message(uint64_t address, void *payload, unsigned int payload_size)
 {
+
+	std::cout<<"Process_pcie_read_message: "<<address<<std::endl;
+	sleep(1);
+
 	Host_Interface_NVMe *hi = (Host_Interface_NVMe *)host_interface;
 	DMA_Req_Item *dma_req_item = dma_list.front();
+
+
 	dma_list.pop_front();
+
+	std::cout<<"dma_list.size(): "<<dma_list.size()<<std::endl;
+	std::cout<<"current time: "<<Simulator->Time()<<std::endl;
+
 
 	switch (dma_req_item->Type)
 	{
@@ -299,6 +326,9 @@ void Request_Fetch_Unit_NVMe::Process_pcie_read_message(uint64_t address, void *
 			new_request->Start_LBA = ((LHA_type)sqe->Command_specific[1]) << 31 | (LHA_type)sqe->Command_specific[0]; //Command Dword 10 and Command Dword 11
 			new_request->SizeInSectors = sqe->Command_specific[2] & (LHA_type)(0x0000ffff);
 			new_request->Size_in_byte = new_request->SizeInSectors * SECTOR_SIZE_IN_BYTE;
+			std::cout<<"come here"<<std::endl;
+			std::cout<<"The request start LBA is "<<new_request->Start_LBA<<std::endl;
+
 			break;
 		case NVME_WRITE_OPCODE:
 			new_request->Type = UserRequestType::WRITE;
@@ -321,9 +351,14 @@ void Request_Fetch_Unit_NVMe::Process_pcie_read_message(uint64_t address, void *
 	}
 	delete dma_req_item;
 }
-
-void Request_Fetch_Unit_NVMe::Fetch_next_request(stream_id_type stream_id)
+//LM
+void Request_Fetch_Unit_NVMe::Fetch_next_request(stream_id_type stream_id) //LM stream_id corresponding to flow_id
 {
+	std::cout<<"stream_id: "<<stream_id<<std::endl;
+	std::cout<<"fetch next request"<<std::endl;
+	std::cout<<"current time: "<<Simulator->Time()<<std::endl;
+
+	sleep(1);
 	DMA_Req_Item *dma_req_item = new DMA_Req_Item;
 	dma_req_item->Type = DMA_Req_Type::REQUEST_INFO;
 	dma_req_item->object = (void *)(intptr_t)stream_id;

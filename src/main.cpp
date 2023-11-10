@@ -168,6 +168,7 @@ std::vector<std::vector<IO_Flow_Parameter_Set*>*>* read_workload_definitions(con
 		io_flow_1->Stop_Time = 1000000000;
 		io_flow_1->Total_Requests_To_Generate = 0;
 		scenario_definition->push_back(io_flow_1);
+		io_flow_1->Read_Hot_Percentage = 0; //LM: added for read hot ratio when read hot it will read the SLC region in the plane
 
 		IO_Flow_Parameter_Set_Synthetic* io_flow_2 = new IO_Flow_Parameter_Set_Synthetic;
 		io_flow_2->Device_Level_Data_Caching_Mode = SSD_Components::Caching_Mode::WRITE_CACHE;
@@ -203,6 +204,7 @@ std::vector<std::vector<IO_Flow_Parameter_Set*>*>* read_workload_definitions(con
 		io_flow_2->Stop_Time = 1000000000;
 		io_flow_2->Total_Requests_To_Generate = 0;
 		scenario_definition->push_back(io_flow_2);
+		io_flow_2->Read_Hot_Percentage = 0; //LM: added for read hot ratio when read hot it will read the SLC region in the plane
 
 		io_scenarios->push_back(scenario_definition);
 

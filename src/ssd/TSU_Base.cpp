@@ -48,12 +48,17 @@ namespace SSD_Components
 	void TSU_Base::handle_channel_idle_signal(flash_channel_ID_type channelID)
 	{
 		std::cout<<"TSU_Base::handle_channel_idle_signal"<<std::endl;
-
+		std::cout;
 
 		for (unsigned int i = 0; i < _my_instance->chip_no_per_channel; i++) {
 			//The TSU does not check if the chip is idle or not since it is possible to suspend a busy chip and issue a new command
-			_my_instance->process_chip_requests(_my_instance->_NVMController->Get_chip(channelID, _my_instance->Round_robin_turn_of_channel[channelID]));
+
+			 NVM::FlashMemory::Flash_Chip *chip = _my_instance->_NVMController->Get_chip(channelID, _my_instance->Round_robin_turn_of_channel[channelID]);
+
+			std::cout<<"chip id is "<<chip->ChipID<<std::endl;
+			_my_instance->process_chip_requests(chip);
 			_my_instance->Round_robin_turn_of_channel[channelID] = (flash_chip_ID_type)(_my_instance->Round_robin_turn_of_channel[channelID] + 1) % _my_instance->chip_no_per_channel;
+
 
 			//A transaction has been started, so TSU should stop searching for another chip
 			if (_my_instance->_NVMController->Get_channel_status(channelID) == BusChannelStatus::BUSY
@@ -107,7 +112,13 @@ namespace SSD_Components
 			{
 				if (transaction_is_ready(*it) && (*it)->Address.DieID == dieID && !(planeVector & 1 << (*it)->Address.PlaneID))
 				{
-					//Check for identical pages when running multiplane command
+
+					std::cout<<"TSU_Base::issue_command_to_chip: transaction_is_ready"<<std::endl;
+					std::cout<<"the stream id is "<<(*it)->Stream_id<<std::endl;
+
+
+					//Check for identical pages when running multiplane command 
+					//LM: This is the case when the channel is busy_out and the chip is DATA_OUT
 					if (planeVector == 0 || (*it)->Address.PageID == pageID)
 					{
 						(*it)->SuspendRequired = suspensionRequired;

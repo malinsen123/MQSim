@@ -53,6 +53,7 @@ namespace NVM
 
 				start_command_execution(command);
 
+
 				this->lastTransferStart = INVALID_TIME;
 			}
 			void EndCMDDataInXfer(Flash_Command* command)//End transferring write data of a group of multi-plane transactions to the Flash chip
@@ -73,7 +74,7 @@ namespace NVM
 			void EndDataOutXfer(Flash_Command* command)
 			{
 				this->STAT_totalXferTime += (Simulator->Time() - this->lastTransferStart);
-
+				std::cout<<"lastTransferStart: "<<this->lastTransferStart<<std::endl;
 				std::cout<<"the added time is: "<<(Simulator->Time() - this->lastTransferStart)<<std::endl;
 				sleep(1);
 

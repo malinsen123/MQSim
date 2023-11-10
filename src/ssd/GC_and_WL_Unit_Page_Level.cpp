@@ -24,6 +24,7 @@ namespace SSD_Components
 	bool GC_and_WL_Unit_Page_Level::GC_is_in_urgent_mode(const NVM::FlashMemory::Flash_Chip* chip)
 	{
 		if (!preemptible_gc_enabled) {
+			//std::cout<<"GC_and_WL_Unit_Page_Level::GC_is_in_urgent_mode 1"<<std::endl;
 			return true;
 		}
 
@@ -33,7 +34,11 @@ namespace SSD_Components
 			for (unsigned int plane_id = 0; plane_id < plane_no_per_die; plane_id++) {
 				addr.DieID = die_id; addr.PlaneID = plane_id;
 				if (block_manager->Get_pool_size(addr) < block_pool_gc_hard_threshold)
+				{
+					//std::cout<<"GC_and_WL_Unit_Page_Level::GC_is_in_urgent_mode 2"<<std::endl;
 					return true;
+				}
+					
 			}
 		}
 

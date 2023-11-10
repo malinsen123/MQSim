@@ -245,6 +245,12 @@ void IO_Flow_Parameter_Set_Synthetic::XML_serialize(Utils::XmlWriter& xmlwriter)
 	xmlwriter.Write_attribute_string(attr, val);
 
 
+	attr = "Read_Hot_Percentage";
+	val = std::to_string(Read_Hot_Percentage);
+	xmlwriter.Write_attribute_string(attr, val);
+
+
+
 	attr = "Address_Distribution";
 	switch (Address_Distribution) {
 		case Utils::Address_Distribution_Type::STREAMING:
@@ -341,7 +347,12 @@ void IO_Flow_Parameter_Set_Synthetic::XML_deserialize(rapidxml::xml_node<> *node
 			} else if (strcmp(param->name(), "Read_Percentage") == 0) {
 				std::string val = param->value();
 				Read_Percentage = std::stoi(val);
-			} else if (strcmp(param->name(), "Address_Distribution") == 0) {
+
+			}else if (strcmp(param->name(), "Read_Hot_Percentage") == 0) {
+				std::string val = param->value();
+				Read_Hot_Percentage = std::stoi(val);
+			
+			}else if (strcmp(param->name(), "Address_Distribution") == 0) {
 				std::string val = param->value();
 				std::transform(val.begin(), val.end(), val.begin(), ::toupper);
 				if (strcmp(val.c_str(), "STREAMING") == 0) {

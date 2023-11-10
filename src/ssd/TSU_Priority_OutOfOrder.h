@@ -42,6 +42,9 @@ public:
     void Validate_simulation_config();
     void Execute_simulator_event(MQSimEngine::Sim_Event *);
     void Report_results_in_XML(std::string name_prefix, Utils::XmlWriter &xmlwriter);
+    void Sort_transactions_by_stream_id(std::list<NVM_Transaction_Flash*>& transaction_list); 
+
+
 
 private:
     Flash_Transaction_Queue ***UserReadTRQueue;
@@ -59,6 +62,10 @@ private:
     bool service_read_transaction(NVM::FlashMemory::Flash_Chip *chip);
     bool service_write_transaction(NVM::FlashMemory::Flash_Chip *chip);
     bool service_erase_transaction(NVM::FlashMemory::Flash_Chip *chip);
+    static bool Compare_transaction_stream_id(const NVM_Transaction_Flash* lhs, const NVM_Transaction_Flash* rhs) {
+        return lhs->Stream_id < rhs->Stream_id;
+    }
+
     Flash_Transaction_Queue *get_next_read_service_queue(NVM::FlashMemory::Flash_Chip *chip);
     Flash_Transaction_Queue *get_next_write_service_queue(NVM::FlashMemory::Flash_Chip *chip);
 };
