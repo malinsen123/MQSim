@@ -86,6 +86,13 @@ namespace NVM
 			Chip_Sim_Event_Type eventType = (Chip_Sim_Event_Type)ev->Type;
 			Flash_Command* command = (Flash_Command*)ev->Parameters;
 
+			//std::cout<<"Flash_Chip.cpp: Execute_simulator_event"<<std::endl;
+			//std::cout<<"current time is: "<<Simulator->Time()<<std::endl;
+			//std::cout<<"the command type is: "<<command->CommandCode<<std::endl;
+			//std::cout<<"the command size is: "<<command->Address.size()<<std::endl;
+			//std::cout<<"the command address is: "<<command->Address[0].PageID<<std::endl;
+			//std::cout<<"the command meta data is: "<<command->Meta_data[0].LPA<<std::endl;
+
 			switch (eventType) {
 				case Chip_Sim_Event_Type::COMMAND_FINISHED:
 					finish_command_execution(command);
@@ -112,6 +119,8 @@ namespace NVM
 			}
 
 			//std::cout<<"Flash_Chip.cpp: register command finish event"<<std::endl;
+			//std::cout<<"meta data is: "<<command->Meta_data[0].LPA<<std::endl;
+			//std::cout<<"expected finish time is: "<<Simulator->Time()+Get_command_execution_latency(command->CommandCode, command->Address[0].PageID)<<std::endl;
 
 			targetDie->Expected_finish_time = Simulator->Time() + Get_command_execution_latency(command->CommandCode, command->Address[0].PageID);
 			targetDie->CommandFinishEvent = Simulator->Register_sim_event(targetDie->Expected_finish_time,
@@ -157,7 +166,17 @@ namespace NVM
 					for (unsigned int planeCntr = 0; planeCntr < command->Address.size(); planeCntr++) {
 						STAT_readCount++;
 						targetDie->Planes[command->Address[planeCntr].PlaneID]->Read_count++;
-						targetDie->Planes[command->Address[planeCntr].PlaneID]->Blocks[command->Address[planeCntr].BlockID]->Pages[command->Address[planeCntr].PageID].Read_metadata(command->Meta_data[planeCntr]);
+
+						//std::cout<<"Flash_Chip.cpp: finish_command_execution: CMD_READ_PAGE"<<std::endl;
+						//std::cout<<"Channel " << this->ChannelID << " Chip " << this->ChipID<<std::endl;
+						//std::cout<<"the plane id is: "<<command->Address[planeCntr].PlaneID<<std::endl;
+						//std::cout<<"the block id is: "<<command->Address[planeCntr].BlockID<<std::endl;
+						//std::cout<<"the page id is: "<<command->Address[planeCntr].PageID<<std::endl;	
+						//std::cout<<"the meta data is: "<<command->Meta_data[planeCntr].LPA<<std::endl; 
+						//std::cout<<"the page meta data is: "<<targetDie->Planes[command->Address[planeCntr].PlaneID]->Blocks[command->Address[planeCntr].BlockID]->Pages[command->Address[planeCntr].PageID].Metadata.LPA<<std::endl;
+						//LM change this for pure read test
+						//targetDie->Planes[command->Address[planeCntr].PlaneID]->Blocks[command->Address[planeCntr].BlockID]->Pages[command->Address[planeCntr].PageID].Read_metadata(command->Meta_data[planeCntr]);
+						//std::cout<<"the meta data is: "<<command->Meta_data[planeCntr].LPA<<std::endl; 
 					}
 					break;
 				case CMD_PROGRAM_PAGE:
@@ -171,8 +190,8 @@ namespace NVM
 						targetDie->Planes[command->Address[planeCntr].PlaneID]->Blocks[command->Address[planeCntr].BlockID]->Pages[command->Address[planeCntr].PageID].Write_metadata(command->Meta_data[planeCntr]);
 					}
 
-					//std::cout<<"Flash_Chip.cpp: finish_command_execution: CMD_PROGRAM_PAGE"<<std::endl;
-					//std::cout<<"The command size is: "<<command->Address.size()<<std::endl;
+					////std::cout<<"Flash_Chip.cpp: finish_command_execution: CMD_PROGRAM_PAGE"<<std::endl;
+					////std::cout<<"The command size is: "<<command->Address.size()<<std::endl;
 
 					break;
 				case CMD_ERASE_BLOCK:
@@ -194,7 +213,8 @@ namespace NVM
 					PRINT_ERROR("Flash chip " << ID() << ": unhandled flash command type!")
 			}
 			//std::cout<<"Flash_Chip.cpp: finish_command_execution: broadcast_ready_signal"<<std::endl;
-
+			//std::cout<<"meta data is: "<<command->Meta_data[0].LPA<<std::endl;
+			//std::cout<<"die meta data is: "<<targetDie->Planes[command->Address[0].PlaneID]->Blocks[command->Address[0].BlockID]->Pages[command->Address[0].PageID].Metadata.LPA<<std::endl;
 			//In MQSim, flash chips always announce their status using the ready/busy signal; the controller does not issue a die status read command
 			broadcast_ready_signal(command);
 		}
@@ -283,19 +303,36 @@ namespace NVM
 			xmlwriter.Write_attribute_string_inline(attr, val);
 
 			attr = "Fraction_of_Time_in_Execution is about ";
-			std::cout<<"STAT_totalExecTime: "<<STAT_totalExecTime<<std::endl;
+			//std::cout<<"STAT_totalExecTime: "<<STAT_totalExecTime<<std::endl;
 			val = std::to_string(STAT_totalExecTime / double(Simulator->Time()));
 			xmlwriter.Write_attribute_string_inline(attr, val);
+
+			attr= "The_execution_time_is ";
+			val = std::to_string(STAT_totalExecTime);
+			xmlwriter.Write_attribute_string_inline(attr, val);
+
 
 			attr = "Fraction_of_Time_in_DataXfer is  ";
 			val = std::to_string(STAT_totalXferTime / double(Simulator->Time()));
 			xmlwriter.Write_attribute_string_inline(attr, val);
 
+			attr = "The_data_transfer_time_is ";
+			val = std::to_string(STAT_totalXferTime);
+			xmlwriter.Write_attribute_string_inline(attr, val);
+
+
+
 			attr = "Fraction_of_Time_in_DataXfer_and_Execution";
 			val = std::to_string(STAT_totalOverlappedXferExecTime / double(Simulator->Time()));
 			xmlwriter.Write_attribute_string_inline(attr, val);
 
-			attr = "Fraction_of_Time_Idle is around  ";
+			attr = "The_data_transfer_and_execution_time_is ";
+			val = std::to_string(STAT_totalOverlappedXferExecTime);
+			xmlwriter.Write_attribute_string_inline(attr, val);
+			
+
+
+			attr = "Fraction_of_Time_channel_Idle is around  ";
 			val = std::to_string((Simulator->Time() - STAT_totalOverlappedXferExecTime - STAT_totalXferTime) / double(Simulator->Time()));
 			xmlwriter.Write_attribute_string_inline(attr, val);
 		

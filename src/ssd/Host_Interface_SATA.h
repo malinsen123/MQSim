@@ -52,7 +52,7 @@ namespace SSD_Components
 	{
 	public:
 		Request_Fetch_Unit_SATA(Host_Interface_Base* host_interface, uint16_t ncq_depth);
-		void Fetch_next_request(stream_id_type stream_id , uint16_t queue_id);
+		void Fetch_next_request(stream_id_type stream_id , uint16_t queue_id );
 		void Fetch_write_data(User_Request* request);
 		void Send_read_data(User_Request* request);
 		void Send_completion_queue_element(User_Request* request, uint16_t ncq_head_value);

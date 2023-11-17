@@ -32,6 +32,9 @@ namespace Host_Components
 		uint16_t Completion_queue_size;
 		uint64_t Completion_head_register_address_on_device;
 		uint64_t Completion_queue_memory_base_address;
+
+		//LM
+		Host_IO_Request* request_queue_in_memory;
 	};
 
 #define NVME_SQ_FULL(Q) (Q.Submission_queue_tail < Q.Submission_queue_size - 1 ? Q.Submission_queue_tail + 1 == Q.Submission_queue_head : Q.Submission_queue_head == 0)
@@ -93,7 +96,11 @@ namespace Host_Components
 		uint16_t nvme_submission_queue_size;
 		uint16_t nvme_completion_queue_size;
 		std::set<uint16_t> available_command_ids; //The command ids that are available for submission 0 to 4294967295 represent the hardware queue ids
-		std::vector<Host_IO_Request*> request_queue_in_memory;
+		std::vector<Host_IO_Request*> request_queue_in_memory;//LM
+		std::vector<int> request_queue_in_memory_index;//LM
+		std::list<std::array<Host_IO_Request *, 65535>> request_queues_in_memory;//LM
+
+
 		std::list<Host_IO_Request*> waiting_requests;//The I/O requests that are still waiting to be enqueued in the I/O queue (the I/O queue is full) LM
 		std::unordered_map<sim_time_type, Host_IO_Request*> nvme_software_request_queue;//The I/O requests that are enqueued in the I/O queue of the SSD device
 		void NVMe_update_and_submit_completion_queue_tail(uint16_t queue_id);

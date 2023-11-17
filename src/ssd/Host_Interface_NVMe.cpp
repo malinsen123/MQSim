@@ -53,17 +53,17 @@ stream_id_type Input_Stream_Manager_NVMe::Create_new_stream(IO_Flow_Priority_Cla
 
 	for(uint32_t i = 0; i < queue_numbers_of_the_flow; i++)
 	{
-		std::cout<<"new_stream: with queue  "<<input_stream->queue_pairs[i].Queue_id<<std::endl;
-		std::cout<<"new_stream: with queue  "<<input_stream->queue_pairs[i].Submission_queue_base_address<<std::endl;
+		//std::cout<<"new_stream: with queue  "<<input_stream->queue_pairs[i].Queue_id<<std::endl;
+		//std::cout<<"new_stream: with queue  "<<input_stream->queue_pairs[i].Submission_queue_base_address<<std::endl;
 
 	}
 
 
 	this->input_streams.push_back(input_stream);
 
-	std::cout<<"Create_new_stream: "<<input_streams.size()<<std::endl;
+	//std::cout<<"Create_new_stream: "<<input_streams.size()<<std::endl;
 	for(uint32_t i = 0; i < queue_numbers_of_the_flow; i++){
-		std::cout<<"new_stream: with queue  "<<input_stream->queue_pairs[i].Queue_id<<std::endl;
+		//std::cout<<"new_stream: with queue  "<<input_stream->queue_pairs[i].Queue_id<<std::endl;
 
 	}
 
@@ -75,9 +75,9 @@ inline void Input_Stream_Manager_NVMe::Submission_queue_tail_pointer_update(stre
 {
 	((Input_Stream_NVMe *)input_streams[stream_id])->queue_pairs[queue_id].Submission_tail = tail_pointer_value; 
 
-	std::cout<<"Submission_queue_tail_pointer_update: "<<tail_pointer_value<<std::endl;
-	std::cout<<"Submission_queue_tail_pointer_update: "<<((Input_Stream_NVMe *)input_streams[stream_id])->queue_pairs[queue_id].Submission_tail<<std::endl;
-	std::cout<<"Queue on the fly requests: "<<((Input_Stream_NVMe *)input_streams[stream_id])->queue_pairs[queue_id].Queue_on_the_fly_requests<<std::endl;
+	//std::cout<<"Submission_queue_tail_pointer_update: "<<tail_pointer_value<<std::endl;
+	//std::cout<<"Submission_queue_tail_pointer_update: "<<((Input_Stream_NVMe *)input_streams[stream_id])->queue_pairs[queue_id].Submission_tail<<std::endl;
+	//std::cout<<"Queue on the fly requests: "<<((Input_Stream_NVMe *)input_streams[stream_id])->queue_pairs[queue_id].Queue_on_the_fly_requests<<std::endl;
 
 	if (((Input_Stream_NVMe *)input_streams[stream_id])->queue_pairs[queue_id].Queue_on_the_fly_requests < Queue_fetch_size) //8191 for Queue_fetch_size
 	{
@@ -140,11 +140,11 @@ inline void Input_Stream_Manager_NVMe::Handle_serviced_request(User_Request *req
 {
 
 	//LM
-	std::cout<<"Host_Interface_NVME::Handle_serviced_request"<<std::endl;
-	std::cout<<"The request start LBA is "<<request->Start_LBA<<std::endl;
-	std::cout<<"Current time is "<<Simulator->Time()<<std::endl;
-	std::cout<<"The stream id is "<<request->Stream_id<<std::endl;
-	std::cout<<"The queue id is "<<request->Queue_id<<std::endl;
+	//std::cout<<"Host_Interface_NVME::Handle_serviced_request"<<std::endl;
+	//std::cout<<"The request start LBA is "<<request->Start_LBA<<std::endl;
+	//std::cout<<"Current time is "<<Simulator->Time()<<std::endl;
+	//std::cout<<"The stream id is "<<request->Stream_id<<std::endl;
+	//std::cout<<"The queue id is "<<request->Queue_id<<std::endl;
 
 	stream_id_type stream_id = request->Stream_id;
 	uint16_t queue_id = request->Queue_id;
@@ -152,8 +152,8 @@ inline void Input_Stream_Manager_NVMe::Handle_serviced_request(User_Request *req
 	((Input_Stream_NVMe *)input_streams[stream_id])->Flow_On_the_fly_requests--;
 	((Input_Stream_NVMe *)input_streams[stream_id])->queue_pairs[request->Queue_id].Queue_on_the_fly_requests--;
 
-	std::cout<<"The flow on the fly requests is "<<((Input_Stream_NVMe *)input_streams[stream_id])->Flow_On_the_fly_requests<<std::endl;
-	std::cout<<"The queue on the fly requests is "<<((Input_Stream_NVMe *)input_streams[stream_id])->queue_pairs[request->Queue_id].Queue_on_the_fly_requests<<std::endl;
+	//std::cout<<"The flow on the fly requests is "<<((Input_Stream_NVMe *)input_streams[stream_id])->Flow_On_the_fly_requests<<std::endl;
+	//std::cout<<"The queue on the fly requests is "<<((Input_Stream_NVMe *)input_streams[stream_id])->queue_pairs[request->Queue_id].Queue_on_the_fly_requests<<std::endl;
 
 	DEBUG("** Host Interface: Request #" << request->ID << " from stream #" << request->Stream_id << " is finished")
 
@@ -167,7 +167,7 @@ inline void Input_Stream_Manager_NVMe::Handle_serviced_request(User_Request *req
 	if (((Input_Stream_NVMe *)input_streams[stream_id])->queue_pairs[request->Queue_id].Submission_head != ((Input_Stream_NVMe *)input_streams[stream_id])->queue_pairs[request->Queue_id].Submission_tail)
 	{
 		((Host_Interface_NVMe *)host_interface)->request_fetch_unit->Fetch_next_request(stream_id, queue_id);
-		std::cout<<"come here 2!!!!!!!!!!!"<<std::endl;
+		//std::cout<<"come here 2!!!!!!!!!!!"<<std::endl;
 		((Input_Stream_NVMe *)input_streams[stream_id])->Flow_On_the_fly_requests++;
 		((Input_Stream_NVMe *)input_streams[stream_id])->queue_pairs[request->Queue_id].Submission_head++; //Update submission queue head after starting fetch request
 		if (((Input_Stream_NVMe *)input_streams[stream_id])->queue_pairs[request->Queue_id].Submission_head == ((Input_Stream_NVMe *)input_streams[stream_id])->queue_pairs[request->Queue_id].Submission_queue_size)
@@ -281,7 +281,7 @@ Request_Fetch_Unit_NVMe::Request_Fetch_Unit_NVMe(Host_Interface_Base *host_inter
 void Request_Fetch_Unit_NVMe::Process_pcie_write_message(uint64_t address, void *payload, unsigned int payload_size)
 {
 
-	std::cout<<"Process_pcie_write_message: "<<address<<std::endl;
+	//std::cout<<"Process_pcie_write_message: "<<address<<std::endl;
 
 	Host_Interface_NVMe *hi = (Host_Interface_NVMe *)host_interface;
 	uint64_t val = (uint64_t)payload;
@@ -346,8 +346,8 @@ void Request_Fetch_Unit_NVMe::Process_pcie_write_message(uint64_t address, void 
 void Request_Fetch_Unit_NVMe::Process_pcie_write_message(uint64_t address, uint16_t queue_id,  void *payload, unsigned int payload_size)
 {
 
-	std::cout<<"Process_pcie_write_message: "<<address<<std::endl;
-	std::cout<<"the queue id is "<<queue_id<<std::endl;
+	//std::cout<<"Process_pcie_write_message: "<<address<<std::endl;
+	//std::cout<<"the queue id is "<<queue_id<<std::endl;
 
 	Host_Interface_NVMe *hi = (Host_Interface_NVMe *)host_interface;
 	uint64_t val = (uint64_t)payload;
@@ -427,8 +427,8 @@ void Request_Fetch_Unit_NVMe::Process_pcie_write_message(uint64_t address, uint1
 void Request_Fetch_Unit_NVMe::Process_pcie_read_message(uint64_t address, uint16_t queue_id,  void *payload, unsigned int payload_size)
 {
 
-	std::cout<<"Process_pcie_read_message: "<<address<<std::endl;
-	std::cout<<"the queue id is "<<queue_id<<std::endl;
+	//std::cout<<"Process_pcie_read_message: "<<address<<std::endl;
+	//std::cout<<"the queue id is "<<queue_id<<std::endl;
 	//sleep(1);
 
 	Host_Interface_NVMe *hi = (Host_Interface_NVMe *)host_interface;
@@ -437,8 +437,8 @@ void Request_Fetch_Unit_NVMe::Process_pcie_read_message(uint64_t address, uint16
 
 	dma_list.pop_front();
 
-	std::cout<<"dma_list.size(): "<<dma_list.size()<<std::endl;
-	std::cout<<"current time: "<<Simulator->Time()<<std::endl;
+	//std::cout<<"dma_list.size(): "<<dma_list.size()<<std::endl;
+	//std::cout<<"current time: "<<Simulator->Time()<<std::endl;
 
 
 	switch (dma_req_item->Type)
@@ -453,6 +453,10 @@ void Request_Fetch_Unit_NVMe::Process_pcie_read_message(uint64_t address, uint16
 		new_request->Queue_id = queue_id;
 		Submission_Queue_Entry *sqe = (Submission_Queue_Entry *)payload;
 		sqe->SQ_ID = queue_id;
+
+		//std::cout<<"Process_pcie_read_message: queue ID "<<sqe->SQ_ID<<std::endl;
+		//std::cout<<"CMD ID "<<sqe->Command_Identifier<<std::endl;
+
 		switch (sqe->Opcode)
 		{
 		case NVME_READ_OPCODE:
@@ -460,8 +464,8 @@ void Request_Fetch_Unit_NVMe::Process_pcie_read_message(uint64_t address, uint16
 			new_request->Start_LBA = ((LHA_type)sqe->Command_specific[1]) << 31 | (LHA_type)sqe->Command_specific[0]; //Command Dword 10 and Command Dword 11
 			new_request->SizeInSectors = sqe->Command_specific[2] & (LHA_type)(0x0000ffff);
 			new_request->Size_in_byte = new_request->SizeInSectors * SECTOR_SIZE_IN_BYTE;
-			std::cout<<"come here"<<std::endl;
-			std::cout<<"The request start LBA is "<<new_request->Start_LBA<<std::endl;
+			//std::cout<<"come here"<<std::endl;
+			//std::cout<<"The request start LBA is "<<new_request->Start_LBA<<std::endl;
 
 			break;
 		case NVME_WRITE_OPCODE:
@@ -485,13 +489,16 @@ void Request_Fetch_Unit_NVMe::Process_pcie_read_message(uint64_t address, uint16
 	}
 	delete dma_req_item;
 }
+
+
+
 //LM
 void Request_Fetch_Unit_NVMe::Fetch_next_request(stream_id_type stream_id, uint16_t queue_id) //LM stream_id corresponding to flow_id
 {
-	std::cout<<"stream_id: "<<stream_id<<std::endl;
-	std::cout<<"fetch next request"<<std::endl;
-	std::cout<<"current time: "<<Simulator->Time()<<std::endl;
-	std::cout<<"queue_id: "<<queue_id<<std::endl;
+	//std::cout<<"stream_id: "<<stream_id<<std::endl;
+	//std::cout<<"fetch next request"<<std::endl;
+	//std::cout<<"current time: "<<Simulator->Time()<<std::endl;
+	//std::cout<<"queue_id: "<<queue_id<<std::endl;
 
 	DMA_Req_Item *dma_req_item = new DMA_Req_Item;
 	dma_req_item->Type = DMA_Req_Type::REQUEST_INFO;
@@ -550,8 +557,8 @@ void Request_Fetch_Unit_NVMe::Send_read_data(User_Request *request)
 	Submission_Queue_Entry *sqe = (Submission_Queue_Entry *)request->IO_command_info;
 	sqe->SQ_ID = request->Queue_id;
 
-	std::cout<<"Send_read_data: queue ID "<<sqe->SQ_ID<<std::endl;
-	std::cout<<"Send_read_data: CMD ID "<<sqe->Command_Identifier<<std::endl;
+	//std::cout<<"Send_read_data: queue ID "<<sqe->SQ_ID<<std::endl;
+	//std::cout<<"Send_read_data: CMD ID "<<sqe->Command_Identifier<<std::endl;
 
 	host_interface->Send_write_message_to_host(sqe->PRP_entry_1,request->Queue_id, request->Data, request->Size_in_byte);
 }

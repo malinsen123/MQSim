@@ -210,8 +210,8 @@ void TSU_Priority_OutOfOrder::Sort_transactions_by_stream_id(std::list<NVM_Trans
 void TSU_Priority_OutOfOrder::Schedule()
 {
 
-    //std::cout<<"TSU_Priority_OutOfOrder::Schedule"<<std::endl;
-    //std::cout<<"the size of transaction_receive_slots: "<<transaction_receive_slots.size()<<std::endl;
+    ////std::cout<<"TSU_Priority_OutOfOrder::Schedule"<<std::endl;
+    ////std::cout<<"the size of transaction_receive_slots: "<<transaction_receive_slots.size()<<std::endl;
 
     opened_scheduling_reqs--;
     if (opened_scheduling_reqs > 0)
@@ -244,13 +244,13 @@ void TSU_Priority_OutOfOrder::Schedule()
             case Transaction_Source_Type::CACHE:
             case Transaction_Source_Type::USERIO:
 
-                //std::cout<<"TSU_Priority_OutOfOrder::Schedule: read transaction from user"<<std::endl;
+                ////std::cout<<"TSU_Priority_OutOfOrder::Schedule: read transaction from user"<<std::endl;
 
                 if ((*it)->Priority_class != IO_Flow_Priority_Class::UNDEFINED)
                 {
                     UserReadTRQueue[(*it)->Address.ChannelID][(*it)->Address.ChipID][static_cast<int>((*it)->Priority_class)].push_back((*it));
 
-                    std::cout<<"The size of UserReadTRQueue: "<<UserReadTRQueue[(*it)->Address.ChannelID][(*it)->Address.ChipID][static_cast<int>((*it)->Priority_class)].size()<<std::endl;
+                    //std::cout<<"The size of UserReadTRQueue: "<<UserReadTRQueue[(*it)->Address.ChannelID][(*it)->Address.ChipID][static_cast<int>((*it)->Priority_class)].size()<<std::endl;
                 }
                 else
                 {
@@ -307,9 +307,9 @@ void TSU_Priority_OutOfOrder::Schedule()
             {
                 NVM::FlashMemory::Flash_Chip *chip = _NVMController->Get_chip(channelID, Round_robin_turn_of_channel[channelID]);
                 //The TSU does not check if the chip is idle or not since it is possible to suspend a busy chip and issue a new command
-                //std::cout<<"TSU_Priority_OutOfOrder::Schedule: process_chip_requests"<<std::endl;
+                ////std::cout<<"TSU_Priority_OutOfOrder::Schedule: process_chip_requests"<<std::endl;
 
-                std::cout<<"The chipid is: "<<chip->ChipID<<std::endl;
+                //std::cout<<"The chipid is: "<<chip->ChipID<<std::endl;
 
 
                 if (!service_read_transaction(chip))
@@ -322,7 +322,7 @@ void TSU_Priority_OutOfOrder::Schedule()
                 Round_robin_turn_of_channel[channelID] = (flash_chip_ID_type)(Round_robin_turn_of_channel[channelID] + 1) % chip_no_per_channel;
                 if (_NVMController->Get_channel_status(chip->ChannelID) != BusChannelStatus::IDLE)
                 {
-                    //std::cout<<"TSU_Priority_OutOfOrder::Schedule: break"<<std::endl;
+                    ////std::cout<<"TSU_Priority_OutOfOrder::Schedule: break"<<std::endl;
 
                     break;
                 }
@@ -369,13 +369,13 @@ bool TSU_Priority_OutOfOrder::service_read_transaction(NVM::FlashMemory::Flash_C
 {
     Flash_Transaction_Queue *sourceQueue1 = NULL, *sourceQueue2 = NULL;
 
-    std::cout<<"TSU_Priority_OutOfOrder::service_read_transaction"<<std::endl;
+    //std::cout<<"TSU_Priority_OutOfOrder::service_read_transaction"<<std::endl;
 
 
     //Flash transactions that are related to FTL mapping data have the highest priority
     if (MappingReadTRQueue[chip->ChannelID][chip->ChipID].size() > 0)
     {
-        std::cout<<"TSU_Priority_OutOfOrder::service_read_transaction: MappingReadTRQueue is not empty"<<std::endl;
+        //std::cout<<"TSU_Priority_OutOfOrder::service_read_transaction: MappingReadTRQueue is not empty"<<std::endl;
 
         sourceQueue1 = &MappingReadTRQueue[chip->ChannelID][chip->ChipID];
         if (ftl->GC_and_WL_Unit->GC_is_in_urgent_mode(chip) && GCReadTRQueue[chip->ChannelID][chip->ChipID].size() > 0)
@@ -390,7 +390,7 @@ bool TSU_Priority_OutOfOrder::service_read_transaction(NVM::FlashMemory::Flash_C
     else if (ftl->GC_and_WL_Unit->GC_is_in_urgent_mode(chip))
     {
 
-        std::cout<<"TSU_Priority_OutOfOrder::service_read_transaction: GC is in urgent mode"<<std::endl;
+        //std::cout<<"TSU_Priority_OutOfOrder::service_read_transaction: GC is in urgent mode"<<std::endl;
 
         //If flash transactions related to GC are prioritzed (non-preemptive execution mode of GC), then GC queues are checked first
         if (GCReadTRQueue[chip->ChannelID][chip->ChipID].size() > 0)
@@ -408,12 +408,12 @@ bool TSU_Priority_OutOfOrder::service_read_transaction(NVM::FlashMemory::Flash_C
         }
         else
         {
-            std::cout<<"TSU_Priority_OutOfOrder::service_read_transaction: else 3"<<std::endl;
+            //std::cout<<"TSU_Priority_OutOfOrder::service_read_transaction: else 3"<<std::endl;
 
             sourceQueue1 = get_next_read_service_queue(chip);
             if (sourceQueue1 == NULL)
             {
-                std::cout<<"TSU_Priority_OutOfOrder::service_read_transaction: return false 2"<<std::endl;
+                //std::cout<<"TSU_Priority_OutOfOrder::service_read_transaction: return false 2"<<std::endl;
 
                 return false;
             }
@@ -421,7 +421,7 @@ bool TSU_Priority_OutOfOrder::service_read_transaction(NVM::FlashMemory::Flash_C
     }
     else
     {
-        std::cout<<"TSU_Priority_OutOfOrder::service_read_transaction: else"<<std::endl;
+        //std::cout<<"TSU_Priority_OutOfOrder::service_read_transaction: else"<<std::endl;
 
         //If GC is currently executed in the preemptive mode, then user IO transaction queues are checked first
         sourceQueue1 = get_next_read_service_queue(chip);
@@ -442,8 +442,8 @@ bool TSU_Priority_OutOfOrder::service_read_transaction(NVM::FlashMemory::Flash_C
         }
         else
         {
-            std::cout<<"sourceQueue1 is NULL"<<std::endl;
-            std::cout<<"TSU_Priority_OutOfOrder::service_read_transaction: return false"<<std::endl;
+            //std::cout<<"sourceQueue1 is NULL"<<std::endl;
+            //std::cout<<"TSU_Priority_OutOfOrder::service_read_transaction: return false"<<std::endl;
 
             return false;
         }
@@ -452,9 +452,9 @@ bool TSU_Priority_OutOfOrder::service_read_transaction(NVM::FlashMemory::Flash_C
     bool suspensionRequired = false;
     ChipStatus cs = _NVMController->GetChipStatus(chip);
 
-    std::cout<<"the chip status is: "<<_NVMController->ChipStatusToString(cs)<<std::endl;
-    std::cout<<"the chip id is: "<<chip->ChipID<<std::endl;
-    std::cout<<"current time: "<<Simulator->Time()<<std::endl;
+    //std::cout<<"the chip status is: "<<_NVMController->ChipStatusToString(cs)<<std::endl;
+    //std::cout<<"the chip id is: "<<chip->ChipID<<std::endl;
+    //std::cout<<"current time: "<<Simulator->Time()<<std::endl;
 
     //LM Make the important change here
     switch (cs)
@@ -482,13 +482,13 @@ bool TSU_Priority_OutOfOrder::service_read_transaction(NVM::FlashMemory::Flash_C
         }
         suspensionRequired = true;
     case ChipStatus::DATA_OUT://LM added
-        std::cout<<"the chip status is: "<<_NVMController->ChipStatusToString(cs)<<std::endl;
-        std::cout<<"current time: "<<Simulator->Time()<<std::endl;
+        //std::cout<<"the chip status is: "<<_NVMController->ChipStatusToString(cs)<<std::endl;
+        //std::cout<<"current time: "<<Simulator->Time()<<std::endl;
         break;
     /*
     case ChipStatus::WAIT_FOR_DATA_OUT: //LM new added which will cause problem for having too long transmission queue
-        std::cout<<"the chip status is: "<<_NVMController->ChipStatusToString(cs)<<std::endl;
-        std::cout<<"current time: "<<Simulator->Time()<<std::endl;
+        //std::cout<<"the chip status is: "<<_NVMController->ChipStatusToString(cs)<<std::endl;
+        //std::cout<<"current time: "<<Simulator->Time()<<std::endl;
         break;
     */
     default:
@@ -496,10 +496,10 @@ bool TSU_Priority_OutOfOrder::service_read_transaction(NVM::FlashMemory::Flash_C
     }
 
     //LM added
-    std::cout<<"sourceQueue1 size: "<<sourceQueue1->size()<<std::endl;
-    std::cout<<"sourceQueue1 before sort: "<<std::endl;
+    //std::cout<<"sourceQueue1 size: "<<sourceQueue1->size()<<std::endl;
+    //std::cout<<"sourceQueue1 before sort: "<<std::endl;
     for (std::list<NVM_Transaction_Flash*>::iterator it = sourceQueue1->begin(); it != sourceQueue1->end(); it++) {
-        std::cout<<"stream_id: "<<(*it)->Stream_id<<std::endl;
+        //std::cout<<"stream_id: "<<(*it)->Stream_id<<std::endl;
     }
 
 
@@ -507,9 +507,9 @@ bool TSU_Priority_OutOfOrder::service_read_transaction(NVM::FlashMemory::Flash_C
     //Sort_transactions_by_stream_id(*sourceQueue1);
 
     //LM added
-    std::cout<<"sourceQueue1 after sort: "<<std::endl;
+    //std::cout<<"sourceQueue1 after sort: "<<std::endl;
     for (std::list<NVM_Transaction_Flash*>::iterator it = sourceQueue1->begin(); it != sourceQueue1->end(); it++) {
-        std::cout<<"stream_id: "<<(*it)->Stream_id<<std::endl;
+        //std::cout<<"stream_id: "<<(*it)->Stream_id<<std::endl;
     }
 
 

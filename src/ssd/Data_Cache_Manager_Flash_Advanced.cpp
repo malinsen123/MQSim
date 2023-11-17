@@ -200,9 +200,9 @@ namespace SSD_Components
 				case Caching_Mode::READ_CACHE:
 				case Caching_Mode::WRITE_READ_CACHE:
 				{
-					std::cout<<"Data_Cache_Manager_Flash_Advanced::process_new_user_request: "<<user_request	->Stream_id<<std::endl;
-					std::cout<<"queue_id: "<<user_request->Queue_id<<std::endl;
-					std::cout<<"the size of user_request->Transaction_list: "<<user_request->Transaction_list.size()<<std::endl;
+					//std::cout<<"Data_Cache_Manager_Flash_Advanced::process_new_user_request: "<<user_request	->Stream_id<<std::endl;
+					//std::cout<<"queue_id: "<<user_request->Queue_id<<std::endl;
+					//std::cout<<"the size of user_request->Transaction_list: "<<user_request->Transaction_list.size()<<std::endl;
 					std::list<NVM_Transaction*>::iterator it = user_request->Transaction_list.begin();
 					while (it != user_request->Transaction_list.end()) {
 						NVM_Transaction_Flash_RD* tr = (NVM_Transaction_Flash_RD*)(*it);
@@ -358,8 +358,7 @@ namespace SSD_Components
 	void Data_Cache_Manager_Flash_Advanced::handle_transaction_serviced_signal_from_PHY(NVM_Transaction_Flash* transaction)
 	{
 
-		std::cout<<"Data_Cache_Manager_Flash_Advanced::handle_transaction_serviced_signal_from_PHY"<<std::endl;
-
+		//std::cout<<"Data_Cache_Manager_Flash_Advanced::handle_transaction_serviced_signal_from_PHY"<<std::endl;
 
 
 		//First check if the transaction source is a user request or the cache itself
@@ -384,9 +383,10 @@ namespace SSD_Components
 				case Caching_Mode::TURNED_OFF:
 				case Caching_Mode::WRITE_CACHE:
 					transaction->UserIORequest->Transaction_list.remove(transaction);
-					std::cout<<"cache mode is TURNED_OFF or WRITE_CACHE"<<std::endl;
+					//std::cout<<"cache mode is TURNED_OFF or WRITE_CACHE"<<std::endl;
 					if (_my_instance->is_user_request_finished(transaction->UserIORequest)) {
-						std::cout<<"is_user_request_finished"<<std::endl;
+						//std::cout<<"is_user_request_finished"<<std::endl;
+						//std::cout<<"transaction timestamp: "<< static_cast<NVM_Transaction_Flash_RD*>(transaction)->DataTimeStamp<<std::endl;
 						_my_instance->broadcast_user_request_serviced_signal(transaction->UserIORequest);
 					}
 					break;

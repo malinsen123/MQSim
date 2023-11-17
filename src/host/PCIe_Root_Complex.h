@@ -23,7 +23,7 @@ namespace Host_Components
 		void Consume_pcie_message(PCIe_Message* messages)//Modern processors support DDIO, where all writes to memory are going through LLC
 		{
 
-			std::cout<<"PCIe_Root_Complex::Consume_pcie_message"<<std::endl;
+			//std::cout<<"PCIe_Root_Complex::Consume_pcie_message"<<std::endl;
 
 			switch (messages->Type)
 			{
@@ -40,6 +40,7 @@ namespace Host_Components
 		}
 		
 		void Write_to_device(uint64_t address, uint16_t queue_id, uint16_t write_value);
+		void Write_to_device_nvme(uint64_t address, uint16_t queue_id, uint16_t write_value, uint16_t command_id); //LM
 		void Set_io_flows(std::vector<Host_Components::IO_Flow_Base*>* IO_flows);
 	private:
 		PCIe_Link* pcie_link;

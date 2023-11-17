@@ -57,11 +57,11 @@ namespace SSD_Components
 
 	void Host_Interface_Base::Send_read_message_to_host(uint64_t addresss, uint16_t queue_id,  unsigned int request_read_data_size)
 	{
-		std::cout<<"Host_Interface_Base::Send_read_message_to_host"<<std::endl;
+		//std::cout<<"Host_Interface_Base::Send_read_message_to_host"<<std::endl;
 
-		std::cout<<"addresss: "<<addresss<<std::endl;
-		std::cout<<"queue_id: "<<queue_id<<std::endl;
-		std::cout<<"request_read_data_size: "<<request_read_data_size<<std::endl;
+		//std::cout<<"addresss: "<<addresss<<std::endl;
+		//std::cout<<"queue_id: "<<queue_id<<std::endl;
+		//std::cout<<"request_read_data_size: "<<request_read_data_size<<std::endl;
 
 		Host_Components::PCIe_Message* pcie_message = new Host_Components::PCIe_Message;
 		pcie_message->Type = Host_Components::PCIe_Message_Type::READ_REQ;

@@ -52,6 +52,8 @@ public:
 	unsigned int Channel_count;
 	unsigned int Chip_no_per_channel;
 
+	sim_time_type STAT_totalExecTime, STAT_totalXferTime, STAT_totalOverlappedXferExecTime;
+
 private:
 	static SSD_Device * my_instance;//Used in static functions
 };

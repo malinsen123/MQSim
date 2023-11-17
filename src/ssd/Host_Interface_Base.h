@@ -77,13 +77,14 @@ namespace SSD_Components
 		virtual void Fetch_write_data(User_Request* request) = 0;
 		virtual void Send_read_data(User_Request* request) = 0;
 		virtual void Process_pcie_write_message(uint64_t, uint16_t,  void *, unsigned int) = 0;
-		virtual void Process_pcie_read_message(uint64_t, uint16_t, void *, unsigned int) = 0;
+		virtual void Process_pcie_read_message(uint64_t, uint16_t, void *, unsigned int ) = 0;
 	protected:
 		enum class DMA_Req_Type { REQUEST_INFO, WRITE_DATA };
 		struct DMA_Req_Item
 		{
 			DMA_Req_Type Type;
 			uint16_t Queue_id;
+			uint16_t Command_id;
 			void * object;
 		};
 		Host_Interface_Base* host_interface;

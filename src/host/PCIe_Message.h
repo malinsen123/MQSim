@@ -17,6 +17,7 @@ namespace Host_Components
 		unsigned int Payload_size;
 		uint64_t Address;
 		uint16_t Queue_id;
+		uint16_t Command_id;
 	};
 }
 

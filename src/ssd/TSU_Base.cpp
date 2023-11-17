@@ -47,15 +47,15 @@ namespace SSD_Components
 	//Old only handle when Channel is idle
 	void TSU_Base::handle_channel_idle_signal(flash_channel_ID_type channelID)
 	{
-		std::cout<<"TSU_Base::handle_channel_idle_signal"<<std::endl;
-		std::cout;
+		//std::cout<<"TSU_Base::handle_channel_idle_signal"<<std::endl;
+		//std::cout;
 
 		for (unsigned int i = 0; i < _my_instance->chip_no_per_channel; i++) {
 			//The TSU does not check if the chip is idle or not since it is possible to suspend a busy chip and issue a new command
 
 			 NVM::FlashMemory::Flash_Chip *chip = _my_instance->_NVMController->Get_chip(channelID, _my_instance->Round_robin_turn_of_channel[channelID]);
 
-			std::cout<<"chip id is "<<chip->ChipID<<std::endl;
+			//std::cout<<"chip id is "<<chip->ChipID<<std::endl;
 			_my_instance->process_chip_requests(chip);
 			_my_instance->Round_robin_turn_of_channel[channelID] = (flash_chip_ID_type)(_my_instance->Round_robin_turn_of_channel[channelID] + 1) % _my_instance->chip_no_per_channel;
 
@@ -73,17 +73,17 @@ namespace SSD_Components
 	void TSU_Base::handle_chip_idle_signal(NVM::FlashMemory::Flash_Chip* chip)
 	{
 
-		std::cout<<"TSU_Base::handle_chip_idle_signal"<<std::endl;
+		//std::cout<<"TSU_Base::handle_chip_idle_signal"<<std::endl;
 
 		if (_my_instance->_NVMController->Get_channel_status(chip->ChannelID) == BusChannelStatus::IDLE) {
 			_my_instance->process_chip_requests(chip);
 		}else{
-			std::cout<<"TSU_Base::handle_chip_idle_signal: channel is << "<<(int)_my_instance->_NVMController->Get_channel_status(chip->ChannelID)<<std::endl;
+			//std::cout<<"TSU_Base::handle_chip_idle_signal: channel is << "<<(int)_my_instance->_NVMController->Get_channel_status(chip->ChannelID)<<std::endl;
 
 			//LM: This is the case when the channel is busy_out and the chip is DATA_OUT
 			if (_my_instance->_NVMController->Get_channel_status(chip->ChannelID) == BusChannelStatus::BUSY_OUT){
 
-				std::cout<<"TSU_Base::handle_chip_idle_signal: channel is busy_out"<<std::endl;
+				//std::cout<<"TSU_Base::handle_chip_idle_signal: channel is busy_out"<<std::endl;
 
 				_my_instance->process_chip_requests(chip);
 
@@ -113,8 +113,10 @@ namespace SSD_Components
 				if (transaction_is_ready(*it) && (*it)->Address.DieID == dieID && !(planeVector & 1 << (*it)->Address.PlaneID))
 				{
 
-					std::cout<<"TSU_Base::issue_command_to_chip: transaction_is_ready"<<std::endl;
-					std::cout<<"the stream id is "<<(*it)->Stream_id<<std::endl;
+					//std::cout<<"TSU_Base::issue_command_to_chip: transaction_is_ready"<<std::endl;
+					//std::cout<<"the stream id is "<<(*it)->Stream_id<<std::endl;
+
+					//std::cout<<"the LPA is "<<(*it)->LPA<<std::endl;
 
 
 					//Check for identical pages when running multiplane command 
@@ -156,9 +158,9 @@ namespace SSD_Components
 			if (transaction_dispatch_slots.size() > 0)
 			{
 
-				std::cout<<"TSU_Base sending command to chip"<<std::endl;
-				std::cout<<"sourceQueue1->size(): "<<sourceQueue1->size()<<std::endl;
-				std::cout<<"transaction_dispatch_slots.size(): "<<transaction_dispatch_slots.size()<<std::endl;
+				//std::cout<<"TSU_Base sending command to chip"<<std::endl;
+				//std::cout<<"sourceQueue1->size(): "<<sourceQueue1->size()<<std::endl;
+				//std::cout<<"transaction_dispatch_slots.size(): "<<transaction_dispatch_slots.size()<<std::endl;
 
 				_NVMController->Send_command_to_chip(transaction_dispatch_slots);
 				transaction_dispatch_slots.clear();

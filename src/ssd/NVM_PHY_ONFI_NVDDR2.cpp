@@ -29,6 +29,7 @@ namespace SSD_Components {
 				bookKeepingTable[channelID][chipID].No_of_active_dies = 0;
 				for (unsigned int dieID = 0; dieID < DieNoPerChip; dieID++) {
 					bookKeepingTable[channelID][chipID].Die_book_keeping_records[dieID].ActiveCommand = NULL;
+					bookKeepingTable[channelID][chipID].Die_book_keeping_records[dieID].ActiveCommandout = NULL;
 					bookKeepingTable[channelID][chipID].Die_book_keeping_records[dieID].ActiveTransactions.clear();
 					bookKeepingTable[channelID][chipID].Die_book_keeping_records[dieID].SuspendedCommand = NULL;
 					bookKeepingTable[channelID][chipID].Die_book_keeping_records[dieID].SuspendedTransactions.clear();
@@ -165,9 +166,12 @@ namespace SSD_Components {
 				}
 			} else {
 
-				std::cout<<"dieBKE->ActiveTransactions.size(): "<<dieBKE->ActiveTransactions.size()<<std::endl;
-				dieBKE->ActiveTransactions.clear();
-
+				//std::cout<<"dieBKE->ActiveTransactions.size(): "<<dieBKE->ActiveTransactions.size()<<std::endl;
+				//dieBKE->ActiveTransactions.clear();
+				//std::cout<<"dieBKE->ActiveTransactions first LPA: "<<dieBKE->ActiveTransactions.front()->LPA<<std::endl;
+				//std::cout<<"meta data: LPA "<<dieBKE->ActiveCommand->Meta_data.back().LPA<<std::endl;
+				//dieBKE->ActiveTransactions.clear();
+				//std::cout<<"come here 1.0"<<std::endl;
 				//if(dieBKE->ActiveTransactions.size() != 1)
 				//PRINT_ERROR("Read suspension is not supported!")
 			}
@@ -175,18 +179,38 @@ namespace SSD_Components {
 
 		dieBKE->Free = false;
 
-		dieBKE->ActiveCommandout= new NVM::FlashMemory::Flash_Command();
+		if(dieBKE->ActiveCommand != NULL){
 
-		//copy all the data in Active command to ActiveCommandout
-		dieBKE->ActiveCommandout->CommandCode = dieBKE->ActiveCommand->CommandCode;
-		dieBKE->ActiveCommandout->Address = dieBKE->ActiveCommand->Address;
-		dieBKE->ActiveCommandout->Meta_data = dieBKE->ActiveCommand->Meta_data;
+			//std::cout<<"come here 2.0"<<std::endl;
+
+			dieBKE->ActiveCommandout= new NVM::FlashMemory::Flash_Command();
+
+			//copy all the data in Active command to ActiveCommandout
+			dieBKE->ActiveCommandout->CommandCode = dieBKE->ActiveCommand->CommandCode;
+			//dieBKE->ActiveCommandout->Address = dieBKE->ActiveCommand->Address;
+			//dieBKE->ActiveCommandout->Meta_data = dieBKE->ActiveCommand->Meta_data;
+			dieBKE->ActiveCommandout->Address.push_back(dieBKE->ActiveCommand->Address[0]);
+			dieBKE->ActiveCommandout->Meta_data.push_back(dieBKE->ActiveCommand->Meta_data[0]);
+
+			//std::cout<<"dieBKE->ActiveCommand->CommandCode: "<<dieBKE->ActiveCommand->CommandCode<<std::endl;
+			//std::cout<<"dieBKE->ActiveCommand->Address[0].ChannelID: "<<dieBKE->ActiveCommand->Address[0].ChannelID<<std::endl;
+			//std::cout<<"meta data: LPA "<<dieBKE->ActiveCommand->Meta_data[0].LPA<<std::endl;
+
+
+
+			//std::cout<<"dieBKE->ActiveCommandout->CommandCode: "<<dieBKE->ActiveCommandout->CommandCode<<std::endl;
+			//std::cout<<"dieBKE->ActiveCommandout->Address[0].ChannelID: "<<dieBKE->ActiveCommandout->Address[0].ChannelID<<std::endl;
+			//std::cout<<"dieBKE->ActiveCommandout->Address[0].ChipID: "<<dieBKE->ActiveCommandout->Address[0].ChipID<<std::endl;
+			//std::cout<<"meta data: LPA "<<dieBKE->ActiveCommandout->Meta_data[0].LPA<<std::endl;
+
+		}
+
 		
 
 		dieBKE->ActiveCommand = new NVM::FlashMemory::Flash_Command();
 
-		std::cout<<"Send_command_to_chip"<<std::endl;
-		std::cout<<"transaction_list.size(): "<<transaction_list.size()<<std::endl;
+		//std::cout<<"Send_command_to_chip"<<std::endl;
+		//std::cout<<"transaction_list.size(): "<<transaction_list.size()<<std::endl;
 
 
 		for (std::list<NVM_Transaction_Flash*>::iterator it = transaction_list.begin();
@@ -196,9 +220,10 @@ namespace SSD_Components {
 			NVM::FlashMemory::PageMetadata metadata;
 			metadata.LPA = (*it)->LPA;
 			dieBKE->ActiveCommand->Meta_data.push_back(metadata);
+			//std::cout<<"meta data: LPA "<<dieBKE->ActiveCommand->Meta_data.back().LPA<<std::endl;
 		}
 
-		std::cout<<"the new activeTransactions size is: "<<dieBKE->ActiveTransactions.size()<<std::endl;
+		//std::cout<<"the new activeTransactions size is: "<<dieBKE->ActiveTransactions.size()<<std::endl;
 
 
 		switch (transaction_list.front()->Type) {
@@ -220,7 +245,9 @@ namespace SSD_Components {
 				}
 				if (chipBKE->OngoingDieCMDTransfers.size() == 0) {
 
-					std::cout<<"chipBKE->OngoingDieCMDTransfers.size() == 0"<<std::endl;
+					//std::cout<<"chipBKE->OngoingDieCMDTransfers.size() == 0"<<std::endl;
+					//std::cout<<"1.0 meta data: LPA "<<dieBKE->ActiveCommand->Meta_data.back().LPA<<std::endl;
+
 
 					targetChip->StartCMDXfer();
 					chipBKE->Status = ChipStatus::CMD_IN;
@@ -230,8 +257,8 @@ namespace SSD_Components {
 					Simulator->Register_sim_event(Simulator->Time() + suspendTime, this, dieBKE, (int)NVDDR2_SimEventType::READ_CMD_ADDR_TRANSFERRED);
 
 
-					std::cout<<"Current time: "<<Simulator->Time()<<" chipBKE->Last_transfer_finish_time: "<<chipBKE->Last_transfer_finish_time<<std::endl;
-					std::cout<<"The tranaction size is: "<<transaction_list.size()<<std::endl;
+					//std::cout<<"Current time: "<<Simulator->Time()<<" chipBKE->Last_transfer_finish_time: "<<chipBKE->Last_transfer_finish_time<<std::endl;
+					//std::cout<<"The tranaction size is: "<<transaction_list.size()<<std::endl;
 
 					//chipBKE->Last_transfer_finish_time = Simulator->Time() + suspendTime + target_channel->ReadCommandTime[transaction_list.size()];
 					//Simulator->Register_sim_event(Simulator->Time() + suspendTime + target_channel->ReadCommandTime[transaction_list.size()], this,
@@ -358,12 +385,12 @@ namespace SSD_Components {
 		//LM new
 		if(target_channel->GetStatus() == BusChannelStatus::IDLE)
 		{
-			std::cout<<"current channel status: IDLE"<<std::endl;
+			//std::cout<<"current channel status: IDLE"<<std::endl;
 			target_channel->SetStatus(BusChannelStatus::BUSY_IN, targetChip);
 
 		}
 		else{
-			std::cout<<"current channel status: "<<(int)target_channel->GetStatus()<<std::endl;
+			//std::cout<<"current channel status: "<<(int)target_channel->GetStatus()<<std::endl;
 			target_channel->SetStatus(BusChannelStatus::BUSY_IN_AND_OUT, targetChip);
 
 		}
@@ -396,15 +423,18 @@ namespace SSD_Components {
 		switch ((NVDDR2_SimEventType)ev->Type) {
 			case NVDDR2_SimEventType::READ_CMD_ADDR_TRANSFERRED:
 
-				std::cout<<"execute READ_CMD_ADDR_TRANSFERRED"<<std::endl;
-				std::cout<<"come here 0"<<std::endl;
+				//std::cout<<"execute READ_CMD_ADDR_TRANSFERRED"<<std::endl;
+				//std::cout<<"come here 0"<<std::endl;
 
 				//DEBUG2("Chip " << targetChip->ChannelID << ", " << targetChip->ChipID << ", " << dieBKE->ActiveTransactions.front()->Address.DieID << ": READ_CMD_ADDR_TRANSFERRED ")
 				targetChip->EndCMDXfer(dieBKE->ActiveCommand);
+
+				//std::cout<<"2.0 meta data: LPA "<<dieBKE->ActiveCommand->Meta_data.back().LPA<<std::endl;
+
 				for (auto tr : dieBKE->ActiveTransactions) {
 					tr->STAT_execution_time = dieBKE->Expected_finish_time - Simulator->Time();
 				}
-				std::cout<<"Current time: "<<Simulator->Time()<<" chipBKE->Last_transfer_finish_time: "<<chipBKE->Last_transfer_finish_time<<std::endl;
+				//std::cout<<"Current time: "<<Simulator->Time()<<" chipBKE->Last_transfer_finish_time: "<<chipBKE->Last_transfer_finish_time<<std::endl;
 
 				chipBKE->OngoingDieCMDTransfers.pop();
 				chipBKE->No_of_active_dies++;
@@ -418,16 +448,16 @@ namespace SSD_Components {
 					if(targetChannel->GetStatus() == BusChannelStatus::BUSY_IN_AND_OUT)
 					{
 						targetChip->StartDataOutXfer();
-						std::cout<<"current channel status: BUSY_IN_AND_OUT"<<std::endl;
+						//std::cout<<"current channel status: BUSY_IN_AND_OUT"<<std::endl;
 						chipBKE->Status = ChipStatus::READING_AND_DATA_OUT;
 						targetChannel->SetStatus(BusChannelStatus::BUSY_OUT, targetChip);
-						std::cout<<"current chip status: READING_AND_DATA_OUT"<<std::endl;
+						//std::cout<<"current chip status: READING_AND_DATA_OUT"<<std::endl;
 					}
 					else{
-						std::cout<<"current channel status: "<<(int)targetChannel->GetStatus()<<std::endl;
+						//std::cout<<"current channel status: "<<(int)targetChannel->GetStatus()<<std::endl;
 						chipBKE->Status = ChipStatus::READING;
 						targetChannel->SetStatus(BusChannelStatus::IDLE, targetChip);
-						std::cout<<"current chip status: READING"<<std::endl;
+						//std::cout<<"current chip status: READING"<<std::endl;
 
 					}
 			
@@ -472,17 +502,19 @@ namespace SSD_Components {
 				//DEBUG2("Chip " << targetChip->ChannelID << ", " << targetChip->ChipID << ", " << dieBKE->ActiveTransactions.front()->Address.DieID << ": READ_DATA_TRANSFERRED ")
 				//targetChip->EndDataOutXfer(dieBKE->ActiveCommand);
 				//copy_read_data_to_transaction((NVM_Transaction_Flash_RD*)dieBKE->ActiveTransfer, dieBKE->ActiveCommand);
+				//std::cout<<"Read data transferred"<<std::endl;
+				//std::cout<<"current time: "<<Simulator->Time()<<std::endl;
 
 				targetChip->EndDataOutXfer(dieBKE->ActiveCommandout);
 				copy_read_data_to_transaction((NVM_Transaction_Flash_RD*)dieBKE->ActiveTransfer, dieBKE->ActiveCommandout);
 
 
-				std::cout<<"chipBKE->ActiveTransactions.size(): "<<dieBKE->ActiveTransactions.size()<<std::endl;
-				std::cout<<"chipid: "<<targetChip->ChipID<<std::endl;
+				//std::cout<<"chipBKE->ActiveTransactions.size(): "<<dieBKE->ActiveTransactions.size()<<std::endl;
+				//std::cout<<"chipid: "<<targetChip->ChipID<<std::endl;
 
 
-				std::cout<<"????????The activeTransfer. LPA: "<<dieBKE->ActiveTransfer->LPA<<std::endl;
-				std::cout<<"current time: "<<Simulator->Time()<<std::endl;
+				//std::cout<<"????????The activeTransfer. LPA: "<<dieBKE->ActiveTransfer->LPA<<std::endl;
+				//std::cout<<"current time: "<<Simulator->Time()<<std::endl;
 	#if 0
 				if (tr->ExecutionMode != ExecutionModeType::COPYBACK)
 	#endif
@@ -494,11 +526,11 @@ namespace SSD_Components {
 					if ((*it) == dieBKE->ActiveTransfer) { //LM new
 						//targetChip->EndDataOutXfer(dieBKE->ActiveCommand);
 						//copy_read_data_to_transaction((NVM_Transaction_Flash_RD*)dieBKE->ActiveTransfer, dieBKE->ActiveCommand);
-						//std::cout<<"????????The activeTransfer. LPA: "<<dieBKE->ActiveTransfer->LPA<<std::endl;
+						////std::cout<<"????????The activeTransfer. LPA: "<<dieBKE->ActiveTransfer->LPA<<std::endl;
 						//broadcastTransactionServicedSignal(dieBKE->ActiveTransfer);
 
 						dieBKE->ActiveTransactions.erase(it);
-						std::cout<<"Delete the activeTransfer"<<std::endl;
+						//std::cout<<"Delete the activeTransfer"<<std::endl;
 
 						find = true;
 						break;
@@ -507,7 +539,7 @@ namespace SSD_Components {
 
 				if(!find){
 
-					std::cout<<"Can not find the activeTransfer"<<std::endl;
+					//std::cout<<"Can not find the activeTransfer"<<std::endl;
 					//sleep(1);
 				}
 
@@ -516,12 +548,12 @@ namespace SSD_Components {
 					dieBKE->ClearCommand();
 				}
 
-				std::cout<<"Execute READ_DATA_TRANSFERRED"<<std::endl;
-				std::cout<<"current time: "<<Simulator->Time()<<std::endl; 
-				std::cout<<"come here 2"<<std::endl;
+				//std::cout<<"Execute READ_DATA_TRANSFERRED"<<std::endl;
+				//std::cout<<"current time: "<<Simulator->Time()<<std::endl; 
+				//std::cout<<"come here 2"<<std::endl;
 				//sleep(1);
 
-				std::cout<<"!!!!!dieBKE->ActiveTransactions.size(): "<<dieBKE->ActiveTransactions.size()<<std::endl;
+				//std::cout<<"!!!!!dieBKE->ActiveTransactions.size(): "<<dieBKE->ActiveTransactions.size()<<std::endl;
 
 
 				chipBKE->WaitingReadTXCount--;
@@ -529,32 +561,32 @@ namespace SSD_Components {
 					if (chipBKE->WaitingReadTXCount == 0) {
 						//LM new
 
-						std::cout<<"come here 4.01"<<std::endl;
+						//std::cout<<"come here 4.01"<<std::endl;
 						if(chipBKE->Status == ChipStatus::READING_AND_DATA_OUT){
-							std::cout<<"current chip status:"<<(int)chipBKE->Status<<std::endl;
+							//std::cout<<"current chip status:"<<(int)chipBKE->Status<<std::endl;
 							chipBKE->Status = ChipStatus::READING;
-							std::cout<<"new chip status:"<<(int)chipBKE->Status<<std::endl;
+							//std::cout<<"new chip status:"<<(int)chipBKE->Status<<std::endl;
 
 						}else{
 
-							std::cout<<"current chip status:"<<(int)chipBKE->Status<<std::endl;
+							//std::cout<<"current chip status:"<<(int)chipBKE->Status<<std::endl;
 							chipBKE->Status = ChipStatus::IDLE;
-							std::cout<<"new chip status:"<<(int)chipBKE->Status<<std::endl;
+							//std::cout<<"new chip status:"<<(int)chipBKE->Status<<std::endl;
 						}
 
 						//chipBKE->Status = ChipStatus::IDLE;
 					} else {
-						std::cout<<"come here 4.02"<<std::endl;
+						//std::cout<<"come here 4.02"<<std::endl;
 						//chipBKE->Status = ChipStatus::WAIT_FOR_DATA_OUT;
 						//LM new
 						if(chipBKE->Status == ChipStatus::READING_AND_DATA_OUT){
-							std::cout<<"current chip status:"<<(int)chipBKE->Status<<std::endl;
+							//std::cout<<"current chip status:"<<(int)chipBKE->Status<<std::endl;
 							chipBKE->Status = ChipStatus::READING_AND_WAIT_DATA_OUT;
-							std::cout<<"new chip status:"<<(int)chipBKE->Status<<std::endl;
+							//std::cout<<"new chip status:"<<(int)chipBKE->Status<<std::endl;
 						}else{
-							std::cout<<"current chip status:"<<(int)chipBKE->Status<<std::endl;
+							//std::cout<<"current chip status:"<<(int)chipBKE->Status<<std::endl;
 							chipBKE->Status = ChipStatus::WAIT_FOR_DATA_OUT;
-							std::cout<<"new chip status:"<<(int)chipBKE->Status<<std::endl;
+							//std::cout<<"new chip status:"<<(int)chipBKE->Status<<std::endl;
 						}
 
 
@@ -563,17 +595,17 @@ namespace SSD_Components {
 				//LM new added		
 					if (chipBKE->WaitingReadTXCount == 0) {
 						//LM new
-						std::cout<<"come here 4.03"<<std::endl;
+						//std::cout<<"come here 4.03"<<std::endl;
 						if(chipBKE->Status == ChipStatus::READING_AND_DATA_OUT){
-							std::cout<<"current chip status:"<<(int)chipBKE->Status<<std::endl;
+							//std::cout<<"current chip status:"<<(int)chipBKE->Status<<std::endl;
 							chipBKE->Status = ChipStatus::READING;
-							std::cout<<"new chip status:"<<(int)chipBKE->Status<<std::endl;
+							//std::cout<<"new chip status:"<<(int)chipBKE->Status<<std::endl;
 
 						}else{
 
-							std::cout<<"current chip status:"<<(int)chipBKE->Status<<std::endl;
+							//std::cout<<"current chip status:"<<(int)chipBKE->Status<<std::endl;
 							chipBKE->Status = ChipStatus::IDLE;
-							std::cout<<"new chip status:"<<(int)chipBKE->Status<<std::endl;
+							//std::cout<<"new chip status:"<<(int)chipBKE->Status<<std::endl;
 						}
 
 						//chipBKE->Status = ChipStatus::IDLE;
@@ -581,15 +613,15 @@ namespace SSD_Components {
 						//chipBKE->Status = ChipStatus::WAIT_FOR_DATA_OUT;
 						//LM new
 
-						std::cout<<"come here 4.00"<<std::endl;
+						//std::cout<<"come here 4.00"<<std::endl;
 						if(chipBKE->Status == ChipStatus::READING_AND_DATA_OUT){
-							std::cout<<"current chip status:"<<(int)chipBKE->Status<<std::endl;
+							//std::cout<<"current chip status:"<<(int)chipBKE->Status<<std::endl;
 							chipBKE->Status = ChipStatus::READING_AND_WAIT_DATA_OUT;
-							std::cout<<"new chip status:"<<(int)chipBKE->Status<<std::endl;
+							//std::cout<<"new chip status:"<<(int)chipBKE->Status<<std::endl;
 						}else{
-							std::cout<<"current chip status:"<<(int)chipBKE->Status<<std::endl;
+							//std::cout<<"current chip status:"<<(int)chipBKE->Status<<std::endl;
 							chipBKE->Status = ChipStatus::WAIT_FOR_DATA_OUT;
-							std::cout<<"new chip status:"<<(int)chipBKE->Status<<std::endl;
+							//std::cout<<"new chip status:"<<(int)chipBKE->Status<<std::endl;
 						}
 
 					}
@@ -651,12 +683,19 @@ namespace SSD_Components {
 				return;
 
 
-			std::cout<<"come here 3"<<std::endl;
-			std::cout<<"waiting read size: "<<WaitingReadTX[channel_id].size()<<std::endl;
+			//std::cout<<"come here 3"<<std::endl;
+			//std::cout<<"waiting read size: "<<WaitingReadTX[channel_id].size()<<std::endl;
 			NVM_Transaction_Flash_RD* waitingTR = (NVM_Transaction_Flash_RD*)WaitingReadTX[channel_id].front();
 			WaitingReadTX[channel_id].pop_front();
+
 			transfer_read_data_from_chip(&bookKeepingTable[channel_id][waitingTR->Address.ChipID],
 				&(bookKeepingTable[channel_id][waitingTR->Address.ChipID].Die_book_keeping_records[waitingTR->Address.DieID]), waitingTR);
+			
+			targetChip = channels[channel_id]->Chips[waitingTR->Address.ChipID];
+
+			//std::cout<<"NEW CHIP ID: "<<targetChip->ChipID<<std::endl;
+
+			_my_instance->broadcastChipIdleSignal(targetChip);
 
 			return;
 		} else if (WaitingGCRead_TX[channel_id].size() > 0) {
@@ -667,7 +706,7 @@ namespace SSD_Components {
 			return;
 		}
 
-		std::cout<<"come here 4"<<std::endl;
+		//std::cout<<"come here 4"<<std::endl;
 
 		//If the execution reaches here, then the bus channel became idle
 		broadcastChannelIdleSignal(channel_id);
@@ -678,7 +717,9 @@ namespace SSD_Components {
 		ChipBookKeepingEntry *chipBKE = &_my_instance->bookKeepingTable[chip->ChannelID][chip->ChipID];
 		DieBookKeepingEntry *dieBKE = &(chipBKE->Die_book_keeping_records[command->Address[0].DieID]);
 
-		std::cout<<"handle_ready_signal_from_chip"<<std::endl;
+		//std::cout<<"handle_ready_signal_from_chip"<<std::endl;
+		//std::cout<<"current time: "<<Simulator->Time()<<std::endl;
+		//std::cout<<"3.0 meta data: LPA "<<command->Meta_data.back().LPA<<std::endl;
 
 		switch (command->CommandCode)
 		{
@@ -688,15 +729,15 @@ namespace SSD_Components {
 			chipBKE->No_of_active_dies--;
 			if (chipBKE->No_of_active_dies == 0){//After finishing the last command, the chip state is changed
 
-				std::cout<<"current chip status: is "<<(int)chipBKE->Status<<std::endl;
+				//std::cout<<"current chip status: is "<<(int)chipBKE->Status<<std::endl;
 				chipBKE->Status = ChipStatus::WAIT_FOR_DATA_OUT;
-				std::cout<<"new chip status: WAIT_FOR_DATA_OUT"<<std::endl;
-				std::cout<<"current time: "<<Simulator->Time()<<std::endl;
-				std::cout<<"current channel status: "<<(int)_my_instance->channels[chip->ChannelID]->GetStatus()<<std::endl;
+				//std::cout<<"new chip status: WAIT_FOR_DATA_OUT"<<std::endl;
+				//std::cout<<"current time: "<<Simulator->Time()<<std::endl;
+				//std::cout<<"current channel status: "<<(int)_my_instance->channels[chip->ChannelID]->GetStatus()<<std::endl;
 			
 			}
 
-			std::cout<<"transaction size: "<<dieBKE->ActiveTransactions.size()<<std::endl;
+			//std::cout<<"transaction size: "<<dieBKE->ActiveTransactions.size()<<std::endl;
 
 			for (std::list<NVM_Transaction_Flash*>::iterator it = dieBKE->ActiveTransactions.begin();
 				it != dieBKE->ActiveTransactions.end(); it++)
@@ -710,7 +751,7 @@ namespace SSD_Components {
 					{
 					case Transaction_Source_Type::CACHE:
 					case Transaction_Source_Type::USERIO:
-						std::cout<<"push back to waiting read tx"<<std::endl;
+						//std::cout<<"push back to waiting read tx"<<std::endl;
 						_my_instance->WaitingReadTX[chip->ChannelID].push_back((*it));
 						break;
 					case Transaction_Source_Type::GC_WL:
@@ -816,13 +857,13 @@ namespace SSD_Components {
 			_my_instance->broadcastChannelIdleSignal(chip->ChannelID);
 		else if (chipBKE->Status == ChipStatus::IDLE)
 		{
-			std::cout<<"come here 5"<<std::endl;
+			//std::cout<<"come here 5"<<std::endl;
 
 			_my_instance->broadcastChipIdleSignal(chip);
 		}else{//LM do the modification need to trigger the broadcastChipIdleSignal 
 			//the chip is in DATA_OUT status
-			std::cout<<"come here 6"<<std::endl;
-			std::cout<<"chip status: "<<_my_instance->ChipStatusToString(chipBKE->Status)<<std::endl;
+			//std::cout<<"come here 6"<<std::endl;
+			//std::cout<<"chip status: "<<_my_instance->ChipStatusToString(chipBKE->Status)<<std::endl;
 			
 			//LM Important change
 			_my_instance->broadcastChipIdleSignal(chip);
@@ -836,38 +877,39 @@ namespace SSD_Components {
 		//DEBUG2("Chip " << tr->Address.ChannelID << ", " << tr->Address.ChipID << ": transfer read data started for LPA: " << tr->LPA)
 		dieBKE->ActiveTransfer = tr;
 		channels[tr->Address.ChannelID]->Chips[tr->Address.ChipID]->StartDataOutXfer();
-		std::cout<<"Chip " << tr->Address.ChannelID << ", " << tr->Address.ChipID << ": transfer read data started for LPA: " << tr->LPA<<std::endl;
-
+		//std::cout<<"Chip " << tr->Address.ChannelID << ", " << tr->Address.ChipID << ": transfer read data started for LPA: " << tr->LPA<<std::endl;
+		//std::cout<<"The activetransfer userrequest queue id is  "<<dieBKE->ActiveTransfer->UserIORequest->Queue_id<<std::endl;
+		//std::cout<<"The activetransfer userrequest id is  "<<dieBKE->ActiveTransfer->UserIORequest->ID<<std::endl;
 
 		//LM new
 		if(chipBKE->Status == ChipStatus::READING_AND_WAIT_DATA_OUT){
-			std::cout<<"current chip status: "<<(int)chipBKE->Status<<std::endl;
+			//std::cout<<"current chip status: "<<(int)chipBKE->Status<<std::endl;
 			chipBKE->Status = ChipStatus::READING_AND_DATA_OUT;
-			std::cout<<"new chip status: "<<(int)chipBKE->Status<<std::endl;
+			//std::cout<<"new chip status: "<<(int)chipBKE->Status<<std::endl;
 		}else{
-			std::cout<<"current chip status: "<<(int)chipBKE->Status<<std::endl;
+			//std::cout<<"current chip status: "<<(int)chipBKE->Status<<std::endl;
 			chipBKE->Status = ChipStatus::DATA_OUT;
-			std::cout<<"new chip status: "<<(int)chipBKE->Status<<std::endl;
+			//std::cout<<"new chip status: "<<(int)chipBKE->Status<<std::endl;
 
 		}
 		Simulator->Register_sim_event(Simulator->Time() + NVDDR2DataOutTransferTime(tr->Data_and_metadata_size_in_byte, channels[tr->Address.ChannelID]),
 			this, dieBKE, (int)NVDDR2_SimEventType::READ_DATA_TRANSFERRED);
 
-		std::cout<<"transfer_read_data_from_chip"<<std::endl;
-		std::cout<<"tr->Data_and_metadata_size_in_byte "<<tr->Data_and_metadata_size_in_byte<<std::endl;
-		std::cout<<"NVDDR2DataOutTransferTime "<<NVDDR2DataOutTransferTime(tr->Data_and_metadata_size_in_byte, channels[tr->Address.ChannelID])<<std::endl;
+		//std::cout<<"transfer_read_data_from_chip"<<std::endl;
+		//std::cout<<"tr->Data_and_metadata_size_in_byte "<<tr->Data_and_metadata_size_in_byte<<std::endl;
+		//std::cout<<"NVDDR2DataOutTransferTime "<<NVDDR2DataOutTransferTime(tr->Data_and_metadata_size_in_byte, channels[tr->Address.ChannelID])<<std::endl;
 
-		std::cout<<"expected finish time: "<<Simulator->Time() + NVDDR2DataOutTransferTime(tr->Data_and_metadata_size_in_byte, channels[tr->Address.ChannelID])<<std::endl;
+		//std::cout<<"expected finish time: "<<Simulator->Time() + NVDDR2DataOutTransferTime(tr->Data_and_metadata_size_in_byte, channels[tr->Address.ChannelID])<<std::endl;
 
-		std::cout<<"current time: "<<Simulator->Time()<<std::endl;
-		std::cout<<"current chip status: "<<(int)chipBKE->Status<<std::endl;
-		std::cout<<"register the read data transferred event"<<std::endl;
+		//std::cout<<"current time: "<<Simulator->Time()<<std::endl;
+		//std::cout<<"current chip status: "<<(int)chipBKE->Status<<std::endl;
+		//std::cout<<"register the read data transferred event"<<std::endl;
 
 
 		tr->STAT_transfer_time += NVDDR2DataOutTransferTime(tr->Data_and_metadata_size_in_byte, channels[tr->Address.ChannelID]);
 		
 		//LM new
-		std::cout<<"current channel status: "<<(int)channels[tr->Address.ChannelID]->GetStatus()<<std::endl;
+		//std::cout<<"current channel status: "<<(int)channels[tr->Address.ChannelID]->GetStatus()<<std::endl;
 		//LM may need to change
 
 

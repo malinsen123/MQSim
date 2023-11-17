@@ -23,21 +23,21 @@ IO_Flow_Synthetic::IO_Flow_Synthetic(const sim_object_id_type &name, uint16_t fl
 	{
 
 	//LM print the parameters
-	std::cout<<"IO_Flow_Synthetic::IO_Flow_Synthetic"<<std::endl;
-	std::cout<<"name: "<<name<<std::endl;
-	std::cout<<"flow_id: "<<flow_id<<std::endl;
-	std::cout<<"start_lsa_on_device: "<<start_lsa_on_device<<std::endl;
-	std::cout<<"end_lsa_on_device: "<<end_lsa_on_device<<std::endl;
-	std::cout<<"working_set_ratio: "<<working_set_ratio<<std::endl;
-	std::cout<<"io_queue_id: "<<io_queue_id<<std::endl;
-	std::cout<<"nvme_submission_queue_size: "<<nvme_submission_queue_size<<std::endl;
-	std::cout<<"nvme_completion_queue_size: "<<nvme_completion_queue_size<<std::endl;
-	std::cout<<"priority_class: "<<priority_class<<std::endl;
-	std::cout<<"read_ratio: "<<read_ratio<<std::endl;
-	std::cout<<"read_hot_ratio: "<<read_hot_ratio<<std::endl;
-	std::cout<<"average_number_of_enqueued_requests: "<<average_number_of_enqueued_requests<<std::endl;
-	std::cout<<"the queue_numbers_of_the_flow: "<<queue_numbers_of_the_flow<<std::endl;
-	//std::cout<<"address_distribution: "<<address_distribution<<std::endl;
+	////std::cout<<"IO_Flow_Synthetic::IO_Flow_Synthetic"<<std::endl;
+	////std::cout<<"name: "<<name<<std::endl;
+	////std::cout<<"flow_id: "<<flow_id<<std::endl;
+	////std::cout<<"start_lsa_on_device: "<<start_lsa_on_device<<std::endl;
+	////std::cout<<"end_lsa_on_device: "<<end_lsa_on_device<<std::endl;
+	////std::cout<<"working_set_ratio: "<<working_set_ratio<<std::endl;
+	////std::cout<<"io_queue_id: "<<io_queue_id<<std::endl;
+	////std::cout<<"nvme_submission_queue_size: "<<nvme_submission_queue_size<<std::endl;
+	////std::cout<<"nvme_completion_queue_size: "<<nvme_completion_queue_size<<std::endl;
+	////std::cout<<"priority_class: "<<priority_class<<std::endl;
+	////std::cout<<"read_ratio: "<<read_ratio<<std::endl;
+	////std::cout<<"read_hot_ratio: "<<read_hot_ratio<<std::endl;
+	////std::cout<<"average_number_of_enqueued_requests: "<<average_number_of_enqueued_requests<<std::endl;
+	////std::cout<<"the queue_numbers_of_the_flow: "<<queue_numbers_of_the_flow<<std::endl;
+	//////std::cout<<"address_distribution: "<<address_distribution<<std::endl;
 	sleep(1);
 
 
@@ -76,7 +76,7 @@ IO_Flow_Synthetic::IO_Flow_Synthetic(const sim_object_id_type &name, uint16_t fl
 		random_time_interval_generator = new Utils::RandomGenerator(random_time_interval_generator_seed);
 	}else if(generator_type == Utils::Request_Generator_Type::BATCH_TRANSACTION){
 		//LM
-		std::cout<<"[IO_Flow_Synthetic][IO_Flow_Synthetic] BATCH_TRANSACTION"<<std::endl;
+		////std::cout<<"[IO_Flow_Synthetic][IO_Flow_Synthetic] BATCH_TRANSACTION"<<std::endl;
 	}
 
 
@@ -185,6 +185,7 @@ IO_Flow_Synthetic::IO_Flow_Synthetic(const sim_object_id_type &name, uint16_t fl
 			request->Start_LBA -= request->Start_LBA % alignment_value;
 		}
 		STAT_generated_request_count++;
+		////std::cout<<"generated request count: "<<STAT_generated_request_count<<std::endl;
 		request->Arrival_time = Simulator->Time();
 		DEBUG("* Host: Request generated - " << (request->Type == Host_IO_Request_Type::READ ? "Read, " : "Write, ") << "LBA:" << request->Start_LBA << ", Size_in_bytes:" << request->LBA_count << "")
 
@@ -198,34 +199,79 @@ IO_Flow_Synthetic::IO_Flow_Synthetic(const sim_object_id_type &name, uint16_t fl
 
 		IO_Flow_Base::NVMe_consume_io_request(io_request);
 
-		std::cout<<"[IO_Flow_Synthetic][NVMe_consume_io_request] io_request: "<<io_request<<std::endl;
-		//std::cout<<"[IO_Flow_Synthetic][NVMe_consume_io_request] io_request->SQ_ID: "<<io_request->SQ_ID<<std::endl;
-		std::cout<<"queue_id: "<<queue_id<<std::endl;
+		////std::cout<<"[IO_Flow_Synthetic][NVMe_consume_io_request] io_request: "<<io_request<<std::endl;
+		//////std::cout<<"[IO_Flow_Synthetic][NVMe_consume_io_request] io_request->SQ_ID: "<<io_request->SQ_ID<<std::endl;
+		////std::cout<<"queue_id: "<<queue_id<<std::endl;
 
 		IO_Flow_Base::NVMe_update_and_submit_completion_queue_tail(queue_id);
 
 		if (generator_type == Utils::Request_Generator_Type::QUEUE_DEPTH) {
 			//Host_IO_Request* request = Generate_next_request();
-		
+	
+			/*
+			for(int i =0; i< queue_numbers_of_the_flow; i++){
+
+				if(nvme_queue_pairs[i].Completion_queue_head != nvme_queue_pairs[i].Submission_queue_head)
+					return;
+
+
+			}
+
+			for(int i =0; i< queue_numbers_of_the_flow; i++){
+
+				////std::cout<<"[IO_Flow_Synthetic][NVMe_consume_io_request] nvme_queue_pair.Completion_queue_head == nvme_queue_pair.Submission_queue_head"<<std::endl;
+				////std::cout<<"the value of nvme_queue_pair.Completion_queue_head: "<<nvme_queue_pairs[i].Completion_queue_head<<std::endl;
+
+				for (unsigned int j = 0; j < average_number_of_enqueued_requests; j++) {
+
+					////std::cout<<"[IO_Flow_Synthetic] average_number_of_enqueued_requests: "<<average_number_of_enqueued_requests<<std::endl;
+					////std::cout<<"current time: "<<Simulator->Time()<<std::endl;
+					////std::cout<<"queue_id: "<<queue_id<<std::endl;
+
+					//if(STAT_ignored_request_count == )
+
+					Host_IO_Request* req = Generate_next_request();
+					
+					if(req == NULL)
+						return;
+					
+					req->Source_queue_id = i;
+					Submit_io_request(req);
+				}
+				
+			}
+
+			*/
+
+			
 			//LM new	
 			if(nvme_queue_pairs[queue_id].Completion_queue_head == nvme_queue_pairs[queue_id].Submission_queue_head)
 			{
 
-				std::cout<<"[IO_Flow_Synthetic][NVMe_consume_io_request] nvme_queue_pair.Completion_queue_head == nvme_queue_pair.Submission_queue_head"<<std::endl;
-				std::cout<<"the value of nvme_queue_pair.Completion_queue_head: "<<nvme_queue_pairs[queue_id].Completion_queue_head<<std::endl;
+				////std::cout<<"[IO_Flow_Synthetic][NVMe_consume_io_request] nvme_queue_pair.Completion_queue_head == nvme_queue_pair.Submission_queue_head"<<std::endl;
+				////std::cout<<"the value of nvme_queue_pair.Completion_queue_head: "<<nvme_queue_pairs[queue_id].Completion_queue_head<<std::endl;
 
 				for (unsigned int i = 0; i < average_number_of_enqueued_requests; i++) {
-				std::cout<<"[IO_Flow_Synthetic] average_number_of_enqueued_requests: "<<average_number_of_enqueued_requests<<std::endl;
-				std::cout<<"current time: "<<Simulator->Time()<<std::endl;
+
+
+				////std::cout<<"[IO_Flow_Synthetic] average_number_of_enqueued_requests: "<<average_number_of_enqueued_requests<<std::endl;
+				////std::cout<<"current time: "<<Simulator->Time()<<std::endl;
+				////std::cout<<"queue_id: "<<queue_id<<std::endl;
+
+				//if(STAT_ignored_request_count == )
+
 				Host_IO_Request* req = Generate_next_request();
-					req->Source_queue_id = queue_id;
-					Submit_io_request(req);
+				
+				if(req == NULL)
+					return;
+				
+				req->Source_queue_id = queue_id;
+				Submit_io_request(req);
 				}
 
 			}
-	
 
-			//std::cout<<"[IO_Flow_Synthetic][NVMe_consume_io_request] request: "<<request<<std::endl;
+			//////std::cout<<"[IO_Flow_Synthetic][NVMe_consume_io_request] request: "<<request<<std::endl;
 
 
 
@@ -266,13 +312,13 @@ IO_Flow_Synthetic::IO_Flow_Synthetic(const sim_object_id_type &name, uint16_t fl
 			Simulator->Register_sim_event((sim_time_type)random_time_interval_generator->Exponential((double)Average_inter_arrival_time_nano_sec), this, 0, 0);
 		} else if(generator_type == Utils::Request_Generator_Type::BATCH_TRANSACTION){
 
-			std::cout<<"[IO_Flow_Synthetic][Start_simulation] BATCH_TRANSACTION"<<std::endl;
+			////std::cout<<"[IO_Flow_Synthetic][Start_simulation] BATCH_TRANSACTION"<<std::endl;
 
 		}
 		else
 		{
 
-			std::cout<<"[IO_Flow_Synthetic][Start_simulation] average_number_of_enqueued_requests: "<<average_number_of_enqueued_requests<<std::endl;
+			////std::cout<<"[IO_Flow_Synthetic][Start_simulation] average_number_of_enqueued_requests: "<<average_number_of_enqueued_requests<<std::endl;
 
 			Simulator->Register_sim_event((sim_time_type)1, this, 0, 0);
 		}
@@ -291,22 +337,22 @@ IO_Flow_Synthetic::IO_Flow_Synthetic(const sim_object_id_type &name, uint16_t fl
 				Simulator->Register_sim_event(Simulator->Time() + (sim_time_type)random_time_interval_generator->Exponential((double)Average_inter_arrival_time_nano_sec), this, 0, 0);
 			}
 		}else if(generator_type == Utils::Request_Generator_Type::BATCH_TRANSACTION){
-			std::cout<<"[IO_Flow_Synthetic][Execute_simulator_event] BATCH_TRANSACTION"<<std::endl;
+			////std::cout<<"[IO_Flow_Synthetic][Execute_simulator_event] BATCH_TRANSACTION"<<std::endl;
 			for (unsigned int i = 0; i < average_number_of_enqueued_requests; i++) {
-				std::cout<<"[IO_Flow_Synthetic][Execute_simulator_event] average_number_of_enqueued_requests: "<<average_number_of_enqueued_requests<<std::endl;
-				std::cout<<"current time: "<<Simulator->Time()<<std::endl;
+				////std::cout<<"[IO_Flow_Synthetic][Execute_simulator_event] average_number_of_enqueued_requests: "<<average_number_of_enqueued_requests<<std::endl;
+				////std::cout<<"current time: "<<Simulator->Time()<<std::endl;
 
 				Submit_io_request(Generate_next_request());
 			}
 		}else {//LM QUEUE_DEPTH
 			for(uint16_t i = 0; i < queue_numbers_of_the_flow; i++)
 			{
-				std::cout<<"[IO_Flow_Synthetic][Execute_simulator_event] queue_numbers_of_the_flow: "<<queue_numbers_of_the_flow<<std::endl;
-				std::cout<<"current time: "<<Simulator->Time()<<std::endl;
+				////std::cout<<"[IO_Flow_Synthetic][Execute_simulator_event] queue_numbers_of_the_flow: "<<queue_numbers_of_the_flow<<std::endl;
+				////std::cout<<"current time: "<<Simulator->Time()<<std::endl;
 
 				for (unsigned int j = 0; j < average_number_of_enqueued_requests; j++) {
-					std::cout<<"[IO_Flow_Synthetic][Execute_simulator_event] average_number_of_enqueued_requests: "<<average_number_of_enqueued_requests<<std::endl;
-					std::cout<<"current time: "<<Simulator->Time()<<std::endl;
+					////std::cout<<"[IO_Flow_Synthetic][Execute_simulator_event] average_number_of_enqueued_requests: "<<average_number_of_enqueued_requests<<std::endl;
+					////std::cout<<"current time: "<<Simulator->Time()<<std::endl;
 
 					Host_IO_Request* req = Generate_next_request();
 					req->Source_queue_id = i;

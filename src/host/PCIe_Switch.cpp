@@ -15,7 +15,7 @@ namespace Host_Components
 	void PCIe_Switch::Send_to_host(PCIe_Message* message)
 	{
 
-		std::cout<<"PCIe_Switch::Send_to_host"<<std::endl;
+		//std::cout<<"PCIe_Switch::Send_to_host"<<std::endl;
 
 		pcie_link->Deliver(message);
 	}
