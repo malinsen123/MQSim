@@ -1,0 +1,4101 @@
+Inserting 61188 with priority (2, 3, 1)
+placed 61188 in table 2 at index 409
+Inserting 492048 with priority (3, 2, 1)
+placed 492048 in table 3 at index 201
+Inserting 438142 with priority (3, 1, 2)
+placed 438142 in table 3 at index 434
+Inserting 432739 with priority (2, 3, 1)
+placed 432739 in table 2 at index 146
+Inserting 648073 with priority (3, 1, 2)
+placed 648073 in table 3 at index 663
+Inserting 72833 with priority (3, 2, 1)
+placed 72833 in table 3 at index 583
+Inserting 92603 with priority (3, 1, 2)
+placed 92603 in table 3 at index 253
+Inserting 654277 with priority (2, 1, 3)
+placed 654277 in table 2 at index 628
+Inserting 55820 with priority (2, 1, 3)
+placed 55820 in table 2 at index 872
+Inserting 989176 with priority (3, 1, 2)
+placed 989176 in table 3 at index 927
+Inserting 703372 with priority (1, 3, 2)
+placed 703372 in table 1 at index 836
+Inserting 24120 with priority (3, 1, 2)
+placed 24120 in table 3 at index 30
+Inserting 384464 with priority (3, 2, 1)
+placed 384464 in table 3 at index 296
+Inserting 579201 with priority (2, 3, 1)
+placed 579201 in table 2 at index 168
+Inserting 373885 with priority (1, 2, 3)
+placed 373885 in table 1 at index 750
+Inserting 461348 with priority (2, 3, 1)
+placed 461348 in table 2 at index 773
+Inserting 867556 with priority (1, 3, 2)
+placed 867556 in table 1 at index 218
+Inserting 245694 with priority (2, 3, 1)
+placed 245694 in table 2 at index 688
+Inserting 734663 with priority (3, 1, 2)
+placed 734663 in table 3 at index 482
+Inserting 870828 with priority (1, 3, 2)
+placed 870828 in table 1 at index 430
+Inserting 647946 with priority (3, 1, 2)
+placed 647946 in table 3 at index 210
+Inserting 8693 with priority (3, 1, 2)
+placed 8693 in table 3 at index 651
+Inserting 292777 with priority (1, 2, 3)
+placed 292777 in table 1 at index 823
+Inserting 683832 with priority (1, 2, 3)
+placed 683832 in table 1 at index 523
+Inserting 8637 with priority (2, 1, 3)
+placed 8637 in table 2 at index 947
+Inserting 93799 with priority (1, 2, 3)
+placed 93799 in table 1 at index 197
+Inserting 912079 with priority (2, 3, 1)
+placed 912079 in table 2 at index 563
+Inserting 718265 with priority (3, 1, 2)
+placed 718265 in table 3 at index 115
+Inserting 169567 with priority (1, 3, 2)
+placed 169567 in table 1 at index 702
+Inserting 687621 with priority (3, 1, 2)
+placed 687621 in table 3 at index 263
+Inserting 164220 with priority (1, 2, 3)
+placed 164220 in table 1 at index 139
+Inserting 638537 with priority (2, 1, 3)
+placed 638537 in table 2 at index 449
+Inserting 939922 with priority (3, 2, 1)
+placed 939922 in table 3 at index 469
+Inserting 871884 with priority (2, 3, 1)
+placed 871884 in table 2 at index 864
+Inserting 440137 with priority (3, 1, 2)
+placed 440137 in table 3 at index 785
+Inserting 863494 with priority (2, 1, 3)
+placed 863494 in table 2 at index 807
+Inserting 266458 with priority (3, 1, 2)
+placed 266458 in table 3 at index 595
+Inserting 955487 with priority (1, 3, 2)
+i = 0 index = 702 tableIndex = 1
+Swapping 955487 with 169567
+placed 169567 in table 3 at index 811
+Inserting 32254 with priority (3, 2, 1)
+placed 32254 in table 3 at index 845
+Inserting 977280 with priority (2, 1, 3)
+placed 977280 in table 2 at index 181
+Inserting 954513 with priority (2, 3, 1)
+placed 954513 in table 2 at index 514
+Inserting 686661 with priority (3, 2, 1)
+placed 686661 in table 3 at index 17
+Inserting 926171 with priority (3, 2, 1)
+placed 926171 in table 3 at index 642
+Inserting 96010 with priority (3, 2, 1)
+placed 96010 in table 3 at index 500
+Inserting 639692 with priority (2, 1, 3)
+placed 639692 in table 2 at index 440
+Inserting 302896 with priority (3, 2, 1)
+placed 302896 in table 3 at index 884
+Inserting 458757 with priority (2, 3, 1)
+placed 458757 in table 2 at index 44
+Inserting 878672 with priority (1, 2, 3)
+placed 878672 in table 1 at index 757
+Inserting 361216 with priority (3, 2, 1)
+placed 361216 in table 3 at index 874
+Inserting 443292 with priority (1, 3, 2)
+placed 443292 in table 1 at index 189
+Inserting 269294 with priority (3, 2, 1)
+placed 269294 in table 3 at index 548
+Inserting 253183 with priority (2, 3, 1)
+placed 253183 in table 2 at index 885
+Inserting 161368 with priority (2, 1, 3)
+placed 161368 in table 2 at index 206
+Inserting 268257 with priority (2, 1, 3)
+placed 268257 in table 2 at index 724
+Inserting 719389 with priority (3, 2, 1)
+placed 719389 in table 3 at index 658
+Inserting 833903 with priority (3, 1, 2)
+placed 833903 in table 3 at index 472
+Inserting 588773 with priority (3, 1, 2)
+placed 588773 in table 3 at index 401
+Inserting 556641 with priority (1, 3, 2)
+placed 556641 in table 1 at index 907
+Inserting 37336 with priority (2, 1, 3)
+placed 37336 in table 2 at index 78
+Inserting 972146 with priority (1, 2, 3)
+placed 972146 in table 1 at index 805
+Inserting 158253 with priority (1, 3, 2)
+placed 158253 in table 1 at index 875
+Inserting 304134 with priority (3, 2, 1)
+placed 304134 in table 3 at index 180
+Inserting 154533 with priority (3, 2, 1)
+placed 154533 in table 3 at index 483
+Inserting 582047 with priority (3, 2, 1)
+placed 582047 in table 3 at index 856
+Inserting 61850 with priority (3, 1, 2)
+placed 61850 in table 3 at index 389
+Inserting 658752 with priority (3, 1, 2)
+placed 658752 in table 3 at index 171
+Inserting 277411 with priority (3, 1, 2)
+placed 277411 in table 3 at index 693
+Inserting 11636 with priority (1, 3, 2)
+placed 11636 in table 1 at index 491
+Inserting 261823 with priority (1, 2, 3)
+placed 261823 in table 1 at index 328
+Inserting 833618 with priority (1, 3, 2)
+placed 833618 in table 1 at index 863
+Inserting 700335 with priority (1, 3, 2)
+placed 700335 in table 1 at index 289
+Inserting 516243 with priority (3, 1, 2)
+placed 516243 in table 3 at index 276
+Inserting 586005 with priority (2, 1, 3)
+placed 586005 in table 2 at index 990
+Inserting 656866 with priority (1, 2, 3)
+placed 656866 in table 1 at index 900
+Inserting 836102 with priority (3, 2, 1)
+placed 836102 in table 3 at index 304
+Inserting 763818 with priority (3, 2, 1)
+placed 763818 in table 3 at index 753
+Inserting 653304 with priority (2, 1, 3)
+placed 653304 in table 2 at index 242
+Inserting 869271 with priority (2, 3, 1)
+placed 869271 in table 2 at index 144
+Inserting 780412 with priority (1, 3, 2)
+placed 780412 in table 1 at index 979
+Inserting 45272 with priority (3, 2, 1)
+placed 45272 in table 3 at index 211
+Inserting 418915 with priority (2, 3, 1)
+placed 418915 in table 2 at index 450
+Inserting 774269 with priority (2, 3, 1)
+placed 774269 in table 2 at index 163
+Inserting 67884 with priority (1, 2, 3)
+placed 67884 in table 1 at index 710
+Inserting 866509 with priority (2, 3, 1)
+placed 866509 in table 2 at index 317
+Inserting 972562 with priority (2, 1, 3)
+placed 972562 in table 2 at index 329
+Inserting 590908 with priority (3, 2, 1)
+placed 590908 in table 3 at index 610
+Inserting 241857 with priority (3, 2, 1)
+placed 241857 in table 3 at index 713
+Inserting 888547 with priority (2, 1, 3)
+placed 888547 in table 2 at index 178
+Inserting 36352 with priority (3, 1, 2)
+placed 36352 in table 3 at index 912
+Inserting 243501 with priority (3, 1, 2)
+placed 243501 in table 3 at index 403
+Inserting 543330 with priority (1, 2, 3)
+placed 543330 in table 1 at index 860
+Inserting 217184 with priority (1, 3, 2)
+placed 217184 in table 1 at index 326
+Inserting 375688 with priority (1, 3, 2)
+placed 375688 in table 1 at index 344
+Inserting 372127 with priority (2, 3, 1)
+placed 372127 in table 2 at index 817
+Inserting 672025 with priority (3, 1, 2)
+placed 672025 in table 3 at index 307
+Inserting 906605 with priority (3, 2, 1)
+placed 906605 in table 3 at index 801
+Inserting 299116 with priority (1, 3, 2)
+placed 299116 in table 1 at index 554
+Inserting 659347 with priority (3, 2, 1)
+placed 659347 in table 3 at index 18
+Inserting 545870 with priority (3, 2, 1)
+placed 545870 in table 3 at index 441
+Inserting 439061 with priority (1, 3, 2)
+placed 439061 in table 1 at index 864
+Inserting 64685 with priority (2, 1, 3)
+placed 64685 in table 2 at index 689
+Inserting 681099 with priority (1, 3, 2)
+placed 681099 in table 1 at index 199
+Inserting 731168 with priority (1, 2, 3)
+placed 731168 in table 1 at index 170
+Inserting 332658 with priority (3, 2, 1)
+placed 332658 in table 3 at index 586
+Inserting 933641 with priority (1, 2, 3)
+placed 933641 in table 1 at index 301
+Inserting 784373 with priority (1, 3, 2)
+placed 784373 in table 1 at index 742
+Inserting 719837 with priority (3, 1, 2)
+placed 719837 in table 3 at index 746
+Inserting 739484 with priority (3, 2, 1)
+placed 739484 in table 3 at index 202
+Inserting 625026 with priority (1, 3, 2)
+placed 625026 in table 1 at index 754
+Inserting 420183 with priority (1, 3, 2)
+placed 420183 in table 1 at index 286
+Inserting 964899 with priority (2, 3, 1)
+placed 964899 in table 2 at index 914
+Inserting 737637 with priority (2, 1, 3)
+placed 737637 in table 2 at index 56
+Inserting 470882 with priority (3, 1, 2)
+placed 470882 in table 3 at index 373
+Inserting 407757 with priority (1, 3, 2)
+placed 407757 in table 1 at index 637
+Inserting 231382 with priority (3, 1, 2)
+placed 231382 in table 3 at index 530
+Inserting 765304 with priority (1, 2, 3)
+placed 765304 in table 1 at index 727
+Inserting 710489 with priority (1, 3, 2)
+placed 710489 in table 1 at index 880
+Inserting 971559 with priority (1, 2, 3)
+placed 971559 in table 1 at index 137
+Inserting 680157 with priority (2, 1, 3)
+placed 680157 in table 2 at index 503
+Inserting 462546 with priority (2, 3, 1)
+placed 462546 in table 2 at index 177
+Inserting 330923 with priority (3, 1, 2)
+placed 330923 in table 3 at index 757
+Inserting 281296 with priority (2, 3, 1)
+placed 281296 in table 2 at index 287
+Inserting 427966 with priority (1, 3, 2)
+placed 427966 in table 1 at index 389
+Inserting 156562 with priority (3, 1, 2)
+placed 156562 in table 3 at index 83
+Inserting 555214 with priority (3, 2, 1)
+placed 555214 in table 3 at index 179
+Inserting 683017 with priority (3, 1, 2)
+placed 683017 in table 3 at index 536
+Inserting 333640 with priority (3, 1, 2)
+placed 333640 in table 3 at index 719
+Inserting 151514 with priority (1, 3, 2)
+placed 151514 in table 1 at index 79
+Inserting 556503 with priority (1, 3, 2)
+placed 556503 in table 1 at index 662
+Inserting 185937 with priority (2, 3, 1)
+placed 185937 in table 2 at index 122
+Inserting 892612 with priority (3, 2, 1)
+placed 892612 in table 3 at index 871
+Inserting 295378 with priority (2, 1, 3)
+placed 295378 in table 2 at index 1
+Inserting 989595 with priority (3, 1, 2)
+placed 989595 in table 3 at index 271
+Inserting 705162 with priority (1, 2, 3)
+placed 705162 in table 1 at index 234
+Inserting 200574 with priority (3, 1, 2)
+placed 200574 in table 3 at index 873
+Inserting 802444 with priority (2, 1, 3)
+placed 802444 in table 2 at index 320
+Inserting 888770 with priority (1, 2, 3)
+placed 888770 in table 1 at index 334
+Inserting 985514 with priority (1, 3, 2)
+placed 985514 in table 1 at index 424
+Inserting 846602 with priority (2, 3, 1)
+placed 846602 in table 2 at index 426
+Inserting 636997 with priority (1, 3, 2)
+placed 636997 in table 1 at index 957
+Inserting 486269 with priority (1, 3, 2)
+placed 486269 in table 1 at index 438
+Inserting 991182 with priority (2, 1, 3)
+placed 991182 in table 2 at index 86
+Inserting 161744 with priority (3, 1, 2)
+placed 161744 in table 3 at index 852
+Inserting 293296 with priority (2, 1, 3)
+placed 293296 in table 2 at index 787
+Inserting 146278 with priority (2, 3, 1)
+placed 146278 in table 2 at index 379
+Inserting 315488 with priority (1, 3, 2)
+placed 315488 in table 1 at index 102
+Inserting 586080 with priority (1, 2, 3)
+placed 586080 in table 1 at index 182
+Inserting 465303 with priority (2, 1, 3)
+placed 465303 in table 2 at index 432
+Inserting 213483 with priority (1, 3, 2)
+placed 213483 in table 1 at index 697
+Inserting 42603 with priority (1, 2, 3)
+placed 42603 in table 1 at index 25
+Inserting 623260 with priority (1, 2, 3)
+placed 623260 in table 1 at index 453
+Inserting 616598 with priority (1, 3, 2)
+placed 616598 in table 1 at index 895
+Inserting 457862 with priority (2, 3, 1)
+placed 457862 in table 2 at index 847
+Inserting 411737 with priority (3, 1, 2)
+i = 0 index = 211 tableIndex = 3
+Swapping 411737 with 45272
+i = 1 index = 637 tableIndex = 1
+Swapping 45272 with 407757
+placed 407757 in table 2 at index 789
+Inserting 691027 with priority (3, 2, 1)
+placed 691027 in table 3 at index 843
+Inserting 757778 with priority (2, 1, 3)
+placed 757778 in table 2 at index 625
+Inserting 253674 with priority (2, 3, 1)
+placed 253674 in table 2 at index 662
+Inserting 517448 with priority (3, 1, 2)
+placed 517448 in table 3 at index 888
+Inserting 799410 with priority (2, 1, 3)
+i = 0 index = 317 tableIndex = 2
+Swapping 799410 with 866509
+placed 866509 in table 1 at index 477
+Inserting 283958 with priority (1, 3, 2)
+placed 283958 in table 1 at index 149
+Inserting 812534 with priority (2, 3, 1)
+placed 812534 in table 2 at index 785
+Inserting 173877 with priority (2, 3, 1)
+placed 173877 in table 2 at index 978
+Inserting 704416 with priority (3, 1, 2)
+placed 704416 in table 3 at index 828
+Inserting 184060 with priority (1, 3, 2)
+placed 184060 in table 1 at index 43
+Inserting 194718 with priority (3, 1, 2)
+placed 194718 in table 3 at index 537
+Inserting 811540 with priority (2, 3, 1)
+placed 811540 in table 2 at index 523
+Inserting 156046 with priority (1, 3, 2)
+placed 156046 in table 1 at index 910
+Inserting 555550 with priority (3, 2, 1)
+placed 555550 in table 3 at index 770
+Inserting 902855 with priority (3, 1, 2)
+placed 902855 in table 3 at index 628
+Inserting 103414 with priority (1, 2, 3)
+placed 103414 in table 1 at index 865
+Inserting 528805 with priority (1, 2, 3)
+placed 528805 in table 1 at index 699
+Inserting 148878 with priority (3, 2, 1)
+placed 148878 in table 3 at index 956
+Inserting 947202 with priority (2, 1, 3)
+placed 947202 in table 2 at index 699
+Inserting 325444 with priority (2, 1, 3)
+placed 325444 in table 2 at index 9
+Inserting 287334 with priority (1, 2, 3)
+placed 287334 in table 1 at index 640
+Inserting 537559 with priority (1, 2, 3)
+placed 537559 in table 1 at index 270
+Inserting 22809 with priority (2, 1, 3)
+placed 22809 in table 2 at index 19
+Inserting 703290 with priority (1, 2, 3)
+placed 703290 in table 1 at index 169
+Inserting 795088 with priority (1, 2, 3)
+placed 795088 in table 1 at index 517
+Inserting 270258 with priority (1, 3, 2)
+placed 270258 in table 1 at index 33
+Inserting 217106 with priority (1, 2, 3)
+placed 217106 in table 1 at index 211
+Inserting 904087 with priority (2, 3, 1)
+placed 904087 in table 2 at index 32
+Inserting 948616 with priority (3, 1, 2)
+placed 948616 in table 3 at index 12
+Inserting 213845 with priority (2, 3, 1)
+placed 213845 in table 2 at index 6
+Inserting 228972 with priority (3, 1, 2)
+placed 228972 in table 3 at index 236
+Inserting 874704 with priority (3, 1, 2)
+placed 874704 in table 3 at index 209
+Inserting 776093 with priority (2, 1, 3)
+placed 776093 in table 2 at index 879
+Inserting 876746 with priority (3, 1, 2)
+placed 876746 in table 3 at index 447
+Inserting 43806 with priority (3, 1, 2)
+placed 43806 in table 3 at index 298
+Inserting 560451 with priority (3, 1, 2)
+placed 560451 in table 3 at index 525
+Inserting 614052 with priority (2, 3, 1)
+placed 614052 in table 2 at index 661
+Inserting 905194 with priority (1, 2, 3)
+placed 905194 in table 1 at index 588
+Inserting 270958 with priority (2, 3, 1)
+placed 270958 in table 2 at index 578
+Inserting 184098 with priority (3, 2, 1)
+placed 184098 in table 3 at index 427
+Inserting 934159 with priority (1, 3, 2)
+placed 934159 in table 1 at index 683
+Inserting 878687 with priority (1, 3, 2)
+placed 878687 in table 1 at index 926
+Inserting 799270 with priority (3, 2, 1)
+placed 799270 in table 3 at index 459
+Inserting 780170 with priority (3, 2, 1)
+placed 780170 in table 3 at index 638
+Inserting 697137 with priority (3, 1, 2)
+placed 697137 in table 3 at index 831
+Inserting 501925 with priority (2, 1, 3)
+placed 501925 in table 2 at index 576
+Inserting 16249 with priority (3, 2, 1)
+i = 0 index = 651 tableIndex = 3
+Swapping 16249 with 8693
+placed 8693 in table 2 at index 986
+Inserting 815181 with priority (1, 3, 2)
+placed 815181 in table 1 at index 717
+Inserting 810862 with priority (1, 3, 2)
+placed 810862 in table 1 at index 224
+Inserting 968551 with priority (3, 1, 2)
+placed 968551 in table 3 at index 239
+Inserting 990812 with priority (3, 2, 1)
+placed 990812 in table 3 at index 440
+Inserting 683492 with priority (3, 2, 1)
+placed 683492 in table 3 at index 365
+Inserting 341160 with priority (2, 1, 3)
+placed 341160 in table 2 at index 816
+Inserting 127316 with priority (1, 2, 3)
+placed 127316 in table 1 at index 145
+Inserting 457566 with priority (3, 1, 2)
+placed 457566 in table 3 at index 524
+Inserting 713844 with priority (2, 3, 1)
+placed 713844 in table 2 at index 591
+Inserting 68508 with priority (3, 2, 1)
+placed 68508 in table 3 at index 120
+Inserting 245381 with priority (3, 2, 1)
+i = 0 index = 586 tableIndex = 3
+Swapping 245381 with 332658
+i = 1 index = 773 tableIndex = 2
+Swapping 332658 with 461348
+placed 461348 in table 1 at index 54
+Inserting 697082 with priority (2, 1, 3)
+placed 697082 in table 2 at index 364
+Inserting 729326 with priority (2, 1, 3)
+placed 729326 in table 2 at index 490
+Inserting 142626 with priority (3, 2, 1)
+placed 142626 in table 3 at index 704
+Inserting 653375 with priority (2, 3, 1)
+placed 653375 in table 2 at index 781
+Inserting 26025 with priority (2, 1, 3)
+placed 26025 in table 2 at index 877
+Inserting 262009 with priority (2, 3, 1)
+placed 262009 in table 2 at index 727
+Inserting 342854 with priority (3, 1, 2)
+placed 342854 in table 3 at index 337
+Inserting 774868 with priority (1, 3, 2)
+i = 0 index = 289 tableIndex = 1
+Swapping 774868 with 700335
+placed 700335 in table 3 at index 640
+Inserting 440639 with priority (1, 2, 3)
+placed 440639 in table 1 at index 920
+Inserting 809195 with priority (2, 1, 3)
+placed 809195 in table 2 at index 35
+Inserting 466553 with priority (2, 3, 1)
+placed 466553 in table 2 at index 815
+Inserting 156923 with priority (1, 3, 2)
+placed 156923 in table 1 at index 792
+Inserting 572443 with priority (1, 2, 3)
+placed 572443 in table 1 at index 918
+Inserting 979695 with priority (3, 2, 1)
+placed 979695 in table 3 at index 890
+Inserting 969305 with priority (3, 1, 2)
+placed 969305 in table 3 at index 720
+Inserting 496210 with priority (1, 2, 3)
+placed 496210 in table 1 at index 719
+Inserting 601031 with priority (3, 1, 2)
+placed 601031 in table 3 at index 128
+Inserting 280931 with priority (3, 2, 1)
+placed 280931 in table 3 at index 207
+Inserting 815646 with priority (1, 2, 3)
+placed 815646 in table 1 at index 431
+Inserting 995525 with priority (2, 1, 3)
+placed 995525 in table 2 at index 916
+Inserting 607841 with priority (1, 3, 2)
+placed 607841 in table 1 at index 651
+Inserting 678337 with priority (3, 2, 1)
+placed 678337 in table 3 at index 606
+Inserting 906540 with priority (3, 2, 1)
+i = 0 index = 459 tableIndex = 3
+Swapping 906540 with 799270
+placed 799270 in table 2 at index 299
+Inserting 742833 with priority (3, 2, 1)
+placed 742833 in table 3 at index 781
+Inserting 50849 with priority (1, 2, 3)
+placed 50849 in table 1 at index 831
+Inserting 410651 with priority (2, 3, 1)
+placed 410651 in table 2 at index 357
+Inserting 136733 with priority (1, 2, 3)
+placed 136733 in table 1 at index 728
+Inserting 897775 with priority (3, 1, 2)
+placed 897775 in table 3 at index 266
+Inserting 577626 with priority (2, 1, 3)
+placed 577626 in table 2 at index 296
+Inserting 268881 with priority (2, 3, 1)
+placed 268881 in table 2 at index 306
+Inserting 29443 with priority (1, 2, 3)
+placed 29443 in table 1 at index 343
+Inserting 995189 with priority (1, 2, 3)
+placed 995189 in table 1 at index 22
+Inserting 58103 with priority (1, 3, 2)
+placed 58103 in table 1 at index 580
+Inserting 948662 with priority (1, 3, 2)
+placed 948662 in table 1 at index 69
+Inserting 917300 with priority (3, 2, 1)
+placed 917300 in table 3 at index 79
+Inserting 325418 with priority (1, 3, 2)
+placed 325418 in table 1 at index 952
+Inserting 972262 with priority (2, 3, 1)
+placed 972262 in table 2 at index 219
+Inserting 763024 with priority (3, 2, 1)
+placed 763024 in table 3 at index 671
+Inserting 318007 with priority (3, 2, 1)
+placed 318007 in table 3 at index 439
+Inserting 230948 with priority (3, 2, 1)
+i = 0 index = 211 tableIndex = 3
+Swapping 230948 with 411737
+placed 411737 in table 2 at index 659
+Inserting 429420 with priority (3, 2, 1)
+placed 429420 in table 3 at index 761
+Inserting 727792 with priority (1, 2, 3)
+placed 727792 in table 1 at index 967
+Inserting 564724 with priority (2, 1, 3)
+placed 564724 in table 2 at index 135
+Inserting 287664 with priority (1, 2, 3)
+placed 287664 in table 1 at index 587
+Inserting 241106 with priority (2, 1, 3)
+placed 241106 in table 2 at index 737
+Inserting 912445 with priority (3, 2, 1)
+placed 912445 in table 3 at index 554
+Inserting 838425 with priority (3, 1, 2)
+placed 838425 in table 3 at index 140
+Inserting 924697 with priority (3, 1, 2)
+placed 924697 in table 3 at index 567
+Inserting 581325 with priority (1, 3, 2)
+i = 0 index = 717 tableIndex = 1
+Swapping 581325 with 815181
+placed 815181 in table 3 at index 249
+Inserting 282436 with priority (2, 3, 1)
+placed 282436 in table 2 at index 441
+Inserting 263775 with priority (3, 1, 2)
+placed 263775 in table 3 at index 420
+Inserting 148216 with priority (2, 1, 3)
+i = 0 index = 122 tableIndex = 2
+Swapping 148216 with 185937
+placed 185937 in table 1 at index 672
+Inserting 54915 with priority (1, 2, 3)
+placed 54915 in table 1 at index 927
+Inserting 772270 with priority (1, 3, 2)
+placed 772270 in table 1 at index 804
+Inserting 492230 with priority (1, 2, 3)
+placed 492230 in table 1 at index 330
+Inserting 566560 with priority (2, 3, 1)
+placed 566560 in table 2 at index 473
+Inserting 754780 with priority (3, 2, 1)
+placed 754780 in table 3 at index 953
+Inserting 734054 with priority (3, 1, 2)
+placed 734054 in table 3 at index 279
+Inserting 929793 with priority (2, 1, 3)
+i = 0 index = 864 tableIndex = 2
+Swapping 929793 with 871884
+placed 871884 in table 1 at index 800
+Inserting 838719 with priority (2, 3, 1)
+placed 838719 in table 2 at index 349
+Inserting 371465 with priority (2, 3, 1)
+placed 371465 in table 2 at index 705
+Inserting 159808 with priority (1, 2, 3)
+placed 159808 in table 1 at index 964
+Inserting 284833 with priority (3, 1, 2)
+placed 284833 in table 3 at index 205
+Inserting 935764 with priority (3, 1, 2)
+placed 935764 in table 3 at index 119
+Inserting 728350 with priority (3, 1, 2)
+placed 728350 in table 3 at index 805
+Inserting 995272 with priority (1, 3, 2)
+placed 995272 in table 1 at index 628
+Inserting 432158 with priority (2, 1, 3)
+placed 432158 in table 2 at index 836
+Inserting 419019 with priority (2, 3, 1)
+placed 419019 in table 2 at index 775
+Inserting 328838 with priority (2, 1, 3)
+placed 328838 in table 2 at index 607
+Inserting 382243 with priority (2, 3, 1)
+i = 0 index = 178 tableIndex = 2
+Swapping 382243 with 888547
+placed 888547 in table 3 at index 339
+Inserting 296437 with priority (1, 2, 3)
+placed 296437 in table 1 at index 478
+Inserting 81597 with priority (1, 2, 3)
+placed 81597 in table 1 at index 666
+Inserting 176797 with priority (1, 2, 3)
+i = 0 index = 640 tableIndex = 1
+Swapping 176797 with 287334
+placed 287334 in table 2 at index 731
+Inserting 934887 with priority (1, 2, 3)
+placed 934887 in table 1 at index 261
+Inserting 766240 with priority (1, 3, 2)
+placed 766240 in table 1 at index 906
+Inserting 416177 with priority (3, 2, 1)
+placed 416177 in table 3 at index 20
+Inserting 245334 with priority (3, 2, 1)
+placed 245334 in table 3 at index 466
+Inserting 380141 with priority (2, 1, 3)
+placed 380141 in table 2 at index 113
+Inserting 458952 with priority (3, 1, 2)
+placed 458952 in table 3 at index 240
+Inserting 487080 with priority (3, 1, 2)
+placed 487080 in table 3 at index 418
+Inserting 178396 with priority (3, 2, 1)
+placed 178396 in table 3 at index 698
+Inserting 477920 with priority (2, 3, 1)
+placed 477920 in table 2 at index 145
+Inserting 721436 with priority (3, 1, 2)
+i = 0 index = 447 tableIndex = 3
+Swapping 721436 with 876746
+placed 876746 in table 1 at index 638
+Inserting 84930 with priority (2, 1, 3)
+i = 0 index = 379 tableIndex = 2
+Swapping 84930 with 146278
+placed 146278 in table 1 at index 624
+Inserting 532390 with priority (1, 2, 3)
+placed 532390 in table 1 at index 876
+Inserting 818919 with priority (2, 1, 3)
+placed 818919 in table 2 at index 302
+Inserting 921975 with priority (2, 1, 3)
+placed 921975 in table 2 at index 500
+Inserting 189193 with priority (3, 2, 1)
+placed 189193 in table 3 at index 219
+Inserting 327320 with priority (2, 3, 1)
+placed 327320 in table 2 at index 438
+Inserting 104705 with priority (3, 2, 1)
+placed 104705 in table 3 at index 326
+Inserting 966752 with priority (3, 1, 2)
+placed 966752 in table 3 at index 70
+Inserting 10179 with priority (2, 3, 1)
+placed 10179 in table 2 at index 542
+Inserting 631863 with priority (1, 2, 3)
+placed 631863 in table 1 at index 592
+Inserting 261568 with priority (2, 3, 1)
+placed 261568 in table 2 at index 373
+Inserting 225890 with priority (3, 1, 2)
+i = 0 index = 79 tableIndex = 3
+Swapping 225890 with 917300
+placed 917300 in table 1 at index 95
+Inserting 101091 with priority (2, 3, 1)
+placed 101091 in table 2 at index 730
+Inserting 900620 with priority (1, 2, 3)
+placed 900620 in table 1 at index 308
+Inserting 691753 with priority (1, 2, 3)
+placed 691753 in table 1 at index 935
+Inserting 341049 with priority (2, 1, 3)
+placed 341049 in table 2 at index 799
+Inserting 468898 with priority (2, 3, 1)
+placed 468898 in table 2 at index 463
+Inserting 237301 with priority (2, 1, 3)
+placed 237301 in table 2 at index 66
+Inserting 407536 with priority (2, 1, 3)
+placed 407536 in table 2 at index 531
+Inserting 153865 with priority (2, 1, 3)
+i = 0 index = 705 tableIndex = 2
+Swapping 153865 with 371465
+placed 371465 in table 1 at index 461
+Inserting 887843 with priority (1, 3, 2)
+placed 887843 in table 1 at index 501
+Inserting 590792 with priority (1, 2, 3)
+placed 590792 in table 1 at index 180
+Inserting 456510 with priority (1, 3, 2)
+placed 456510 in table 1 at index 469
+Inserting 656112 with priority (1, 3, 2)
+i = 0 index = 967 tableIndex = 1
+Swapping 656112 with 727792
+placed 727792 in table 3 at index 749
+Inserting 688730 with priority (1, 2, 3)
+placed 688730 in table 1 at index 615
+Inserting 593918 with priority (1, 2, 3)
+placed 593918 in table 1 at index 745
+Inserting 773659 with priority (1, 2, 3)
+placed 773659 in table 1 at index 470
+Inserting 811652 with priority (3, 1, 2)
+placed 811652 in table 3 at index 551
+Inserting 283604 with priority (2, 1, 3)
+placed 283604 in table 2 at index 555
+Inserting 526477 with priority (3, 1, 2)
+placed 526477 in table 3 at index 489
+Inserting 275497 with priority (1, 3, 2)
+placed 275497 in table 1 at index 311
+Inserting 583213 with priority (2, 1, 3)
+placed 583213 in table 2 at index 601
+Inserting 414706 with priority (2, 1, 3)
+placed 414706 in table 2 at index 229
+Inserting 482259 with priority (3, 1, 2)
+placed 482259 in table 3 at index 38
+Inserting 86104 with priority (3, 2, 1)
+placed 86104 in table 3 at index 16
+Inserting 608137 with priority (3, 1, 2)
+placed 608137 in table 3 at index 741
+Inserting 404103 with priority (2, 3, 1)
+i = 0 index = 426 tableIndex = 2
+Swapping 404103 with 846602
+placed 846602 in table 3 at index 708
+Inserting 569293 with priority (3, 2, 1)
+placed 569293 in table 3 at index 922
+Inserting 177270 with priority (2, 3, 1)
+placed 177270 in table 2 at index 81
+Inserting 891446 with priority (2, 3, 1)
+placed 891446 in table 2 at index 385
+Inserting 140723 with priority (3, 1, 2)
+placed 140723 in table 3 at index 0
+Inserting 832471 with priority (3, 1, 2)
+placed 832471 in table 3 at index 574
+Inserting 319142 with priority (1, 3, 2)
+placed 319142 in table 1 at index 772
+Inserting 228489 with priority (1, 3, 2)
+placed 228489 in table 1 at index 869
+Inserting 5039 with priority (2, 1, 3)
+placed 5039 in table 2 at index 703
+Inserting 346406 with priority (1, 3, 2)
+placed 346406 in table 1 at index 228
+Inserting 761195 with priority (1, 2, 3)
+placed 761195 in table 1 at index 937
+Inserting 903449 with priority (3, 1, 2)
+placed 903449 in table 3 at index 665
+Inserting 951668 with priority (1, 2, 3)
+placed 951668 in table 1 at index 323
+Inserting 884707 with priority (1, 2, 3)
+placed 884707 in table 1 at index 625
+Inserting 660933 with priority (1, 3, 2)
+i = 0 index = 757 tableIndex = 1
+Swapping 660933 with 878672
+placed 878672 in table 3 at index 540
+Inserting 112647 with priority (2, 3, 1)
+placed 112647 in table 2 at index 866
+Inserting 90464 with priority (2, 1, 3)
+i = 0 index = 1 tableIndex = 2
+Swapping 90464 with 295378
+placed 295378 in table 1 at index 319
+Inserting 888335 with priority (3, 2, 1)
+placed 888335 in table 3 at index 95
+Inserting 155717 with priority (2, 1, 3)
+placed 155717 in table 2 at index 516
+Inserting 521894 with priority (3, 2, 1)
+placed 521894 in table 3 at index 826
+Inserting 262354 with priority (2, 3, 1)
+placed 262354 in table 2 at index 249
+Inserting 234079 with priority (3, 2, 1)
+placed 234079 in table 3 at index 82
+Inserting 577878 with priority (1, 3, 2)
+placed 577878 in table 1 at index 563
+Inserting 979608 with priority (2, 3, 1)
+placed 979608 in table 2 at index 294
+Inserting 366122 with priority (1, 2, 3)
+placed 366122 in table 1 at index 480
+Inserting 899684 with priority (2, 1, 3)
+placed 899684 in table 2 at index 853
+Inserting 478229 with priority (3, 1, 2)
+placed 478229 in table 3 at index 839
+Inserting 357691 with priority (1, 2, 3)
+placed 357691 in table 1 at index 92
+Inserting 668898 with priority (2, 3, 1)
+i = 0 index = 591 tableIndex = 2
+Swapping 668898 with 713844
+placed 713844 in table 3 at index 786
+Inserting 927250 with priority (3, 2, 1)
+i = 0 index = 753 tableIndex = 3
+Swapping 927250 with 763818
+placed 763818 in table 2 at index 518
+Inserting 947024 with priority (1, 3, 2)
+placed 947024 in table 1 at index 357
+Inserting 701858 with priority (1, 3, 2)
+placed 701858 in table 1 at index 560
+Inserting 310781 with priority (3, 1, 2)
+placed 310781 in table 3 at index 80
+Inserting 894251 with priority (2, 1, 3)
+placed 894251 in table 2 at index 107
+Inserting 280731 with priority (1, 2, 3)
+placed 280731 in table 1 at index 774
+Inserting 478146 with priority (1, 3, 2)
+placed 478146 in table 1 at index 422
+Inserting 35459 with priority (1, 3, 2)
+placed 35459 in table 1 at index 279
+Inserting 539560 with priority (1, 3, 2)
+placed 539560 in table 1 at index 746
+Inserting 641128 with priority (3, 1, 2)
+placed 641128 in table 3 at index 542
+Inserting 429266 with priority (1, 3, 2)
+placed 429266 in table 1 at index 151
+Inserting 490871 with priority (1, 3, 2)
+placed 490871 in table 1 at index 556
+Inserting 958326 with priority (1, 3, 2)
+placed 958326 in table 1 at index 201
+Inserting 118999 with priority (2, 1, 3)
+placed 118999 in table 2 at index 176
+Inserting 945013 with priority (1, 2, 3)
+placed 945013 in table 1 at index 718
+Inserting 726408 with priority (2, 1, 3)
+placed 726408 in table 2 at index 284
+Inserting 772117 with priority (3, 2, 1)
+i = 0 index = 140 tableIndex = 3
+Swapping 772117 with 838425
+placed 838425 in table 2 at index 59
+Inserting 928665 with priority (1, 2, 3)
+placed 928665 in table 1 at index 212
+Inserting 987762 with priority (1, 3, 2)
+placed 987762 in table 1 at index 221
+Inserting 524107 with priority (2, 3, 1)
+placed 524107 in table 2 at index 655
+Inserting 763795 with priority (2, 1, 3)
+placed 763795 in table 2 at index 180
+Inserting 989581 with priority (1, 3, 2)
+placed 989581 in table 1 at index 705
+Inserting 749480 with priority (3, 2, 1)
+placed 749480 in table 3 at index 944
+Inserting 453504 with priority (3, 2, 1)
+placed 453504 in table 3 at index 407
+Inserting 676328 with priority (3, 2, 1)
+placed 676328 in table 3 at index 369
+Inserting 60782 with priority (1, 3, 2)
+placed 60782 in table 1 at index 968
+Inserting 68024 with priority (1, 2, 3)
+placed 68024 in table 1 at index 963
+Inserting 159529 with priority (3, 1, 2)
+i = 0 index = 953 tableIndex = 3
+Swapping 159529 with 754780
+placed 754780 in table 1 at index 329
+Inserting 33708 with priority (2, 3, 1)
+i = 0 index = 724 tableIndex = 2
+Swapping 33708 with 268257
+placed 268257 in table 3 at index 309
+Inserting 961172 with priority (3, 2, 1)
+placed 961172 in table 3 at index 198
+Inserting 694571 with priority (2, 1, 3)
+placed 694571 in table 2 at index 371
+Inserting 138680 with priority (3, 1, 2)
+placed 138680 in table 3 at index 90
+Inserting 693582 with priority (3, 2, 1)
+placed 693582 in table 3 at index 6
+Inserting 339827 with priority (1, 3, 2)
+placed 339827 in table 1 at index 576
+Inserting 571790 with priority (1, 3, 2)
+i = 0 index = 286 tableIndex = 1
+Swapping 571790 with 420183
+placed 420183 in table 3 at index 380
+Inserting 742447 with priority (2, 3, 1)
+i = 0 index = 287 tableIndex = 2
+Swapping 742447 with 281296
+placed 281296 in table 3 at index 972
+Inserting 259442 with priority (2, 3, 1)
+placed 259442 in table 2 at index 669
+Inserting 558608 with priority (2, 3, 1)
+placed 558608 in table 2 at index 175
+Inserting 84503 with priority (3, 1, 2)
+placed 84503 in table 3 at index 320
+Inserting 50775 with priority (1, 3, 2)
+placed 50775 in table 1 at index 310
+Inserting 180554 with priority (2, 3, 1)
+placed 180554 in table 2 at index 922
+Inserting 246251 with priority (1, 2, 3)
+placed 246251 in table 1 at index 161
+Inserting 681998 with priority (3, 2, 1)
+i = 0 index = 761 tableIndex = 3
+Swapping 681998 with 429420
+placed 429420 in table 2 at index 676
+Inserting 387361 with priority (3, 2, 1)
+placed 387361 in table 3 at index 975
+Inserting 183453 with priority (3, 1, 2)
+i = 0 index = 801 tableIndex = 3
+Swapping 183453 with 906605
+placed 906605 in table 1 at index 239
+Inserting 276778 with priority (3, 1, 2)
+i = 0 index = 542 tableIndex = 3
+Swapping 276778 with 641128
+placed 641128 in table 1 at index 726
+Inserting 108772 with priority (3, 2, 1)
+placed 108772 in table 3 at index 245
+Inserting 115406 with priority (1, 3, 2)
+placed 115406 in table 1 at index 10
+Inserting 950240 with priority (1, 3, 2)
+placed 950240 in table 1 at index 390
+Inserting 574944 with priority (1, 2, 3)
+i = 0 index = 54 tableIndex = 1
+Swapping 574944 with 461348
+i = 1 index = 773 tableIndex = 2
+Swapping 461348 with 332658
+i = 2 index = 586 tableIndex = 3
+Swapping 332658 with 245381
+placed 245381 in table 1 at index 913
+Inserting 521161 with priority (2, 1, 3)
+placed 521161 in table 2 at index 857
+Inserting 388701 with priority (2, 3, 1)
+placed 388701 in table 2 at index 111
+Inserting 711730 with priority (1, 2, 3)
+placed 711730 in table 1 at index 337
+Inserting 724933 with priority (1, 3, 2)
+placed 724933 in table 1 at index 581
+Inserting 477773 with priority (3, 1, 2)
+placed 477773 in table 3 at index 247
+Inserting 897603 with priority (3, 2, 1)
+placed 897603 in table 3 at index 814
+Inserting 694801 with priority (2, 3, 1)
+placed 694801 in table 2 at index 890
+Inserting 453188 with priority (3, 1, 2)
+placed 453188 in table 3 at index 794
+Inserting 976969 with priority (3, 1, 2)
+placed 976969 in table 3 at index 238
+Inserting 577490 with priority (2, 1, 3)
+placed 577490 in table 2 at index 609
+Inserting 379863 with priority (3, 2, 1)
+placed 379863 in table 3 at index 352
+Inserting 344172 with priority (2, 1, 3)
+placed 344172 in table 2 at index 108
+Inserting 412336 with priority (2, 1, 3)
+placed 412336 in table 2 at index 955
+Inserting 76498 with priority (2, 3, 1)
+placed 76498 in table 2 at index 697
+Inserting 825841 with priority (3, 2, 1)
+placed 825841 in table 3 at index 945
+Inserting 673170 with priority (1, 2, 3)
+placed 673170 in table 1 at index 459
+Inserting 670678 with priority (3, 1, 2)
+placed 670678 in table 3 at index 992
+Inserting 312554 with priority (2, 1, 3)
+placed 312554 in table 2 at index 462
+Inserting 306764 with priority (2, 1, 3)
+placed 306764 in table 2 at index 664
+Inserting 414835 with priority (3, 2, 1)
+placed 414835 in table 3 at index 543
+Inserting 907559 with priority (3, 1, 2)
+i = 0 index = 83 tableIndex = 3
+Swapping 907559 with 156562
+placed 156562 in table 1 at index 171
+Inserting 192064 with priority (3, 1, 2)
+placed 192064 in table 3 at index 886
+Inserting 322650 with priority (3, 1, 2)
+placed 322650 in table 3 at index 541
+Inserting 893447 with priority (2, 3, 1)
+placed 893447 in table 2 at index 138
+Inserting 572225 with priority (3, 1, 2)
+placed 572225 in table 3 at index 782
+Inserting 859368 with priority (3, 2, 1)
+i = 0 index = 665 tableIndex = 3
+Swapping 859368 with 903449
+placed 903449 in table 2 at index 579
+Inserting 517201 with priority (2, 1, 3)
+placed 517201 in table 2 at index 674
+Inserting 310644 with priority (2, 1, 3)
+placed 310644 in table 2 at index 751
+Inserting 351200 with priority (3, 1, 2)
+placed 351200 in table 3 at index 573
+Inserting 683127 with priority (1, 3, 2)
+placed 683127 in table 1 at index 44
+Inserting 398405 with priority (1, 2, 3)
+i = 0 index = 149 tableIndex = 1
+Swapping 398405 with 283958
+placed 283958 in table 2 at index 993
+Inserting 234934 with priority (3, 1, 2)
+placed 234934 in table 3 at index 355
+Inserting 862754 with priority (1, 2, 3)
+placed 862754 in table 1 at index 712
+Inserting 608454 with priority (2, 1, 3)
+placed 608454 in table 2 at index 639
+Inserting 204526 with priority (3, 1, 2)
+placed 204526 in table 3 at index 75
+Inserting 441049 with priority (2, 1, 3)
+placed 441049 in table 2 at index 491
+Inserting 864983 with priority (2, 1, 3)
+placed 864983 in table 2 at index 24
+Inserting 325436 with priority (2, 3, 1)
+placed 325436 in table 2 at index 846
+Inserting 466062 with priority (3, 2, 1)
+placed 466062 in table 3 at index 954
+Inserting 954882 with priority (3, 1, 2)
+i = 0 index = 922 tableIndex = 3
+Swapping 954882 with 569293
+placed 569293 in table 1 at index 373
+Inserting 567062 with priority (3, 1, 2)
+placed 567062 in table 3 at index 819
+Inserting 895177 with priority (2, 3, 1)
+placed 895177 in table 2 at index 41
+Inserting 611890 with priority (2, 3, 1)
+placed 611890 in table 2 at index 29
+Inserting 446155 with priority (3, 1, 2)
+i = 0 index = 972 tableIndex = 3
+Swapping 446155 with 281296
+placed 281296 in table 1 at index 445
+Inserting 217586 with priority (3, 1, 2)
+i = 0 index = 805 tableIndex = 3
+Swapping 217586 with 728350
+i = 1 index = 719 tableIndex = 1
+Swapping 728350 with 496210
+placed 496210 in table 2 at index 809
+Inserting 116694 with priority (3, 2, 1)
+placed 116694 in table 3 at index 531
+Inserting 830524 with priority (2, 3, 1)
+placed 830524 in table 2 at index 998
+Inserting 340758 with priority (1, 3, 2)
+placed 340758 in table 1 at index 159
+Inserting 107823 with priority (3, 1, 2)
+placed 107823 in table 3 at index 880
+Inserting 482381 with priority (3, 2, 1)
+placed 482381 in table 3 at index 233
+Inserting 917344 with priority (2, 1, 3)
+placed 917344 in table 2 at index 569
+Inserting 867934 with priority (3, 2, 1)
+placed 867934 in table 3 at index 756
+Inserting 779426 with priority (2, 1, 3)
+placed 779426 in table 2 at index 527
+Inserting 33054 with priority (3, 1, 2)
+placed 33054 in table 3 at index 834
+Inserting 354153 with priority (2, 3, 1)
+placed 354153 in table 2 at index 541
+Inserting 463664 with priority (1, 2, 3)
+placed 463664 in table 1 at index 763
+Inserting 46293 with priority (1, 2, 3)
+placed 46293 in table 1 at index 972
+Inserting 59166 with priority (3, 1, 2)
+i = 0 index = 554 tableIndex = 3
+Swapping 59166 with 912445
+i = 1 index = 330 tableIndex = 1
+Swapping 912445 with 492230
+placed 492230 in table 2 at index 399
+Inserting 472386 with priority (3, 2, 1)
+placed 472386 in table 3 at index 464
+Inserting 476410 with priority (3, 2, 1)
+placed 476410 in table 3 at index 802
+Inserting 877111 with priority (2, 1, 3)
+placed 877111 in table 2 at index 28
+Inserting 888455 with priority (3, 1, 2)
+placed 888455 in table 3 at index 904
+Inserting 118313 with priority (2, 1, 3)
+placed 118313 in table 2 at index 629
+Inserting 23987 with priority (3, 1, 2)
+placed 23987 in table 3 at index 359
+Inserting 213057 with priority (2, 3, 1)
+placed 213057 in table 2 at index 424
+Inserting 33377 with priority (2, 1, 3)
+placed 33377 in table 2 at index 164
+Inserting 47161 with priority (2, 1, 3)
+placed 47161 in table 2 at index 431
+Inserting 632399 with priority (1, 2, 3)
+placed 632399 in table 1 at index 463
+Inserting 426027 with priority (1, 3, 2)
+placed 426027 in table 1 at index 613
+Inserting 595438 with priority (3, 2, 1)
+placed 595438 in table 3 at index 955
+Inserting 172465 with priority (3, 1, 2)
+placed 172465 in table 3 at index 392
+Inserting 597889 with priority (1, 3, 2)
+placed 597889 in table 1 at index 541
+Inserting 674831 with priority (1, 3, 2)
+placed 674831 in table 1 at index 131
+Inserting 720918 with priority (2, 1, 3)
+placed 720918 in table 2 at index 61
+Inserting 845852 with priority (2, 1, 3)
+placed 845852 in table 2 at index 354
+Inserting 709040 with priority (2, 1, 3)
+i = 0 index = 163 tableIndex = 2
+Swapping 709040 with 774269
+placed 774269 in table 1 at index 630
+Inserting 652760 with priority (3, 2, 1)
+placed 652760 in table 3 at index 4
+Inserting 524266 with priority (3, 1, 2)
+placed 524266 in table 3 at index 752
+Inserting 951498 with priority (1, 2, 3)
+placed 951498 in table 1 at index 118
+Inserting 822527 with priority (2, 1, 3)
+placed 822527 in table 2 at index 389
+Inserting 664542 with priority (1, 2, 3)
+placed 664542 in table 1 at index 771
+Inserting 465056 with priority (1, 2, 3)
+placed 465056 in table 1 at index 682
+Inserting 91024 with priority (1, 3, 2)
+placed 91024 in table 1 at index 433
+Inserting 148096 with priority (2, 1, 3)
+placed 148096 in table 2 at index 277
+Inserting 165320 with priority (3, 1, 2)
+placed 165320 in table 3 at index 435
+Inserting 837201 with priority (1, 3, 2)
+placed 837201 in table 1 at index 552
+Inserting 864119 with priority (3, 2, 1)
+placed 864119 in table 3 at index 702
+Inserting 369811 with priority (2, 1, 3)
+placed 369811 in table 2 at index 388
+Inserting 36614 with priority (1, 2, 3)
+placed 36614 in table 1 at index 230
+Inserting 227372 with priority (1, 3, 2)
+placed 227372 in table 1 at index 998
+Inserting 109460 with priority (3, 2, 1)
+placed 109460 in table 3 at index 208
+Inserting 258852 with priority (3, 1, 2)
+placed 258852 in table 3 at index 897
+Inserting 672949 with priority (2, 3, 1)
+placed 672949 in table 2 at index 738
+Inserting 184176 with priority (2, 3, 1)
+placed 184176 in table 2 at index 331
+Inserting 553984 with priority (1, 2, 3)
+placed 553984 in table 1 at index 232
+Inserting 884004 with priority (3, 1, 2)
+placed 884004 in table 3 at index 495
+Inserting 176099 with priority (2, 1, 3)
+placed 176099 in table 2 at index 714
+Inserting 515272 with priority (1, 2, 3)
+placed 515272 in table 1 at index 748
+Inserting 676800 with priority (2, 3, 1)
+i = 0 index = 349 tableIndex = 2
+Swapping 676800 with 838719
+placed 838719 in table 3 at index 519
+Inserting 91588 with priority (2, 3, 1)
+placed 91588 in table 2 at index 281
+Inserting 924873 with priority (3, 1, 2)
+i = 0 index = 30 tableIndex = 3
+Swapping 924873 with 24120
+placed 24120 in table 1 at index 75
+Inserting 666322 with priority (2, 3, 1)
+placed 666322 in table 2 at index 881
+Inserting 349163 with priority (1, 2, 3)
+placed 349163 in table 1 at index 65
+Inserting 690790 with priority (3, 1, 2)
+placed 690790 in table 3 at index 396
+Inserting 663192 with priority (3, 2, 1)
+placed 663192 in table 3 at index 497
+Inserting 597728 with priority (1, 2, 3)
+placed 597728 in table 1 at index 782
+Inserting 260155 with priority (3, 1, 2)
+i = 0 index = 18 tableIndex = 3
+Swapping 260155 with 659347
+placed 659347 in table 1 at index 798
+Inserting 595817 with priority (1, 2, 3)
+placed 595817 in table 1 at index 115
+Inserting 758986 with priority (1, 2, 3)
+placed 758986 in table 1 at index 678
+Inserting 545197 with priority (2, 3, 1)
+placed 545197 in table 2 at index 681
+Inserting 496531 with priority (1, 2, 3)
+placed 496531 in table 1 at index 886
+Inserting 456621 with priority (3, 2, 1)
+placed 456621 in table 3 at index 723
+Inserting 351796 with priority (2, 3, 1)
+placed 351796 in table 2 at index 519
+Inserting 862193 with priority (3, 1, 2)
+placed 862193 in table 3 at index 490
+Inserting 260525 with priority (1, 2, 3)
+placed 260525 in table 1 at index 787
+Inserting 15251 with priority (3, 2, 1)
+placed 15251 in table 3 at index 96
+Inserting 451516 with priority (2, 3, 1)
+placed 451516 in table 2 at index 910
+Inserting 152868 with priority (1, 2, 3)
+i = 0 index = 886 tableIndex = 1
+Swapping 152868 with 496531
+placed 496531 in table 2 at index 268
+Inserting 653848 with priority (3, 2, 1)
+placed 653848 in table 3 at index 194
+Inserting 543460 with priority (1, 3, 2)
+placed 543460 in table 1 at index 34
+Inserting 868757 with priority (2, 1, 3)
+placed 868757 in table 2 at index 278
+Inserting 125461 with priority (3, 2, 1)
+placed 125461 in table 3 at index 986
+Inserting 694522 with priority (1, 3, 2)
+placed 694522 in table 1 at index 485
+Inserting 720255 with priority (3, 1, 2)
+placed 720255 in table 3 at index 386
+Inserting 66978 with priority (2, 1, 3)
+placed 66978 in table 2 at index 263
+Inserting 66027 with priority (3, 2, 1)
+placed 66027 in table 3 at index 454
+Inserting 545921 with priority (3, 2, 1)
+placed 545921 in table 3 at index 516
+Inserting 346780 with priority (2, 3, 1)
+placed 346780 in table 2 at index 610
+Inserting 849992 with priority (1, 3, 2)
+placed 849992 in table 1 at index 236
+Inserting 219850 with priority (2, 3, 1)
+placed 219850 in table 2 at index 618
+Inserting 204050 with priority (1, 3, 2)
+i = 0 index = 787 tableIndex = 1
+Swapping 204050 with 260525
+i = 1 index = 785 tableIndex = 3
+Swapping 260525 with 440137
+placed 440137 in table 2 at index 361
+Inserting 479820 with priority (3, 2, 1)
+i = 0 index = 927 tableIndex = 3
+Swapping 479820 with 989176
+placed 989176 in table 2 at index 962
+Inserting 979272 with priority (1, 3, 2)
+placed 979272 in table 1 at index 524
+Inserting 5899 with priority (2, 3, 1)
+placed 5899 in table 2 at index 959
+Inserting 944346 with priority (3, 2, 1)
+placed 944346 in table 3 at index 878
+Inserting 107016 with priority (2, 1, 3)
+i = 0 index = 28 tableIndex = 2
+Swapping 107016 with 877111
+placed 877111 in table 1 at index 488
+Inserting 769593 with priority (1, 3, 2)
+i = 0 index = 886 tableIndex = 1
+Swapping 769593 with 152868
+placed 152868 in table 3 at index 635
+Inserting 857882 with priority (1, 2, 3)
+placed 857882 in table 1 at index 947
+Inserting 29013 with priority (1, 2, 3)
+placed 29013 in table 1 at index 28
+Inserting 721017 with priority (2, 1, 3)
+placed 721017 in table 2 at index 583
+Inserting 562425 with priority (2, 1, 3)
+placed 562425 in table 2 at index 15
+Inserting 698331 with priority (3, 1, 2)
+placed 698331 in table 3 at index 188
+Inserting 162102 with priority (2, 3, 1)
+placed 162102 in table 2 at index 369
+Inserting 614431 with priority (2, 3, 1)
+i = 0 index = 857 tableIndex = 2
+Swapping 614431 with 521161
+placed 521161 in table 3 at index 124
+Inserting 785010 with priority (1, 2, 3)
+i = 0 index = 445 tableIndex = 1
+Swapping 785010 with 281296
+i = 1 index = 287 tableIndex = 2
+Swapping 281296 with 742447
+placed 742447 in table 3 at index 643
+Inserting 253431 with priority (3, 2, 1)
+placed 253431 in table 3 at index 631
+Inserting 382635 with priority (3, 1, 2)
+i = 0 index = 276 tableIndex = 3
+Swapping 382635 with 516243
+i = 1 index = 118 tableIndex = 1
+Swapping 516243 with 951498
+placed 951498 in table 2 at index 98
+Inserting 978027 with priority (2, 3, 1)
+placed 978027 in table 2 at index 675
+Inserting 199646 with priority (3, 1, 2)
+placed 199646 in table 3 at index 889
+Inserting 652460 with priority (1, 3, 2)
+placed 652460 in table 1 at index 238
+Inserting 479439 with priority (1, 3, 2)
+placed 479439 in table 1 at index 871
+Inserting 949265 with priority (3, 2, 1)
+placed 949265 in table 3 at index 345
+Inserting 40587 with priority (3, 1, 2)
+placed 40587 in table 3 at index 278
+Inserting 520578 with priority (3, 2, 1)
+i = 0 index = 663 tableIndex = 3
+Swapping 520578 with 648073
+placed 648073 in table 2 at index 721
+Inserting 7360 with priority (3, 2, 1)
+placed 7360 in table 3 at index 769
+Inserting 419392 with priority (3, 2, 1)
+placed 419392 in table 3 at index 634
+Inserting 58943 with priority (2, 3, 1)
+placed 58943 in table 2 at index 653
+Inserting 538395 with priority (3, 2, 1)
+placed 538395 in table 3 at index 706
+Inserting 203918 with priority (1, 2, 3)
+i = 0 index = 774 tableIndex = 1
+Swapping 203918 with 280731
+placed 280731 in table 2 at index 677
+Inserting 17960 with priority (1, 2, 3)
+placed 17960 in table 1 at index 586
+Inserting 664509 with priority (3, 1, 2)
+placed 664509 in table 3 at index 268
+Inserting 882397 with priority (1, 2, 3)
+placed 882397 in table 1 at index 404
+Inserting 521044 with priority (2, 1, 3)
+i = 0 index = 699 tableIndex = 2
+Swapping 521044 with 947202
+placed 947202 in table 1 at index 138
+Inserting 302800 with priority (2, 1, 3)
+placed 302800 in table 2 at index 71
+Inserting 557850 with priority (1, 2, 3)
+placed 557850 in table 1 at index 515
+Inserting 958513 with priority (2, 3, 1)
+placed 958513 in table 2 at index 598
+Inserting 820399 with priority (2, 3, 1)
+placed 820399 in table 2 at index 295
+Inserting 909130 with priority (1, 2, 3)
+i = 0 index = 182 tableIndex = 1
+Swapping 909130 with 586080
+placed 586080 in table 2 at index 129
+Inserting 446247 with priority (1, 2, 3)
+placed 446247 in table 1 at index 577
+Inserting 249965 with priority (2, 3, 1)
+placed 249965 in table 2 at index 425
+Inserting 451758 with priority (3, 2, 1)
+placed 451758 in table 3 at index 336
+Inserting 624494 with priority (2, 3, 1)
+placed 624494 in table 2 at index 930
+Inserting 502688 with priority (1, 3, 2)
+placed 502688 in table 1 at index 162
+Inserting 969669 with priority (3, 2, 1)
+placed 969669 in table 3 at index 310
+Inserting 453428 with priority (2, 3, 1)
+placed 453428 in table 2 at index 303
+Inserting 200656 with priority (1, 2, 3)
+i = 0 index = 613 tableIndex = 1
+Swapping 200656 with 426027
+placed 426027 in table 2 at index 547
+Inserting 669330 with priority (3, 2, 1)
+placed 669330 in table 3 at index 942
+Inserting 435512 with priority (2, 3, 1)
+placed 435512 in table 2 at index 834
+Inserting 181849 with priority (2, 3, 1)
+placed 181849 in table 2 at index 291
+Inserting 687355 with priority (3, 2, 1)
+placed 687355 in table 3 at index 909
+Inserting 952289 with priority (2, 3, 1)
+placed 952289 in table 2 at index 12
+Inserting 464767 with priority (1, 3, 2)
+i = 0 index = 556 tableIndex = 1
+Swapping 464767 with 490871
+placed 490871 in table 3 at index 260
+Inserting 503267 with priority (2, 1, 3)
+placed 503267 in table 2 at index 650
+Inserting 894734 with priority (2, 1, 3)
+placed 894734 in table 2 at index 854
+Inserting 159649 with priority (1, 3, 2)
+placed 159649 in table 1 at index 287
+Inserting 895280 with priority (2, 1, 3)
+placed 895280 in table 2 at index 907
+Inserting 582534 with priority (2, 3, 1)
+i = 0 index = 463 tableIndex = 2
+Swapping 582534 with 468898
+i = 1 index = 194 tableIndex = 3
+Swapping 468898 with 653848
+placed 653848 in table 1 at index 449
+Inserting 889288 with priority (1, 3, 2)
+placed 889288 in table 1 at index 932
+Inserting 632640 with priority (3, 2, 1)
+i = 0 index = 205 tableIndex = 3
+Swapping 632640 with 284833
+placed 284833 in table 2 at index 652
+Inserting 183643 with priority (1, 2, 3)
+placed 183643 in table 1 at index 826
+Inserting 574336 with priority (1, 2, 3)
+placed 574336 in table 1 at index 120
+Inserting 258572 with priority (3, 2, 1)
+placed 258572 in table 3 at index 402
+Inserting 65057 with priority (2, 3, 1)
+placed 65057 in table 2 at index 692
+Inserting 498267 with priority (1, 3, 2)
+placed 498267 in table 1 at index 994
+Inserting 91201 with priority (1, 3, 2)
+i = 0 index = 201 tableIndex = 1
+Swapping 91201 with 958326
+placed 958326 in table 3 at index 481
+Inserting 649428 with priority (3, 1, 2)
+placed 649428 in table 3 at index 381
+Inserting 981749 with priority (2, 1, 3)
+placed 981749 in table 2 at index 546
+Inserting 982752 with priority (2, 1, 3)
+placed 982752 in table 2 at index 977
+Inserting 165354 with priority (3, 1, 2)
+placed 165354 in table 3 at index 33
+Inserting 36828 with priority (2, 1, 3)
+i = 0 index = 986 tableIndex = 2
+Swapping 36828 with 8693
+placed 8693 in table 1 at index 838
+Inserting 986533 with priority (1, 3, 2)
+placed 986533 in table 1 at index 819
+Inserting 74202 with priority (2, 3, 1)
+placed 74202 in table 2 at index 568
+Inserting 643219 with priority (3, 1, 2)
+placed 643219 in table 3 at index 863
+Inserting 764338 with priority (2, 3, 1)
+placed 764338 in table 2 at index 621
+Inserting 949584 with priority (3, 1, 2)
+i = 0 index = 530 tableIndex = 3
+Swapping 949584 with 231382
+placed 231382 in table 1 at index 635
+Inserting 393139 with priority (3, 1, 2)
+i = 0 index = 638 tableIndex = 3
+Swapping 393139 with 780170
+placed 780170 in table 1 at index 194
+Inserting 539995 with priority (1, 3, 2)
+placed 539995 in table 1 at index 146
+Inserting 131975 with priority (1, 2, 3)
+i = 0 index = 459 tableIndex = 1
+Swapping 131975 with 673170
+placed 673170 in table 2 at index 649
+Inserting 707988 with priority (2, 1, 3)
+placed 707988 in table 2 at index 875
+Inserting 357029 with priority (2, 3, 1)
+placed 357029 in table 2 at index 624
+Inserting 8754 with priority (1, 2, 3)
+i = 0 index = 65 tableIndex = 1
+Swapping 8754 with 349163
+placed 349163 in table 2 at index 715
+Inserting 368460 with priority (2, 3, 1)
+placed 368460 in table 2 at index 496
+Inserting 327177 with priority (1, 3, 2)
+placed 327177 in table 1 at index 325
+Inserting 302980 with priority (1, 2, 3)
+placed 302980 in table 1 at index 604
+Inserting 118152 with priority (1, 3, 2)
+i = 0 index = 592 tableIndex = 1
+Swapping 118152 with 631863
+placed 631863 in table 3 at index 283
+Inserting 395681 with priority (3, 2, 1)
+placed 395681 in table 3 at index 121
+Inserting 992463 with priority (3, 1, 2)
+i = 0 index = 723 tableIndex = 3
+Swapping 992463 with 456621
+i = 1 index = 587 tableIndex = 1
+Swapping 456621 with 287664
+placed 287664 in table 2 at index 67
+Inserting 719606 with priority (3, 1, 2)
+placed 719606 in table 3 at index 523
+Inserting 935362 with priority (2, 1, 3)
+i = 0 index = 547 tableIndex = 2
+Swapping 935362 with 426027
+i = 1 index = 613 tableIndex = 1
+Swapping 426027 with 200656
+placed 200656 in table 3 at index 808
+Inserting 171040 with priority (2, 3, 1)
+placed 171040 in table 2 at index 761
+Inserting 755651 with priority (1, 2, 3)
+placed 755651 in table 1 at index 555
+Inserting 569042 with priority (2, 1, 3)
+i = 0 index = 81 tableIndex = 2
+Swapping 569042 with 177270
+placed 177270 in table 1 at index 249
+Inserting 577319 with priority (3, 1, 2)
+placed 577319 in table 3 at index 349
+Inserting 55221 with priority (3, 1, 2)
+placed 55221 in table 3 at index 677
+Inserting 259084 with priority (2, 3, 1)
+placed 259084 in table 2 at index 488
+Inserting 603974 with priority (1, 2, 3)
+placed 603974 in table 1 at index 954
+Inserting 101800 with priority (1, 3, 2)
+placed 101800 in table 1 at index 226
+Inserting 986135 with priority (3, 1, 2)
+placed 986135 in table 3 at index 73
+Inserting 294363 with priority (3, 1, 2)
+placed 294363 in table 3 at index 969
+Inserting 625470 with priority (1, 2, 3)
+placed 625470 in table 1 at index 429
+Inserting 128017 with priority (3, 1, 2)
+placed 128017 in table 3 at index 424
+Inserting 352134 with priority (1, 3, 2)
+i = 0 index = 918 tableIndex = 1
+Swapping 352134 with 572443
+placed 572443 in table 3 at index 870
+Inserting 610137 with priority (2, 1, 3)
+placed 610137 in table 2 at index 115
+Inserting 404591 with priority (3, 1, 2)
+placed 404591 in table 3 at index 809
+Inserting 560882 with priority (3, 1, 2)
+placed 560882 in table 3 at index 790
+Inserting 944477 with priority (3, 1, 2)
+i = 0 index = 253 tableIndex = 3
+Swapping 944477 with 92603
+i = 1 index = 836 tableIndex = 1
+Swapping 92603 with 703372
+placed 703372 in table 2 at index 152
+Inserting 682514 with priority (2, 1, 3)
+placed 682514 in table 2 at index 849
+Inserting 479418 with priority (1, 2, 3)
+placed 479418 in table 1 at index 617
+Inserting 402004 with priority (1, 3, 2)
+i = 0 index = 865 tableIndex = 1
+Swapping 402004 with 103414
+placed 103414 in table 3 at index 72
+Inserting 50219 with priority (1, 2, 3)
+placed 50219 in table 1 at index 309
+Inserting 520335 with priority (2, 1, 3)
+placed 520335 in table 2 at index 187
+Inserting 485664 with priority (1, 3, 2)
+placed 485664 in table 1 at index 442
+Inserting 889965 with priority (1, 3, 2)
+placed 889965 in table 1 at index 975
+Inserting 146833 with priority (2, 1, 3)
+placed 146833 in table 2 at index 210
+Inserting 224228 with priority (3, 2, 1)
+i = 0 index = 704 tableIndex = 3
+Swapping 224228 with 142626
+placed 142626 in table 2 at index 759
+Inserting 446069 with priority (2, 3, 1)
+i = 0 index = 66 tableIndex = 2
+Swapping 446069 with 237301
+placed 237301 in table 3 at index 19
+Inserting 392836 with priority (2, 3, 1)
+placed 392836 in table 2 at index 929
+Inserting 55533 with priority (2, 3, 1)
+i = 0 index = 881 tableIndex = 2
+Swapping 55533 with 666322
+placed 666322 in table 3 at index 892
+Inserting 54757 with priority (1, 3, 2)
+placed 54757 in table 1 at index 575
+Inserting 417142 with priority (3, 2, 1)
+placed 417142 in table 3 at index 443
+Inserting 803379 with priority (3, 2, 1)
+placed 803379 in table 3 at index 468
+Inserting 600049 with priority (1, 3, 2)
+placed 600049 in table 1 at index 258
+Inserting 368440 with priority (1, 2, 3)
+placed 368440 in table 1 at index 995
+Inserting 301178 with priority (1, 2, 3)
+i = 0 index = 389 tableIndex = 1
+Swapping 301178 with 427966
+placed 427966 in table 2 at index 912
+Inserting 383109 with priority (2, 3, 1)
+placed 383109 in table 2 at index 116
+Inserting 601599 with priority (1, 3, 2)
+i = 0 index = 212 tableIndex = 1
+Swapping 601599 with 928665
+placed 928665 in table 3 at index 621
+Inserting 304351 with priority (1, 3, 2)
+placed 304351 in table 1 at index 766
+Inserting 180507 with priority (2, 1, 3)
+placed 180507 in table 2 at index 437
+Inserting 996711 with priority (2, 3, 1)
+placed 996711 in table 2 at index 158
+Inserting 50099 with priority (2, 1, 3)
+placed 50099 in table 2 at index 448
+Inserting 630405 with priority (1, 2, 3)
+placed 630405 in table 1 at index 401
+Inserting 621717 with priority (3, 1, 2)
+placed 621717 in table 3 at index 521
+Inserting 576862 with priority (3, 1, 2)
+placed 576862 in table 3 at index 303
+Inserting 361412 with priority (1, 3, 2)
+i = 0 index = 792 tableIndex = 1
+Swapping 361412 with 156923
+i = 1 index = 482 tableIndex = 3
+Swapping 156923 with 734663
+i = 2 index = 178 tableIndex = 2
+Swapping 734663 with 382243
+placed 382243 in table 1 at index 669
+Inserting 857652 with priority (1, 3, 2)
+placed 857652 in table 1 at index 911
+Inserting 300345 with priority (3, 1, 2)
+placed 300345 in table 3 at index 84
+Inserting 359828 with priority (3, 2, 1)
+i = 0 index = 567 tableIndex = 3
+Swapping 359828 with 924697
+placed 924697 in table 2 at index 843
+Inserting 616041 with priority (2, 3, 1)
+placed 616041 in table 2 at index 909
+Inserting 33981 with priority (1, 3, 2)
+placed 33981 in table 1 at index 426
+Inserting 134875 with priority (3, 2, 1)
+placed 134875 in table 3 at index 129
+Inserting 618235 with priority (3, 2, 1)
+placed 618235 in table 3 at index 450
+Inserting 127428 with priority (2, 1, 3)
+placed 127428 in table 2 at index 617
+Inserting 428051 with priority (2, 1, 3)
+placed 428051 in table 2 at index 60
+Inserting 259868 with priority (1, 3, 2)
+placed 259868 in table 1 at index 269
+Inserting 699416 with priority (2, 3, 1)
+placed 699416 in table 2 at index 198
+Inserting 983329 with priority (1, 2, 3)
+placed 983329 in table 1 at index 335
+Inserting 444022 with priority (1, 2, 3)
+placed 444022 in table 1 at index 777
+Inserting 479104 with priority (3, 1, 2)
+placed 479104 in table 3 at index 242
+Inserting 167095 with priority (2, 3, 1)
+placed 167095 in table 2 at index 828
+Inserting 982317 with priority (2, 1, 3)
+placed 982317 in table 2 at index 905
+Inserting 481889 with priority (2, 3, 1)
+i = 0 index = 284 tableIndex = 2
+Swapping 481889 with 726408
+placed 726408 in table 3 at index 155
+Inserting 492948 with priority (3, 1, 2)
+placed 492948 in table 3 at index 549
+Inserting 171521 with priority (3, 2, 1)
+placed 171521 in table 3 at index 486
+Inserting 295083 with priority (2, 1, 3)
+placed 295083 in table 2 at index 131
+Inserting 212208 with priority (2, 1, 3)
+placed 212208 in table 2 at index 651
+Inserting 898976 with priority (3, 1, 2)
+placed 898976 in table 3 at index 568
+Inserting 775870 with priority (2, 3, 1)
+placed 775870 in table 2 at index 480
+Inserting 163081 with priority (1, 3, 2)
+placed 163081 in table 1 at index 725
+Inserting 605492 with priority (1, 3, 2)
+placed 605492 in table 1 at index 623
+Inserting 571013 with priority (1, 2, 3)
+placed 571013 in table 1 at index 641
+Inserting 926299 with priority (2, 3, 1)
+i = 0 index = 357 tableIndex = 2
+Swapping 926299 with 410651
+placed 410651 in table 3 at index 256
+Inserting 567906 with priority (1, 2, 3)
+placed 567906 in table 1 at index 244
+Inserting 301538 with priority (1, 3, 2)
+placed 301538 in table 1 at index 916
+Inserting 617013 with priority (2, 1, 3)
+placed 617013 in table 2 at index 378
+Inserting 300923 with priority (3, 1, 2)
+placed 300923 in table 3 at index 690
+Inserting 947267 with priority (2, 3, 1)
+placed 947267 in table 2 at index 694
+Inserting 891721 with priority (1, 2, 3)
+i = 0 index = 145 tableIndex = 1
+Swapping 891721 with 127316
+placed 127316 in table 2 at index 451
+Inserting 731849 with priority (1, 3, 2)
+placed 731849 in table 1 at index 737
+Inserting 826583 with priority (2, 3, 1)
+placed 826583 in table 2 at index 976
+Inserting 66221 with priority (3, 1, 2)
+placed 66221 in table 3 at index 637
+Inserting 5457 with priority (2, 1, 3)
+placed 5457 in table 2 at index 234
+Inserting 767841 with priority (3, 1, 2)
+placed 767841 in table 3 at index 970
+Inserting 574233 with priority (2, 1, 3)
+placed 574233 in table 2 at index 75
+Inserting 626002 with priority (3, 2, 1)
+i = 0 index = 219 tableIndex = 3
+Swapping 626002 with 189193
+placed 189193 in table 2 at index 921
+Inserting 163091 with priority (1, 2, 3)
+i = 0 index = 478 tableIndex = 1
+Swapping 163091 with 296437
+i = 1 index = 490 tableIndex = 2
+Swapping 296437 with 729326
+placed 729326 in table 3 at index 56
+Inserting 656259 with priority (2, 1, 3)
+placed 656259 in table 2 at index 798
+Inserting 510635 with priority (1, 3, 2)
+placed 510635 in table 1 at index 5
+Inserting 73768 with priority (1, 3, 2)
+placed 73768 in table 1 at index 98
+Inserting 645225 with priority (3, 2, 1)
+i = 0 index = 482 tableIndex = 3
+Swapping 645225 with 156923
+i = 1 index = 281 tableIndex = 2
+Swapping 156923 with 91588
+placed 91588 in table 1 at index 184
+Inserting 942706 with priority (1, 2, 3)
+placed 942706 in table 1 at index 437
+Inserting 425754 with priority (3, 2, 1)
+placed 425754 in table 3 at index 9
+Inserting 784450 with priority (2, 3, 1)
+placed 784450 in table 2 at index 427
+Inserting 929533 with priority (3, 2, 1)
+i = 0 index = 886 tableIndex = 3
+Swapping 929533 with 192064
+placed 192064 in table 2 at index 957
+Inserting 321639 with priority (2, 3, 1)
+i = 0 index = 438 tableIndex = 2
+Swapping 321639 with 327320
+placed 327320 in table 3 at index 624
+Inserting 339707 with priority (2, 3, 1)
+placed 339707 in table 2 at index 289
+Inserting 628921 with priority (2, 3, 1)
+placed 628921 in table 2 at index 487
+Inserting 321744 with priority (3, 1, 2)
+placed 321744 in table 3 at index 675
+Inserting 417492 with priority (1, 3, 2)
+placed 417492 in table 1 at index 953
+Inserting 753084 with priority (3, 2, 1)
+placed 753084 in table 3 at index 74
+Inserting 338696 with priority (1, 2, 3)
+placed 338696 in table 1 at index 568
+Inserting 71682 with priority (1, 3, 2)
+placed 71682 in table 1 at index 58
+Inserting 266147 with priority (2, 3, 1)
+placed 266147 in table 2 at index 706
+Inserting 253578 with priority (3, 1, 2)
+i = 0 index = 171 tableIndex = 3
+Swapping 253578 with 658752
+placed 658752 in table 1 at index 292
+Inserting 967632 with priority (2, 1, 3)
+placed 967632 in table 2 at index 159
+Inserting 37112 with priority (1, 2, 3)
+i = 0 index = 615 tableIndex = 1
+Swapping 37112 with 688730
+placed 688730 in table 2 at index 336
+Inserting 783788 with priority (3, 2, 1)
+placed 783788 in table 3 at index 939
+Inserting 692576 with priority (2, 3, 1)
+i = 0 index = 609 tableIndex = 2
+Swapping 692576 with 577490
+placed 577490 in table 3 at index 668
+Inserting 445633 with priority (1, 2, 3)
+placed 445633 in table 1 at index 385
+Inserting 988894 with priority (2, 3, 1)
+placed 988894 in table 2 at index 252
+Inserting 649422 with priority (2, 1, 3)
+placed 649422 in table 2 at index 14
+Inserting 849389 with priority (3, 1, 2)
+i = 0 index = 210 tableIndex = 3
+Swapping 849389 with 647946
+placed 647946 in table 1 at index 458
+Inserting 183876 with priority (3, 2, 1)
+i = 0 index = 486 tableIndex = 3
+Swapping 183876 with 171521
+placed 171521 in table 2 at index 192
+Inserting 31818 with priority (1, 3, 2)
+placed 31818 in table 1 at index 566
+Inserting 232924 with priority (1, 3, 2)
+i = 0 index = 137 tableIndex = 1
+Swapping 232924 with 971559
+i = 1 index = 489 tableIndex = 3
+Swapping 971559 with 526477
+placed 526477 in table 2 at index 989
+Inserting 993604 with priority (1, 2, 3)
+placed 993604 in table 1 at index 528
+Inserting 479388 with priority (3, 1, 2)
+i = 0 index = 90 tableIndex = 3
+Swapping 479388 with 138680
+placed 138680 in table 1 at index 483
+Inserting 777879 with priority (3, 2, 1)
+placed 777879 in table 3 at index 731
+Inserting 425968 with priority (1, 3, 2)
+i = 0 index = 279 tableIndex = 1
+Swapping 425968 with 35459
+placed 35459 in table 3 at index 515
+Inserting 803666 with priority (2, 1, 3)
+placed 803666 in table 2 at index 593
+Inserting 536229 with priority (2, 1, 3)
+i = 0 index = 624 tableIndex = 2
+Swapping 536229 with 357029
+i = 1 index = 771 tableIndex = 1
+Swapping 357029 with 664542
+placed 664542 in table 3 at index 558
+Inserting 665840 with priority (3, 2, 1)
+placed 665840 in table 3 at index 935
+Inserting 839976 with priority (1, 2, 3)
+placed 839976 in table 1 at index 202
+Inserting 463799 with priority (3, 2, 1)
+placed 463799 in table 3 at index 293
+Inserting 847786 with priority (2, 1, 3)
+placed 847786 in table 2 at index 190
+Inserting 625383 with priority (1, 3, 2)
+placed 625383 in table 1 at index 645
+Inserting 576366 with priority (2, 3, 1)
+i = 0 index = 650 tableIndex = 2
+Swapping 576366 with 503267
+placed 503267 in table 3 at index 353
+Inserting 605825 with priority (2, 3, 1)
+placed 605825 in table 2 at index 936
+Inserting 710221 with priority (2, 3, 1)
+placed 710221 in table 2 at index 917
+Inserting 665892 with priority (3, 1, 2)
+placed 665892 in table 3 at index 931
+Inserting 48860 with priority (3, 1, 2)
+i = 0 index = 276 tableIndex = 3
+Swapping 48860 with 382635
+placed 382635 in table 1 at index 565
+Inserting 835887 with priority (2, 3, 1)
+placed 835887 in table 2 at index 407
+Inserting 782169 with priority (1, 2, 3)
+i = 0 index = 552 tableIndex = 1
+Swapping 782169 with 837201
+i = 1 index = 650 tableIndex = 2
+Swapping 837201 with 576366
+placed 576366 in table 3 at index 327
+Inserting 311753 with priority (3, 2, 1)
+placed 311753 in table 3 at index 984
+Inserting 113196 with priority (2, 3, 1)
+placed 113196 in table 2 at index 348
+Inserting 43725 with priority (2, 1, 3)
+placed 43725 in table 2 at index 461
+Inserting 932523 with priority (2, 3, 1)
+i = 0 index = 379 tableIndex = 2
+Swapping 932523 with 84930
+i = 1 index = 121 tableIndex = 3
+Swapping 84930 with 395681
+placed 395681 in table 1 at index 919
+Inserting 654992 with priority (1, 3, 2)
+placed 654992 in table 1 at index 833
+Inserting 2723 with priority (2, 1, 3)
+i = 0 index = 98 tableIndex = 2
+Swapping 2723 with 951498
+i = 1 index = 118 tableIndex = 1
+Swapping 951498 with 516243
+i = 2 index = 276 tableIndex = 3
+Swapping 516243 with 48860
+placed 48860 in table 2 at index 250
+Inserting 215336 with priority (3, 1, 2)
+placed 215336 in table 3 at index 699
+Inserting 611256 with priority (1, 3, 2)
+placed 611256 in table 1 at index 883
+Inserting 925411 with priority (2, 1, 3)
+i = 0 index = 138 tableIndex = 2
+Swapping 925411 with 893447
+i = 1 index = 875 tableIndex = 1
+Swapping 893447 with 158253
+placed 158253 in table 3 at index 282
+Inserting 590842 with priority (3, 2, 1)
+placed 590842 in table 3 at index 636
+Inserting 298706 with priority (1, 2, 3)
+placed 298706 in table 1 at index 855
+Inserting 525842 with priority (3, 2, 1)
+placed 525842 in table 3 at index 425
+Inserting 921397 with priority (2, 3, 1)
+placed 921397 in table 2 at index 90
+Inserting 384219 with priority (2, 1, 3)
+placed 384219 in table 2 at index 557
+Inserting 148653 with priority (2, 3, 1)
+placed 148653 in table 2 at index 337
+Inserting 746377 with priority (2, 3, 1)
+placed 746377 in table 2 at index 825
+Inserting 80467 with priority (1, 3, 2)
+i = 0 index = 330 tableIndex = 1
+Swapping 80467 with 912445
+i = 1 index = 554 tableIndex = 3
+Swapping 912445 with 59166
+placed 59166 in table 2 at index 156
+Inserting 19436 with priority (3, 2, 1)
+placed 19436 in table 3 at index 187
+Inserting 11104 with priority (3, 1, 2)
+placed 11104 in table 3 at index 848
+Inserting 379707 with priority (2, 3, 1)
+i = 0 index = 905 tableIndex = 2
+Swapping 379707 with 982317
+placed 982317 in table 3 at index 455
+Inserting 65673 with priority (2, 3, 1)
+i = 0 index = 977 tableIndex = 2
+Swapping 65673 with 982752
+placed 982752 in table 3 at index 270
+Inserting 481039 with priority (2, 3, 1)
+placed 481039 in table 2 at index 419
+Inserting 725199 with priority (1, 3, 2)
+placed 725199 in table 1 at index 351
+Inserting 292027 with priority (3, 1, 2)
+placed 292027 in table 3 at index 683
+Inserting 511727 with priority (3, 2, 1)
+placed 511727 in table 3 at index 730
+Inserting 685900 with priority (1, 2, 3)
+i = 0 index = 792 tableIndex = 1
+Swapping 685900 with 361412
+placed 361412 in table 2 at index 945
+Inserting 3845 with priority (2, 3, 1)
+placed 3845 in table 2 at index 700
+Inserting 533299 with priority (3, 2, 1)
+placed 533299 in table 3 at index 707
+Inserting 579685 with priority (1, 2, 3)
+placed 579685 in table 1 at index 983
+Inserting 457270 with priority (1, 3, 2)
+placed 457270 in table 1 at index 13
+Inserting 583583 with priority (3, 1, 2)
+placed 583583 in table 3 at index 69
+Inserting 902819 with priority (3, 2, 1)
+i = 0 index = 4 tableIndex = 3
+Swapping 902819 with 652760
+placed 652760 in table 2 at index 174
+Inserting 268513 with priority (3, 2, 1)
+placed 268513 in table 3 at index 609
+Inserting 925833 with priority (1, 2, 3)
+placed 925833 in table 1 at index 421
+Inserting 238159 with priority (2, 3, 1)
+placed 238159 in table 2 at index 899
+Inserting 10931 with priority (1, 2, 3)
+placed 10931 in table 1 at index 420
+Inserting 635469 with priority (1, 2, 3)
+i = 0 index = 69 tableIndex = 1
+Swapping 635469 with 948662
+i = 1 index = 993 tableIndex = 2
+Swapping 948662 with 283958
+i = 2 index = 276 tableIndex = 3
+Swapping 283958 with 516243
+i = 0 index = 118 tableIndex = 1
+Swapping 516243 with 951498
+i = 1 index = 98 tableIndex = 2
+Swapping 951498 with 2723
+placed 2723 in table 3 at index 898
+Inserting 499936 with priority (1, 2, 3)
+i = 0 index = 774 tableIndex = 1
+Swapping 499936 with 203918
+placed 203918 in table 2 at index 502
+Inserting 560983 with priority (3, 1, 2)
+placed 560983 in table 3 at index 216
+Inserting 295321 with priority (2, 3, 1)
+placed 295321 in table 2 at index 499
+Inserting 886308 with priority (3, 1, 2)
+i = 0 index = 309 tableIndex = 3
+Swapping 886308 with 268257
+i = 1 index = 907 tableIndex = 1
+Swapping 268257 with 556641
+placed 556641 in table 2 at index 532
+Inserting 496176 with priority (3, 1, 2)
+placed 496176 in table 3 at index 887
+Inserting 751449 with priority (2, 3, 1)
+i = 0 index = 299 tableIndex = 2
+Swapping 751449 with 799270
+i = 1 index = 459 tableIndex = 3
+Swapping 799270 with 906540
+placed 906540 in table 1 at index 590
+Inserting 266407 with priority (2, 3, 1)
+placed 266407 in table 2 at index 566
+Inserting 111647 with priority (3, 2, 1)
+placed 111647 in table 3 at index 596
+Inserting 278497 with priority (1, 3, 2)
+placed 278497 in table 1 at index 915
+Inserting 230269 with priority (1, 3, 2)
+placed 230269 in table 1 at index 534
+Inserting 112699 with priority (3, 2, 1)
+i = 0 index = 459 tableIndex = 3
+Swapping 112699 with 799270
+i = 1 index = 299 tableIndex = 2
+Swapping 799270 with 751449
+placed 751449 in table 1 at index 24
+Inserting 420262 with priority (2, 1, 3)
+i = 0 index = 219 tableIndex = 2
+Swapping 420262 with 972262
+i = 1 index = 624 tableIndex = 1
+Swapping 972262 with 146278
+placed 146278 in table 3 at index 422
+Inserting 633059 with priority (2, 3, 1)
+placed 633059 in table 2 at index 554
+Inserting 921583 with priority (3, 2, 1)
+i = 0 index = 208 tableIndex = 3
+Swapping 921583 with 109460
+placed 109460 in table 2 at index 923
+Inserting 208155 with priority (1, 3, 2)
+placed 208155 in table 1 at index 110
+Inserting 365897 with priority (2, 1, 3)
+placed 365897 in table 2 at index 153
+Inserting 474499 with priority (2, 3, 1)
+placed 474499 in table 2 at index 758
+Inserting 703140 with priority (3, 1, 2)
+placed 703140 in table 3 at index 166
+Inserting 610415 with priority (2, 1, 3)
+i = 0 index = 431 tableIndex = 2
+Swapping 610415 with 47161
+i = 1 index = 326 tableIndex = 1
+Swapping 47161 with 217184
+placed 217184 in table 3 at index 370
+Inserting 838196 with priority (1, 2, 3)
+i = 0 index = 351 tableIndex = 1
+Swapping 838196 with 725199
+placed 725199 in table 2 at index 43
+Inserting 306198 with priority (2, 3, 1)
+i = 0 index = 373 tableIndex = 2
+Swapping 306198 with 261568
+i = 1 index = 927 tableIndex = 3
+Swapping 261568 with 479820
+placed 479820 in table 1 at index 96
+Inserting 91337 with priority (3, 2, 1)
+i = 0 index = 352 tableIndex = 3
+Swapping 91337 with 379863
+placed 379863 in table 2 at index 288
+Inserting 127194 with priority (2, 3, 1)
+placed 127194 in table 2 at index 256
+Inserting 40452 with priority (2, 1, 3)
+placed 40452 in table 2 at index 89
+Inserting 140260 with priority (1, 3, 2)
+placed 140260 in table 1 at index 594
+Inserting 509847 with priority (1, 3, 2)
+placed 509847 in table 1 at index 474
+Inserting 391733 with priority (1, 2, 3)
+placed 391733 in table 1 at index 914
+Inserting 951428 with priority (3, 2, 1)
+i = 0 index = 886 tableIndex = 3
+Swapping 951428 with 929533
+i = 1 index = 35 tableIndex = 2
+Swapping 929533 with 809195
+placed 809195 in table 1 at index 793
+Inserting 695366 with priority (3, 2, 1)
+placed 695366 in table 3 at index 37
+Inserting 945728 with priority (3, 2, 1)
+placed 945728 in table 3 at index 679
+Inserting 467658 with priority (3, 1, 2)
+placed 467658 in table 3 at index 510
+Inserting 602828 with priority (1, 2, 3)
+placed 602828 in table 1 at index 80
+Inserting 21306 with priority (2, 3, 1)
+placed 21306 in table 2 at index 604
+Inserting 817856 with priority (2, 1, 3)
+placed 817856 in table 2 at index 197
+Inserting 429183 with priority (1, 2, 3)
+i = 0 index = 212 tableIndex = 1
+Swapping 429183 with 601599
+placed 601599 in table 2 at index 21
+Inserting 726335 with priority (1, 3, 2)
+placed 726335 in table 1 at index 504
+Inserting 10173 with priority (3, 2, 1)
+placed 10173 in table 3 at index 10
+Inserting 730859 with priority (3, 1, 2)
+placed 730859 in table 3 at index 285
+Inserting 252732 with priority (1, 2, 3)
+placed 252732 in table 1 at index 679
+Inserting 653822 with priority (3, 2, 1)
+i = 0 index = 83 tableIndex = 3
+Swapping 653822 with 907559
+placed 907559 in table 2 at index 574
+Inserting 293201 with priority (3, 2, 1)
+placed 293201 in table 3 at index 673
+Inserting 51009 with priority (2, 3, 1)
+placed 51009 in table 2 at index 944
+Inserting 540269 with priority (1, 3, 2)
+i = 0 index = 967 tableIndex = 1
+Swapping 540269 with 656112
+i = 1 index = 515 tableIndex = 3
+Swapping 656112 with 35459
+i = 2 index = 86 tableIndex = 2
+Swapping 35459 with 991182
+placed 991182 in table 1 at index 18
+Inserting 158895 with priority (3, 2, 1)
+i = 0 index = 831 tableIndex = 3
+Swapping 158895 with 697137
+placed 697137 in table 2 at index 262
+Inserting 821854 with priority (1, 3, 2)
+placed 821854 in table 1 at index 843
+Inserting 848145 with priority (1, 3, 2)
+placed 848145 in table 1 at index 196
+Inserting 153171 with priority (3, 2, 1)
+placed 153171 in table 3 at index 918
+Inserting 313990 with priority (3, 1, 2)
+placed 313990 in table 3 at index 91
+Inserting 39336 with priority (3, 1, 2)
+placed 39336 in table 3 at index 367
+Inserting 13675 with priority (3, 2, 1)
+placed 13675 in table 3 at index 390
+Inserting 641209 with priority (3, 1, 2)
+placed 641209 in table 3 at index 89
+Inserting 35691 with priority (2, 1, 3)
+placed 35691 in table 2 at index 251
+Inserting 374201 with priority (3, 2, 1)
+i = 0 index = 345 tableIndex = 3
+Swapping 374201 with 949265
+placed 949265 in table 2 at index 298
+Inserting 650800 with priority (2, 1, 3)
+i = 0 index = 699 tableIndex = 2
+Swapping 650800 with 521044
+i = 1 index = 953 tableIndex = 1
+Swapping 521044 with 417492
+placed 417492 in table 3 at index 311
+Inserting 413762 with priority (3, 2, 1)
+placed 413762 in table 3 at index 246
+Inserting 524056 with priority (3, 2, 1)
+placed 524056 in table 3 at index 323
+Inserting 489844 with priority (1, 3, 2)
+placed 489844 in table 1 at index 971
+Inserting 990321 with priority (3, 2, 1)
+placed 990321 in table 3 at index 145
+Inserting 668546 with priority (3, 1, 2)
+placed 668546 in table 3 at index 923
+Inserting 629998 with priority (2, 3, 1)
+i = 0 index = 250 tableIndex = 2
+Swapping 629998 with 48860
+i = 1 index = 276 tableIndex = 3
+Swapping 48860 with 283958
+i = 2 index = 149 tableIndex = 1
+Swapping 283958 with 398405
+placed 398405 in table 2 at index 428
+Inserting 730843 with priority (3, 1, 2)
+placed 730843 in table 3 at index 66
+Inserting 410718 with priority (2, 1, 3)
+placed 410718 in table 2 at index 948
+Inserting 531094 with priority (3, 2, 1)
+placed 531094 in table 3 at index 529
+Inserting 812340 with priority (2, 3, 1)
+placed 812340 in table 2 at index 223
+Inserting 585697 with priority (2, 1, 3)
+placed 585697 in table 2 at index 124
+Inserting 533251 with priority (1, 3, 2)
+i = 0 index = 727 tableIndex = 1
+Swapping 533251 with 765304
+placed 765304 in table 3 at index 847
+Inserting 496725 with priority (2, 3, 1)
+placed 496725 in table 2 at index 806
+Inserting 101774 with priority (2, 3, 1)
+placed 101774 in table 2 at index 494
+Inserting 961802 with priority (2, 3, 1)
+placed 961802 in table 2 at index 754
+Inserting 733486 with priority (2, 1, 3)
+placed 733486 in table 2 at index 106
+Inserting 253950 with priority (2, 1, 3)
+placed 253950 in table 2 at index 376
+Inserting 593170 with priority (3, 2, 1)
+placed 593170 in table 3 at index 7
+Inserting 894085 with priority (2, 3, 1)
+placed 894085 in table 2 at index 876
+Inserting 902386 with priority (3, 2, 1)
+placed 902386 in table 3 at index 109
+Inserting 814976 with priority (3, 1, 2)
+placed 814976 in table 3 at index 251
+Inserting 342324 with priority (2, 3, 1)
+placed 342324 in table 2 at index 63
+Inserting 689926 with priority (3, 1, 2)
+placed 689926 in table 3 at index 788
+Inserting 702481 with priority (2, 1, 3)
+i = 0 index = 730 tableIndex = 2
+Swapping 702481 with 101091
+placed 101091 in table 1 at index 489
+Inserting 742436 with priority (1, 3, 2)
+placed 742436 in table 1 at index 966
+Inserting 617663 with priority (1, 2, 3)
+placed 617663 in table 1 at index 216
+Inserting 449227 with priority (3, 1, 2)
+placed 449227 in table 3 at index 815
+Inserting 384088 with priority (1, 3, 2)
+placed 384088 in table 1 at index 293
+Inserting 297872 with priority (3, 1, 2)
+i = 0 index = 521 tableIndex = 3
+Swapping 297872 with 621717
+placed 621717 in table 1 at index 936
+Inserting 41758 with priority (3, 2, 1)
+i = 0 index = 954 tableIndex = 3
+Swapping 41758 with 466062
+placed 466062 in table 2 at index 606
+Inserting 443041 with priority (1, 3, 2)
+placed 443041 in table 1 at index 647
+Inserting 499239 with priority (2, 1, 3)
+i = 0 index = 806 tableIndex = 2
+Swapping 499239 with 496725
+placed 496725 in table 1 at index 564
+Inserting 503688 with priority (3, 2, 1)
+placed 503688 in table 3 at index 518
+Inserting 404840 with priority (1, 2, 3)
+placed 404840 in table 1 at index 94
+Inserting 262945 with priority (3, 2, 1)
+i = 0 index = 542 tableIndex = 3
+Swapping 262945 with 276778
+placed 276778 in table 2 at index 630
+Inserting 565981 with priority (1, 2, 3)
+placed 565981 in table 1 at index 780
+Inserting 985451 with priority (3, 2, 1)
+placed 985451 in table 3 at index 94
+Inserting 157173 with priority (3, 2, 1)
+placed 157173 in table 3 at index 924
+Inserting 414288 with priority (2, 3, 1)
+placed 414288 in table 2 at index 975
+Inserting 495510 with priority (2, 3, 1)
+placed 495510 in table 2 at index 485
+Inserting 211171 with priority (3, 1, 2)
+i = 0 index = 519 tableIndex = 3
+Swapping 211171 with 838719
+i = 1 index = 424 tableIndex = 1
+Swapping 838719 with 985514
+placed 985514 in table 2 at index 966
+Inserting 971574 with priority (3, 1, 2)
+i = 0 index = 194 tableIndex = 3
+Swapping 971574 with 468898
+placed 468898 in table 1 at index 112
+Inserting 44297 with priority (1, 2, 3)
+placed 44297 in table 1 at index 861
+Inserting 458797 with priority (1, 3, 2)
+placed 458797 in table 1 at index 403
+Inserting 127687 with priority (2, 1, 3)
+i = 0 index = 930 tableIndex = 2
+Swapping 127687 with 624494
+placed 624494 in table 1 at index 8
+Inserting 753378 with priority (1, 2, 3)
+placed 753378 in table 1 at index 652
+Inserting 413276 with priority (1, 3, 2)
+placed 413276 in table 1 at index 73
+Inserting 461541 with priority (2, 1, 3)
+placed 461541 in table 2 at index 768
+Inserting 53480 with priority (3, 2, 1)
+placed 53480 in table 3 at index 104
+Inserting 432390 with priority (2, 3, 1)
+placed 432390 in table 2 at index 999
+Inserting 767559 with priority (3, 1, 2)
+i = 0 index = 811 tableIndex = 3
+Swapping 767559 with 169567
+i = 1 index = 702 tableIndex = 1
+Swapping 169567 with 955487
+placed 955487 in table 2 at index 393
+Inserting 883350 with priority (1, 2, 3)
+placed 883350 in table 1 at index 231
+Inserting 310500 with priority (3, 1, 2)
+placed 310500 in table 3 at index 655
+Inserting 2337 with priority (3, 1, 2)
+placed 2337 in table 3 at index 485
+Inserting 219966 with priority (2, 1, 3)
+placed 219966 in table 2 at index 656
+Inserting 392414 with priority (2, 3, 1)
+placed 392414 in table 2 at index 460
+Inserting 340987 with priority (3, 2, 1)
+i = 0 index = 251 tableIndex = 3
+Swapping 340987 with 814976
+i = 1 index = 781 tableIndex = 2
+Swapping 814976 with 653375
+i = 2 index = 96 tableIndex = 1
+Swapping 653375 with 479820
+i = 0 index = 927 tableIndex = 3
+Swapping 479820 with 261568
+i = 1 index = 373 tableIndex = 2
+Swapping 261568 with 306198
+placed 306198 in table 1 at index 39
+Inserting 526539 with priority (2, 1, 3)
+i = 0 index = 975 tableIndex = 2
+Swapping 526539 with 414288
+i = 1 index = 373 tableIndex = 1
+Swapping 414288 with 569293
+i = 2 index = 922 tableIndex = 3
+Swapping 569293 with 954882
+placed 954882 in table 2 at index 259
+Inserting 95497 with priority (1, 3, 2)
+placed 95497 in table 1 at index 701
+Inserting 420858 with priority (1, 3, 2)
+placed 420858 in table 1 at index 533
+Inserting 526020 with priority (1, 3, 2)
+placed 526020 in table 1 at index 384
+Inserting 282910 with priority (2, 3, 1)
+i = 0 index = 532 tableIndex = 2
+Swapping 282910 with 556641
+i = 1 index = 707 tableIndex = 3
+Swapping 556641 with 533299
+placed 533299 in table 1 at index 220
+Inserting 923832 with priority (1, 3, 2)
+placed 923832 in table 1 at index 691
+Inserting 596588 with priority (2, 1, 3)
+i = 0 index = 348 tableIndex = 2
+Swapping 596588 with 113196
+placed 113196 in table 1 at index 958
+Inserting 581704 with priority (1, 3, 2)
+i = 0 index = 420 tableIndex = 1
+Swapping 581704 with 10931
+i = 1 index = 890 tableIndex = 3
+Swapping 10931 with 979695
+placed 979695 in table 2 at index 871
+Inserting 229696 with priority (2, 3, 1)
+i = 0 index = 277 tableIndex = 2
+Swapping 229696 with 148096
+placed 148096 in table 3 at index 646
+Inserting 559341 with priority (2, 3, 1)
+placed 559341 in table 2 at index 913
+Inserting 831601 with priority (1, 3, 2)
+i = 0 index = 442 tableIndex = 1
+Swapping 831601 with 485664
+placed 485664 in table 3 at index 982
+Inserting 265746 with priority (3, 2, 1)
+placed 265746 in table 3 at index 382
+Inserting 976938 with priority (2, 1, 3)
+i = 0 index = 206 tableIndex = 2
+Swapping 976938 with 161368
+i = 1 index = 421 tableIndex = 1
+Swapping 161368 with 925833
+placed 925833 in table 3 at index 374
+Inserting 374367 with priority (2, 3, 1)
+placed 374367 in table 2 at index 193
+Inserting 943608 with priority (2, 3, 1)
+placed 943608 in table 2 at index 818
+Inserting 202749 with priority (3, 2, 1)
+placed 202749 in table 3 at index 755
+Inserting 541590 with priority (3, 1, 2)
+i = 0 index = 109 tableIndex = 3
+Swapping 541590 with 902386
+placed 902386 in table 1 at index 93
+Inserting 138261 with priority (2, 1, 3)
+placed 138261 in table 2 at index 166
+Inserting 971967 with priority (2, 3, 1)
+placed 971967 in table 2 at index 149
+Inserting 57414 with priority (1, 2, 3)
+placed 57414 in table 1 at index 106
+Inserting 22701 with priority (3, 1, 2)
+placed 22701 in table 3 at index 294
+Inserting 225584 with priority (1, 2, 3)
+placed 225584 in table 1 at index 35
+Inserting 523213 with priority (1, 3, 2)
+placed 523213 in table 1 at index 333
+Inserting 847082 with priority (3, 1, 2)
+i = 0 index = 482 tableIndex = 3
+Swapping 847082 with 645225
+placed 645225 in table 1 at index 299
+Inserting 843871 with priority (3, 2, 1)
+placed 843871 in table 3 at index 726
+Inserting 896046 with priority (2, 1, 3)
+placed 896046 in table 2 at index 434
+Inserting 257744 with priority (3, 2, 1)
+i = 0 index = 268 tableIndex = 3
+Swapping 257744 with 664509
+placed 664509 in table 2 at index 539
+Inserting 577945 with priority (2, 3, 1)
+i = 0 index = 419 tableIndex = 2
+Swapping 577945 with 481039
+placed 481039 in table 3 at index 943
+Inserting 233029 with priority (1, 2, 3)
+placed 233029 in table 1 at index 125
+Inserting 66732 with priority (2, 3, 1)
+placed 66732 in table 2 at index 220
+Inserting 255995 with priority (2, 3, 1)
+placed 255995 in table 2 at index 745
+Inserting 167321 with priority (3, 1, 2)
+placed 167321 in table 3 at index 130
+Inserting 624536 with priority (2, 1, 3)
+i = 0 index = 806 tableIndex = 2
+Swapping 624536 with 499239
+placed 499239 in table 1 at index 649
+Inserting 608266 with priority (2, 1, 3)
+placed 608266 in table 2 at index 10
+Inserting 147874 with priority (2, 3, 1)
+placed 147874 in table 2 at index 479
+Inserting 845002 with priority (1, 2, 3)
+placed 845002 in table 1 at index 542
+Inserting 576305 with priority (3, 2, 1)
+placed 576305 in table 3 at index 191
+Inserting 502142 with priority (1, 2, 3)
+placed 502142 in table 1 at index 513
+Inserting 44842 with priority (2, 1, 3)
+placed 44842 in table 2 at index 246
+Inserting 734431 with priority (2, 1, 3)
+placed 734431 in table 2 at index 833
+Inserting 703130 with priority (3, 2, 1)
+placed 703130 in table 3 at index 141
+Inserting 721374 with priority (1, 3, 2)
+placed 721374 in table 1 at index 827
+Inserting 566049 with priority (1, 2, 3)
+placed 566049 in table 1 at index 399
+Inserting 934230 with priority (1, 2, 3)
+i = 0 index = 763 tableIndex = 1
+Swapping 934230 with 463664
+i = 1 index = 787 tableIndex = 2
+Swapping 463664 with 293296
+placed 293296 in table 3 at index 479
+Inserting 338923 with priority (3, 2, 1)
+placed 338923 in table 3 at index 608
+Inserting 952832 with priority (2, 3, 1)
+placed 952832 in table 2 at index 829
+Inserting 539195 with priority (1, 3, 2)
+placed 539195 in table 1 at index 372
+Inserting 775581 with priority (3, 1, 2)
+i = 0 index = 180 tableIndex = 3
+Swapping 775581 with 304134
+placed 304134 in table 1 at index 246
+Inserting 471155 with priority (1, 3, 2)
+i = 0 index = 920 tableIndex = 1
+Swapping 471155 with 440639
+placed 440639 in table 3 at index 915
+Inserting 708587 with priority (2, 1, 3)
+i = 0 index = 19 tableIndex = 2
+Swapping 708587 with 22809
+i = 1 index = 972 tableIndex = 1
+Swapping 22809 with 46293
+placed 46293 in table 3 at index 493
+Inserting 247189 with priority (3, 2, 1)
+i = 0 index = 516 tableIndex = 3
+Swapping 247189 with 545921
+placed 545921 in table 2 at index 920
+Inserting 63354 with priority (2, 1, 3)
+placed 63354 in table 2 at index 340
+Inserting 381354 with priority (1, 2, 3)
+placed 381354 in table 1 at index 176
+Inserting 458307 with priority (3, 2, 1)
+i = 0 index = 608 tableIndex = 3
+Swapping 458307 with 338923
+placed 338923 in table 2 at index 891
+Inserting 582909 with priority (2, 3, 1)
+i = 0 index = 539 tableIndex = 2
+Swapping 582909 with 664509
+i = 1 index = 268 tableIndex = 3
+Swapping 664509 with 257744
+i = 2 index = 149 tableIndex = 1
+Swapping 257744 with 283958
+i = 0 index = 993 tableIndex = 2
+Swapping 283958 with 948662
+i = 1 index = 481 tableIndex = 3
+Swapping 948662 with 958326
+i = 2 index = 201 tableIndex = 1
+Swapping 958326 with 91201
+i = 0 index = 424 tableIndex = 2
+Swapping 91201 with 213057
+i = 1 index = 683 tableIndex = 3
+Swapping 213057 with 292027
+placed 292027 in table 1 at index 980
+Inserting 940514 with priority (2, 3, 1)
+placed 940514 in table 2 at index 623
+Inserting 607127 with priority (3, 2, 1)
+placed 607127 in table 3 at index 913
+Inserting 483509 with priority (1, 2, 3)
+placed 483509 in table 1 at index 74
+Inserting 192009 with priority (1, 3, 2)
+placed 192009 in table 1 at index 381
+Inserting 305037 with priority (2, 3, 1)
+placed 305037 in table 2 at index 805
+Inserting 401012 with priority (1, 3, 2)
+placed 401012 in table 1 at index 155
+Inserting 55479 with priority (3, 1, 2)
+placed 55479 in table 3 at index 611
+Inserting 159608 with priority (2, 1, 3)
+placed 159608 in table 2 at index 562
+Inserting 659606 with priority (3, 1, 2)
+placed 659606 in table 3 at index 465
+Inserting 453246 with priority (2, 3, 1)
+i = 0 index = 480 tableIndex = 2
+Swapping 453246 with 775870
+placed 775870 in table 3 at index 295
+Inserting 300199 with priority (3, 2, 1)
+i = 0 index = 756 tableIndex = 3
+Swapping 300199 with 867934
+i = 1 index = 156 tableIndex = 2
+Swapping 867934 with 59166
+i = 2 index = 287 tableIndex = 1
+Swapping 59166 with 159649
+i = 0 index = 279 tableIndex = 3
+Swapping 159649 with 734054
+placed 734054 in table 2 at index 459
+Inserting 922242 with priority (3, 1, 2)
+placed 922242 in table 3 at index 174
+Inserting 108735 with priority (1, 3, 2)
+i = 0 index = 344 tableIndex = 1
+Swapping 108735 with 375688
+placed 375688 in table 3 at index 287
+Inserting 870666 with priority (3, 1, 2)
+placed 870666 in table 3 at index 791
+Inserting 438572 with priority (1, 2, 3)
+i = 0 index = 422 tableIndex = 1
+Swapping 438572 with 478146
+placed 478146 in table 2 at index 395
+Inserting 876237 with priority (1, 3, 2)
+placed 876237 in table 1 at index 317
+Inserting 552009 with priority (3, 1, 2)
+i = 0 index = 486 tableIndex = 3
+Swapping 552009 with 183876
+placed 183876 in table 1 at index 440
+Inserting 711280 with priority (3, 2, 1)
+placed 711280 in table 3 at index 51
+Inserting 684878 with priority (2, 1, 3)
+placed 684878 in table 2 at index 446
+Inserting 284899 with priority (2, 3, 1)
+placed 284899 in table 2 at index 786
+Inserting 598216 with priority (1, 3, 2)
+i = 0 index = 980 tableIndex = 1
+Swapping 598216 with 292027
+i = 1 index = 683 tableIndex = 3
+Swapping 292027 with 213057
+i = 2 index = 424 tableIndex = 2
+Swapping 213057 with 91201
+i = 0 index = 201 tableIndex = 1
+Swapping 91201 with 958326
+i = 1 index = 481 tableIndex = 3
+Swapping 958326 with 948662
+i = 2 index = 993 tableIndex = 2
+Swapping 948662 with 283958
+i = 0 index = 149 tableIndex = 1
+Swapping 283958 with 257744
+i = 1 index = 268 tableIndex = 3
+Swapping 257744 with 664509
+i = 2 index = 539 tableIndex = 2
+Swapping 664509 with 582909
+i = 0 index = 910 tableIndex = 1
+Swapping 582909 with 156046
+i = 1 index = 542 tableIndex = 3
+Swapping 156046 with 262945
+placed 262945 in table 2 at index 236
+Inserting 447726 with priority (2, 3, 1)
+i = 0 index = 514 tableIndex = 2
+Swapping 447726 with 954513
+i = 1 index = 401 tableIndex = 3
+Swapping 954513 with 588773
+placed 588773 in table 1 at index 695
+Inserting 708140 with priority (1, 3, 2)
+placed 708140 in table 1 at index 70
+Inserting 458541 with priority (1, 2, 3)
+placed 458541 in table 1 at index 939
+Inserting 211627 with priority (1, 3, 2)
+placed 211627 in table 1 at index 397
+Inserting 945519 with priority (2, 1, 3)
+i = 0 index = 759 tableIndex = 2
+Swapping 945519 with 142626
+placed 142626 in table 1 at index 336
+Inserting 15377 with priority (1, 3, 2)
+placed 15377 in table 1 at index 716
+Inserting 139127 with priority (2, 1, 3)
+placed 139127 in table 2 at index 924
+Inserting 915116 with priority (1, 2, 3)
+placed 915116 in table 1 at index 174
+Inserting 202760 with priority (1, 2, 3)
+placed 202760 in table 1 at index 512
+Inserting 646305 with priority (3, 2, 1)
+i = 0 index = 191 tableIndex = 3
+Swapping 646305 with 576305
+i = 1 index = 990 tableIndex = 2
+Swapping 576305 with 586005
+i = 2 index = 952 tableIndex = 1
+Swapping 586005 with 325418
+placed 325418 in table 3 at index 126
+Inserting 480313 with priority (1, 2, 3)
+placed 480313 in table 1 at index 526
+Inserting 990657 with priority (1, 3, 2)
+placed 990657 in table 1 at index 801
+Inserting 337382 with priority (2, 1, 3)
+placed 337382 in table 2 at index 483
+Inserting 990674 with priority (1, 3, 2)
+placed 990674 in table 1 at index 751
+Inserting 799754 with priority (2, 3, 1)
+placed 799754 in table 2 at index 746
+Inserting 282084 with priority (2, 3, 1)
+placed 282084 in table 2 at index 365
+Inserting 981197 with priority (2, 3, 1)
+placed 981197 in table 2 at index 189
+Inserting 865215 with priority (1, 3, 2)
+placed 865215 in table 1 at index 88
+Inserting 15468 with priority (3, 2, 1)
+placed 15468 in table 3 at index 593
+Inserting 276589 with priority (2, 1, 3)
+i = 0 index = 681 tableIndex = 2
+Swapping 276589 with 545197
+i = 1 index = 699 tableIndex = 1
+Swapping 545197 with 528805
+placed 528805 in table 3 at index 613
+Inserting 377485 with priority (2, 3, 1)
+placed 377485 in table 2 at index 333
+Inserting 462523 with priority (1, 2, 3)
+placed 462523 in table 1 at index 492
+Inserting 979185 with priority (3, 2, 1)
+placed 979185 in table 3 at index 762
+Inserting 61868 with priority (2, 3, 1)
+i = 0 index = 364 tableIndex = 2
+Swapping 61868 with 697082
+placed 697082 in table 3 at index 654
+Inserting 356235 with priority (1, 3, 2)
+placed 356235 in table 1 at index 607
+Inserting 909711 with priority (3, 1, 2)
+placed 909711 in table 3 at index 799
+Inserting 421160 with priority (3, 2, 1)
+placed 421160 in table 3 at index 666
+Inserting 117368 with priority (2, 1, 3)
+placed 117368 in table 2 at index 666
+Inserting 367717 with priority (1, 2, 3)
+placed 367717 in table 1 at index 567
+Inserting 422175 with priority (1, 3, 2)
+placed 422175 in table 1 at index 634
+Inserting 658705 with priority (1, 3, 2)
+placed 658705 in table 1 at index 596
+Inserting 915509 with priority (2, 3, 1)
+i = 0 index = 210 tableIndex = 2
+Swapping 915509 with 146833
+placed 146833 in table 3 at index 692
+Inserting 802926 with priority (1, 2, 3)
+i = 0 index = 936 tableIndex = 1
+Swapping 802926 with 621717
+i = 1 index = 854 tableIndex = 2
+Swapping 621717 with 894734
+i = 2 index = 673 tableIndex = 3
+Swapping 894734 with 293201
+placed 293201 in table 1 at index 464
+Inserting 38556 with priority (1, 2, 3)
+i = 0 index = 501 tableIndex = 1
+Swapping 38556 with 887843
+i = 1 index = 66 tableIndex = 2
+Swapping 887843 with 446069
+placed 446069 in table 3 at index 159
+Inserting 35886 with priority (3, 1, 2)
+placed 35886 in table 3 at index 150
+Inserting 874695 with priority (1, 3, 2)
+placed 874695 in table 1 at index 367
+Inserting 753205 with priority (1, 3, 2)
+placed 753205 in table 1 at index 498
+Inserting 542549 with priority (2, 1, 3)
+placed 542549 in table 2 at index 558
+Inserting 430712 with priority (3, 2, 1)
+placed 430712 in table 3 at index 803
+Inserting 895398 with priority (1, 3, 2)
+i = 0 index = 244 tableIndex = 1
+Swapping 895398 with 567906
+placed 567906 in table 3 at index 691
+Inserting 840653 with priority (3, 2, 1)
+placed 840653 in table 3 at index 229
+Inserting 971878 with priority (3, 2, 1)
+placed 971878 in table 3 at index 964
+Inserting 628909 with priority (2, 3, 1)
+placed 628909 in table 2 at index 961
+Inserting 538500 with priority (2, 1, 3)
+i = 0 index = 569 tableIndex = 2
+Swapping 538500 with 917344
+i = 1 index = 966 tableIndex = 1
+Swapping 917344 with 742436
+placed 742436 in table 3 at index 694
+Inserting 781947 with priority (2, 3, 1)
+placed 781947 in table 2 at index 521
+Inserting 12444 with priority (1, 3, 2)
+placed 12444 in table 1 at index 557
+Inserting 130144 with priority (2, 1, 3)
+placed 130144 in table 2 at index 257
+Inserting 501662 with priority (3, 2, 1)
+i = 0 index = 887 tableIndex = 3
+Swapping 501662 with 496176
+i = 1 index = 331 tableIndex = 2
+Swapping 496176 with 184176
+i = 2 index = 199 tableIndex = 1
+Swapping 184176 with 681099
+i = 0 index = 892 tableIndex = 3
+Swapping 681099 with 666322
+i = 1 index = 881 tableIndex = 2
+Swapping 666322 with 55533
+placed 55533 in table 1 at index 271
+Inserting 120322 with priority (3, 2, 1)
+placed 120322 in table 3 at index 57
+Inserting 417209 with priority (1, 3, 2)
+i = 0 index = 566 tableIndex = 1
+Swapping 417209 with 31818
+placed 31818 in table 3 at index 29
+Inserting 224820 with priority (3, 2, 1)
+i = 0 index = 677 tableIndex = 3
+Swapping 224820 with 55221
+placed 55221 in table 2 at index 34
+Inserting 182774 with priority (1, 3, 2)
+placed 182774 in table 1 at index 113
+Inserting 666501 with priority (3, 1, 2)
+placed 666501 in table 3 at index 199
+Inserting 115210 with priority (2, 3, 1)
+placed 115210 in table 2 at index 186
+Inserting 343188 with priority (1, 2, 3)
+placed 343188 in table 1 at index 77
+Inserting 43908 with priority (2, 1, 3)
+i = 0 index = 905 tableIndex = 2
+Swapping 43908 with 379707
+placed 379707 in table 1 at index 868
+Inserting 776463 with priority (3, 2, 1)
+i = 0 index = 593 tableIndex = 3
+Swapping 776463 with 15468
+i = 1 index = 156 tableIndex = 2
+Swapping 15468 with 867934
+i = 2 index = 563 tableIndex = 1
+Swapping 867934 with 577878
+i = 0 index = 839 tableIndex = 3
+Swapping 577878 with 478229
+placed 478229 in table 2 at index 870
+Inserting 142971 with priority (2, 3, 1)
+i = 0 index = 761 tableIndex = 2
+Swapping 142971 with 171040
+placed 171040 in table 3 at index 911
+Inserting 217592 with priority (2, 1, 3)
+i = 0 index = 122 tableIndex = 2
+Swapping 217592 with 148216
+placed 148216 in table 1 at index 7
+Inserting 820826 with priority (1, 2, 3)
+placed 820826 in table 1 at index 807
+Inserting 636134 with priority (1, 3, 2)
+placed 636134 in table 1 at index 608
+Inserting 279023 with priority (3, 1, 2)
+placed 279023 in table 3 at index 576
+Inserting 372619 with priority (3, 1, 2)
+placed 372619 in table 3 at index 254
+Inserting 681661 with priority (2, 3, 1)
+i = 0 index = 187 tableIndex = 2
+Swapping 681661 with 520335
+placed 520335 in table 3 at index 331
+Inserting 321312 with priority (2, 1, 3)
+i = 0 index = 193 tableIndex = 2
+Swapping 321312 with 374367
+placed 374367 in table 1 at index 894
+Inserting 505938 with priority (2, 3, 1)
+i = 0 index = 329 tableIndex = 2
+Swapping 505938 with 972562
+placed 972562 in table 3 at index 118
+Inserting 586408 with priority (1, 2, 3)
+placed 586408 in table 1 at index 274
+Inserting 473573 with priority (3, 2, 1)
+placed 473573 in table 3 at index 896
+Inserting 496805 with priority (2, 1, 3)
+placed 496805 in table 2 at index 352
+Inserting 592770 with priority (3, 1, 2)
+i = 0 index = 155 tableIndex = 3
+Swapping 592770 with 726408
+i = 1 index = 224 tableIndex = 1
+Swapping 726408 with 810862
+i = 2 index = 106 tableIndex = 2
+Swapping 810862 with 733486
+placed 733486 in table 3 at index 289
+Inserting 697384 with priority (2, 3, 1)
+placed 697384 in table 2 at index 368
+Inserting 808082 with priority (3, 2, 1)
+placed 808082 in table 3 at index 721
+Inserting 185573 with priority (2, 3, 1)
+placed 185573 in table 2 at index 160
+Inserting 408907 with priority (3, 1, 2)
+placed 408907 in table 3 at index 496
+Inserting 83557 with priority (3, 1, 2)
+placed 83557 in table 3 at index 215
+Inserting 760922 with priority (2, 3, 1)
+i = 0 index = 256 tableIndex = 2
+Swapping 760922 with 127194
+placed 127194 in table 3 at index 674
+Inserting 810499 with priority (2, 1, 3)
+i = 0 index = 246 tableIndex = 2
+Swapping 810499 with 44842
+placed 44842 in table 1 at index 496
+Inserting 21898 with priority (2, 1, 3)
+placed 21898 in table 2 at index 482
+Inserting 197284 with priority (3, 1, 2)
+placed 197284 in table 3 at index 53
+Inserting 425086 with priority (3, 1, 2)
+placed 425086 in table 3 at index 112
+Inserting 208761 with priority (2, 3, 1)
+placed 208761 in table 2 at index 23
+Inserting 627490 with priority (1, 2, 3)
+placed 627490 in table 1 at index 760
+Inserting 948921 with priority (2, 1, 3)
+i = 0 index = 463 tableIndex = 2
+Swapping 948921 with 582534
+placed 582534 in table 1 at index 942
+Inserting 71256 with priority (1, 3, 2)
+i = 0 index = 381 tableIndex = 1
+Swapping 71256 with 192009
+placed 192009 in table 3 at index 61
+Inserting 477999 with priority (2, 3, 1)
+placed 477999 in table 2 at index 551
+Inserting 798190 with priority (3, 1, 2)
+placed 798190 in table 3 at index 42
+Inserting 152374 with priority (1, 2, 3)
+placed 152374 in table 1 at index 253
+Inserting 915981 with priority (2, 3, 1)
+i = 0 index = 149 tableIndex = 2
+Swapping 915981 with 971967
+i = 1 index = 573 tableIndex = 3
+Swapping 971967 with 351200
+placed 351200 in table 1 at index 214
+Inserting 790573 with priority (2, 3, 1)
+placed 790573 in table 2 at index 17
+Inserting 695842 with priority (1, 2, 3)
+i = 0 index = 480 tableIndex = 1
+Swapping 695842 with 366122
+placed 366122 in table 2 at index 326
+Inserting 271260 with priority (2, 3, 1)
+placed 271260 in table 2 at index 42
+Inserting 854474 with priority (2, 1, 3)
+placed 854474 in table 2 at index 114
+Inserting 199579 with priority (3, 2, 1)
+placed 199579 in table 3 at index 400
+Inserting 465717 with priority (1, 2, 3)
+placed 465717 in table 1 at index 730
+Inserting 227581 with priority (1, 2, 3)
+placed 227581 in table 1 at index 654
+Inserting 850349 with priority (2, 3, 1)
+i = 0 index = 745 tableIndex = 2
+Swapping 850349 with 255995
+placed 255995 in table 3 at index 123
+Inserting 247035 with priority (1, 2, 3)
+placed 247035 in table 1 at index 144
+Inserting 969083 with priority (2, 3, 1)
+placed 969083 in table 2 at index 665
+Inserting 607554 with priority (1, 2, 3)
+placed 607554 in table 1 at index 46
+Inserting 183415 with priority (2, 3, 1)
+i = 0 index = 364 tableIndex = 2
+Swapping 183415 with 61868
+placed 61868 in table 3 at index 700
+Inserting 838927 with priority (1, 2, 3)
+placed 838927 in table 1 at index 19
+Inserting 454525 with priority (2, 3, 1)
+placed 454525 in table 2 at index 211
+Inserting 858848 with priority (2, 3, 1)
+placed 858848 in table 2 at index 937
+Inserting 706298 with priority (3, 2, 1)
+i = 0 index = 402 tableIndex = 3
+Swapping 706298 with 258572
+placed 258572 in table 2 at index 112
+Inserting 826153 with priority (1, 2, 3)
+placed 826153 in table 1 at index 223
+Inserting 780943 with priority (2, 1, 3)
+i = 0 index = 419 tableIndex = 2
+Swapping 780943 with 577945
+i = 1 index = 932 tableIndex = 1
+Swapping 577945 with 889288
+placed 889288 in table 3 at index 26
+Inserting 607302 with priority (2, 1, 3)
+placed 607302 in table 2 at index 119
+Inserting 736626 with priority (3, 1, 2)
+placed 736626 in table 3 at index 102
+Inserting 355742 with priority (2, 1, 3)
+placed 355742 in table 2 at index 316
+Inserting 123089 with priority (3, 1, 2)
+placed 123089 in table 3 at index 882
+Inserting 575725 with priority (3, 2, 1)
+placed 575725 in table 3 at index 360
+Inserting 130389 with priority (2, 3, 1)
+placed 130389 in table 2 at index 958
+Inserting 723541 with priority (1, 3, 2)
+placed 723541 in table 1 at index 996
+Inserting 162032 with priority (3, 2, 1)
+placed 162032 in table 3 at index 520
+Inserting 858114 with priority (1, 3, 2)
+i = 0 index = 730 tableIndex = 1
+Swapping 858114 with 465717
+placed 465717 in table 3 at index 748
+Inserting 974718 with priority (2, 3, 1)
+i = 0 index = 568 tableIndex = 2
+Swapping 974718 with 74202
+placed 74202 in table 3 at index 881
+Inserting 131279 with priority (1, 3, 2)
+i = 0 index = 615 tableIndex = 1
+Swapping 131279 with 37112
+placed 37112 in table 3 at index 526
+Inserting 137418 with priority (1, 2, 3)
+i = 0 index = 54 tableIndex = 1
+Swapping 137418 with 574944
+i = 1 index = 385 tableIndex = 2
+Swapping 574944 with 891446
+i = 2 index = 551 tableIndex = 3
+Swapping 891446 with 811652
+placed 811652 in table 1 at index 620
+Inserting 608775 with priority (1, 3, 2)
+placed 608775 in table 1 at index 411
+Inserting 256120 with priority (1, 2, 3)
+placed 256120 in table 1 at index 847
+Inserting 460343 with priority (2, 1, 3)
+i = 0 index = 156 tableIndex = 2
+Swapping 460343 with 15468
+i = 1 index = 234 tableIndex = 1
+Swapping 15468 with 705162
+i = 2 index = 839 tableIndex = 3
+Swapping 705162 with 577878
+placed 577878 in table 2 at index 13
+Inserting 956842 with priority (2, 1, 3)
+i = 0 index = 246 tableIndex = 2
+Swapping 956842 with 810499
+placed 810499 in table 1 at index 503
+Inserting 541791 with priority (1, 2, 3)
+i = 0 index = 678 tableIndex = 1
+Swapping 541791 with 758986
+placed 758986 in table 2 at index 722
+Inserting 22713 with priority (3, 2, 1)
+i = 0 index = 482 tableIndex = 3
+Swapping 22713 with 847082
+placed 847082 in table 2 at index 310
+Inserting 778888 with priority (3, 2, 1)
+i = 0 index = 303 tableIndex = 3
+Swapping 778888 with 576862
+i = 1 index = 924 tableIndex = 2
+Swapping 576862 with 139127
+placed 139127 in table 1 at index 60
+Inserting 598442 with priority (2, 3, 1)
+placed 598442 in table 2 at index 726
+Inserting 77986 with priority (2, 1, 3)
+placed 77986 in table 2 at index 615
+Inserting 219304 with priority (2, 3, 1)
+placed 219304 in table 2 at index 280
+Inserting 537472 with priority (2, 3, 1)
+placed 537472 in table 2 at index 133
+Inserting 874940 with priority (3, 1, 2)
+i = 0 index = 345 tableIndex = 3
+Swapping 874940 with 374201
+placed 374201 in table 1 at index 342
+Inserting 260883 with priority (2, 1, 3)
+placed 260883 in table 2 at index 852
+Inserting 167636 with priority (1, 3, 2)
+i = 0 index = 329 tableIndex = 1
+Swapping 167636 with 754780
+i = 1 index = 953 tableIndex = 3
+Swapping 754780 with 159529
+i = 2 index = 557 tableIndex = 2
+Swapping 159529 with 384219
+placed 384219 in table 1 at index 922
+Inserting 254388 with priority (2, 3, 1)
+placed 254388 in table 2 at index 191
+Inserting 48823 with priority (2, 3, 1)
+placed 48823 in table 2 at index 76
+Inserting 19266 with priority (2, 1, 3)
+placed 19266 in table 2 at index 355
+Inserting 941446 with priority (2, 1, 3)
+placed 941446 in table 2 at index 559
+Inserting 35281 with priority (3, 2, 1)
+placed 35281 in table 3 at index 319
+Inserting 917522 with priority (3, 2, 1)
+placed 917522 in table 3 at index 577
+Inserting 974177 with priority (3, 2, 1)
+placed 974177 in table 3 at index 65
+Inserting 499485 with priority (2, 3, 1)
+i = 0 index = 847 tableIndex = 2
+Swapping 499485 with 457862
+i = 1 index = 270 tableIndex = 3
+Swapping 457862 with 982752
+placed 982752 in table 1 at index 686
+Inserting 939031 with priority (3, 2, 1)
+i = 0 index = 702 tableIndex = 3
+Swapping 939031 with 864119
+placed 864119 in table 2 at index 860
+Inserting 635360 with priority (3, 2, 1)
+placed 635360 in table 3 at index 8
+Inserting 913195 with priority (2, 3, 1)
+i = 0 index = 35 tableIndex = 2
+Swapping 913195 with 929533
+i = 1 index = 886 tableIndex = 3
+Swapping 929533 with 951428
+i = 2 index = 916 tableIndex = 1
+Swapping 951428 with 301538
+i = 0 index = 119 tableIndex = 2
+Swapping 301538 with 607302
+placed 607302 in table 3 at index 127
+Inserting 181683 with priority (2, 1, 3)
+i = 0 index = 440 tableIndex = 2
+Swapping 181683 with 639692
+i = 1 index = 184 tableIndex = 1
+Swapping 639692 with 91588
+placed 91588 in table 3 at index 442
+Inserting 246208 with priority (1, 2, 3)
+placed 246208 in table 1 at index 572
+Inserting 856626 with priority (3, 2, 1)
+placed 856626 in table 3 at index 368
+Inserting 32981 with priority (1, 3, 2)
+placed 32981 in table 1 at index 476
+Inserting 579245 with priority (3, 1, 2)
+i = 0 index = 924 tableIndex = 3
+Swapping 579245 with 157173
+i = 1 index = 390 tableIndex = 1
+Swapping 157173 with 950240
+placed 950240 in table 2 at index 241
+Inserting 916002 with priority (3, 1, 2)
+placed 916002 in table 3 at index 170
+Inserting 904712 with priority (1, 2, 3)
+placed 904712 in table 1 at index 416
+Inserting 733631 with priority (2, 3, 1)
+placed 733631 in table 2 at index 685
+Inserting 667213 with priority (1, 3, 2)
+placed 667213 in table 1 at index 181
+Inserting 949897 with priority (2, 1, 3)
+i = 0 index = 281 tableIndex = 2
+Swapping 949897 with 156923
+i = 1 index = 792 tableIndex = 1
+Swapping 156923 with 685900
+placed 685900 in table 3 at index 776
+Inserting 681018 with priority (2, 1, 3)
+i = 0 index = 916 tableIndex = 2
+Swapping 681018 with 995525
+i = 1 index = 725 tableIndex = 1
+Swapping 995525 with 163081
+placed 163081 in table 3 at index 891
+Inserting 62716 with priority (3, 2, 1)
+i = 0 index = 805 tableIndex = 3
+Swapping 62716 with 217586
+placed 217586 in table 2 at index 285
+Inserting 357648 with priority (2, 1, 3)
+placed 357648 in table 2 at index 935
+Inserting 781169 with priority (3, 2, 1)
+placed 781169 in table 3 at index 393
+Inserting 492779 with priority (1, 2, 3)
+placed 492779 in table 1 at index 681
+Inserting 130239 with priority (3, 2, 1)
+i = 0 index = 944 tableIndex = 3
+Swapping 130239 with 749480
+placed 749480 in table 2 at index 72
+Inserting 852779 with priority (2, 1, 3)
+placed 852779 in table 2 at index 27
+Inserting 342373 with priority (1, 3, 2)
+i = 0 index = 607 tableIndex = 1
+Swapping 342373 with 356235
+placed 356235 in table 3 at index 732
+Inserting 282568 with priority (1, 2, 3)
+i = 0 index = 92 tableIndex = 1
+Swapping 282568 with 357691
+placed 357691 in table 2 at index 769
+Inserting 737665 with priority (1, 2, 3)
+placed 737665 in table 1 at index 205
+Inserting 547568 with priority (3, 2, 1)
+i = 0 index = 403 tableIndex = 3
+Swapping 547568 with 243501
+i = 1 index = 41 tableIndex = 2
+Swapping 243501 with 895177
+i = 2 index = 201 tableIndex = 1
+Swapping 895177 with 91201
+i = 0 index = 479 tableIndex = 3
+Swapping 91201 with 293296
+i = 1 index = 787 tableIndex = 2
+Swapping 293296 with 463664
+i = 2 index = 763 tableIndex = 1
+Swapping 463664 with 934230
+placed 934230 in table 3 at index 25
+Inserting 533866 with priority (3, 1, 2)
+placed 533866 in table 3 at index 315
+Inserting 103499 with priority (1, 3, 2)
+placed 103499 in table 1 at index 547
+Inserting 699279 with priority (1, 3, 2)
+placed 699279 in table 1 at index 91
+Inserting 952463 with priority (2, 3, 1)
+i = 0 index = 499 tableIndex = 2
+Swapping 952463 with 295321
+placed 295321 in table 3 at index 258
+Inserting 387967 with priority (1, 3, 2)
+i = 0 index = 228 tableIndex = 1
+Swapping 387967 with 346406
+placed 346406 in table 3 at index 176
+Inserting 899358 with priority (1, 2, 3)
+i = 0 index = 271 tableIndex = 1
+Swapping 899358 with 55533
+i = 1 index = 881 tableIndex = 2
+Swapping 55533 with 666322
+i = 2 index = 892 tableIndex = 3
+Swapping 666322 with 681099
+i = 0 index = 199 tableIndex = 1
+Swapping 681099 with 184176
+i = 1 index = 331 tableIndex = 2
+Swapping 184176 with 496176
+i = 2 index = 887 tableIndex = 3
+Swapping 496176 with 501662
+i = 0 index = 7 tableIndex = 1
+Swapping 501662 with 148216
+i = 1 index = 122 tableIndex = 2
+Swapping 148216 with 217592
+i = 2 index = 554 tableIndex = 3
+Swapping 217592 with 912445
+i = 0 index = 330 tableIndex = 1
+Swapping 912445 with 80467
+placed 80467 in table 2 at index 708
+Inserting 343835 with priority (1, 3, 2)
+i = 0 index = 838 tableIndex = 1
+Swapping 343835 with 8693
+i = 1 index = 651 tableIndex = 3
+Swapping 8693 with 16249
+i = 2 index = 775 tableIndex = 2
+Swapping 16249 with 419019
+placed 419019 in table 1 at index 195
+Inserting 831549 with priority (2, 1, 3)
+i = 0 index = 219 tableIndex = 2
+Swapping 831549 with 420262
+i = 1 index = 716 tableIndex = 1
+Swapping 420262 with 15377
+placed 15377 in table 3 at index 601
+Inserting 281630 with priority (1, 2, 3)
+placed 281630 in table 1 at index 455
+Inserting 110085 with priority (1, 2, 3)
+placed 110085 in table 1 at index 545
+Inserting 90498 with priority (2, 3, 1)
+i = 0 index = 419 tableIndex = 2
+Swapping 90498 with 780943
+i = 1 index = 465 tableIndex = 3
+Swapping 780943 with 659606
+i = 2 index = 431 tableIndex = 1
+Swapping 659606 with 815646
+placed 815646 in table 2 at index 564
+Inserting 263063 with priority (1, 3, 2)
+placed 263063 in table 1 at index 242
+Inserting 290153 with priority (2, 1, 3)
+i = 0 index = 541 tableIndex = 2
+Swapping 290153 with 354153
+placed 354153 in table 1 at index 659
+Inserting 853896 with priority (2, 3, 1)
+i = 0 index = 60 tableIndex = 2
+Swapping 853896 with 428051
+placed 428051 in table 3 at index 324
+Inserting 837120 with priority (1, 2, 3)
+i = 0 index = 488 tableIndex = 1
+Swapping 837120 with 877111
+i = 1 index = 28 tableIndex = 2
+Swapping 877111 with 107016
+placed 107016 in table 3 at index 308
+Inserting 68458 with priority (1, 3, 2)
+placed 68458 in table 1 at index 516
+Inserting 82900 with priority (2, 3, 1)
+placed 82900 in table 2 at index 323
+Inserting 482017 with priority (1, 2, 3)
+i = 0 index = 19 tableIndex = 1
+Swapping 482017 with 838927
+i = 1 index = 259 tableIndex = 2
+Swapping 838927 with 954882
+i = 2 index = 922 tableIndex = 3
+Swapping 954882 with 569293
+i = 0 index = 373 tableIndex = 1
+Swapping 569293 with 414288
+i = 1 index = 975 tableIndex = 2
+Swapping 414288 with 526539
+i = 2 index = 382 tableIndex = 3
+Swapping 526539 with 265746
+placed 265746 in table 1 at index 371
+Inserting 589867 with priority (1, 2, 3)
+i = 0 index = 373 tableIndex = 1
+Swapping 589867 with 569293
+placed 569293 in table 2 at index 109
+Inserting 76070 with priority (3, 1, 2)
+placed 76070 in table 3 at index 81
+Inserting 310047 with priority (3, 1, 2)
+i = 0 index = 400 tableIndex = 3
+Swapping 310047 with 199579
+placed 199579 in table 1 at index 598
+Inserting 628902 with priority (3, 2, 1)
+placed 628902 in table 3 at index 919
+Inserting 963626 with priority (2, 3, 1)
+placed 963626 in table 2 at index 822
+Inserting 767823 with priority (3, 1, 2)
+i = 0 index = 638 tableIndex = 3
+Swapping 767823 with 393139
+i = 1 index = 628 tableIndex = 1
+Swapping 393139 with 995272
+placed 995272 in table 2 at index 972
+Inserting 747775 with priority (2, 1, 3)
+i = 0 index = 781 tableIndex = 2
+Swapping 747775 with 814976
+placed 814976 in table 1 at index 312
+Inserting 495181 with priority (1, 3, 2)
+i = 0 index = 861 tableIndex = 1
+Swapping 495181 with 44297
+i = 1 index = 89 tableIndex = 3
+Swapping 44297 with 641209
+placed 641209 in table 2 at index 375
+Inserting 842639 with priority (3, 2, 1)
+i = 0 index = 896 tableIndex = 3
+Swapping 842639 with 473573
+i = 1 index = 160 tableIndex = 2
+Swapping 473573 with 185573
+i = 2 index = 695 tableIndex = 1
+Swapping 185573 with 588773
+i = 0 index = 401 tableIndex = 3
+Swapping 588773 with 954513
+i = 1 index = 514 tableIndex = 2
+Swapping 954513 with 447726
+i = 2 index = 760 tableIndex = 1
+Swapping 447726 with 627490
+placed 627490 in table 3 at index 569
+Inserting 426060 with priority (2, 3, 1)
+i = 0 index = 480 tableIndex = 2
+Swapping 426060 with 453246
+placed 453246 in table 3 at index 535
+Inserting 376254 with priority (3, 1, 2)
+i = 0 index = 753 tableIndex = 3
+Swapping 376254 with 927250
+placed 927250 in table 1 at index 899
+Inserting 607999 with priority (3, 1, 2)
+i = 0 index = 583 tableIndex = 3
+Swapping 607999 with 72833
+i = 1 index = 317 tableIndex = 1
+Swapping 72833 with 876237
+placed 876237 in table 2 at index 581
+Inserting 1094 with priority (1, 3, 2)
+placed 1094 in table 1 at index 578
+Inserting 921886 with priority (1, 2, 3)
+i = 0 index = 607 tableIndex = 1
+Swapping 921886 with 342373
+placed 342373 in table 2 at index 600
+Inserting 963863 with priority (1, 2, 3)
+i = 0 index = 442 tableIndex = 1
+Swapping 963863 with 831601
+placed 831601 in table 2 at index 950
+Inserting 492657 with priority (3, 2, 1)
+i = 0 index = 386 tableIndex = 3
+Swapping 492657 with 720255
+i = 1 index = 581 tableIndex = 2
+Swapping 720255 with 876237
+i = 2 index = 317 tableIndex = 1
+Swapping 876237 with 72833
+i = 0 index = 583 tableIndex = 3
+Swapping 72833 with 607999
+placed 607999 in table 2 at index 85
+Inserting 781910 with priority (2, 3, 1)
+i = 0 index = 357 tableIndex = 2
+Swapping 781910 with 926299
+placed 926299 in table 3 at index 866
+Inserting 882399 with priority (3, 2, 1)
+i = 0 index = 352 tableIndex = 3
+Swapping 882399 with 91337
+i = 1 index = 681 tableIndex = 2
+Swapping 91337 with 276589
+i = 2 index = 351 tableIndex = 1
+Swapping 276589 with 838196
+placed 838196 in table 3 at index 161
+Inserting 402942 with priority (2, 1, 3)
+i = 0 index = 288 tableIndex = 2
+Swapping 402942 with 379863
+placed 379863 in table 1 at index 414
+Inserting 835724 with priority (1, 2, 3)
+placed 835724 in table 1 at index 764
+Inserting 858740 with priority (3, 2, 1)
+i = 0 index = 489 tableIndex = 3
+Swapping 858740 with 971559
+i = 1 index = 574 tableIndex = 2
+Swapping 971559 with 907559
+placed 907559 in table 1 at index 673
+Inserting 2496 with priority (2, 1, 3)
+i = 0 index = 373 tableIndex = 2
+Swapping 2496 with 261568
+i = 1 index = 628 tableIndex = 1
+Swapping 261568 with 393139
+i = 2 index = 638 tableIndex = 3
+Swapping 393139 with 767823
+i = 0 index = 35 tableIndex = 2
+Swapping 767823 with 913195
+i = 1 index = 501 tableIndex = 1
+Swapping 913195 with 38556
+placed 38556 in table 3 at index 928
+Inserting 218652 with priority (1, 3, 2)
+placed 218652 in table 1 at index 845
+Inserting 669807 with priority (1, 3, 2)
+i = 0 index = 485 tableIndex = 1
+Swapping 669807 with 694522
+placed 694522 in table 3 at index 572
+Inserting 296159 with priority (2, 3, 1)
+i = 0 index = 113 tableIndex = 2
+Swapping 296159 with 380141
+placed 380141 in table 3 at index 822
+Inserting 812314 with priority (1, 2, 3)
+placed 812314 in table 1 at index 395
+Inserting 895665 with priority (3, 1, 2)
+placed 895665 in table 3 at index 508
+Inserting 863717 with priority (3, 1, 2)
+i = 0 index = 913 tableIndex = 3
+Swapping 863717 with 607127
+placed 607127 in table 1 at index 698
+Inserting 469985 with priority (3, 1, 2)
+placed 469985 in table 3 at index 712
+Inserting 20107 with priority (3, 2, 1)
+placed 20107 in table 3 at index 85
+Inserting 603569 with priority (1, 2, 3)
+placed 603569 in table 1 at index 846
+Inserting 288872 with priority (3, 1, 2)
+i = 0 index = 56 tableIndex = 3
+Swapping 288872 with 729326
+placed 729326 in table 1 at index 104
+Inserting 619242 with priority (1, 2, 3)
+placed 619242 in table 1 at index 252
+Inserting 328941 with priority (3, 2, 1)
+placed 328941 in table 3 at index 286
+Inserting 227115 with priority (2, 3, 1)
+placed 227115 in table 2 at index 747
+Inserting 121268 with priority (1, 3, 2)
+i = 0 index = 679 tableIndex = 1
+Swapping 121268 with 252732
+i = 1 index = 815 tableIndex = 3
+Swapping 252732 with 449227
+i = 2 index = 111 tableIndex = 2
+Swapping 449227 with 388701
+i = 0 index = 972 tableIndex = 1
+Swapping 388701 with 22809
+placed 22809 in table 3 at index 64
+Inserting 258906 with priority (2, 3, 1)
+placed 258906 in table 2 at index 608
+Inserting 832386 with priority (1, 2, 3)
+i = 0 index = 146 tableIndex = 1
+Swapping 832386 with 539995
+placed 539995 in table 2 at index 213
+Inserting 691243 with priority (1, 2, 3)
+placed 691243 in table 1 at index 101
+Inserting 893703 with priority (1, 3, 2)
+i = 0 index = 659 tableIndex = 1
+Swapping 893703 with 354153
+placed 354153 in table 3 at index 306
+Inserting 215684 with priority (1, 2, 3)
+placed 215684 in table 1 at index 940
+Inserting 653858 with priority (3, 2, 1)
+i = 0 index = 819 tableIndex = 3
+Swapping 653858 with 567062
+placed 567062 in table 2 at index 501
+Inserting 911186 with priority (2, 3, 1)
+placed 911186 in table 2 at index 777
+Inserting 433082 with priority (3, 1, 2)
+i = 0 index = 389 tableIndex = 3
+Swapping 433082 with 61850
+placed 61850 in table 1 at index 835
+Inserting 339056 with priority (1, 3, 2)
+i = 0 index = 679 tableIndex = 1
+Swapping 339056 with 121268
+placed 121268 in table 3 at index 175
+Inserting 343499 with priority (3, 2, 1)
+i = 0 index = 443 tableIndex = 3
+Swapping 343499 with 417142
+i = 1 index = 769 tableIndex = 2
+Swapping 417142 with 357691
+i = 2 index = 92 tableIndex = 1
+Swapping 357691 with 282568
+placed 282568 in table 3 at index 195
+Inserting 759169 with priority (1, 2, 3)
+placed 759169 in table 1 at index 45
+Inserting 184967 with priority (1, 3, 2)
+placed 184967 in table 1 at index 443
+Inserting 265434 with priority (1, 2, 3)
+i = 0 index = 911 tableIndex = 1
+Swapping 265434 with 857652
+placed 857652 in table 2 at index 543
+Inserting 443249 with priority (2, 3, 1)
+placed 443249 in table 2 at index 878
+Inserting 889028 with priority (3, 2, 1)
+placed 889028 in table 3 at index 364
+Inserting 467533 with priority (2, 3, 1)
+placed 467533 in table 2 at index 325
+Inserting 367558 with priority (2, 3, 1)
+placed 367558 in table 2 at index 447
+Inserting 517038 with priority (3, 2, 1)
+placed 517038 in table 3 at index 908
+Inserting 153943 with priority (2, 3, 1)
+i = 0 index = 864 tableIndex = 2
+Swapping 153943 with 929793
+i = 1 index = 668 tableIndex = 3
+Swapping 929793 with 577490
+placed 577490 in table 1 at index 663
+Inserting 745962 with priority (1, 3, 2)
+i = 0 index = 212 tableIndex = 1
+Swapping 745962 with 429183
+i = 1 index = 118 tableIndex = 3
+Swapping 429183 with 972562
+i = 2 index = 329 tableIndex = 2
+Swapping 972562 with 505938
+placed 505938 in table 1 at index 687
+Inserting 300640 with priority (3, 2, 1)
+i = 0 index = 454 tableIndex = 3
+Swapping 300640 with 66027
+i = 1 index = 419 tableIndex = 2
+Swapping 66027 with 90498
+placed 90498 in table 1 at index 674
+Inserting 334287 with priority (3, 1, 2)
+i = 0 index = 369 tableIndex = 3
+Swapping 334287 with 676328
+i = 1 index = 710 tableIndex = 1
+Swapping 676328 with 67884
+placed 67884 in table 2 at index 292
+Inserting 24326 with priority (3, 1, 2)
+placed 24326 in table 3 at index 999
+Inserting 146556 with priority (3, 1, 2)
+placed 146556 in table 3 at index 771
+Inserting 387639 with priority (2, 3, 1)
+placed 387639 in table 2 at index 940
+Inserting 620451 with priority (3, 2, 1)
+i = 0 index = 731 tableIndex = 3
+Swapping 620451 with 777879
+i = 1 index = 336 tableIndex = 2
+Swapping 777879 with 688730
+i = 2 index = 615 tableIndex = 1
+Swapping 688730 with 131279
+i = 0 index = 368 tableIndex = 3
+Swapping 131279 with 856626
+placed 856626 in table 2 at index 573
+Inserting 911183 with priority (3, 1, 2)
+placed 911183 in table 3 at index 903
+Inserting 599865 with priority (1, 2, 3)
+placed 599865 in table 1 at index 78
+Inserting 13695 with priority (3, 1, 2)
+i = 0 index = 310 tableIndex = 3
+Swapping 13695 with 969669
+i = 1 index = 757 tableIndex = 1
+Swapping 969669 with 660933
+placed 660933 in table 2 at index 196
+Inserting 36359 with priority (2, 1, 3)
+i = 0 index = 986 tableIndex = 2
+Swapping 36359 with 36828
+placed 36828 in table 1 at index 105
+Inserting 125220 with priority (1, 2, 3)
+i = 0 index = 326 tableIndex = 1
+Swapping 125220 with 47161
+i = 1 index = 431 tableIndex = 2
+Swapping 47161 with 610415
+placed 610415 in table 3 at index 602
+Inserting 140629 with priority (1, 2, 3)
+i = 0 index = 236 tableIndex = 1
+Swapping 140629 with 849992
+i = 1 index = 916 tableIndex = 2
+Swapping 849992 with 681018
+i = 2 index = 596 tableIndex = 3
+Swapping 681018 with 111647
+placed 111647 in table 1 at index 770
+Inserting 969980 with priority (1, 3, 2)
+placed 969980 in table 1 at index 67
+Inserting 887561 with priority (3, 1, 2)
+i = 0 index = 698 tableIndex = 3
+Swapping 887561 with 178396
+placed 178396 in table 1 at index 897
+Inserting 136370 with priority (3, 1, 2)
+placed 136370 in table 3 at index 766
+Inserting 261838 with priority (3, 1, 2)
+i = 0 index = 400 tableIndex = 3
+Swapping 261838 with 310047
+placed 310047 in table 1 at index 314
+Inserting 710498 with priority (1, 3, 2)
+placed 710498 in table 1 at index 756
+Inserting 41834 with priority (2, 1, 3)
+i = 0 index = 518 tableIndex = 2
+Swapping 41834 with 763818
+placed 763818 in table 1 at index 248
+Inserting 302037 with priority (1, 3, 2)
+i = 0 index = 772 tableIndex = 1
+Swapping 302037 with 319142
+placed 319142 in table 3 at index 825
+Inserting 577929 with priority (2, 3, 1)
+i = 0 index = 601 tableIndex = 2
+Swapping 577929 with 583213
+placed 583213 in table 3 at index 948
+Inserting 280441 with priority (1, 2, 3)
+placed 280441 in table 1 at index 386
+Inserting 688469 with priority (3, 2, 1)
+i = 0 index = 20 tableIndex = 3
+Swapping 688469 with 416177
+placed 416177 in table 2 at index 646
+Inserting 650065 with priority (1, 3, 2)
+placed 650065 in table 1 at index 872
+Inserting 247648 with priority (3, 2, 1)
+i = 0 index = 755 tableIndex = 3
+Swapping 247648 with 202749
+placed 202749 in table 2 at index 435
+Inserting 568977 with priority (3, 2, 1)
+placed 568977 in table 3 at index 865
+Inserting 128912 with priority (3, 2, 1)
+placed 128912 in table 3 at index 480
+Inserting 116200 with priority (1, 2, 3)
+placed 116200 in table 1 at index 758
+Inserting 591848 with priority (1, 3, 2)
+placed 591848 in table 1 at index 670
+Inserting 48789 with priority (1, 3, 2)
+i = 0 index = 88 tableIndex = 1
+Swapping 48789 with 865215
+i = 1 index = 608 tableIndex = 3
+Swapping 865215 with 458307
+placed 458307 in table 2 at index 790
+Inserting 160386 with priority (2, 1, 3)
+placed 160386 in table 2 at index 771
+Inserting 667985 with priority (1, 2, 3)
+i = 0 index = 24 tableIndex = 1
+Swapping 667985 with 751449
+i = 1 index = 299 tableIndex = 2
+Swapping 751449 with 799270
+i = 2 index = 459 tableIndex = 3
+Swapping 799270 with 112699
+i = 0 index = 804 tableIndex = 1
+Swapping 112699 with 772270
+placed 772270 in table 2 at index 698
+Inserting 297728 with priority (1, 2, 3)
+placed 297728 in table 1 at index 992
+Inserting 713976 with priority (3, 2, 1)
+i = 0 index = 881 tableIndex = 3
+Swapping 713976 with 74202
+i = 1 index = 568 tableIndex = 2
+Swapping 74202 with 974718
+placed 974718 in table 1 at index 241
+Inserting 523784 with priority (1, 3, 2)
+i = 0 index = 384 tableIndex = 1
+Swapping 523784 with 526020
+i = 1 index = 83 tableIndex = 3
+Swapping 526020 with 653822
+placed 653822 in table 2 at index 104
+Inserting 521216 with priority (2, 1, 3)
+placed 521216 in table 2 at index 765
+Inserting 629716 with priority (3, 2, 1)
+placed 629716 in table 3 at index 963
+Inserting 762158 with priority (2, 3, 1)
+placed 762158 in table 2 at index 82
+Inserting 434738 with priority (2, 1, 3)
+placed 434738 in table 2 at index 221
+Inserting 17728 with priority (1, 3, 2)
+placed 17728 in table 1 at index 132
+Inserting 207225 with priority (1, 2, 3)
+i = 0 index = 242 tableIndex = 1
+Swapping 207225 with 263063
+i = 1 index = 448 tableIndex = 2
+Swapping 263063 with 50099
+i = 2 index = 319 tableIndex = 3
+Swapping 50099 with 35281
+placed 35281 in table 1 at index 40
+Inserting 858913 with priority (3, 2, 1)
+placed 858913 in table 3 at index 156
+Inserting 478972 with priority (2, 1, 3)
+i = 0 index = 462 tableIndex = 2
+Swapping 478972 with 312554
+i = 1 index = 404 tableIndex = 1
+Swapping 312554 with 882397
+i = 2 index = 208 tableIndex = 3
+Swapping 882397 with 921583
+placed 921583 in table 2 at index 239
+Inserting 832421 with priority (2, 1, 3)
+placed 832421 in table 2 at index 544
+Inserting 811222 with priority (1, 2, 3)
+i = 0 index = 75 tableIndex = 1
+Swapping 811222 with 24120
+placed 24120 in table 2 at index 162
+Inserting 33445 with priority (2, 1, 3)
+placed 33445 in table 2 at index 784
+Inserting 183776 with priority (3, 1, 2)
+i = 0 index = 482 tableIndex = 3
+Swapping 183776 with 22713
+i = 1 index = 918 tableIndex = 1
+Swapping 22713 with 352134
+placed 352134 in table 2 at index 439
+Inserting 125575 with priority (2, 1, 3)
+i = 0 index = 162 tableIndex = 2
+Swapping 125575 with 24120
+i = 1 index = 75 tableIndex = 1
+Swapping 24120 with 811222
+placed 811222 in table 3 at index 97
+Inserting 680917 with priority (1, 2, 3)
+i = 0 index = 196 tableIndex = 1
+Swapping 680917 with 848145
+i = 1 index = 818 tableIndex = 2
+Swapping 848145 with 943608
+i = 2 index = 246 tableIndex = 3
+Swapping 943608 with 413762
+placed 413762 in table 1 at index 302
+Inserting 951258 with priority (2, 1, 3)
+placed 951258 in table 2 at index 384
+Inserting 359536 with priority (1, 2, 3)
+placed 359536 in table 1 at index 471
+Inserting 639956 with priority (2, 3, 1)
+placed 639956 in table 2 at index 139
+Inserting 697300 with priority (1, 2, 3)
+i = 0 index = 169 tableIndex = 1
+Swapping 697300 with 703290
+placed 703290 in table 2 at index 956
+Inserting 93408 with priority (2, 1, 3)
+i = 0 index = 921 tableIndex = 2
+Swapping 93408 with 189193
+placed 189193 in table 1 at index 525
+Inserting 28299 with priority (2, 3, 1)
+placed 28299 in table 2 at index 599
+Inserting 936749 with priority (1, 3, 2)
+i = 0 index = 883 tableIndex = 1
+Swapping 936749 with 611256
+placed 611256 in table 3 at index 872
+Inserting 295396 with priority (2, 1, 3)
+i = 0 index = 765 tableIndex = 2
+Swapping 295396 with 521216
+placed 521216 in table 1 at index 904
+Inserting 723545 with priority (3, 1, 2)
+placed 723545 in table 3 at index 456
+Inserting 575104 with priority (1, 3, 2)
+i = 0 index = 144 tableIndex = 1
+Swapping 575104 with 247035
+i = 1 index = 309 tableIndex = 3
+Swapping 247035 with 886308
+placed 886308 in table 2 at index 117
+Inserting 782053 with priority (1, 3, 2)
+i = 0 index = 455 tableIndex = 1
+Swapping 782053 with 281630
+placed 281630 in table 3 at index 449
+Inserting 720183 with priority (3, 1, 2)
+i = 0 index = 95 tableIndex = 3
+Swapping 720183 with 888335
+i = 1 index = 915 tableIndex = 1
+Swapping 888335 with 278497
+placed 278497 in table 2 at index 620
+Inserting 896982 with priority (1, 3, 2)
+placed 896982 in table 1 at index 339
+Inserting 979544 with priority (3, 1, 2)
+placed 979544 in table 3 at index 522
+Inserting 533886 with priority (2, 1, 3)
+placed 533886 in table 2 at index 16
+Inserting 908822 with priority (2, 3, 1)
+placed 908822 in table 2 at index 125
+Inserting 320556 with priority (2, 3, 1)
+i = 0 index = 948 tableIndex = 2
+Swapping 320556 with 410718
+placed 410718 in table 3 at index 248
+Inserting 690925 with priority (3, 1, 2)
+placed 690925 in table 3 at index 930
+Inserting 559881 with priority (2, 1, 3)
+placed 559881 in table 2 at index 801
+Inserting 411246 with priority (2, 3, 1)
+i = 0 index = 434 tableIndex = 2
+Swapping 411246 with 896046
+placed 896046 in table 3 at index 384
+Inserting 475913 with priority (3, 1, 2)
+placed 475913 in table 3 at index 994
+Inserting 29371 with priority (3, 2, 1)
+i = 0 index = 828 tableIndex = 3
+Swapping 29371 with 704416
+i = 1 index = 9 tableIndex = 2
+Swapping 704416 with 325444
+placed 325444 in table 1 at index 520
+Inserting 589933 with priority (2, 3, 1)
+placed 589933 in table 2 at index 73
+Inserting 407582 with priority (2, 1, 3)
+placed 407582 in table 2 at index 932
+Inserting 553779 with priority (3, 2, 1)
+placed 553779 in table 3 at index 793
+Inserting 491989 with priority (1, 3, 2)
+placed 491989 in table 1 at index 740
+Inserting 351435 with priority (2, 1, 3)
+i = 0 index = 191 tableIndex = 2
+Swapping 351435 with 254388
+i = 1 index = 727 tableIndex = 1
+Swapping 254388 with 533251
+i = 2 index = 248 tableIndex = 3
+Swapping 533251 with 410718
+i = 0 index = 948 tableIndex = 2
+Swapping 410718 with 320556
+placed 320556 in table 1 at index 198
+Inserting 672306 with priority (3, 1, 2)
+i = 0 index = 427 tableIndex = 3
+Swapping 672306 with 184098
+i = 1 index = 440 tableIndex = 1
+Swapping 184098 with 183876
+i = 2 index = 393 tableIndex = 2
+Swapping 183876 with 955487
+placed 955487 in table 3 at index 186
+Inserting 236594 with priority (1, 3, 2)
+placed 236594 in table 1 at index 609
+Inserting 824541 with priority (2, 3, 1)
+placed 824541 in table 2 at index 471
+Inserting 562186 with priority (2, 3, 1)
+placed 562186 in table 2 at index 690
+Inserting 748120 with priority (3, 1, 2)
+i = 0 index = 963 tableIndex = 3
+Swapping 748120 with 629716
+i = 1 index = 201 tableIndex = 1
+Swapping 629716 with 895177
+i = 2 index = 41 tableIndex = 2
+Swapping 895177 with 243501
+i = 0 index = 403 tableIndex = 3
+Swapping 243501 with 547568
+i = 1 index = 79 tableIndex = 1
+Swapping 547568 with 151514
+i = 2 index = 944 tableIndex = 2
+Swapping 151514 with 51009
+placed 51009 in table 3 at index 415
+Inserting 849771 with priority (2, 1, 3)
+placed 849771 in table 2 at index 51
+Inserting 564539 with priority (1, 2, 3)
+placed 564539 in table 1 at index 300
+Inserting 143002 with priority (3, 2, 1)
+placed 143002 in table 3 at index 676
+Inserting 89868 with priority (1, 2, 3)
+placed 89868 in table 1 at index 692
+Inserting 1283 with priority (3, 1, 2)
+placed 1283 in table 3 at index 378
+Inserting 243209 with priority (3, 2, 1)
+i = 0 index = 37 tableIndex = 3
+Swapping 243209 with 695366
+i = 1 index = 759 tableIndex = 2
+Swapping 695366 with 945519
+placed 945519 in table 1 at index 885
+Inserting 527335 with priority (2, 3, 1)
+placed 527335 in table 2 at index 22
+Inserting 38868 with priority (3, 2, 1)
+placed 38868 in table 3 at index 63
+Inserting 46976 with priority (2, 1, 3)
+i = 0 index = 781 tableIndex = 2
+Swapping 46976 with 747775
+i = 1 index = 628 tableIndex = 1
+Swapping 747775 with 261568
+i = 2 index = 927 tableIndex = 3
+Swapping 261568 with 479820
+i = 0 index = 488 tableIndex = 2
+Swapping 479820 with 259084
+i = 1 index = 804 tableIndex = 1
+Swapping 259084 with 112699
+i = 2 index = 459 tableIndex = 3
+Swapping 112699 with 799270
+i = 0 index = 299 tableIndex = 2
+Swapping 799270 with 751449
+i = 1 index = 24 tableIndex = 1
+Swapping 751449 with 667985
+placed 667985 in table 3 at index 398
+Inserting 375445 with priority (2, 1, 3)
+i = 0 index = 542 tableIndex = 2
+Swapping 375445 with 10179
+placed 10179 in table 1 at index 499
+Inserting 438566 with priority (2, 3, 1)
+placed 438566 in table 2 at index 859
+Inserting 51441 with priority (3, 2, 1)
+placed 51441 in table 3 at index 725
+Inserting 546743 with priority (3, 2, 1)
+i = 0 index = 638 tableIndex = 3
+Swapping 546743 with 393139
+i = 1 index = 864 tableIndex = 2
+Swapping 393139 with 153943
+placed 153943 in table 1 at index 974
+Inserting 537525 with priority (2, 3, 1)
+placed 537525 in table 2 at index 626
+Inserting 109116 with priority (3, 1, 2)
+placed 109116 in table 3 at index 241
+Inserting 870603 with priority (3, 2, 1)
+placed 870603 in table 3 at index 410
+Inserting 808343 with priority (1, 3, 2)
+i = 0 index = 162 tableIndex = 1
+Swapping 808343 with 502688
+placed 502688 in table 3 at index 173
+Inserting 68053 with priority (2, 1, 3)
+i = 0 index = 854 tableIndex = 2
+Swapping 68053 with 621717
+i = 1 index = 936 tableIndex = 1
+Swapping 621717 with 802926
+placed 802926 in table 3 at index 556
+Inserting 968649 with priority (2, 3, 1)
+i = 0 index = 609 tableIndex = 2
+Swapping 968649 with 692576
+placed 692576 in table 3 at index 110
+Inserting 911854 with priority (1, 3, 2)
+placed 911854 in table 1 at index 160
+Inserting 900526 with priority (1, 3, 2)
+placed 900526 in table 1 at index 844
+Inserting 730378 with priority (1, 3, 2)
+placed 730378 in table 1 at index 890
+Inserting 596050 with priority (2, 3, 1)
+i = 0 index = 977 tableIndex = 2
+Swapping 596050 with 65673
+placed 65673 in table 3 at index 111
+Inserting 854578 with priority (2, 1, 3)
+i = 0 index = 557 tableIndex = 2
+Swapping 854578 with 159529
+i = 1 index = 727 tableIndex = 1
+Swapping 159529 with 254388
+placed 254388 in table 3 at index 570
+Inserting 285423 with priority (2, 1, 3)
+placed 285423 in table 2 at index 535
+Inserting 310320 with priority (1, 2, 3)
+placed 310320 in table 1 at index 891
+Inserting 891369 with priority (3, 1, 2)
+placed 891369 in table 3 at index 592
+Inserting 468365 with priority (1, 2, 3)
+placed 468365 in table 1 at index 689
+Inserting 351291 with priority (1, 2, 3)
+placed 351291 in table 1 at index 812
+Inserting 39624 with priority (3, 2, 1)
+placed 39624 in table 3 at index 950
+Inserting 628175 with priority (1, 2, 3)
+placed 628175 in table 1 at index 655
+Inserting 149427 with priority (3, 1, 2)
+i = 0 index = 73 tableIndex = 3
+Swapping 149427 with 986135
+i = 1 index = 746 tableIndex = 1
+Swapping 986135 with 539560
+placed 539560 in table 2 at index 416
+Inserting 659987 with priority (3, 2, 1)
+placed 659987 in table 3 at index 444
+Inserting 225297 with priority (2, 1, 3)
+placed 225297 in table 2 at index 594
+Inserting 64277 with priority (3, 1, 2)
+placed 64277 in table 3 at index 438
+Inserting 38239 with priority (3, 1, 2)
+i = 0 index = 631 tableIndex = 3
+Swapping 38239 with 253431
+placed 253431 in table 1 at index 148
+Inserting 327947 with priority (3, 2, 1)
+placed 327947 in table 3 at index 213
+Inserting 221890 with priority (1, 2, 3)
+i = 0 index = 838 tableIndex = 1
+Swapping 221890 with 343835
+placed 343835 in table 2 at index 997
+Inserting 915655 with priority (1, 3, 2)
+placed 915655 in table 1 at index 447
+Inserting 106663 with priority (1, 3, 2)
+i = 0 index = 609 tableIndex = 1
+Swapping 106663 with 236594
+placed 236594 in table 3 at index 322
+Inserting 370642 with priority (3, 2, 1)
+placed 370642 in table 3 at index 829
+Inserting 641195 with priority (3, 1, 2)
+placed 641195 in table 3 at index 647
+Inserting 139270 with priority (2, 1, 3)
+placed 139270 in table 2 at index 55
+Inserting 704224 with priority (1, 3, 2)
+placed 704224 in table 1 at index 694
+Inserting 419160 with priority (2, 1, 3)
+i = 0 index = 574 tableIndex = 2
+Swapping 419160 with 971559
+i = 1 index = 137 tableIndex = 1
+Swapping 971559 with 232924
+placed 232924 in table 3 at index 272
+Inserting 652804 with priority (3, 2, 1)
+placed 652804 in table 3 at index 783
+Inserting 563521 with priority (3, 2, 1)
+placed 563521 in table 3 at index 656
+Inserting 159314 with priority (3, 1, 2)
+i = 0 index = 364 tableIndex = 3
+Swapping 159314 with 889028
+i = 1 index = 8 tableIndex = 1
+Swapping 889028 with 624494
+i = 2 index = 930 tableIndex = 2
+Swapping 624494 with 127687
+i = 0 index = 522 tableIndex = 3
+Swapping 127687 with 979544
+placed 979544 in table 1 at index 813
+Inserting 264243 with priority (3, 2, 1)
+placed 264243 in table 3 at index 947
+Inserting 856769 with priority (3, 1, 2)
+placed 856769 in table 3 at index 183
+Inserting 449304 with priority (2, 3, 1)
+placed 449304 in table 2 at index 550
+Inserting 272847 with priority (1, 3, 2)
+placed 272847 in table 1 at index 767
+Inserting 140707 with priority (2, 1, 3)
+i = 0 index = 922 tableIndex = 2
+Swapping 140707 with 180554
+placed 180554 in table 1 at index 38
+Inserting 984415 with priority (3, 2, 1)
+i = 0 index = 420 tableIndex = 3
+Swapping 984415 with 263775
+placed 263775 in table 2 at index 273
+Inserting 966233 with priority (1, 3, 2)
+i = 0 index = 904 tableIndex = 1
+Swapping 966233 with 521216
+placed 521216 in table 3 at index 787
+Inserting 770484 with priority (3, 1, 2)
+placed 770484 in table 3 at index 413
+Inserting 568839 with priority (1, 2, 3)
+placed 568839 in table 1 at index 579
+Inserting 786817 with priority (2, 3, 1)
+placed 786817 in table 2 at index 848
+Inserting 834579 with priority (1, 3, 2)
+i = 0 index = 110 tableIndex = 1
+Swapping 834579 with 208155
+placed 208155 in table 3 at index 259
+Inserting 436241 with priority (2, 1, 3)
+placed 436241 in table 2 at index 802
+Inserting 762226 with priority (2, 3, 1)
+i = 0 index = 461 tableIndex = 2
+Swapping 762226 with 43725
+placed 43725 in table 3 at index 862
+Inserting 873458 with priority (1, 3, 2)
+placed 873458 in table 1 at index 677
+Inserting 816343 with priority (2, 3, 1)
+placed 816343 in table 2 at index 592
+Inserting 967694 with priority (2, 3, 1)
+i = 0 index = 950 tableIndex = 2
+Swapping 967694 with 831601
+placed 831601 in table 3 at index 14
+Inserting 187532 with priority (2, 1, 3)
+placed 187532 in table 2 at index 216
+Inserting 24336 with priority (2, 1, 3)
+i = 0 index = 431 tableIndex = 2
+Swapping 24336 with 47161
+i = 1 index = 326 tableIndex = 1
+Swapping 47161 with 125220
+i = 2 index = 271 tableIndex = 3
+Swapping 125220 with 989595
+placed 989595 in table 2 at index 341
+Inserting 710137 with priority (1, 2, 3)
+i = 0 index = 826 tableIndex = 1
+Swapping 710137 with 183643
+placed 183643 in table 2 at index 589
+Inserting 314776 with priority (3, 1, 2)
+i = 0 index = 954 tableIndex = 3
+Swapping 314776 with 41758
+i = 1 index = 975 tableIndex = 1
+Swapping 41758 with 889965
+i = 2 index = 425 tableIndex = 2
+Swapping 889965 with 249965
+i = 0 index = 296 tableIndex = 3
+Swapping 249965 with 384464
+i = 1 index = 501 tableIndex = 1
+Swapping 384464 with 913195
+i = 2 index = 35 tableIndex = 2
+Swapping 913195 with 767823
+i = 0 index = 638 tableIndex = 3
+Swapping 767823 with 546743
+placed 546743 in table 1 at index 696
+Inserting 232607 with priority (3, 1, 2)
+placed 232607 in table 3 at index 603
+Inserting 531393 with priority (3, 1, 2)
+placed 531393 in table 3 at index 448
+Inserting 813657 with priority (3, 2, 1)
+placed 813657 in table 3 at index 114
+Inserting 468531 with priority (3, 2, 1)
+placed 468531 in table 3 at index 594
+Inserting 999515 with priority (2, 1, 3)
+i = 0 index = 765 tableIndex = 2
+Swapping 999515 with 295396
+placed 295396 in table 1 at index 90
+Inserting 300645 with priority (2, 1, 3)
+placed 300645 in table 2 at index 880
+Inserting 454187 with priority (1, 3, 2)
+placed 454187 in table 1 at index 821
+Inserting 764240 with priority (1, 2, 3)
+placed 764240 in table 1 at index 597
+Inserting 886241 with priority (3, 1, 2)
+i = 0 index = 159 tableIndex = 3
+Swapping 886241 with 446069
+placed 446069 in table 1 at index 934
+Inserting 779035 with priority (3, 2, 1)
+i = 0 index = 455 tableIndex = 3
+Swapping 779035 with 982317
+i = 1 index = 905 tableIndex = 2
+Swapping 982317 with 43908
+i = 2 index = 228 tableIndex = 1
+Swapping 43908 with 387967
+i = 0 index = 111 tableIndex = 3
+Swapping 387967 with 65673
+i = 1 index = 977 tableIndex = 2
+Swapping 65673 with 596050
+placed 596050 in table 1 at index 999
+Inserting 8755 with priority (2, 3, 1)
+i = 0 index = 152 tableIndex = 2
+Swapping 8755 with 703372
+i = 1 index = 481 tableIndex = 3
+Swapping 703372 with 958326
+i = 2 index = 201 tableIndex = 1
+Swapping 958326 with 629716
+i = 0 index = 675 tableIndex = 2
+Swapping 629716 with 978027
+i = 1 index = 14 tableIndex = 3
+Swapping 978027 with 831601
+i = 2 index = 442 tableIndex = 1
+Swapping 831601 with 963863
+i = 0 index = 416 tableIndex = 2
+Swapping 963863 with 539560
+placed 539560 in table 3 at index 806
+Inserting 977072 with priority (3, 2, 1)
+i = 0 index = 331 tableIndex = 3
+Swapping 977072 with 520335
+i = 1 index = 187 tableIndex = 2
+Swapping 520335 with 681661
+placed 681661 in table 1 at index 522
+Inserting 232421 with priority (3, 1, 2)
+placed 232421 in table 3 at index 623
+Inserting 272134 with priority (2, 3, 1)
+i = 0 index = 439 tableIndex = 2
+Swapping 272134 with 352134
+placed 352134 in table 3 at index 792
+Inserting 216180 with priority (3, 1, 2)
+placed 216180 in table 3 at index 419
+Inserting 16792 with priority (2, 3, 1)
+placed 16792 in table 2 at index 430
+Inserting 71495 with priority (1, 3, 2)
+i = 0 index = 655 tableIndex = 1
+Swapping 71495 with 628175
+placed 628175 in table 3 at index 264
+Inserting 92997 with priority (3, 2, 1)
+i = 0 index = 770 tableIndex = 3
+Swapping 92997 with 555550
+i = 1 index = 604 tableIndex = 2
+Swapping 555550 with 21306
+placed 21306 in table 1 at index 657
+Inserting 452265 with priority (1, 3, 2)
+i = 0 index = 343 tableIndex = 1
+Swapping 452265 with 29443
+i = 1 index = 65 tableIndex = 3
+Swapping 29443 with 974177
+placed 974177 in table 2 at index 892
+Inserting 83941 with priority (1, 2, 3)
+placed 83941 in table 1 at index 63
+Inserting 539910 with priority (3, 2, 1)
+i = 0 index = 121 tableIndex = 3
+Swapping 539910 with 84930
+i = 1 index = 379 tableIndex = 2
+Swapping 84930 with 932523
+placed 932523 in table 1 at index 141
+Inserting 793854 with priority (2, 1, 3)
+placed 793854 in table 2 at index 392
+Inserting 882634 with priority (3, 2, 1)
+placed 882634 in table 3 at index 167
+Inserting 397125 with priority (2, 3, 1)
+placed 397125 in table 2 at index 52
+Inserting 199695 with priority (2, 3, 1)
+placed 199695 in table 2 at index 619
+Inserting 763436 with priority (2, 3, 1)
+i = 0 index = 340 tableIndex = 2
+Swapping 763436 with 63354
+placed 63354 in table 3 at index 43
+Inserting 673130 with priority (1, 3, 2)
+i = 0 index = 772 tableIndex = 1
+Swapping 673130 with 302037
+placed 302037 in table 3 at index 98
+Inserting 332243 with priority (3, 2, 1)
+i = 0 index = 307 tableIndex = 3
+Swapping 332243 with 672025
+placed 672025 in table 2 at index 995
+Inserting 174003 with priority (2, 3, 1)
+placed 174003 in table 2 at index 632
+Inserting 222742 with priority (1, 2, 3)
+placed 222742 in table 1 at index 207
+Inserting 251866 with priority (3, 1, 2)
+placed 251866 in table 3 at index 784
+Inserting 781285 with priority (2, 1, 3)
+placed 781285 in table 2 at index 184
+Inserting 747655 with priority (3, 1, 2)
+i = 0 index = 577 tableIndex = 3
+Swapping 747655 with 917522
+placed 917522 in table 1 at index 59
+Inserting 897384 with priority (3, 1, 2)
+i = 0 index = 427 tableIndex = 3
+Swapping 897384 with 672306
+placed 672306 in table 1 at index 857
+Inserting 100441 with priority (1, 2, 3)
+placed 100441 in table 1 at index 648
+Inserting 552413 with priority (2, 3, 1)
+placed 552413 in table 2 at index 127
+Inserting 401224 with priority (3, 2, 1)
+i = 0 index = 96 tableIndex = 3
+Swapping 401224 with 15251
+placed 15251 in table 2 at index 764
+Inserting 170926 with priority (1, 3, 2)
+placed 170926 in table 1 at index 412
+Inserting 981067 with priority (2, 3, 1)
+placed 981067 in table 2 at index 279
+Inserting 777593 with priority (2, 3, 1)
+placed 777593 in table 2 at index 567
+Inserting 631917 with priority (2, 3, 1)
+i = 0 index = 409 tableIndex = 2
+Swapping 631917 with 61188
+placed 61188 in table 3 at index 277
+Inserting 774423 with priority (1, 2, 3)
+i = 0 index = 34 tableIndex = 1
+Swapping 774423 with 543460
+placed 543460 in table 2 at index 869
+Inserting 492591 with priority (1, 2, 3)
+i = 0 index = 609 tableIndex = 1
+Swapping 492591 with 106663
+placed 106663 in table 2 at index 62
+Inserting 714596 with priority (3, 1, 2)
+placed 714596 in table 3 at index 807
+Inserting 637107 with priority (1, 3, 2)
+placed 637107 in table 1 at index 332
+Inserting 989986 with priority (2, 3, 1)
+placed 989986 in table 2 at index 383
+Inserting 9752 with priority (3, 1, 2)
+placed 9752 in table 3 at index 428
+Inserting 502279 with priority (2, 1, 3)
+i = 0 index = 698 tableIndex = 2
+Swapping 502279 with 772270
+i = 1 index = 804 tableIndex = 1
+Swapping 772270 with 259084
+placed 259084 in table 3 at index 810
+Inserting 89877 with priority (3, 2, 1)
+placed 89877 in table 3 at index 758
+Inserting 865432 with priority (3, 2, 1)
+placed 865432 in table 3 at index 514
+Inserting 940715 with priority (3, 2, 1)
+placed 940715 in table 3 at index 474
+Inserting 936425 with priority (2, 3, 1)
+placed 936425 in table 2 at index 749
+Inserting 931401 with priority (2, 3, 1)
+placed 931401 in table 2 at index 65
+Inserting 464059 with priority (1, 2, 3)
+placed 464059 in table 1 at index 36
+Inserting 144504 with priority (1, 3, 2)
+i = 0 index = 239 tableIndex = 1
+Swapping 144504 with 906605
+i = 1 index = 801 tableIndex = 3
+Swapping 906605 with 183453
+placed 183453 in table 2 at index 319
+Inserting 432809 with priority (3, 1, 2)
+placed 432809 in table 3 at index 491
+Inserting 551431 with priority (2, 1, 3)
+placed 551431 in table 2 at index 474
+Inserting 211766 with priority (3, 2, 1)
+i = 0 index = 794 tableIndex = 3
+Swapping 211766 with 453188
+i = 1 index = 385 tableIndex = 2
+Swapping 453188 with 574944
+i = 2 index = 54 tableIndex = 1
+Swapping 574944 with 137418
+placed 137418 in table 3 at index 351
+Inserting 753311 with priority (2, 1, 3)
+placed 753311 in table 2 at index 633
+Inserting 870327 with priority (1, 3, 2)
+placed 870327 in table 1 at index 296
+Inserting 300941 with priority (3, 1, 2)
+i = 0 index = 573 tableIndex = 3
+Swapping 300941 with 971967
+placed 971967 in table 1 at index 768
+Inserting 493436 with priority (2, 3, 1)
+placed 493436 in table 2 at index 590
+Inserting 743166 with priority (1, 3, 2)
+placed 743166 in table 1 at index 457
+Inserting 570451 with priority (1, 3, 2)
+i = 0 index = 666 tableIndex = 1
+Swapping 570451 with 81597
+placed 81597 in table 3 at index 619
+Inserting 7414 with priority (3, 2, 1)
+placed 7414 in table 3 at index 538
+Inserting 574217 with priority (1, 3, 2)
+placed 574217 in table 1 at index 629
+Inserting 11227 with priority (2, 3, 1)
+placed 11227 in table 2 at index 637
+Inserting 824538 with priority (2, 3, 1)
+i = 0 index = 416 tableIndex = 2
+Swapping 824538 with 963863
+i = 1 index = 801 tableIndex = 3
+Swapping 963863 with 906605
+i = 2 index = 239 tableIndex = 1
+Swapping 906605 with 144504
+placed 144504 in table 2 at index 2
+Inserting 870765 with priority (1, 3, 2)
+placed 870765 in table 1 at index 591
+Inserting 620321 with priority (1, 2, 3)
+placed 620321 in table 1 at index 559
+Inserting 845118 with priority (1, 2, 3)
+i = 0 index = 93 tableIndex = 1
+Swapping 845118 with 902386
+i = 1 index = 589 tableIndex = 2
+Swapping 902386 with 183643
+i = 2 index = 493 tableIndex = 3
+Swapping 183643 with 46293
+i = 0 index = 972 tableIndex = 1
+Swapping 46293 with 388701
+i = 1 index = 111 tableIndex = 2
+Swapping 388701 with 449227
+i = 2 index = 815 tableIndex = 3
+Swapping 449227 with 252732
+i = 0 index = 679 tableIndex = 1
+Swapping 252732 with 339056
+placed 339056 in table 2 at index 707
+Inserting 608856 with priority (1, 3, 2)
+placed 608856 in table 1 at index 53
+Inserting 244401 with priority (1, 3, 2)
+i = 0 index = 422 tableIndex = 1
+Swapping 244401 with 438572
+i = 1 index = 304 tableIndex = 3
+Swapping 438572 with 836102
+placed 836102 in table 2 at index 143
+Inserting 435807 with priority (2, 1, 3)
+i = 0 index = 593 tableIndex = 2
+Swapping 435807 with 803666
+i = 1 index = 623 tableIndex = 1
+Swapping 803666 with 605492
+placed 605492 in table 3 at index 405
+Inserting 595574 with priority (2, 1, 3)
+placed 595574 in table 2 at index 185
+Inserting 599669 with priority (2, 3, 1)
+i = 0 index = 578 tableIndex = 2
+Swapping 599669 with 270958
+i = 1 index = 441 tableIndex = 3
+Swapping 270958 with 545870
+i = 2 index = 890 tableIndex = 1
+Swapping 545870 with 730378
+placed 730378 in table 2 at index 130
+Inserting 629416 with priority (2, 1, 3)
+i = 0 index = 416 tableIndex = 2
+Swapping 629416 with 824538
+i = 1 index = 239 tableIndex = 1
+Swapping 824538 with 906605
+i = 2 index = 801 tableIndex = 3
+Swapping 906605 with 963863
+i = 0 index = 416 tableIndex = 2
+Swapping 963863 with 629416
+a circle has been detected
+Load Factor Table 1: 0.471
+Load Factor Table 2: 0.483
+Load Factor Table 3: 0.494

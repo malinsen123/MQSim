@@ -1,0 +1,6786 @@
+Inserting 1 with priority (3, 1, 2)
+placed 1 in table 3 at index 0
+Table 1:
+
+Table 2:
+
+Table 3:
+Index 0: 1
+
+Inserting 2 with priority (3, 1, 2)
+placed 2 in table 3 at index 1
+Table 1:
+
+Table 2:
+
+Table 3:
+Index 0: 1
+Index 1: 2
+
+Inserting 3 with priority (2, 3, 1)
+placed 3 in table 2 at index 8
+Table 1:
+
+Table 2:
+Index 8: 3
+
+Table 3:
+Index 0: 1
+Index 1: 2
+
+Inserting 4 with priority (1, 3, 2)
+placed 4 in table 1 at index 1
+Table 1:
+Index 1: 4
+
+Table 2:
+Index 8: 3
+
+Table 3:
+Index 0: 1
+Index 1: 2
+
+Inserting 5 with priority (3, 1, 2)
+placed 5 in table 3 at index 4
+Table 1:
+Index 1: 4
+
+Table 2:
+Index 8: 3
+
+Table 3:
+Index 0: 1
+Index 1: 2
+Index 4: 5
+
+Inserting 6 with priority (1, 2, 3)
+placed 6 in table 1 at index 3
+Table 1:
+Index 1: 4
+Index 3: 6
+
+Table 2:
+Index 8: 3
+
+Table 3:
+Index 0: 1
+Index 1: 2
+Index 4: 5
+
+Inserting 7 with priority (2, 1, 3)
+placed 7 in table 2 at index 4
+Table 1:
+Index 1: 4
+Index 3: 6
+
+Table 2:
+Index 4: 7
+Index 8: 3
+
+Table 3:
+Index 0: 1
+Index 1: 2
+Index 4: 5
+
+Inserting 8 with priority (2, 1, 3)
+placed 8 in table 2 at index 3
+Table 1:
+Index 1: 4
+Index 3: 6
+
+Table 2:
+Index 3: 8
+Index 4: 7
+Index 8: 3
+
+Table 3:
+Index 0: 1
+Index 1: 2
+Index 4: 5
+
+Inserting 9 with priority (2, 3, 1)
+placed 9 in table 2 at index 2
+Table 1:
+Index 1: 4
+Index 3: 6
+
+Table 2:
+Index 2: 9
+Index 3: 8
+Index 4: 7
+Index 8: 3
+
+Table 3:
+Index 0: 1
+Index 1: 2
+Index 4: 5
+
+Inserting 10 with priority (2, 1, 3)
+placed 10 in table 2 at index 1
+Table 1:
+Index 1: 4
+Index 3: 6
+
+Table 2:
+Index 1: 10
+Index 2: 9
+Index 3: 8
+Index 4: 7
+Index 8: 3
+
+Table 3:
+Index 0: 1
+Index 1: 2
+Index 4: 5
+
+Inserting 11 with priority (1, 3, 2)
+placed 11 in table 1 at index 8
+Table 1:
+Index 1: 4
+Index 3: 6
+Index 8: 11
+
+Table 2:
+Index 1: 10
+Index 2: 9
+Index 3: 8
+Index 4: 7
+Index 8: 3
+
+Table 3:
+Index 0: 1
+Index 1: 2
+Index 4: 5
+
+Inserting 12 with priority (1, 3, 2)
+placed 12 in table 1 at index 9
+Table 1:
+Index 1: 4
+Index 3: 6
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 1: 10
+Index 2: 9
+Index 3: 8
+Index 4: 7
+Index 8: 3
+
+Table 3:
+Index 0: 1
+Index 1: 2
+Index 4: 5
+
+Inserting 13 with priority (2, 1, 3)
+i = 0 index = 8 tableIndex = 2
+Swapping 13 with 3
+Table 1:
+Index 1: 4
+Index 3: 6
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 1: 10
+Index 2: 9
+Index 3: 8
+Index 4: 7
+Index 8: 13
+
+Table 3:
+Index 0: 1
+Index 1: 2
+Index 4: 5
+
+placed 3 in table 1 at index 0
+Table 1:
+Index 0: 3
+Index 1: 4
+Index 3: 6
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 1: 10
+Index 2: 9
+Index 3: 8
+Index 4: 7
+Index 8: 13
+
+Table 3:
+Index 0: 1
+Index 1: 2
+Index 4: 5
+
+Inserting 14 with priority (2, 1, 3)
+placed 14 in table 2 at index 7
+Table 1:
+Index 0: 3
+Index 1: 4
+Index 3: 6
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 1: 10
+Index 2: 9
+Index 3: 8
+Index 4: 7
+Index 7: 14
+Index 8: 13
+
+Table 3:
+Index 0: 1
+Index 1: 2
+Index 4: 5
+
+Inserting 15 with priority (2, 3, 1)
+placed 15 in table 2 at index 6
+Table 1:
+Index 0: 3
+Index 1: 4
+Index 3: 6
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 1: 10
+Index 2: 9
+Index 3: 8
+Index 4: 7
+Index 6: 15
+Index 7: 14
+Index 8: 13
+
+Table 3:
+Index 0: 1
+Index 1: 2
+Index 4: 5
+
+Inserting 16 with priority (3, 1, 2)
+placed 16 in table 3 at index 5
+Table 1:
+Index 0: 3
+Index 1: 4
+Index 3: 6
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 1: 10
+Index 2: 9
+Index 3: 8
+Index 4: 7
+Index 6: 15
+Index 7: 14
+Index 8: 13
+
+Table 3:
+Index 0: 1
+Index 1: 2
+Index 4: 5
+Index 5: 16
+
+Inserting 17 with priority (1, 3, 2)
+placed 17 in table 1 at index 4
+Table 1:
+Index 0: 3
+Index 1: 4
+Index 3: 6
+Index 4: 17
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 1: 10
+Index 2: 9
+Index 3: 8
+Index 4: 7
+Index 6: 15
+Index 7: 14
+Index 8: 13
+
+Table 3:
+Index 0: 1
+Index 1: 2
+Index 4: 5
+Index 5: 16
+
+Inserting 18 with priority (3, 1, 2)
+placed 18 in table 3 at index 7
+Table 1:
+Index 0: 3
+Index 1: 4
+Index 3: 6
+Index 4: 17
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 1: 10
+Index 2: 9
+Index 3: 8
+Index 4: 7
+Index 6: 15
+Index 7: 14
+Index 8: 13
+
+Table 3:
+Index 0: 1
+Index 1: 2
+Index 4: 5
+Index 5: 16
+Index 7: 18
+
+Inserting 19 with priority (3, 2, 1)
+placed 19 in table 3 at index 8
+Table 1:
+Index 0: 3
+Index 1: 4
+Index 3: 6
+Index 4: 17
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 1: 10
+Index 2: 9
+Index 3: 8
+Index 4: 7
+Index 6: 15
+Index 7: 14
+Index 8: 13
+
+Table 3:
+Index 0: 1
+Index 1: 2
+Index 4: 5
+Index 5: 16
+Index 7: 18
+Index 8: 19
+
+Inserting 20 with priority (2, 1, 3)
+i = 0 index = 1 tableIndex = 2
+Swapping 20 with 10
+Table 1:
+Index 0: 3
+Index 1: 4
+Index 3: 6
+Index 4: 17
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 1: 20
+Index 2: 9
+Index 3: 8
+Index 4: 7
+Index 6: 15
+Index 7: 14
+Index 8: 13
+
+Table 3:
+Index 0: 1
+Index 1: 2
+Index 4: 5
+Index 5: 16
+Index 7: 18
+Index 8: 19
+
+placed 10 in table 1 at index 7
+Table 1:
+Index 0: 3
+Index 1: 4
+Index 3: 6
+Index 4: 17
+Index 7: 10
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 1: 20
+Index 2: 9
+Index 3: 8
+Index 4: 7
+Index 6: 15
+Index 7: 14
+Index 8: 13
+
+Table 3:
+Index 0: 1
+Index 1: 2
+Index 4: 5
+Index 5: 16
+Index 7: 18
+Index 8: 19
+
+Inserting 21 with priority (3, 2, 1)
+i = 0 index = 0 tableIndex = 3
+Swapping 21 with 1
+Table 1:
+Index 0: 3
+Index 1: 4
+Index 3: 6
+Index 4: 17
+Index 7: 10
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 1: 20
+Index 2: 9
+Index 3: 8
+Index 4: 7
+Index 6: 15
+Index 7: 14
+Index 8: 13
+
+Table 3:
+Index 0: 21
+Index 1: 2
+Index 4: 5
+Index 5: 16
+Index 7: 18
+Index 8: 19
+
+placed 1 in table 2 at index 0
+Table 1:
+Index 0: 3
+Index 1: 4
+Index 3: 6
+Index 4: 17
+Index 7: 10
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 20
+Index 2: 9
+Index 3: 8
+Index 4: 7
+Index 6: 15
+Index 7: 14
+Index 8: 13
+
+Table 3:
+Index 0: 21
+Index 1: 2
+Index 4: 5
+Index 5: 16
+Index 7: 18
+Index 8: 19
+
+Inserting 22 with priority (3, 2, 1)
+i = 0 index = 1 tableIndex = 3
+Swapping 22 with 2
+Table 1:
+Index 0: 3
+Index 1: 4
+Index 3: 6
+Index 4: 17
+Index 7: 10
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 20
+Index 2: 9
+Index 3: 8
+Index 4: 7
+Index 6: 15
+Index 7: 14
+Index 8: 13
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 4: 5
+Index 5: 16
+Index 7: 18
+Index 8: 19
+
+placed 2 in table 2 at index 9
+Table 1:
+Index 0: 3
+Index 1: 4
+Index 3: 6
+Index 4: 17
+Index 7: 10
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 20
+Index 2: 9
+Index 3: 8
+Index 4: 7
+Index 6: 15
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 4: 5
+Index 5: 16
+Index 7: 18
+Index 8: 19
+
+Inserting 23 with priority (3, 2, 1)
+placed 23 in table 3 at index 2
+Table 1:
+Index 0: 3
+Index 1: 4
+Index 3: 6
+Index 4: 17
+Index 7: 10
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 20
+Index 2: 9
+Index 3: 8
+Index 4: 7
+Index 6: 15
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 4: 5
+Index 5: 16
+Index 7: 18
+Index 8: 19
+
+Inserting 24 with priority (1, 3, 2)
+i = 0 index = 1 tableIndex = 1
+Swapping 24 with 4
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 3: 6
+Index 4: 17
+Index 7: 10
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 20
+Index 2: 9
+Index 3: 8
+Index 4: 7
+Index 6: 15
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 4: 5
+Index 5: 16
+Index 7: 18
+Index 8: 19
+
+placed 4 in table 3 at index 3
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 3: 6
+Index 4: 17
+Index 7: 10
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 20
+Index 2: 9
+Index 3: 8
+Index 4: 7
+Index 6: 15
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 5
+Index 5: 16
+Index 7: 18
+Index 8: 19
+
+Inserting 25 with priority (3, 2, 1)
+i = 0 index = 4 tableIndex = 3
+Swapping 25 with 5
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 3: 6
+Index 4: 17
+Index 7: 10
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 20
+Index 2: 9
+Index 3: 8
+Index 4: 7
+Index 6: 15
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 7: 18
+Index 8: 19
+
+i = 1 index = 6 tableIndex = 2
+Swapping 5 with 15
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 3: 6
+Index 4: 17
+Index 7: 10
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 20
+Index 2: 9
+Index 3: 8
+Index 4: 7
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 7: 18
+Index 8: 19
+
+placed 15 in table 1 at index 2
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 7: 10
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 20
+Index 2: 9
+Index 3: 8
+Index 4: 7
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 7: 18
+Index 8: 19
+
+Inserting 26 with priority (2, 3, 1)
+placed 26 in table 2 at index 5
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 7: 10
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 20
+Index 2: 9
+Index 3: 8
+Index 4: 7
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 7: 18
+Index 8: 19
+
+Inserting 27 with priority (2, 3, 1)
+i = 0 index = 4 tableIndex = 2
+Swapping 27 with 7
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 7: 10
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 20
+Index 2: 9
+Index 3: 8
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 7: 18
+Index 8: 19
+
+placed 7 in table 3 at index 6
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 7: 10
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 20
+Index 2: 9
+Index 3: 8
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 18
+Index 8: 19
+
+Inserting 28 with priority (3, 2, 1)
+i = 0 index = 7 tableIndex = 3
+Swapping 28 with 18
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 7: 10
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 20
+Index 2: 9
+Index 3: 8
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+
+i = 1 index = 3 tableIndex = 2
+Swapping 18 with 8
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 7: 10
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 20
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+
+placed 8 in table 1 at index 5
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 7: 10
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 20
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+
+Inserting 29 with priority (1, 2, 3)
+placed 29 in table 1 at index 6
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 10
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 20
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+
+Inserting 30 with priority (2, 1, 3)
+i = 0 index = 1 tableIndex = 2
+Swapping 30 with 20
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 10
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+
+i = 1 index = 7 tableIndex = 1
+Swapping 20 with 10
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+
+placed 10 in table 3 at index 9
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+Inserting 31 with priority (2, 3, 1)
+i = 0 index = 0 tableIndex = 2
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 21 with 11
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 11 with 31
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 1
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 21 with 11
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 1
+Index 9: 12
+
+Table 2:
+Index 0: 21
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 11 with 31
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 1
+Index 9: 12
+
+Table 2:
+Index 0: 21
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 11
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 31
+Index 9: 12
+
+Table 2:
+Index 0: 21
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 11
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 31
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 11
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 21 with 11
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 31
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 11 with 31
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 21 with 11
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 11 with 31
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 1
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 21 with 11
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 1
+Index 9: 12
+
+Table 2:
+Index 0: 21
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 11 with 31
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 1
+Index 9: 12
+
+Table 2:
+Index 0: 21
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 11
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 31
+Index 9: 12
+
+Table 2:
+Index 0: 21
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 11
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 31
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 11
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 21 with 11
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 31
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 11 with 31
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 21 with 11
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 11 with 31
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 1
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 21 with 11
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 1
+Index 9: 12
+
+Table 2:
+Index 0: 21
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 11 with 31
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 1
+Index 9: 12
+
+Table 2:
+Index 0: 21
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 11
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 31
+Index 9: 12
+
+Table 2:
+Index 0: 21
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 11
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 31
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 11
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 21 with 11
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 31
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 11 with 31
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 21 with 11
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 11 with 31
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 1
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 21 with 11
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 1
+Index 9: 12
+
+Table 2:
+Index 0: 21
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 11 with 31
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 1
+Index 9: 12
+
+Table 2:
+Index 0: 21
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 11
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 31
+Index 9: 12
+
+Table 2:
+Index 0: 21
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 11
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 31
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 11
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 21 with 11
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 31
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 11 with 31
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 21 with 11
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 11 with 31
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 1
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 21 with 11
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 1
+Index 9: 12
+
+Table 2:
+Index 0: 21
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 11 with 31
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 1
+Index 9: 12
+
+Table 2:
+Index 0: 21
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 11
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 31
+Index 9: 12
+
+Table 2:
+Index 0: 21
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 11
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 31
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 11
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 21 with 11
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 31
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 11 with 31
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 21 with 11
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 11 with 31
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 1
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 21 with 11
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 1
+Index 9: 12
+
+Table 2:
+Index 0: 21
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 11 with 31
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 1
+Index 9: 12
+
+Table 2:
+Index 0: 21
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 11
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 31
+Index 9: 12
+
+Table 2:
+Index 0: 21
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 11
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 31
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 11
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 21 with 11
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 31
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 11 with 31
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 21 with 11
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 11 with 31
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 1
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 21 with 11
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 1
+Index 9: 12
+
+Table 2:
+Index 0: 21
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 11 with 31
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 1
+Index 9: 12
+
+Table 2:
+Index 0: 21
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 11
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 31
+Index 9: 12
+
+Table 2:
+Index 0: 21
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 11
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 31
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 11
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 21 with 11
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 31
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 11 with 31
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 21 with 11
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 11 with 31
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 1
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 21 with 11
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 1
+Index 9: 12
+
+Table 2:
+Index 0: 21
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 11 with 31
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 1
+Index 9: 12
+
+Table 2:
+Index 0: 21
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 11
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 31
+Index 9: 12
+
+Table 2:
+Index 0: 21
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 11
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 31
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 11
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 21 with 11
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 31
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 11 with 31
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 21 with 11
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 11 with 31
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 1
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 21 with 11
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 1
+Index 9: 12
+
+Table 2:
+Index 0: 21
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 11 with 31
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 1
+Index 9: 12
+
+Table 2:
+Index 0: 21
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 11
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 31
+Index 9: 12
+
+Table 2:
+Index 0: 21
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 11
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 31
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 11
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 21 with 11
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 31
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 11 with 31
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 21 with 11
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 11 with 31
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 1
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 21 with 11
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 1
+Index 9: 12
+
+Table 2:
+Index 0: 21
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 11 with 31
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 1
+Index 9: 12
+
+Table 2:
+Index 0: 21
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 11
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 31
+Index 9: 12
+
+Table 2:
+Index 0: 21
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 11
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 31
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 11
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 21 with 11
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 31
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 11 with 31
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 21 with 11
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 11 with 31
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 1
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 21 with 11
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 1
+Index 9: 12
+
+Table 2:
+Index 0: 21
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 11 with 31
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 1
+Index 9: 12
+
+Table 2:
+Index 0: 21
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 11
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 31
+Index 9: 12
+
+Table 2:
+Index 0: 21
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 11
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 31
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 11
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 21 with 11
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 31
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 11 with 31
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 21 with 11
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 11 with 31
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 1
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 21 with 11
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 1
+Index 9: 12
+
+Table 2:
+Index 0: 21
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 11 with 31
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 1
+Index 9: 12
+
+Table 2:
+Index 0: 21
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 11
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 31
+Index 9: 12
+
+Table 2:
+Index 0: 21
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 11
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 31
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 11
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 21 with 11
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 31
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 11 with 31
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 1
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 21
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 11
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 21 with 11
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 31
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 0 index = 0 tableIndex = 2
+Swapping 11 with 31
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 1
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 1 index = 0 tableIndex = 3
+Swapping 31 with 1
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 21
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+i = 2 index = 8 tableIndex = 1
+Swapping 1 with 21
+Table 1:
+Index 0: 3
+Index 1: 24
+Index 2: 15
+Index 3: 6
+Index 4: 17
+Index 5: 8
+Index 6: 29
+Index 7: 20
+Index 8: 1
+Index 9: 12
+
+Table 2:
+Index 0: 11
+Index 1: 30
+Index 2: 9
+Index 3: 18
+Index 4: 27
+Index 5: 26
+Index 6: 5
+Index 7: 14
+Index 8: 13
+Index 9: 2
+
+Table 3:
+Index 0: 31
+Index 1: 22
+Index 2: 23
+Index 3: 4
+Index 4: 25
+Index 5: 16
+Index 6: 7
+Index 7: 28
+Index 8: 19
+Index 9: 10
+
+Load Factor Table 1: 1
+Load Factor Table 2: 1
+Load Factor Table 3: 1
