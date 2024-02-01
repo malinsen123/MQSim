@@ -35,10 +35,14 @@ namespace SSD_Components
 		Input_Stream_Base();
 		virtual ~Input_Stream_Base();
 		unsigned int STAT_number_of_read_requests;
+		unsigned int STAT_number_of_read_hot_requests;
 		unsigned int STAT_number_of_write_requests;
 		unsigned int STAT_number_of_read_transactions;
+		unsigned int STAT_number_of_read_hot_transactions;
 		unsigned int STAT_number_of_write_transactions;
 		sim_time_type STAT_sum_of_read_transactions_execution_time, STAT_sum_of_read_transactions_transfer_time, STAT_sum_of_read_transactions_waiting_time;
+		//LM for read hot
+		sim_time_type STAT_sum_of_read_hot_transactions_execution_time, STAT_sum_of_read_hot_transactions_transfer_time, STAT_sum_of_read_hot_transactions_waiting_time;
 		sim_time_type STAT_sum_of_write_transactions_execution_time, STAT_sum_of_write_transactions_transfer_time, STAT_sum_of_write_transactions_waiting_time;
 	};
 
@@ -62,6 +66,11 @@ namespace SSD_Components
 		uint32_t Get_average_write_transaction_execution_time(stream_id_type stream_id);//in microseconds
 		uint32_t Get_average_write_transaction_transfer_time(stream_id_type stream_id);//in microseconds
 		uint32_t Get_average_write_transaction_waiting_time(stream_id_type stream_id);//in microseconds
+		//LM for read hot
+		uint32_t Get_average_read_hot_transaction_turnaround_time(stream_id_type stream_id);//in microseconds
+		uint32_t Get_average_read_hot_transaction_execution_time(stream_id_type stream_id);//in microseconds
+		uint32_t Get_average_read_hot_transaction_transfer_time(stream_id_type stream_id);//in microseconds
+		uint32_t Get_average_read_hot_transaction_waiting_time(stream_id_type stream_id);//in microseconds
 	protected:
 		Host_Interface_Base* host_interface;
 		virtual void segment_user_request(User_Request* user_request) = 0;

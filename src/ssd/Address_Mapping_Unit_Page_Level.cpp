@@ -519,8 +519,6 @@ namespace SSD_Components
 
 		//std::cout<<"Address_Mapping_Unit_Page_Level::query_cmt"<<std::endl;
 
-
-
 		stream_id_type stream_id = transaction->Stream_id;
 		Stats::total_CMT_queries++;
 		Stats::total_CMT_queries_per_stream[stream_id]++;
@@ -534,7 +532,15 @@ namespace SSD_Components
 				Stats::total_readTR_CMT_queries++;
 				Stats::readTR_CMT_hits_per_stream[stream_id]++;
 				Stats::readTR_CMT_hits++;
-			} else {
+			}else if(transaction->Type == Transaction_Type::READ_HOT) //LM for read hot
+			{
+				Stats::total_readTR_CMT_queries_per_stream[stream_id]++;
+				Stats::total_readTR_CMT_queries++;
+				Stats::readTR_CMT_hits_per_stream[stream_id]++;
+				Stats::readTR_CMT_hits++;
+
+			} 
+			else {
 				//This is a write transaction
 				Stats::total_writeTR_CMT_queries++;
 				Stats::total_writeTR_CMT_queries_per_stream[stream_id]++;
@@ -558,7 +564,14 @@ namespace SSD_Components
 					Stats::total_readTR_CMT_queries_per_stream[stream_id]++;
 					Stats::readTR_CMT_miss++;
 					Stats::readTR_CMT_miss_per_stream[stream_id]++;
-				} else { //This is a write transaction
+				}else if(transaction->Type == Transaction_Type::READ_HOT) //LM for read hot
+				{
+					Stats::total_readTR_CMT_queries++;
+					Stats::total_readTR_CMT_queries_per_stream[stream_id]++;
+					Stats::readTR_CMT_miss++;
+					Stats::readTR_CMT_miss_per_stream[stream_id]++;
+				} 		
+				else { //This is a write transaction
 					Stats::total_writeTR_CMT_queries++;
 					Stats::total_writeTR_CMT_queries_per_stream[stream_id]++;
 					Stats::writeTR_CMT_miss++;
@@ -577,7 +590,15 @@ namespace SSD_Components
 					Stats::readTR_CMT_miss++;
 					Stats::readTR_CMT_miss_per_stream[stream_id]++;
 					domains[stream_id]->Waiting_unmapped_read_transactions.insert(std::pair<LPA_type, NVM_Transaction_Flash*>(transaction->LPA, transaction));
-				} else {//This is a write transaction
+				} else if(transaction->Type == Transaction_Type::READ_HOT) //LM for read hot
+				{
+					Stats::total_readTR_CMT_queries++;
+					Stats::total_readTR_CMT_queries_per_stream[stream_id]++;
+					Stats::readTR_CMT_miss++;
+					Stats::readTR_CMT_miss_per_stream[stream_id]++;
+					domains[stream_id]->Waiting_unmapped_read_transactions.insert(std::pair<LPA_type, NVM_Transaction_Flash*>(transaction->LPA, transaction));
+				} 
+				else {//This is a write transaction
 					Stats::total_writeTR_CMT_queries++;
 					Stats::total_writeTR_CMT_queries_per_stream[stream_id]++;
 					Stats::writeTR_CMT_miss++;
@@ -607,6 +628,15 @@ namespace SSD_Components
 			block_manager->Read_transaction_issued(transaction->Address);
 			transaction->Physical_address_determined = true;
 			
+			return true;
+		}else if(transaction->Type == Transaction_Type::READ_HOT){
+			if (ppa == NO_PPA) {
+				ppa = online_create_entry_for_reads(transaction->LPA, streamID, transaction->Address, ((NVM_Transaction_Flash_RD*)transaction)->read_sectors_bitmap);
+			}
+			transaction->PPA = ppa;
+			Convert_ppa_to_address(transaction->PPA, transaction->Address);
+			block_manager->Read_transaction_issued(transaction->Address);
+			transaction->Physical_address_determined = true;
 			return true;
 		} else {//This is a write transaction
 			allocate_plane_for_user_write((NVM_Transaction_Flash_WR*)transaction);

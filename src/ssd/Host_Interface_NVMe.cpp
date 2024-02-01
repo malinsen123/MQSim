@@ -121,8 +121,13 @@ inline void Input_Stream_Manager_NVMe::Handle_new_arrived_request(User_Request *
 		segment_user_request(request);
 
 		((Host_Interface_NVMe *)host_interface)->broadcast_user_request_arrival_signal(request);
-	}
-	else
+	}else if(request->Type == UserRequestType::READ_HOT){
+		((Input_Stream_NVMe *)input_streams[request->Stream_id])->Waiting_user_requests.push_back(request);
+		((Input_Stream_NVMe *)input_streams[request->Stream_id])->STAT_number_of_read_hot_requests++;
+		segment_user_request(request);
+
+		((Host_Interface_NVMe *)host_interface)->broadcast_user_request_arrival_signal(request);
+	}else
 	{ //This is a write request
 		((Input_Stream_NVMe *)input_streams[request->Stream_id])->Waiting_user_requests.push_back(request);
 		((Input_Stream_NVMe *)input_streams[request->Stream_id])->STAT_number_of_write_requests++;
@@ -253,9 +258,15 @@ void Input_Stream_Manager_NVMe::segment_user_request(User_Request *user_request)
 		if (user_request->Type == UserRequestType::READ)
 		{
 			NVM_Transaction_Flash_RD *transaction = new NVM_Transaction_Flash_RD(Transaction_Source_Type::USERIO, user_request->Stream_id,
-																				 transaction_size * SECTOR_SIZE_IN_BYTE, lpa, NO_PPA, user_request, user_request->Priority_class, 0, access_status_bitmap, CurrentTimeStamp);
+																				 transaction_size * SECTOR_SIZE_IN_BYTE, lpa, NO_PPA, user_request, user_request->Priority_class, 0, access_status_bitmap, CurrentTimeStamp, false);
 			user_request->Transaction_list.push_back(transaction);
 			input_streams[user_request->Stream_id]->STAT_number_of_read_transactions++;
+		}else if(user_request->Type == UserRequestType::READ_HOT)
+		{
+			NVM_Transaction_Flash_RD *transaction = new NVM_Transaction_Flash_RD(Transaction_Source_Type::USERIO, user_request->Stream_id,
+																				 transaction_size * SECTOR_SIZE_IN_BYTE, lpa, NO_PPA, user_request, user_request->Priority_class, 0, access_status_bitmap, CurrentTimeStamp, true);
+			user_request->Transaction_list.push_back(transaction);
+			input_streams[user_request->Stream_id]->STAT_number_of_read_hot_transactions++;
 		}
 		else
 		{ //user_request->Type == UserRequestType::WRITE
@@ -466,8 +477,15 @@ void Request_Fetch_Unit_NVMe::Process_pcie_read_message(uint64_t address, uint16
 			new_request->Size_in_byte = new_request->SizeInSectors * SECTOR_SIZE_IN_BYTE;
 			//std::cout<<"come here"<<std::endl;
 			//std::cout<<"The request start LBA is "<<new_request->Start_LBA<<std::endl;
-
 			break;
+		case NVME_READ_HOT_OPCODE:
+			new_request->Type = UserRequestType::READ_HOT;
+			new_request->Start_LBA = ((LHA_type)sqe->Command_specific[1]) << 31 | (LHA_type)sqe->Command_specific[0]; //Command Dword 10 and Command Dword 11
+			new_request->SizeInSectors = sqe->Command_specific[2] & (LHA_type)(0x0000ffff);
+			new_request->Size_in_byte = new_request->SizeInSectors * SECTOR_SIZE_IN_BYTE;
+			new_request->Priority_class = IO_Flow_Priority_Class::URGENT;//LM always set to urgent for read hot
+			break;
+
 		case NVME_WRITE_OPCODE:
 			new_request->Type = UserRequestType::WRITE;
 			new_request->Start_LBA = ((LHA_type)sqe->Command_specific[1]) << 31 | (LHA_type)sqe->Command_specific[0]; //Command Dword 10 and Command Dword 11

@@ -108,8 +108,23 @@ IO_Flow_Synthetic::IO_Flow_Synthetic(const sim_object_id_type &name, uint16_t fl
 		
 		Host_IO_Request* request = new Host_IO_Request;
 		if (random_request_type_generator->Uniform(0, 1) <= read_ratio) {
-			request->Type = Host_IO_Request_Type::READ;
-			STAT_generated_read_request_count++;
+
+			//LM
+			//Add the read_hot_ratio
+			if (random_hot_cold_generator->Uniform(0, 1) <= read_hot_ratio)
+			{
+				request->Type = Host_IO_Request_Type::READ_HOT;
+				STAT_generated_read_hot_request_count++;
+			}
+			else
+			{
+				request->Type = Host_IO_Request_Type::READ;
+				STAT_generated_read_request_count++;
+			}
+
+
+			//request->Type = Host_IO_Request_Type::READ;
+			//STAT_generated_read_request_count++;
 		} else {
 			request->Type = Host_IO_Request_Type::WRITE;
 			STAT_generated_write_request_count++;

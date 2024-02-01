@@ -7,6 +7,7 @@ namespace SSD_Components
 	unsigned long Stats::IssuedCopybackReadCMD = 0;
 	unsigned long Stats::IssuedInterleaveReadCMD = 0;
 	unsigned long Stats::IssuedMultiplaneReadCMD = 0;
+	unsigned long Stats::IssuedMultiplaneReadhotCMD = 0;
 	unsigned long Stats::IssuedMultiplaneCopybackReadCMD = 0;
 	unsigned long Stats::IssuedProgramCMD = 0;
 	unsigned long Stats::IssuedInterleaveProgramCMD = 0;

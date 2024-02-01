@@ -48,7 +48,6 @@ namespace SSD_Components
 	void TSU_Base::handle_channel_idle_signal(flash_channel_ID_type channelID)
 	{
 		//std::cout<<"TSU_Base::handle_channel_idle_signal"<<std::endl;
-		//std::cout;
 
 		for (unsigned int i = 0; i < _my_instance->chip_no_per_channel; i++) {
 			//The TSU does not check if the chip is idle or not since it is possible to suspend a busy chip and issue a new command
@@ -85,7 +84,7 @@ namespace SSD_Components
 
 				//std::cout<<"TSU_Base::handle_chip_idle_signal: channel is busy_out"<<std::endl;
 
-				_my_instance->process_chip_requests(chip);
+				//_my_instance->process_chip_requests(chip);
 
 			}
 

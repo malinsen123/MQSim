@@ -1,0 +1,40 @@
+The specified SSD configuration file does not exist.
+Using MQSim's default configuration.
+Writing the default configuration parameters to the expected configuration file.
+[====================] Done!
+
+The specified workload definition file does not exist!
+Using MQSim's default workload definitions.
+Writing the default workload definitions to the expected workload definition file.
+[====================] Done!
+
+Writing default workload parameters to the expected input file.
+MQSim started at Thu Dec  7 23:01:36 2023
+
+******************************
+Executing scenario 1 out of 1 .......
+ONFI_Channel_Base::ONFI_Channel_Base
+channelID: 0
+status: 4
+ONFI_Channel_Base::ONFI_Channel_Base
+channelID: 1
+status: 4
+ONFI_Channel_Base::ONFI_Channel_Base
+channelID: 2
+status: 4
+ONFI_Channel_Base::ONFI_Channel_Base
+channelID: 3
+status: 4
+ONFI_Channel_Base::ONFI_Channel_Base
+channelID: 4
+status: 4
+ONFI_Channel_Base::ONFI_Channel_Base
+channelID: 5
+status: 4
+ONFI_Channel_Base::ONFI_Channel_Base
+channelID: 6
+status: 4
+ONFI_Channel_Base::ONFI_Channel_Base
+channelID: 7
+status: 4
+SSD Device preconditioning started .........

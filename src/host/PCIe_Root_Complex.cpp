@@ -76,10 +76,7 @@ namespace Host_Components
 
 
 
-
-
-
-
+	//LM important function
 	void PCIe_Root_Complex::Read_from_memory(const uint64_t address,const uint16_t queue_id, const unsigned int read_size)
 	{
 

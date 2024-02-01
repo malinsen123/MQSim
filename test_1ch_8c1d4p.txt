@@ -1,0 +1,366 @@
+MQSim started at Thu Dec  7 23:19:51 2023
+
+******************************
+Executing scenario 1 out of 1 .......
+ONFI_Channel_Base::ONFI_Channel_Base
+channelID: 0
+status: 4
+[>                   ]  0% progress in Host.IO_Flow.Synth.No_6
+
+[>                   ]  0% progress in Host.IO_Flow.Synth.No_4
+
+[>                   ]  0% progress in Host.IO_Flow.Synth.No_7
+
+[>                   ]  0% progress in Host.IO_Flow.Synth.No_3
+
+[>                   ]  0% progress in Host.IO_Flow.Synth.No_1
+
+[>                   ]  0% progress in Host.IO_Flow.Synth.No_0
+
+[>                   ]  0% progress in Host.IO_Flow.Synth.No_5
+
+[>                   ]  0% progress in Host.IO_Flow.Synth.No_2
+
+[=>                  ]  5% progress in Host.IO_Flow.Synth.No_6
+
+[=>                  ]  5% progress in Host.IO_Flow.Synth.No_4
+
+[=>                  ]  5% progress in Host.IO_Flow.Synth.No_7
+
+[=>                  ]  5% progress in Host.IO_Flow.Synth.No_3
+
+[=>                  ]  5% progress in Host.IO_Flow.Synth.No_1
+
+[=>                  ]  5% progress in Host.IO_Flow.Synth.No_0
+
+[=>                  ]  5% progress in Host.IO_Flow.Synth.No_5
+
+[=>                  ]  5% progress in Host.IO_Flow.Synth.No_2
+
+[==>                 ]  10% progress in Host.IO_Flow.Synth.No_6
+
+[==>                 ]  10% progress in Host.IO_Flow.Synth.No_4
+
+[==>                 ]  10% progress in Host.IO_Flow.Synth.No_7
+
+[==>                 ]  10% progress in Host.IO_Flow.Synth.No_3
+
+[==>                 ]  10% progress in Host.IO_Flow.Synth.No_1
+
+[==>                 ]  10% progress in Host.IO_Flow.Synth.No_0
+
+[==>                 ]  10% progress in Host.IO_Flow.Synth.No_5
+
+[==>                 ]  10% progress in Host.IO_Flow.Synth.No_2
+
+[===>                ]  15% progress in Host.IO_Flow.Synth.No_6
+
+[===>                ]  15% progress in Host.IO_Flow.Synth.No_4
+
+[===>                ]  15% progress in Host.IO_Flow.Synth.No_7
+
+[===>                ]  15% progress in Host.IO_Flow.Synth.No_3
+
+[===>                ]  15% progress in Host.IO_Flow.Synth.No_1
+
+[===>                ]  15% progress in Host.IO_Flow.Synth.No_0
+
+[===>                ]  15% progress in Host.IO_Flow.Synth.No_5
+
+[===>                ]  15% progress in Host.IO_Flow.Synth.No_2
+
+[====>               ]  20% progress in Host.IO_Flow.Synth.No_6
+
+[====>               ]  20% progress in Host.IO_Flow.Synth.No_4
+
+[====>               ]  20% progress in Host.IO_Flow.Synth.No_7
+
+[====>               ]  20% progress in Host.IO_Flow.Synth.No_3
+
+[====>               ]  20% progress in Host.IO_Flow.Synth.No_1
+
+[====>               ]  20% progress in Host.IO_Flow.Synth.No_0
+
+[====>               ]  20% progress in Host.IO_Flow.Synth.No_5
+
+[====>               ]  20% progress in Host.IO_Flow.Synth.No_2
+
+[=====>              ]  25% progress in Host.IO_Flow.Synth.No_6
+
+[=====>              ]  25% progress in Host.IO_Flow.Synth.No_4
+
+[=====>              ]  25% progress in Host.IO_Flow.Synth.No_7
+
+[=====>              ]  25% progress in Host.IO_Flow.Synth.No_3
+
+[=====>              ]  25% progress in Host.IO_Flow.Synth.No_1
+
+[=====>              ]  25% progress in Host.IO_Flow.Synth.No_0
+
+[=====>              ]  25% progress in Host.IO_Flow.Synth.No_5
+
+[=====>              ]  25% progress in Host.IO_Flow.Synth.No_2
+
+[======>             ]  30% progress in Host.IO_Flow.Synth.No_6
+
+[======>             ]  30% progress in Host.IO_Flow.Synth.No_4
+
+[======>             ]  30% progress in Host.IO_Flow.Synth.No_7
+
+[======>             ]  30% progress in Host.IO_Flow.Synth.No_3
+
+[======>             ]  30% progress in Host.IO_Flow.Synth.No_1
+
+[======>             ]  30% progress in Host.IO_Flow.Synth.No_0
+
+[======>             ]  30% progress in Host.IO_Flow.Synth.No_5
+
+[======>             ]  30% progress in Host.IO_Flow.Synth.No_2
+
+[=======>            ]  35% progress in Host.IO_Flow.Synth.No_6
+
+[=======>            ]  35% progress in Host.IO_Flow.Synth.No_4
+
+[=======>            ]  35% progress in Host.IO_Flow.Synth.No_7
+
+[=======>            ]  35% progress in Host.IO_Flow.Synth.No_3
+
+[=======>            ]  35% progress in Host.IO_Flow.Synth.No_1
+
+[=======>            ]  35% progress in Host.IO_Flow.Synth.No_0
+
+[=======>            ]  35% progress in Host.IO_Flow.Synth.No_5
+
+[=======>            ]  35% progress in Host.IO_Flow.Synth.No_2
+
+[========>           ]  40% progress in Host.IO_Flow.Synth.No_6
+
+[========>           ]  40% progress in Host.IO_Flow.Synth.No_4
+
+[========>           ]  40% progress in Host.IO_Flow.Synth.No_7
+
+[========>           ]  40% progress in Host.IO_Flow.Synth.No_3
+
+[========>           ]  40% progress in Host.IO_Flow.Synth.No_1
+
+[========>           ]  40% progress in Host.IO_Flow.Synth.No_0
+
+[========>           ]  40% progress in Host.IO_Flow.Synth.No_5
+
+[========>           ]  40% progress in Host.IO_Flow.Synth.No_2
+
+[=========>          ]  45% progress in Host.IO_Flow.Synth.No_6
+
+[=========>          ]  45% progress in Host.IO_Flow.Synth.No_4
+
+[=========>          ]  45% progress in Host.IO_Flow.Synth.No_7
+
+[=========>          ]  45% progress in Host.IO_Flow.Synth.No_3
+
+[=========>          ]  45% progress in Host.IO_Flow.Synth.No_1
+
+[=========>          ]  45% progress in Host.IO_Flow.Synth.No_0
+
+[=========>          ]  45% progress in Host.IO_Flow.Synth.No_5
+
+[=========>          ]  45% progress in Host.IO_Flow.Synth.No_2
+
+[==========>         ]  50% progress in Host.IO_Flow.Synth.No_6
+
+[==========>         ]  50% progress in Host.IO_Flow.Synth.No_4
+
+[==========>         ]  50% progress in Host.IO_Flow.Synth.No_7
+
+[==========>         ]  50% progress in Host.IO_Flow.Synth.No_3
+
+[==========>         ]  50% progress in Host.IO_Flow.Synth.No_1
+
+[==========>         ]  50% progress in Host.IO_Flow.Synth.No_0
+
+[==========>         ]  50% progress in Host.IO_Flow.Synth.No_5
+
+[==========>         ]  50% progress in Host.IO_Flow.Synth.No_2
+
+[===========>        ]  55% progress in Host.IO_Flow.Synth.No_6
+
+[===========>        ]  55% progress in Host.IO_Flow.Synth.No_4
+
+[===========>        ]  55% progress in Host.IO_Flow.Synth.No_7
+
+[===========>        ]  55% progress in Host.IO_Flow.Synth.No_3
+
+[===========>        ]  55% progress in Host.IO_Flow.Synth.No_1
+
+[===========>        ]  55% progress in Host.IO_Flow.Synth.No_0
+
+[===========>        ]  55% progress in Host.IO_Flow.Synth.No_5
+
+[===========>        ]  55% progress in Host.IO_Flow.Synth.No_2
+
+[============>       ]  60% progress in Host.IO_Flow.Synth.No_6
+
+[============>       ]  60% progress in Host.IO_Flow.Synth.No_4
+
+[============>       ]  60% progress in Host.IO_Flow.Synth.No_7
+
+[============>       ]  60% progress in Host.IO_Flow.Synth.No_3
+
+[============>       ]  60% progress in Host.IO_Flow.Synth.No_1
+
+[============>       ]  60% progress in Host.IO_Flow.Synth.No_0
+
+[============>       ]  60% progress in Host.IO_Flow.Synth.No_5
+
+[============>       ]  60% progress in Host.IO_Flow.Synth.No_2
+
+[=============>      ]  65% progress in Host.IO_Flow.Synth.No_6
+
+[=============>      ]  65% progress in Host.IO_Flow.Synth.No_4
+
+[=============>      ]  65% progress in Host.IO_Flow.Synth.No_7
+
+[=============>      ]  65% progress in Host.IO_Flow.Synth.No_3
+
+[=============>      ]  65% progress in Host.IO_Flow.Synth.No_1
+
+[=============>      ]  65% progress in Host.IO_Flow.Synth.No_0
+
+[=============>      ]  65% progress in Host.IO_Flow.Synth.No_5
+
+[=============>      ]  65% progress in Host.IO_Flow.Synth.No_2
+
+[==============>     ]  70% progress in Host.IO_Flow.Synth.No_6
+
+[==============>     ]  70% progress in Host.IO_Flow.Synth.No_4
+
+[==============>     ]  70% progress in Host.IO_Flow.Synth.No_7
+
+[==============>     ]  70% progress in Host.IO_Flow.Synth.No_3
+
+[==============>     ]  70% progress in Host.IO_Flow.Synth.No_1
+
+[==============>     ]  70% progress in Host.IO_Flow.Synth.No_0
+
+[==============>     ]  70% progress in Host.IO_Flow.Synth.No_5
+
+[==============>     ]  70% progress in Host.IO_Flow.Synth.No_2
+
+[===============>    ]  75% progress in Host.IO_Flow.Synth.No_6
+
+[===============>    ]  75% progress in Host.IO_Flow.Synth.No_4
+
+[===============>    ]  75% progress in Host.IO_Flow.Synth.No_7
+
+[===============>    ]  75% progress in Host.IO_Flow.Synth.No_3
+
+[===============>    ]  75% progress in Host.IO_Flow.Synth.No_1
+
+[===============>    ]  75% progress in Host.IO_Flow.Synth.No_0
+
+[===============>    ]  75% progress in Host.IO_Flow.Synth.No_5
+
+[===============>    ]  75% progress in Host.IO_Flow.Synth.No_2
+
+[================>   ]  80% progress in Host.IO_Flow.Synth.No_6
+
+[================>   ]  80% progress in Host.IO_Flow.Synth.No_4
+
+[================>   ]  80% progress in Host.IO_Flow.Synth.No_7
+
+[================>   ]  80% progress in Host.IO_Flow.Synth.No_3
+
+[================>   ]  80% progress in Host.IO_Flow.Synth.No_1
+
+[================>   ]  80% progress in Host.IO_Flow.Synth.No_0
+
+[================>   ]  80% progress in Host.IO_Flow.Synth.No_5
+
+[================>   ]  80% progress in Host.IO_Flow.Synth.No_2
+
+[=================>  ]  85% progress in Host.IO_Flow.Synth.No_6
+
+[=================>  ]  85% progress in Host.IO_Flow.Synth.No_4
+
+[=================>  ]  85% progress in Host.IO_Flow.Synth.No_7
+
+[=================>  ]  85% progress in Host.IO_Flow.Synth.No_3
+
+[=================>  ]  85% progress in Host.IO_Flow.Synth.No_1
+
+[=================>  ]  85% progress in Host.IO_Flow.Synth.No_0
+
+[=================>  ]  85% progress in Host.IO_Flow.Synth.No_5
+
+[=================>  ]  85% progress in Host.IO_Flow.Synth.No_2
+
+[==================> ]  90% progress in Host.IO_Flow.Synth.No_6
+
+[==================> ]  90% progress in Host.IO_Flow.Synth.No_4
+
+[==================> ]  90% progress in Host.IO_Flow.Synth.No_7
+
+[==================> ]  90% progress in Host.IO_Flow.Synth.No_3
+
+[==================> ]  90% progress in Host.IO_Flow.Synth.No_1
+
+[==================> ]  90% progress in Host.IO_Flow.Synth.No_0
+
+[==================> ]  90% progress in Host.IO_Flow.Synth.No_5
+
+[==================> ]  90% progress in Host.IO_Flow.Synth.No_2
+
+[===================>]  95% progress in Host.IO_Flow.Synth.No_6
+
+[===================>]  95% progress in Host.IO_Flow.Synth.No_4
+
+[===================>]  95% progress in Host.IO_Flow.Synth.No_7
+
+[===================>]  95% progress in Host.IO_Flow.Synth.No_3
+
+[===================>]  95% progress in Host.IO_Flow.Synth.No_1
+
+[===================>]  95% progress in Host.IO_Flow.Synth.No_0
+
+[===================>]  95% progress in Host.IO_Flow.Synth.No_5
+
+[===================>]  95% progress in Host.IO_Flow.Synth.No_2
+
+[====================]  100% progress in Host.IO_Flow.Synth.No_6
+
+[====================]  100% progress in Host.IO_Flow.Synth.No_4
+
+[====================]  100% progress in Host.IO_Flow.Synth.No_7
+
+[====================]  100% progress in Host.IO_Flow.Synth.No_3
+
+[====================]  100% progress in Host.IO_Flow.Synth.No_1
+
+[====================]  100% progress in Host.IO_Flow.Synth.No_0
+
+[====================]  100% progress in Host.IO_Flow.Synth.No_5
+
+[====================]  100% progress in Host.IO_Flow.Synth.No_2
+
+MQSim finished at Thu Dec  7 23:20:33 2023
+
+Total simulation time: 0:0:42
+
+Writing results to output file .......
+Channel 0 Fraction of time spent in Exec 3.54762 Fraction of time spent in Xfer 1.2791e+06 Fraction of time spent in Xferout 0.177329 Fraction of time spent in Overlapped Xfer 0
+Flow Host.IO_Flow.Synth.No_0 - total requests generated: 500000 total requests serviced:500000
+                   - device response time: 8705 (us) end-to-end request delay:8705 (us)
+Flow Host.IO_Flow.Synth.No_1 - total requests generated: 500000 total requests serviced:500000
+                   - device response time: 8661 (us) end-to-end request delay:8661 (us)
+Flow Host.IO_Flow.Synth.No_2 - total requests generated: 500000 total requests serviced:500000
+                   - device response time: 8817 (us) end-to-end request delay:8817 (us)
+Flow Host.IO_Flow.Synth.No_3 - total requests generated: 500000 total requests serviced:500000
+                   - device response time: 8648 (us) end-to-end request delay:8648 (us)
+Flow Host.IO_Flow.Synth.No_4 - total requests generated: 500000 total requests serviced:500000
+                   - device response time: 8574 (us) end-to-end request delay:8574 (us)
+Flow Host.IO_Flow.Synth.No_5 - total requests generated: 500000 total requests serviced:500000
+                   - device response time: 8757 (us) end-to-end request delay:8757 (us)
+Flow Host.IO_Flow.Synth.No_6 - total requests generated: 500000 total requests serviced:500000
+                   - device response time: 8585 (us) end-to-end request delay:8585 (us)
+Flow Host.IO_Flow.Synth.No_7 - total requests generated: 500000 total requests serviced:500000
+                   - device response time: 8596 (us) end-to-end request delay:8596 (us)
+Simulation complete; Press any key to exit.

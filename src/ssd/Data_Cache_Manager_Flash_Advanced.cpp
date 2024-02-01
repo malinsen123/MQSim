@@ -239,6 +239,55 @@ namespace SSD_Components
 					return;
 				}
 			}
+		}else if(user_request->Type == UserRequestType::READ_HOT)
+		{
+			switch (caching_mode_per_input_stream[user_request->Stream_id]) {
+				case Caching_Mode::TURNED_OFF:
+					static_cast<FTL*>(nvm_firmware)->Address_Mapping_Unit->Translate_lpa_to_ppa_and_dispatch(user_request->Transaction_list);
+					return;
+				case Caching_Mode::WRITE_CACHE:
+				case Caching_Mode::READ_CACHE:
+				case Caching_Mode::WRITE_READ_CACHE:
+				{
+					//std::cout<<"Data_Cache_Manager_Flash_Advanced::process_new_user_request: "<<user_request	->Stream_id<<std::endl;
+					//std::cout<<"queue_id: "<<user_request->Queue_id<<std::endl;
+					//std::cout<<"the size of user_request->Transaction_list: "<<user_request->Transaction_list.size()<<std::endl;
+					std::list<NVM_Transaction*>::iterator it = user_request->Transaction_list.begin();
+					while (it != user_request->Transaction_list.end()) {
+						NVM_Transaction_Flash_RD* tr = (NVM_Transaction_Flash_RD*)(*it);
+						if (per_stream_cache[tr->Stream_id]->Exists(tr->Stream_id, tr->LPA)) {
+							page_status_type available_sectors_bitmap = per_stream_cache[tr->Stream_id]->Get_slot(tr->Stream_id, tr->LPA).State_bitmap_of_existing_sectors & tr->read_sectors_bitmap;
+							if (available_sectors_bitmap == tr->read_sectors_bitmap) {
+								user_request->Sectors_serviced_from_cache += count_sector_no_from_status_bitmap(tr->read_sectors_bitmap);
+								user_request->Transaction_list.erase(it++);//the ++ operation should happen here, otherwise the iterator will be part of the list after erasing it from the list
+							} else if (available_sectors_bitmap != 0) {
+								user_request->Sectors_serviced_from_cache += count_sector_no_from_status_bitmap(available_sectors_bitmap);
+								tr->read_sectors_bitmap = (tr->read_sectors_bitmap & ~available_sectors_bitmap);
+								tr->Data_and_metadata_size_in_byte -= count_sector_no_from_status_bitmap(available_sectors_bitmap) * SECTOR_SIZE_IN_BYTE;
+								it++;
+							} else {
+								it++;
+							}
+						} else {
+							it++;
+						}
+					}
+
+					if (user_request->Sectors_serviced_from_cache > 0) {
+						Memory_Transfer_Info* transfer_info = new Memory_Transfer_Info;
+						transfer_info->Size_in_bytes = user_request->Sectors_serviced_from_cache * SECTOR_SIZE_IN_BYTE;
+						transfer_info->Related_request = user_request;
+						transfer_info->next_event_type = Data_Cache_Simulation_Event_Type::MEMORY_READ_FOR_USERIO_FINISHED;
+						transfer_info->Stream_id = user_request->Stream_id;
+						service_dram_access_request(transfer_info);
+					}
+					if (user_request->Transaction_list.size() > 0) {
+						static_cast<FTL*>(nvm_firmware)->Address_Mapping_Unit->Translate_lpa_to_ppa_and_dispatch(user_request->Transaction_list);
+					}
+
+					return;
+				}
+			}
 		}
 		else//This is a write request
 		{

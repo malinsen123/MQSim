@@ -267,6 +267,30 @@ void TSU_Priority_OutOfOrder::Schedule()
                 PRINT_ERROR("TSU_OutOfOrder: unknown source type for a read transaction!")
             }
             break;
+        case Transaction_Type::READ_HOT:
+            switch ((*it)->Source)
+            {
+            case Transaction_Source_Type::CACHE:
+            case Transaction_Source_Type::USERIO:
+                if ((*it)->Priority_class != IO_Flow_Priority_Class::UNDEFINED)
+                {
+                    UserReadTRQueue[(*it)->Address.ChannelID][(*it)->Address.ChipID][static_cast<int>((*it)->Priority_class)].push_back((*it));
+                }
+                else
+                {
+                    UserReadTRQueue[(*it)->Address.ChannelID][(*it)->Address.ChipID][IO_Flow_Priority_Class::HIGH].push_back((*it));
+                }
+                break;
+            case Transaction_Source_Type::MAPPING:
+                MappingReadTRQueue[(*it)->Address.ChannelID][(*it)->Address.ChipID].push_back((*it));
+                break;
+            case Transaction_Source_Type::GC_WL:
+                GCReadTRQueue[(*it)->Address.ChannelID][(*it)->Address.ChipID].push_back((*it));
+                break;
+            default:
+                PRINT_ERROR("TSU_OutOfOrder: unknown source type for a read hot transaction!")
+            }
+            break;
         case Transaction_Type::WRITE:
             switch ((*it)->Source)
             {
@@ -310,7 +334,6 @@ void TSU_Priority_OutOfOrder::Schedule()
                 ////std::cout<<"TSU_Priority_OutOfOrder::Schedule: process_chip_requests"<<std::endl;
 
                 //std::cout<<"The chipid is: "<<chip->ChipID<<std::endl;
-
 
                 if (!service_read_transaction(chip))
                 {
@@ -498,9 +521,9 @@ bool TSU_Priority_OutOfOrder::service_read_transaction(NVM::FlashMemory::Flash_C
     //LM added
     //std::cout<<"sourceQueue1 size: "<<sourceQueue1->size()<<std::endl;
     //std::cout<<"sourceQueue1 before sort: "<<std::endl;
-    for (std::list<NVM_Transaction_Flash*>::iterator it = sourceQueue1->begin(); it != sourceQueue1->end(); it++) {
+    //for (std::list<NVM_Transaction_Flash*>::iterator it = sourceQueue1->begin(); it != sourceQueue1->end(); it++) {
         //std::cout<<"stream_id: "<<(*it)->Stream_id<<std::endl;
-    }
+    //}
 
 
     //sort sourceQueue1 by stream_id
@@ -508,9 +531,9 @@ bool TSU_Priority_OutOfOrder::service_read_transaction(NVM::FlashMemory::Flash_C
 
     //LM added
     //std::cout<<"sourceQueue1 after sort: "<<std::endl;
-    for (std::list<NVM_Transaction_Flash*>::iterator it = sourceQueue1->begin(); it != sourceQueue1->end(); it++) {
+   // for (std::list<NVM_Transaction_Flash*>::iterator it = sourceQueue1->begin(); it != sourceQueue1->end(); it++) {
         //std::cout<<"stream_id: "<<(*it)->Stream_id<<std::endl;
-    }
+   // }
 
 
     //sort sourceQueue2 by stream_id if it is not NULL

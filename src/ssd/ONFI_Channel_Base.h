@@ -28,7 +28,7 @@ namespace SSD_Components
 				|| (status == BusChannelStatus::BUSY_OUT && new_status == BusChannelStatus::BUSY_OUT)
 				|| (status == BusChannelStatus::BUSY_IN_AND_OUT && new_status == BusChannelStatus::BUSY_IN_AND_OUT))
 				&& (current_active_chip != target_chip)) {
-				PRINT_ERROR("Bus " << ChannelID << ": illegal bus status transition!")
+				//PRINT_ERROR("Bus " << ChannelID << ": illegal bus status transition!")
 			}
 
 			//std::cout<<"set status: "<<(int)status<<" -> "<<(int)new_status<<std::endl;

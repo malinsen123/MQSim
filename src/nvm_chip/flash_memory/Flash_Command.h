@@ -12,7 +12,12 @@
 #define CMD_READ_PAGE_CACHE_SEQ 0x31
 #define CMD_READ_PAGE_CACHE_RANDOM 0x0031
 #define CMD_READ_PAGE_MULTIPLANE 0x0032
-#define CMD_READ_PAGE_COPYBACK 0x0035
+#define CMD_READ_PAGE_AND_READ_HOT 0x0033 //LM For the case both read and read hot are executed in the same command
+#define CMD_READ_PAGE_HOT 0x0034 //LM For the case only read hot is executed in the command
+#define CMD_READ_PAGE_HOT_MULTIPLANE 0x0035 //LM For the case only read hot mutiplane is executed in the command
+
+
+#define CMD_READ_PAGE_COPYBACK 0x0036
 #define CMD_READ_PAGE_COPYBACK_MULTIPLANE 0x00321 //since the codes of multiplane copyback (i.e., 0x0032) and multiplane read (i.e., 0x0032) are identical, we change the code of multiplane copyback 0x0032 to 0x00321 so that we can differentiate copyback multiplane from normal multiplane
 #define CMD_PROGRAM 0x8000
 #define CMD_PROGRAM_PAGE 0x8010

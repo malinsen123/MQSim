@@ -19,7 +19,7 @@ namespace NVM
 			lastTransferStart(INVALID_TIME), executionStartTime(INVALID_TIME), expectedFinishTime(INVALID_TIME),
 			STAT_readCount(0), STAT_progamCount(0), STAT_eraseCount(0),
 			STAT_totalSuspensionCount(0), STAT_totalResumeCount(0),
-			STAT_totalExecTime(0), STAT_totalXferTime(0), STAT_totalOverlappedXferExecTime(0)
+			STAT_totalExecTime(0), STAT_totalXferTime(0), STAT_totalXferoutTime(0), STAT_totalOverlappedXferExecTime(0)
 		{
 			int bits_per_cell = static_cast<int>(flash_technology);
 			_readLatency = new sim_time_type[bits_per_cell];
@@ -122,9 +122,22 @@ namespace NVM
 			//std::cout<<"meta data is: "<<command->Meta_data[0].LPA<<std::endl;
 			//std::cout<<"expected finish time is: "<<Simulator->Time()+Get_command_execution_latency(command->CommandCode, command->Address[0].PageID)<<std::endl;
 
-			targetDie->Expected_finish_time = Simulator->Time() + Get_command_execution_latency(command->CommandCode, command->Address[0].PageID);
-			targetDie->CommandFinishEvent = Simulator->Register_sim_event(targetDie->Expected_finish_time,
-				this, command, static_cast<int>(Chip_Sim_Event_Type::COMMAND_FINISHED));
+			
+			//targetDie->Expected_finish_time = Simulator->Time() + Get_command_execution_latency(command->CommandCode, command->Address[0].PageID);
+
+			if(command->CommandCode == CMD_READ_PAGE_AND_READ_HOT){
+
+				targetDie->Expected_finish_time = Simulator->Time() + Get_command_execution_latency(CMD_READ_PAGE, command->Address[0].PageID);
+				targetDie->Expected_read_hot_finish_time = Simulator->Time() + Get_command_execution_latency(CMD_READ_PAGE_HOT, command->Address[0].PageID);
+
+				targetDie->CommandFinishEvent = Simulator->Register_sim_event(targetDie->Expected_finish_time, this, command, static_cast<int>(Chip_Sim_Event_Type::COMMAND_FINISHED));
+				targetDie->CommandFinishEventhot = Simulator->Register_sim_event(targetDie->Expected_read_hot_finish_time, this, command, static_cast<int>(Chip_Sim_Event_Type::COMMAND_FINISHED));
+			}else{
+				targetDie->Expected_finish_time = Simulator->Time() + Get_command_execution_latency(command->CommandCode, command->Address[0].PageID);
+				targetDie->CommandFinishEvent = Simulator->Register_sim_event(targetDie->Expected_finish_time, this, command, static_cast<int>(Chip_Sim_Event_Type::COMMAND_FINISHED));
+			}
+
+
 			targetDie->CurrentCMD = command;
 			targetDie->Status = DieStatus::BUSY;
 			idleDieNo--;
@@ -195,7 +208,7 @@ namespace NVM
 
 					break;
 				case CMD_ERASE_BLOCK:
-				case CMD_ERASE_BLOCK_MULTIPLANE:
+				case CMD_ERASE_BLOCK_MULTIPLANE: //LM working not done
 				{
 					for (unsigned int planeCntr = 0; planeCntr < command->Address.size(); planeCntr++) {
 						STAT_eraseCount++;
@@ -315,6 +328,12 @@ namespace NVM
 			attr = "Fraction_of_Time_in_DataXfer is  ";
 			val = std::to_string(STAT_totalXferTime / double(Simulator->Time()));
 			xmlwriter.Write_attribute_string_inline(attr, val);
+
+			attr = "Fraction_of_Time_in_DataXferout is  ";
+			val = std::to_string(STAT_totalXferoutTime / double(Simulator->Time()));
+			xmlwriter.Write_attribute_string_inline(attr, val);
+
+
 
 			attr = "The_data_transfer_time_is ";
 			val = std::to_string(STAT_totalXferTime);

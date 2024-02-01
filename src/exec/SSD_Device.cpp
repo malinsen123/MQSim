@@ -441,6 +441,7 @@ void SSD_Device::Report_results_in_XML(std::string name_prefix, Utils::XmlWriter
 		{
 			STAT_totalExecTime = 0;
 			STAT_totalXferTime = 0;
+			STAT_totalXferoutTime = 0;
 			STAT_totalOverlappedXferExecTime = 0;
 
 			for (unsigned int chip_cntr = 0; chip_cntr < Chip_no_per_channel; chip_cntr++)
@@ -449,15 +450,18 @@ void SSD_Device::Report_results_in_XML(std::string name_prefix, Utils::XmlWriter
 			
 				STAT_totalExecTime+=((SSD_Components::ONFI_Channel_NVDDR2 *)Channels[channel_cntr])->Chips[chip_cntr]->STAT_totalExecTime;
 				STAT_totalXferTime+=((SSD_Components::ONFI_Channel_NVDDR2 *)Channels[channel_cntr])->Chips[chip_cntr]->STAT_totalXferTime;
+				STAT_totalXferoutTime+=((SSD_Components::ONFI_Channel_NVDDR2 *)Channels[channel_cntr])->Chips[chip_cntr]->STAT_totalXferoutTime;
 				STAT_totalOverlappedXferExecTime+=((SSD_Components::ONFI_Channel_NVDDR2 *)Channels[channel_cntr])->Chips[chip_cntr]->STAT_totalOverlappedXferExecTime;
 			}
 
-			std::cout<<"Channel "<<channel_cntr<<" Total Exec Time "<<STAT_totalExecTime<<" Total Xfer Time "<<STAT_totalXferTime<<" Total Overlapped Xfer Exec Time "<<STAT_totalOverlappedXferExecTime<<std::endl;
+			//std::cout<<"Channel "<<channel_cntr<<" Total Exec Time "<<STAT_totalExecTime<<" Total Xfer Time "<<STAT_totalXferTime<<" Total Overlapped Xfer Exec Time "<<STAT_totalOverlappedXferExecTime<<std::endl;
 			//std::cout<<"Channel "<<channel_cntr<<"Fraction of time spent in Exec "<<(double)STAT_totalExecTime/(STAT_totalExecTime+STAT_totalXferTime+STAT_totalOverlappedXferExecTime)<<std::endl;
 			double total_exectime_fraction = STAT_totalExecTime / double(Simulator->Time());
 			double total_xfertime_fraction = STAT_totalXferTime / double(Simulator->Time());
+			double total_xferouttime_fraction = STAT_totalXferoutTime / double(Simulator->Time());
 			double total_overlapped_xfertime_fraction = STAT_totalOverlappedXferExecTime / double(Simulator->Time());
-			std::cout<<"Channel "<<channel_cntr<<" Fraction of time spent in Xfer "<<total_xfertime_fraction<<" Fraction of time spent in Overlapped Xfer "<<total_overlapped_xfertime_fraction<<std::endl;
+			//std::cout<<"Channel "<<channel_cntr<<" Fraction of time spent in Xfer "<<total_xfertime_fraction<<" Fraction of time spent in Overlapped Xfer "<<total_overlapped_xfertime_fraction<<std::endl;
+			std::cout<<"Channel "<<channel_cntr<<" Fraction of time spent in Exec "<<total_exectime_fraction<<" Fraction of time spent in Xfer "<<total_xfertime_fraction<<" Fraction of time spent in Xferout "<<total_xferouttime_fraction<<" Fraction of time spent in Overlapped Xfer "<<total_overlapped_xfertime_fraction<<std::endl;
 		}
 	}
 	xmlwriter.Write_close_tag();

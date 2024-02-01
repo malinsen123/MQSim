@@ -42,7 +42,8 @@ namespace NVM
 			}
 			void StartDataOutXfer()
 			{
-				this->lastTransferStart = Simulator->Time();
+				//this->lastTransferStart = Simulator->Time();
+				this->lastTransferoutStart = Simulator->Time();
 			}
 			void EndCMDXfer(Flash_Command* command)//End transferring write data to the Flash chip
 			{
@@ -73,16 +74,19 @@ namespace NVM
 			}
 			void EndDataOutXfer(Flash_Command* command)
 			{
-				this->STAT_totalXferTime += (Simulator->Time() - this->lastTransferStart);
+				//this->STAT_totalXferTime += (Simulator->Time() - this->lastTransferStart);
+				this->STAT_totalXferoutTime += (Simulator->Time() - this->lastTransferoutStart);
 				//std::cout<<"lastTransferStart: "<<this->lastTransferStart<<std::endl;
 				//std::cout<<"the added time is: "<<(Simulator->Time() - this->lastTransferStart)<<std::endl;
 				//sleep(1);
 
+				/*
 				if (this->idleDieNo != die_no)
 					STAT_totalOverlappedXferExecTime += (Simulator->Time() - lastTransferStart);
 				this->Dies[command->Address[0].DieID]->STAT_TotalXferTime += (Simulator->Time() - lastTransferStart);
-
-				this->lastTransferStart = INVALID_TIME;
+				*/
+				this->lastTransferoutStart = INVALID_TIME;
+			
 			}
 			void Change_memory_status_preconditioning(const NVM_Memory_Address* address, const void* status_info);
 			void Start_simulation();
@@ -109,6 +113,9 @@ namespace NVM
 					case CMD_READ_PAGE_COPYBACK:
 					case CMD_READ_PAGE_COPYBACK_MULTIPLANE:
 						return _readLatency[latencyType] + _RBSignalDelayRead;
+					case CMD_READ_PAGE_HOT:
+					case CMD_READ_PAGE_HOT_MULTIPLANE:
+						return _readLatency[latencyType]/2 + _RBSignalDelayRead;
 					case CMD_PROGRAM_PAGE:
 					case CMD_PROGRAM_PAGE_MULTIPLANE:
 					case CMD_PROGRAM_PAGE_COPYBACK:
@@ -129,8 +136,8 @@ namespace NVM
 			void Report_results_in_XML(std::string name_prefix, Utils::XmlWriter& xmlwriter);
 			LPA_type Get_metadata(flash_die_ID_type die_id, flash_plane_ID_type plane_id, flash_block_ID_type block_id, flash_page_ID_type page_id);//A simplification to decrease the complexity of GC execution! The GC unit may need to know the metadata of a page to decide if a page is valid or invalid. 
 		
-			sim_time_type STAT_totalExecTime, STAT_totalXferTime, STAT_totalOverlappedXferExecTime;
-		
+			sim_time_type STAT_totalExecTime, STAT_totalXferTime, STAT_totalXferoutTime, STAT_totalOverlappedXferExecTime;
+
 		private:
 			Flash_Technology_Type flash_technology;
 			Internal_Status status;
@@ -144,6 +151,7 @@ namespace NVM
 			sim_time_type _suspendProgramLatency, _suspendEraseLatency;
 			sim_time_type _RBSignalDelayRead, _RBSignalDelayWrite, _RBSignalDelayErase;
 			sim_time_type lastTransferStart;
+			sim_time_type lastTransferoutStart;
 			sim_time_type executionStartTime, expectedFinishTime;
 
 			unsigned long STAT_readCount, STAT_progamCount, STAT_eraseCount;
