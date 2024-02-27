@@ -230,11 +230,11 @@ namespace SSD_Components {
 
 		//std::cout<<"the new activeTransactions size is: "<<dieBKE->ActiveTransactions.size()<<std::endl;
 
-
+		bool contain_READ_HOT = false;
 		switch (transaction_list.front()->Type) {
 			case Transaction_Type::READ:
 				//LM check if there is READ_HOT transaction in the transaction_list
-				bool contain_READ_HOT = false;
+				contain_READ_HOT = false;
 				for(std::list<NVM_Transaction_Flash*>::iterator it = transaction_list.begin(); it != transaction_list.end(); it++){
 					if((*it)->Type == Transaction_Type::READ_HOT){
 						std::cout<<"READ_HOT transaction is found"<<std::endl;

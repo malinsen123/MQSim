@@ -13,7 +13,7 @@
 		<Memory_Type>FLASH</Memory_Type>
 		<HostInterface_Type>NVME</HostInterface_Type>
 		<IO_Queue_Depth>65535</IO_Queue_Depth>
-		<Queue_Fetch_Size>1024</Queue_Fetch_Size>
+		<Queue_Fetch_Size>8192</Queue_Fetch_Size>
 		<Caching_Mechanism>ADVANCED</Caching_Mechanism>
 		<Data_Cache_Sharing_Mode>SHARED</Data_Cache_Sharing_Mode>
 		<Data_Cache_Capacity>268435456</Data_Cache_Capacity>
@@ -63,7 +63,7 @@
 			<Plane_No_Per_Die>4</Plane_No_Per_Die>
 			<Block_No_Per_Plane>2048</Block_No_Per_Plane>
 			<Page_No_Per_Block>256</Page_No_Per_Block>
-			<Page_Capacity>8192</Page_Capacity>
+			<Page_Capacity>16384</Page_Capacity>
 			<Page_Metadat_Capacity>448</Page_Metadat_Capacity>
 		</Flash_Parameter_Set>
 	</Device_Parameter_Set>

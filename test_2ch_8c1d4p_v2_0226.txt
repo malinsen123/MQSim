@@ -1,0 +1,62 @@
+MQSim started at Mon Feb 26 02:17:40 2024
+
+******************************
+Executing scenario 1 out of 1 .......
+ONFI_Channel_Base::ONFI_Channel_Base
+channelID: 0
+status: 4
+ONFI_Channel_Base::ONFI_Channel_Base
+channelID: 1
+status: 4
+[>                   ]  0% progress in Host.IO_Flow.Synth.No_0
+
+[=>                  ]  5% progress in Host.IO_Flow.Synth.No_0
+
+[==>                 ]  10% progress in Host.IO_Flow.Synth.No_0
+
+[===>                ]  15% progress in Host.IO_Flow.Synth.No_0
+
+[====>               ]  20% progress in Host.IO_Flow.Synth.No_0
+
+[=====>              ]  25% progress in Host.IO_Flow.Synth.No_0
+
+[======>             ]  30% progress in Host.IO_Flow.Synth.No_0
+
+[=======>            ]  35% progress in Host.IO_Flow.Synth.No_0
+
+[========>           ]  40% progress in Host.IO_Flow.Synth.No_0
+
+[=========>          ]  45% progress in Host.IO_Flow.Synth.No_0
+
+[==========>         ]  50% progress in Host.IO_Flow.Synth.No_0
+
+[===========>        ]  55% progress in Host.IO_Flow.Synth.No_0
+
+[============>       ]  60% progress in Host.IO_Flow.Synth.No_0
+
+[=============>      ]  65% progress in Host.IO_Flow.Synth.No_0
+
+[==============>     ]  70% progress in Host.IO_Flow.Synth.No_0
+
+[===============>    ]  75% progress in Host.IO_Flow.Synth.No_0
+
+[================>   ]  80% progress in Host.IO_Flow.Synth.No_0
+
+[=================>  ]  85% progress in Host.IO_Flow.Synth.No_0
+
+[==================> ]  90% progress in Host.IO_Flow.Synth.No_0
+
+[===================>]  95% progress in Host.IO_Flow.Synth.No_0
+
+[====================]  100% progress in Host.IO_Flow.Synth.No_0
+
+MQSim finished at Mon Feb 26 02:17:43 2024
+
+Total simulation time: 0:0:3
+
+Writing results to output file .......
+Channel 0 Fraction of time spent in Exec 2.86109 Fraction of time spent in Xfer 122485 Fraction of time spent in Xferout 0.0934835 Fraction of time spent in Overlapped Xfer 0
+Channel 1 Fraction of time spent in Exec 2.8749 Fraction of time spent in Xfer 122736 Fraction of time spent in Xferout 0.0932378 Fraction of time spent in Overlapped Xfer 0
+Flow Host.IO_Flow.Synth.No_0 - total requests generated: 500000 total requests serviced:500000
+                   - device response time: 384 (us) end-to-end request delay:384 (us)
+Simulation complete; Press any key to exit.

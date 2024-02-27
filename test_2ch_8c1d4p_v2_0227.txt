@@ -1,0 +1,22 @@
+MQSim started at Mon Feb 26 09:46:31 2024
+
+******************************
+Executing scenario 1 out of 1 .......
+ONFI_Channel_Base::ONFI_Channel_Base
+channelID: 0
+status: 4
+ONFI_Channel_Base::ONFI_Channel_Base
+channelID: 1
+status: 4
+[>                   ]  0% progress in Host.IO_Flow.Synth.No_0
+
+MQSim finished at Mon Feb 26 09:46:32 2024
+
+Total simulation time: 0:0:1
+
+Writing results to output file .......
+Channel 0 Fraction of time spent in Exec 2.56873 Fraction of time spent in Xfer 533.482 Fraction of time spent in Xferout 0.298438 Fraction of time spent in Overlapped Xfer 0
+Channel 1 Fraction of time spent in Exec 2.81316 Fraction of time spent in Xfer 625.131 Fraction of time spent in Xferout 0.282413 Fraction of time spent in Overlapped Xfer 0
+Flow Host.IO_Flow.Synth.No_0 - total requests generated: 16384 total requests serviced:8192
+                   - device response time: 7686 (us) end-to-end request delay:7686 (us)
+Simulation complete; Press any key to exit.

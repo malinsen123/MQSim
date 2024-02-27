@@ -153,7 +153,7 @@ namespace SSD_Components
 
 			if (user_request->Type == UserRequestType::READ) {
 				NVM_Transaction_Flash_RD* transaction = new NVM_Transaction_Flash_RD(Transaction_Source_Type::USERIO, SATA_STREAM_ID,
-					transaction_size * SECTOR_SIZE_IN_BYTE, lpa, NO_PPA, user_request, 0, access_status_bitmap, CurrentTimeStamp);
+					transaction_size * SECTOR_SIZE_IN_BYTE, lpa, NO_PPA, user_request, 0, access_status_bitmap, CurrentTimeStamp, false);
 				user_request->Transaction_list.push_back(transaction);
 				input_streams[SATA_STREAM_ID]->STAT_number_of_read_transactions++;
 			} else {//user_request->Type == UserRequestType::WRITE
